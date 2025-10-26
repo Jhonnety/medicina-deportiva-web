@@ -1,10 +1,12 @@
+import { StaticImageData } from "next/image";
+
 export interface Treatment {
   id: string;
   slug: string;
   title: string;
   description: string;
   benefits: string[];
-  image: string;
+  image: StaticImageData;
 }
 
 export interface Testimonial {
