@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "treatments": "Tratamientos",
+    "about": "Sobre Mí",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "schedule": "Agendar Consulta"
+  },
+  "hero": {
+    "title": "Recupera tu movilidad y bienestar con Cirugía Mínimamente Invasiva",
+    "subtitle": "Tratamientos especializados en medicina deportiva y manejo del dolor. Técnicas avanzadas para tu recuperación óptima.",
+    "cta_primary": "Agendar Consulta",
+    "cta_secondary": "Conocer Tratamientos",
+    "tag1": "Especialista en Medicina Deportiva",
+    "tag2": "Más de 15 años de experiencia",
+    "tag3": "Técnicas Mínimamente Invasivas"
+  },
+  "process": {
+    "title": "Tu recuperación en 3 pasos simples",
+    "subtitle": "Un proceso diseñado para tu bienestar y recuperación efectiva",
+    "step1": {
+      "number": "01",
+      "title": "Valoración Inicial",
+      "description": "Evaluación completa de tu condición con tecnología de diagnóstico avanzado"
+    },
+    "step2": {
+      "number": "02",
+      "title": "Tratamiento Personalizado",
+      "description": "Plan de tratamiento diseñado específicamente para tus necesidades"
+    },
+    "step3": {
+      "number": "03",
+      "title": "Seguimiento y Recuperación",
+      "description": "Acompañamiento continuo hasta tu recuperación completa"
+    }
+  },
+  "treatments": {
+    "title": "Tratamientos Especializados",
+    "subtitle": "Soluciones médicas avanzadas para tu recuperación",
+    "artrosis": {
+      "title": "Tratamiento de Artrosis",
+      "description": "Terapias regenerativas para aliviar el dolor articular y mejorar la movilidad",
+      "benefits": ["Reducción del dolor", "Mejora de movilidad", "Evita cirugía mayor"]
+    },
+    "proloterapia": {
+      "title": "Proloterapia",
+      "description": "Estimulación natural del proceso de curación de ligamentos y tendones",
+      "benefits": ["Regeneración natural", "Sin cirugía", "Resultados duraderos"]
+    },
+    "prp": {
+      "title": "Plasma Rico en Plaquetas (PRP)",
+      "description": "Uso de factores de crecimiento de tu propia sangre para acelerar la curación",
+      "benefits": ["100% natural", "Sin efectos secundarios", "Recuperación rápida"]
+    },
+    "lesiones": {
+      "title": "Lesiones Deportivas",
+      "description": "Diagnóstico y tratamiento especializado para atletas y personas activas",
+      "benefits": ["Retorno rápido al deporte", "Prevención de recaídas", "Rehabilitación integral"]
+    },
+    "ecoguiado": {
+      "title": "Diagnóstico Ecoguiado",
+      "description": "Diagnóstico preciso mediante ultrasonido de alta resolución",
+      "benefits": ["Precisión máxima", "Sin radiación", "Resultados inmediatos"]
+    },
+    "adelgazamiento": {
+      "title": "Programa de Adelgazamiento",
+      "description": "Plan integral para pérdida de peso saludable y sostenible",
+      "benefits": ["Seguimiento médico", "Planes personalizados", "Resultados duraderos"]
+    },
+    "cta": "Ver Más Detalles"
+  },
+  "about": {
+    "title": "Dr. James Madrid",
+    "subtitle": "Especialista en Medicina Deportiva",
+    "description": "Con más de 15 años de experiencia en medicina deportiva y tratamientos regenerativos, el Dr. James Madrid se ha especializado en técnicas mínimamente invasivas que permiten a sus pacientes recuperar su calidad de vida sin necesidad de cirugías mayores.",
+    "credentials": [
+      "Médico Cirujano - Universidad de Los Andes",
+      "Especialista en Medicina Deportiva",
+      "Certificación en Proloterapia y PRP",
+      "Más de 5,000 procedimientos realizados"
+    ]
+  },
+  "testimonials": {
+    "title": "Historias reales de recuperación",
+    "subtitle": "Lo que dicen nuestros pacientes"
+  },
+  "faqs": {
+    "title": "¿Tienes dudas? Te ayudamos",
+    "subtitle": "Preguntas frecuentes sobre nuestros tratamientos",
+    "question1": {
+      "q": "¿Los tratamientos son dolorosos?",
+      "a": "Los procedimientos se realizan con anestesia local y son mínimamente invasivos, causando molestias mínimas."
+    },
+    "question2": {
+      "q": "¿Cuánto tiempo tarda la recuperación?",
+      "a": "Depende del tratamiento, pero generalmente los pacientes pueden retomar actividades normales en 1-2 semanas."
+    },
+    "question3": {
+      "q": "¿Mi seguro cubre estos tratamientos?",
+      "a": "Trabajamos con las principales aseguradoras. Contacta a tu seguro para verificar cobertura específica."
+    },
+    "question4": {
+      "q": "¿Necesito una remisión médica?",
+      "a": "No es necesaria una remisión, puedes agendar directamente tu consulta."
+    },
+    "question5": {
+      "q": "¿Qué debo llevar a mi primera consulta?",
+      "a": "Trae tus exámenes médicos previos, lista de medicamentos actuales y tu documento de identidad."
+    }
+  },
+  "contact": {
+    "title": "Agenda tu Consulta",
+    "subtitle": "Estamos aquí para ayudarte a recuperar tu bienestar",
+    "phone": "Teléfono / WhatsApp",
+    "email": "Correo Electrónico",
+    "location": "Ubicación",
+    "hours": "Horarios de Atención",
+    "hoursDetail": "Lunes a Viernes: 8:00 AM - 6:00 PM\nSábados: 9:00 AM - 1:00 PM",
+    "address": "Calle 123 #45-67, Medellín, Colombia",
+    "formTitle": "Envíanos un mensaje",
+    "formName": "Nombre completo",
+    "formEmail": "Correo electrónico",
+    "formPhone": "Teléfono",
+    "formMessage": "Mensaje",
+    "formSubmit": "Enviar Mensaje",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "description": "Especialistas en medicina deportiva y tratamientos regenerativos en Medellín, Colombia.",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados"
+  },
+  "seo": {
+    "home": {
+      "title": "Dr. James Madrid - Medicina Deportiva y Tratamientos Regenerativos | Medellín",
+      "description": "Especialista en medicina deportiva en Medellín. Tratamientos de artrosis, PRP, proloterapia y lesiones deportivas con técnicas mínimamente invasivas. +15 años de experiencia."
+    }
+  }
+}
+
+

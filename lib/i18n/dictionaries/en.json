@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Home",
+    "treatments": "Treatments",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "schedule": "Schedule Appointment"
+  },
+  "hero": {
+    "title": "Recover Your Mobility and Wellness with Minimally Invasive Surgery",
+    "subtitle": "Specialized treatments in sports medicine and pain management. Advanced techniques for optimal recovery.",
+    "cta_primary": "Schedule Appointment",
+    "cta_secondary": "View Treatments",
+    "tag1": "Sports Medicine Specialist",
+    "tag2": "Over 15 Years of Experience",
+    "tag3": "Minimally Invasive Techniques"
+  },
+  "process": {
+    "title": "Your recovery in 3 simple steps",
+    "subtitle": "A process designed for your wellness and effective recovery",
+    "step1": {
+      "number": "01",
+      "title": "Initial Assessment",
+      "description": "Complete evaluation of your condition with advanced diagnostic technology"
+    },
+    "step2": {
+      "number": "02",
+      "title": "Personalized Treatment",
+      "description": "Treatment plan designed specifically for your needs"
+    },
+    "step3": {
+      "number": "03",
+      "title": "Follow-up and Recovery",
+      "description": "Continuous support until your complete recovery"
+    }
+  },
+  "treatments": {
+    "title": "Specialized Treatments",
+    "subtitle": "Advanced medical solutions for your recovery",
+    "artrosis": {
+      "title": "Arthritis Treatment",
+      "description": "Regenerative therapies to relieve joint pain and improve mobility",
+      "benefits": ["Pain reduction", "Improved mobility", "Avoid major surgery"]
+    },
+    "proloterapia": {
+      "title": "Prolotherapy",
+      "description": "Natural stimulation of the healing process of ligaments and tendons",
+      "benefits": ["Natural regeneration", "No surgery", "Lasting results"]
+    },
+    "prp": {
+      "title": "Platelet-Rich Plasma (PRP)",
+      "description": "Use of growth factors from your own blood to accelerate healing",
+      "benefits": ["100% natural", "No side effects", "Quick recovery"]
+    },
+    "lesiones": {
+      "title": "Sports Injuries",
+      "description": "Specialized diagnosis and treatment for athletes and active people",
+      "benefits": ["Quick return to sport", "Relapse prevention", "Comprehensive rehabilitation"]
+    },
+    "ecoguiado": {
+      "title": "Ultrasound-Guided Diagnosis",
+      "description": "Precise diagnosis using high-resolution ultrasound",
+      "benefits": ["Maximum precision", "No radiation", "Immediate results"]
+    },
+    "adelgazamiento": {
+      "title": "Weight Loss Program",
+      "description": "Comprehensive plan for healthy and sustainable weight loss",
+      "benefits": ["Medical monitoring", "Personalized plans", "Lasting results"]
+    },
+    "cta": "View More Details"
+  },
+  "about": {
+    "title": "Dr. James Madrid",
+    "subtitle": "Sports Medicine Specialist",
+    "description": "With over 15 years of experience in sports medicine and regenerative treatments, Dr. James Madrid has specialized in minimally invasive techniques that allow his patients to recover their quality of life without the need for major surgeries.",
+    "credentials": [
+      "Medical Doctor - Universidad de Los Andes",
+      "Sports Medicine Specialist",
+      "Prolotherapy and PRP Certification",
+      "Over 5,000 procedures performed"
+    ]
+  },
+  "testimonials": {
+    "title": "Real recovery stories",
+    "subtitle": "What our patients say"
+  },
+  "faqs": {
+    "title": "Have questions? We're here to help",
+    "subtitle": "Frequently asked questions about our treatments",
+    "question1": {
+      "q": "Are the treatments painful?",
+      "a": "Procedures are performed with local anesthesia and are minimally invasive, causing minimal discomfort."
+    },
+    "question2": {
+      "q": "How long does recovery take?",
+      "a": "It depends on the treatment, but generally patients can resume normal activities in 1-2 weeks."
+    },
+    "question3": {
+      "q": "Does my insurance cover these treatments?",
+      "a": "We work with major insurance providers. Contact your insurance to verify specific coverage."
+    },
+    "question4": {
+      "q": "Do I need a medical referral?",
+      "a": "A referral is not necessary, you can schedule your appointment directly."
+    },
+    "question5": {
+      "q": "What should I bring to my first appointment?",
+      "a": "Bring your previous medical tests, list of current medications, and your ID."
+    }
+  },
+  "contact": {
+    "title": "Schedule Your Appointment",
+    "subtitle": "We're here to help you recover your wellness",
+    "phone": "Phone / WhatsApp",
+    "email": "Email",
+    "location": "Location",
+    "hours": "Office Hours",
+    "hoursDetail": "Monday to Friday: 8:00 AM - 6:00 PM\nSaturday: 9:00 AM - 1:00 PM",
+    "address": "Calle 123 #45-67, Medellín, Colombia",
+    "formTitle": "Send us a message",
+    "formName": "Full name",
+    "formEmail": "Email address",
+    "formPhone": "Phone",
+    "formMessage": "Message",
+    "formSubmit": "Send Message",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "description": "Specialists in sports medicine and regenerative treatments in Medellín, Colombia.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved"
+  },
+  "seo": {
+    "home": {
+      "title": "Dr. James Madrid - Sports Medicine & Regenerative Treatments | Medellín",
+      "description": "Sports medicine specialist in Medellín. Arthritis treatments, PRP, prolotherapy and sports injuries with minimally invasive techniques. +15 years of experience."
+    }
+  }
+}
+
+

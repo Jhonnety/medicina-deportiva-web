@@ -1,0 +1,176 @@
+{
+  "tratamiento-artrosis": {
+    "es": {
+      "title": "Tratamiento de Artrosis",
+      "subtitle": "Recupera tu movilidad sin cirugía",
+      "metaTitle": "Tratamiento de Artrosis en Medellín | Dr. James Madrid",
+      "metaDescription": "Tratamiento especializado para artrosis con técnicas regenerativas. Alivio del dolor y mejora de movilidad sin cirugía. +15 años de experiencia.",
+      "whatIs": {
+        "title": "¿Qué es el Tratamiento de Artrosis y cómo funciona?",
+        "definition": "La artrosis es una enfermedad degenerativa de las articulaciones que causa dolor, inflamación y limitación del movimiento. Nuestro tratamiento utiliza técnicas regenerativas avanzadas para estimular la reparación del cartílago y reducir la inflamación.",
+        "physiologicalBenefit": "Los tratamientos regenerativos para artrosis trabajan estimulando los mecanismos naturales de curación del cuerpo. Utilizamos factores de crecimiento y células madre para promover la regeneración del tejido cartilaginoso, reducir la inflamación y mejorar la lubricación articular.",
+        "howWorks": "El procedimiento consiste en la aplicación de terapias biológicas directamente en la articulación afectada, utilizando ultrasonido para máxima precisión. Estas sustancias estimulan la reparación del tejido dañado y reducen el proceso inflamatorio, aliviando el dolor y mejorando la función articular."
+      },
+      "symptoms": {
+        "title": "Síntomas que Tratamos",
+        "list": [
+          "Dolor articular persistente",
+          "Rigidez matutina",
+          "Hinchazón de las articulaciones",
+          "Crujidos al mover las articulaciones",
+          "Limitación del rango de movimiento",
+          "Debilidad muscular alrededor de la articulación"
+        ]
+      },
+      "results": {
+        "title": "Resultados que Puedes Esperar",
+        "items": [
+          {
+            "title": "Reducción del Dolor",
+            "description": "La mayoría de pacientes experimentan alivio significativo del dolor en las primeras 2-4 semanas.",
+            "percentage": "85%"
+          },
+          {
+            "title": "Mejora de Movilidad",
+            "description": "Incremento notable en el rango de movimiento y capacidad para realizar actividades diarias.",
+            "percentage": "90%"
+          },
+          {
+            "title": "Evitar Cirugía",
+            "description": "Muchos pacientes pueden evitar o posponer cirugías de reemplazo articular.",
+            "percentage": "75%"
+          }
+        ]
+      },
+      "process": {
+        "title": "Tu Tratamiento en 3 Pasos",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Evaluación Diagnóstica",
+            "description": "Realizamos un examen completo con ultrasonido de alta resolución para evaluar el grado de daño articular y diseñar el mejor plan de tratamiento para ti."
+          },
+          {
+            "number": "02",
+            "title": "Aplicación del Tratamiento",
+            "description": "Procedimiento mínimamente invasivo guiado por ultrasonido. El tratamiento toma aproximadamente 30-45 minutos y puedes volver a casa el mismo día."
+          },
+          {
+            "number": "03",
+            "title": "Seguimiento y Recuperación",
+            "description": "Programa de rehabilitación personalizado con controles regulares para monitorear tu progreso y optimizar los resultados."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "¿Cuánto tiempo dura el tratamiento?",
+          "a": "El procedimiento en sí toma entre 30-45 minutos. Dependiendo de tu caso, pueden ser necesarias 1-3 sesiones espaciadas cada 4-6 semanas."
+        },
+        {
+          "q": "¿Es doloroso el procedimiento?",
+          "a": "Se realiza con anestesia local, por lo que las molestias son mínimas. Algunos pacientes reportan sensibilidad leve durante 2-3 días después del procedimiento."
+        },
+        {
+          "q": "¿Cuándo veré los resultados?",
+          "a": "La mayoría de pacientes comienzan a experimentar mejoría entre 2-4 semanas después del tratamiento, con resultados óptimos a los 2-3 meses."
+        },
+        {
+          "q": "¿Cuánto tiempo duran los resultados?",
+          "a": "Los resultados pueden durar de 1-2 años o más, dependiendo del grado de artrosis y los cuidados post-tratamiento. Muchos pacientes optan por sesiones de mantenimiento."
+        },
+        {
+          "q": "¿Puedo volver a mis actividades normales?",
+          "a": "Sí, la mayoría de pacientes pueden retomar actividades ligeras en 24-48 horas. Se recomienda evitar ejercicio intenso durante 1-2 semanas."
+        }
+      ]
+    },
+    "en": {
+      "title": "Arthritis Treatment",
+      "subtitle": "Recover your mobility without surgery",
+      "metaTitle": "Arthritis Treatment in Medellín | Dr. James Madrid",
+      "metaDescription": "Specialized arthritis treatment with regenerative techniques. Pain relief and improved mobility without surgery. +15 years of experience.",
+      "whatIs": {
+        "title": "What is Arthritis Treatment and how does it work?",
+        "definition": "Arthritis is a degenerative joint disease that causes pain, inflammation, and limited movement. Our treatment uses advanced regenerative techniques to stimulate cartilage repair and reduce inflammation.",
+        "physiologicalBenefit": "Regenerative treatments for arthritis work by stimulating the body's natural healing mechanisms. We use growth factors and stem cells to promote cartilage tissue regeneration, reduce inflammation, and improve joint lubrication.",
+        "howWorks": "The procedure consists of applying biological therapies directly to the affected joint, using ultrasound for maximum precision. These substances stimulate the repair of damaged tissue and reduce the inflammatory process, relieving pain and improving joint function."
+      },
+      "symptoms": {
+        "title": "Symptoms We Treat",
+        "list": [
+          "Persistent joint pain",
+          "Morning stiffness",
+          "Joint swelling",
+          "Cracking when moving joints",
+          "Limited range of motion",
+          "Muscle weakness around the joint"
+        ]
+      },
+      "results": {
+        "title": "Results You Can Expect",
+        "items": [
+          {
+            "title": "Pain Reduction",
+            "description": "Most patients experience significant pain relief within the first 2-4 weeks.",
+            "percentage": "85%"
+          },
+          {
+            "title": "Improved Mobility",
+            "description": "Notable increase in range of motion and ability to perform daily activities.",
+            "percentage": "90%"
+          },
+          {
+            "title": "Avoid Surgery",
+            "description": "Many patients can avoid or postpone joint replacement surgeries.",
+            "percentage": "75%"
+          }
+        ]
+      },
+      "process": {
+        "title": "Your Treatment in 3 Steps",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Diagnostic Evaluation",
+            "description": "We perform a complete examination with high-resolution ultrasound to assess the degree of joint damage and design the best treatment plan for you."
+          },
+          {
+            "number": "02",
+            "title": "Treatment Application",
+            "description": "Minimally invasive procedure guided by ultrasound. The treatment takes approximately 30-45 minutes and you can go home the same day."
+          },
+          {
+            "number": "03",
+            "title": "Follow-up and Recovery",
+            "description": "Personalized rehabilitation program with regular check-ups to monitor your progress and optimize results."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "How long does the treatment take?",
+          "a": "The procedure itself takes between 30-45 minutes. Depending on your case, 1-3 sessions spaced every 4-6 weeks may be necessary."
+        },
+        {
+          "q": "Is the procedure painful?",
+          "a": "It is performed with local anesthesia, so discomfort is minimal. Some patients report mild tenderness for 2-3 days after the procedure."
+        },
+        {
+          "q": "When will I see results?",
+          "a": "Most patients begin to experience improvement between 2-4 weeks after treatment, with optimal results at 2-3 months."
+        },
+        {
+          "q": "How long do the results last?",
+          "a": "Results can last 1-2 years or more, depending on the degree of arthritis and post-treatment care. Many patients opt for maintenance sessions."
+        },
+        {
+          "q": "Can I return to my normal activities?",
+          "a": "Yes, most patients can resume light activities within 24-48 hours. It is recommended to avoid intense exercise for 1-2 weeks."
+        }
+      ]
+    }
+  }
+}
+
+
