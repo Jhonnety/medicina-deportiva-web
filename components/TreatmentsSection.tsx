@@ -45,7 +45,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {TREATMENTS.map((treatment, index) => {
             const treatmentKey = treatment.slug.replace('tratamiento-', '').replace('plasma-rico-plaquetas', 'prp').replace('lesiones-deportivas', 'lesiones').replace('diagnostico-ecoguiado', 'ecoguiado').replace('programa-adelgazamiento', 'adelgazamiento');
-            const treatmentDict = dictionary.treatments[treatmentKey] || {};
+            const treatmentDict = dictionary.treatments[treatmentKey as keyof typeof dictionary.treatments] || {};
 
             const colors = [
               { primary: '#0066FF', light: '#E6F2FF', bg: '#F0F8FF' },
@@ -162,16 +162,16 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
               }
             };
 
-            const currentTexts = treatmentTexts[treatmentKey] || {
+            const currentTexts = treatmentTexts[treatmentKey as keyof typeof treatmentTexts] || {
               es: {
-                title: treatmentDict.title || treatment.title,
-                description: treatmentDict.description || treatment.description,
-                benefits: treatmentDict.benefits || treatment.benefits
+                title: (treatmentDict as any).title || treatment.title,
+                description: (treatmentDict as any).description || treatment.description,
+                benefits: (treatmentDict as any).benefits || treatment.benefits
               },
               en: {
-                title: treatmentDict.title || treatment.title,
-                description: treatmentDict.description || treatment.description,
-                benefits: treatmentDict.benefits || treatment.benefits
+                title: (treatmentDict as any).title || treatment.title,
+                description: (treatmentDict as any).description || treatment.description,
+                benefits: (treatmentDict as any).benefits || treatment.benefits
               }
             };
 
@@ -189,7 +189,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                       src={treatment.image}
                       alt={currentTexts[locale as 'es' | 'en'].title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="object-cover object-top lg:object-center group-hover:scale-105 transition-transform duration-700"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                     {/* Gradient Overlay */}
