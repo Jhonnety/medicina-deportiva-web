@@ -165,7 +165,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
         <TreatmentsSection dictionary={dictionary} locale={lang} />
         <AboutSection locale={lang} />
         <TestimonialsSection dictionary={dictionary} locale={lang} />
-        <FAQsSection dictionary={dictionary} />
+        <FAQsSection dictionary={dictionary} locale={lang} />
         <ContactSection dictionary={dictionary} locale={lang} />
       </main>
       

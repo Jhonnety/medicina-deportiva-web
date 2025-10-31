@@ -3,6 +3,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
 interface TestimonialsSectionProps {
   dictionary: Dictionary;
@@ -77,20 +82,70 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
         <AutoMarquee items={rowB} direction="right" onOpenVideo={(v) => setModalVideo(v)} />
       </div>
 
-      {/* Mobile: carrusel simple con snap */}
+      {/* Mobile: Swiper optimizado */}
       <div className="lg:hidden px-6 md:px-8">
-        <div className="-mx-6 md:-mx-8 px-6 md:px-8 overflow-x-auto snap-x snap-mandatory no-scrollbar">
-          <div className="flex gap-4">
-            {[
-              // Primero videos del mismo idioma
-              ...ordered.filter(t => t.kind === 'video' && t.language === (locale === 'en' ? 'en' : 'es')),
-              // Luego los demás
-              ...ordered.filter(t => !(t.kind === 'video' && t.language === (locale === 'en' ? 'en' : 'es'))),
-            ].map(item => (
-              <div key={`m-${item.id}`} className="snap-start">
-                <TestimonialCard item={item} onOpenVideo={(v) => setModalVideo(v)} />
-              </div>
-            ))}
+        <Swiper
+          modules={[Pagination, Autoplay, EffectCoverflow]}
+          effect="coverflow"
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView="auto"
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: false,
+          }}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          loop={true}
+          speed={800}
+          className="testimonials-swiper !pb-14"
+        >
+          {[
+            // Primero videos del mismo idioma
+            ...ordered.filter(t => t.kind === 'video' && t.language === (locale === 'en' ? 'en' : 'es')),
+            // Luego los demás
+            ...ordered.filter(t => !(t.kind === 'video' && t.language === (locale === 'en' ? 'en' : 'es'))),
+          ].map(item => (
+            <SwiperSlide key={`m-${item.id}`} className="!w-[320px] md:!w-[380px]">
+              <TestimonialCard item={item} onOpenVideo={(v) => setModalVideo(v)} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* CTA - Próximo caso de éxito */}
+      <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 mt-16">
+        <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-8 md:p-12 lg:p-16 border border-gray-100">
+          <div className="text-center max-w-3xl mx-auto">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1A1A1A] mb-4">
+              {locale === 'es' 
+                ? '¿Quieres ser nuestro próximo caso de éxito?' 
+                : 'Want to be our next success story?'}
+            </h3>
+            <p className="text-lg md:text-xl text-[#4A5568] mb-8">
+              {locale === 'es'
+                ? 'Únete a los miles de pacientes que han recuperado su movilidad con nosotros'
+                : 'Join thousands of patients who have recovered their mobility with us'}
+            </p>
+            <a
+              href="#contacto"
+              className="inline-flex items-center gap-2 bg-[#00D98E] hover:bg-[#00B876] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              {locale === 'es' ? 'Comenzar mi Recuperación' : 'Start My Recovery'}
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
