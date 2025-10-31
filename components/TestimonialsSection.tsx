@@ -120,8 +120,12 @@ function HeaderBlock({ title, subtitle }: { title: string; subtitle: string }) {
 
 function AutoMarquee({ items, direction, onOpenVideo }: { items: Testimonial[]; direction: 'left' | 'right'; onOpenVideo: (v: TestimonialVideo) => void }) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const positionRef = useRef(direction === 'left' ? 0 : 0);
+  const isDraggingRef = useRef(false);
+  const startXRef = useRef(0);
+  const startPositionRef = useRef(0);
   
   // Triplicar items para bucle suave sin saltos
   const infiniteItems = [...items, ...items, ...items, ...items];
@@ -136,7 +140,7 @@ function AutoMarquee({ items, direction, onOpenVideo }: { items: Testimonial[]; 
       positionRef.current = -setWidth;
     }
 
-    if (isPaused) return;
+    if (isPaused || isDraggingRef.current) return;
 
     const speed = direction === 'left' ? -0.5 : 0.5;
     let animationId: number;
@@ -167,16 +171,68 @@ function AutoMarquee({ items, direction, onOpenVideo }: { items: Testimonial[]; 
     return () => cancelAnimationFrame(animationId);
   }, [direction, isPaused]);
 
+  // Drag handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    isDraggingRef.current = true;
+    startXRef.current = e.clientX;
+    startPositionRef.current = positionRef.current;
+    setIsPaused(true);
+    if (containerRef.current) {
+      containerRef.current.style.cursor = 'grabbing';
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDraggingRef.current || !trackRef.current) return;
+    
+    const deltaX = e.clientX - startXRef.current;
+    const newPosition = startPositionRef.current + deltaX;
+    
+    // Aplicar límites del bucle
+    const setWidth = trackRef.current.scrollWidth / 4;
+    
+    if (newPosition <= -setWidth) {
+      positionRef.current = newPosition + setWidth;
+      startPositionRef.current = positionRef.current;
+      startXRef.current = e.clientX;
+    } else if (newPosition >= 0) {
+      positionRef.current = newPosition - setWidth;
+      startPositionRef.current = positionRef.current;
+      startXRef.current = e.clientX;
+    } else {
+      positionRef.current = newPosition;
+    }
+    
+    trackRef.current.style.transform = `translateX(${positionRef.current}px)`;
+  };
+
+  const handleMouseUp = () => {
+    isDraggingRef.current = false;
+    if (containerRef.current) {
+      containerRef.current.style.cursor = 'grab';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (isDraggingRef.current) {
+      isDraggingRef.current = false;
+      if (containerRef.current) {
+        containerRef.current.style.cursor = 'grab';
+      }
+    }
+    setIsPaused(false);
+  };
+
   return (
-    <div 
-      className="relative overflow-hidden w-full"
+    <div
+      ref={containerRef}
+      className="relative overflow-hidden w-full cursor-grab active:cursor-grabbing select-none py-4"
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseLeave}
       onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
     >
-      {/* edge fades */}
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-white via-white/80 to-transparent z-10" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-white via-white/80 to-transparent z-10" />
-      
       <div
         ref={trackRef}
         className="flex gap-6 will-change-transform"
@@ -249,29 +305,32 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
           />
         )}
         {/* overlay gradient bottom for title */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
         {/* badges */}
-        <div className="absolute top-3 left-3 flex items-center gap-2 z-10">
+        <div className="absolute top-3 left-3 flex items-center gap-2 z-10 pointer-events-none">
           <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-white/90 text-gray-900">{item.typeLabel}</span>
         </div>
-        <div className="absolute top-3 right-3 z-10">
+        <div className="absolute top-3 right-3 z-10 pointer-events-none">
           <span className="px-2 py-1 text-xs font-bold rounded-full bg-black/70 text-white">{item.language.toUpperCase()}</span>
         </div>
-        {/* open modal */}
-        <button
-          type="button"
-          onClick={onOpen}
-          aria-label="Ver video"
-          className="absolute inset-0 flex items-center justify-center z-10"
-        >
-          <div className="w-16 h-16 md:w-20 md:h-20 bg-white/95 rounded-full flex items-center justify-center shadow-xl">
+        {/* play button - solo este es clickeable */}
+        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              onOpen();
+            }}
+            aria-label="Ver video"
+            className="w-16 h-16 md:w-20 md:h-20 bg-white/95 rounded-full flex items-center justify-center shadow-xl hover:bg-white hover:scale-110 transition-all duration-300 cursor-pointer pointer-events-auto"
+          >
             <svg className="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
               <path d="M8 5v14l11-7z" />
             </svg>
-          </div>
-        </button>
+          </button>
+        </div>
         {/* bottom text */}
-        <div className="absolute bottom-4 left-4 right-4 z-10 text-white">
+        <div className="absolute bottom-4 left-4 right-4 z-10 text-white pointer-events-none">
           <div className="font-semibold">{item.name}</div>
           <div className="text-sm opacity-90">{item.condition}</div>
         </div>
