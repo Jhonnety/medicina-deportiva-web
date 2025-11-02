@@ -38,35 +38,45 @@
   "treatments": {
     "title": "Tratamientos Especializados",
     "subtitle": "Soluciones médicas avanzadas para tu recuperación",
-    "artrosis": {
-      "title": "Tratamiento de Artrosis",
-      "description": "Terapias regenerativas para aliviar el dolor articular y mejorar la movilidad",
-      "benefits": ["Reducción del dolor", "Mejora de movilidad", "Evita cirugía mayor"]
+    "celulas_madre": {
+      "title": "Células Madre Mesenquimales",
+      "description": "Células totipotenciales con capacidad de convertir tejido enfermo en sano. Pueden ser autólogas o alogénicas",
+      "benefits": ["Regeneración total", "Autólogas o alogénicas", "Tratamiento avanzado"]
     },
-    "proloterapia": {
-      "title": "Proloterapia",
-      "description": "Estimulación natural del proceso de curación de ligamentos y tendones",
-      "benefits": ["Regeneración natural", "Sin cirugía", "Resultados duraderos"]
+    "exosomas": {
+      "title": "Exosomas",
+      "description": "Vesículas extraídas de células madre mesenquimales que contienen microRNA, proteínas y factores de crecimiento",
+      "benefits": ["Alta concentración", "Regeneración celular", "Tecnología avanzada"]
     },
     "prp": {
       "title": "Plasma Rico en Plaquetas (PRP)",
-      "description": "Uso de factores de crecimiento de tu propia sangre para acelerar la curación",
-      "benefits": ["100% natural", "Sin efectos secundarios", "Recuperación rápida"]
+      "description": "Fracción de plasma extraído de sangre autóloga, con concentración superior de plaquetas y altos niveles de factores de crecimiento",
+      "benefits": ["100% autólogo", "Factores de crecimiento", "Recuperación rápida"]
     },
-    "lesiones": {
-      "title": "Lesiones Deportivas",
-      "description": "Diagnóstico y tratamiento especializado para atletas y personas activas",
-      "benefits": ["Retorno rápido al deporte", "Prevención de recaídas", "Rehabilitación integral"]
+    "acido_hialuronico": {
+      "title": "Ácido Hialurónico",
+      "description": "Lubricante articular que acelera la cicatrización, fomenta la producción de colágeno natural y tiene efecto analgésico",
+      "benefits": ["Lubricación articular", "Efecto analgésico", "Estimula colágeno"]
     },
-    "ecoguiado": {
-      "title": "Diagnóstico Ecoguiado",
-      "description": "Diagnóstico preciso mediante ultrasonido de alta resolución",
-      "benefits": ["Precisión máxima", "Sin radiación", "Resultados inmediatos"]
+    "infiltracion": {
+      "title": "Infiltración Convencional",
+      "description": "Control de inflamación de articulación, tendón o músculo mediante esteroides o biorreguladores con anestésicos locales",
+      "benefits": ["Control de inflamación", "Alivio inmediato", "Mínimamente invasivo"]
+    },
+    "sueroterapia": {
+      "title": "Sueroterapia",
+      "description": "Fórmula personalizada por vía intravenosa que proporciona al cuerpo los elementos necesarios para restaurar el equilibrio y bienestar",
+      "benefits": ["Personalizada", "Restauración integral", "Resultados inmediatos"]
     },
     "adelgazamiento": {
       "title": "Programa de Adelgazamiento",
-      "description": "Plan integral para pérdida de peso saludable y sostenible",
-      "benefits": ["Seguimiento médico", "Planes personalizados", "Resultados duraderos"]
+      "description": "Programa integral multidisciplinario que te ayuda a realizar cambios permanentes en hábitos alimenticios, actividad física y manejo psicológico",
+      "benefits": ["Equipo multidisciplinario", "Cambios permanentes", "Manejo psicológico"]
+    },
+    "alto_rendimiento": {
+      "title": "Alto Rendimiento Deportivo",
+      "description": "Evaluación y manejo de deportistas élite y aficionados para prevenir y rehabilitar lesiones deportivas y mejorar el rendimiento en condiciones seguras",
+      "benefits": ["Prevención de lesiones", "Mejora de rendimiento", "Condiciones seguras"]
     },
     "cta": "Ver Más Detalles"
   },

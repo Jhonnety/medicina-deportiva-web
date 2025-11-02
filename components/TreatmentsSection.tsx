@@ -44,7 +44,19 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
         {/* Treatments Grid - Two Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {TREATMENTS.map((treatment, index) => {
-            const treatmentKey = treatment.slug.replace('tratamiento-', '').replace('plasma-rico-plaquetas', 'prp').replace('lesiones-deportivas', 'lesiones').replace('diagnostico-ecoguiado', 'ecoguiado').replace('programa-adelgazamiento', 'adelgazamiento');
+            // Mapeo de slugs a claves del diccionario
+            const slugToKeyMap: Record<string, string> = {
+              'celulas-madre-mesenquimales': 'celulas_madre',
+              'exosomas': 'exosomas',
+              'plasma-rico-plaquetas': 'prp',
+              'acido-hialuronico': 'acido_hialuronico',
+              'infiltracion-convencional': 'infiltracion',
+              'sueroterapia': 'sueroterapia',
+              'programa-adelgazamiento': 'adelgazamiento',
+              'alto-rendimiento-deportivo': 'alto_rendimiento',
+            };
+            
+            const treatmentKey = slugToKeyMap[treatment.slug] || treatment.slug;
             const treatmentDict = dictionary.treatments[treatmentKey as keyof typeof dictionary.treatments] || {};
 
             const colors = [
@@ -54,115 +66,14 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
               { primary: '#8B5CF6', light: '#F3F0FF', bg: '#FAF5FF' },
               { primary: '#F59E0B', light: '#FEF3C7', bg: '#FFFBEB' },
               { primary: '#EF4444', light: '#FEE2E2', bg: '#FEF2F2' },
+              { primary: '#06B6D4', light: '#CFFAFE', bg: '#ECFEFF' },
+              { primary: '#EC4899', light: '#FCE7F3', bg: '#FDF2F8' },
             ];
 
             const currentColor = colors[index % colors.length];
 
-            // Textos específicos basados en la imagen
-            const treatmentTexts = {
-              artrosis: {
-                es: {
-                  title: 'Tratamiento de Artrosis',
-                  description: 'Alivio del dolor y regeneración del cartílago articular mediante técnicas avanzadas de medicina regenerativa.',
-                  benefits: [
-                    'Reducción significativa del dolor articular',
-                    'Mejora de la movilidad y flexibilidad',
-                    'Regeneración natural del cartílago'
-                  ]
-                },
-                en: {
-                  title: 'Osteoarthritis Treatment',
-                  description: 'Pain relief and cartilage regeneration through advanced regenerative medicine techniques.',
-                  benefits: [
-                    'Significant reduction in joint pain',
-                    'Improved mobility and flexibility',
-                    'Natural cartilage regeneration'
-                  ]
-                }
-              },
-              prp: {
-                es: {
-                  title: 'Plasma Rico en Plaquetas (PRP)',
-                  description: 'Terapia regenerativa que utiliza las propias plaquetas del paciente para acelerar la curación.',
-                  benefits: [
-                    'Aceleración del proceso de curación',
-                    'Reducción de la inflamación',
-                    'Mejora de la función articular'
-                  ]
-                },
-                en: {
-                  title: 'Platelet Rich Plasma (PRP)',
-                  description: 'Regenerative therapy using the patient\'s own platelets to accelerate healing.',
-                  benefits: [
-                    'Accelerated healing process',
-                    'Reduced inflammation',
-                    'Improved joint function'
-                  ]
-                }
-              },
-              lesiones: {
-                es: {
-                  title: 'Lesiones Deportivas',
-                  description: 'Tratamiento especializado para deportistas con técnicas de medicina regenerativa y rehabilitación.',
-                  benefits: [
-                    'Recuperación más rápida',
-                    'Prevención de recaídas',
-                    'Retorno seguro al deporte'
-                  ]
-                },
-                en: {
-                  title: 'Sports Injuries',
-                  description: 'Specialized treatment for athletes using regenerative medicine and rehabilitation techniques.',
-                  benefits: [
-                    'Faster recovery',
-                    'Prevention of relapses',
-                    'Safe return to sports'
-                  ]
-                }
-              },
-              ecoguiado: {
-                es: {
-                  title: 'Diagnóstico Ecoguiado',
-                  description: 'Evaluación precisa mediante ultrasonido para un diagnóstico y tratamiento más efectivo.',
-                  benefits: [
-                    'Diagnóstico preciso y en tiempo real',
-                    'Tratamiento dirigido y seguro',
-                    'Menor riesgo de complicaciones'
-                  ]
-                },
-                en: {
-                  title: 'Ultrasound-Guided Diagnosis',
-                  description: 'Precise evaluation through ultrasound for more effective diagnosis and treatment.',
-                  benefits: [
-                    'Precise and real-time diagnosis',
-                    'Targeted and safe treatment',
-                    'Lower risk of complications'
-                  ]
-                }
-              },
-              adelgazamiento: {
-                es: {
-                  title: 'Programa de Adelgazamiento',
-                  description: 'Plan integral de pérdida de peso con seguimiento médico especializado y técnicas complementarias.',
-                  benefits: [
-                    'Pérdida de peso saludable y sostenible',
-                    'Seguimiento médico personalizado',
-                    'Mejora de la salud general'
-                  ]
-                },
-                en: {
-                  title: 'Weight Loss Program',
-                  description: 'Comprehensive weight loss plan with specialized medical follow-up and complementary techniques.',
-                  benefits: [
-                    'Healthy and sustainable weight loss',
-                    'Personalized medical follow-up',
-                    'Overall health improvement'
-                  ]
-                }
-              }
-            };
-
-            const currentTexts = treatmentTexts[treatmentKey as keyof typeof treatmentTexts] || {
+            // Usar los datos del diccionario
+            const currentTexts = {
               es: {
                 title: (treatmentDict as any).title || treatment.title,
                 description: (treatmentDict as any).description || treatment.description,

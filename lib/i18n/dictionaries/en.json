@@ -38,35 +38,45 @@
   "treatments": {
     "title": "Specialized Treatments",
     "subtitle": "Advanced medical solutions for your recovery",
-    "artrosis": {
-      "title": "Arthritis Treatment",
-      "description": "Regenerative therapies to relieve joint pain and improve mobility",
-      "benefits": ["Pain reduction", "Improved mobility", "Avoid major surgery"]
+    "celulas_madre": {
+      "title": "Mesenchymal Stem Cells",
+      "description": "Totipotent cells capable of converting diseased tissue into healthy tissue. Can be autologous or allogeneic",
+      "benefits": ["Total regeneration", "Autologous or allogeneic", "Advanced treatment"]
     },
-    "proloterapia": {
-      "title": "Prolotherapy",
-      "description": "Natural stimulation of the healing process of ligaments and tendons",
-      "benefits": ["Natural regeneration", "No surgery", "Lasting results"]
+    "exosomas": {
+      "title": "Exosomes",
+      "description": "Vesicles extracted from mesenchymal stem cells containing microRNA, proteins and growth factors",
+      "benefits": ["High concentration", "Cellular regeneration", "Advanced technology"]
     },
     "prp": {
       "title": "Platelet-Rich Plasma (PRP)",
-      "description": "Use of growth factors from your own blood to accelerate healing",
-      "benefits": ["100% natural", "No side effects", "Quick recovery"]
+      "description": "Plasma fraction extracted from autologous blood with higher platelet concentration and high levels of growth factors",
+      "benefits": ["100% autologous", "Growth factors", "Quick recovery"]
     },
-    "lesiones": {
-      "title": "Sports Injuries",
-      "description": "Specialized diagnosis and treatment for athletes and active people",
-      "benefits": ["Quick return to sport", "Relapse prevention", "Comprehensive rehabilitation"]
+    "acido_hialuronico": {
+      "title": "Hyaluronic Acid",
+      "description": "Joint lubricant that accelerates healing, promotes natural collagen production and has analgesic effects",
+      "benefits": ["Joint lubrication", "Analgesic effect", "Stimulates collagen"]
     },
-    "ecoguiado": {
-      "title": "Ultrasound-Guided Diagnosis",
-      "description": "Precise diagnosis using high-resolution ultrasound",
-      "benefits": ["Maximum precision", "No radiation", "Immediate results"]
+    "infiltracion": {
+      "title": "Conventional Infiltration",
+      "description": "Inflammation control of joint, tendon or muscle through steroids or bioregulators with local anesthetics",
+      "benefits": ["Inflammation control", "Immediate relief", "Minimally invasive"]
+    },
+    "sueroterapia": {
+      "title": "IV Therapy",
+      "description": "Personalized intravenous formula that provides the body with necessary elements to restore balance and wellness",
+      "benefits": ["Personalized", "Comprehensive restoration", "Immediate results"]
     },
     "adelgazamiento": {
       "title": "Weight Loss Program",
-      "description": "Comprehensive plan for healthy and sustainable weight loss",
-      "benefits": ["Medical monitoring", "Personalized plans", "Lasting results"]
+      "description": "Comprehensive multidisciplinary program that helps you make permanent changes in eating habits, physical activity and psychological management",
+      "benefits": ["Multidisciplinary team", "Permanent changes", "Psychological management"]
+    },
+    "alto_rendimiento": {
+      "title": "High Performance Sports",
+      "description": "Evaluation and management of elite and amateur athletes to prevent and rehabilitate sports injuries and improve performance in safe conditions",
+      "benefits": ["Injury prevention", "Performance improvement", "Safe conditions"]
     },
     "cta": "View More Details"
   },
