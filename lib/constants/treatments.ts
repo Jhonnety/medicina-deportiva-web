@@ -20,6 +20,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Células totipotenciales con capacidad de convertir tejido enfermo en sano',
     benefits: ['Regeneración total', 'Autólogas o alogénicas', 'Tratamiento avanzado'],
     image: celulas_madre_mesenquimales,
+    mobileImagePosition: 'center', // Prioriza la parte superior de la imagen en mobile
   },
   {
     id: '2',
@@ -27,7 +28,8 @@ export const TREATMENTS: Treatment[] = [
     title: 'Exosomas',
     description: 'Vesículas extraídas de células madre con microRNA, proteínas y factores de crecimiento',
     benefits: ['Alta concentración', 'Regeneración celular', 'Tecnología avanzada'],
-    image: exosomas
+    image: exosomas,
+    mobileImagePosition: 'center', // Centra el contenido de la imagen en mobile
   },
   {
     id: '3',
@@ -35,7 +37,8 @@ export const TREATMENTS: Treatment[] = [
     title: 'Plasma Rico en Plaquetas (PRP)',
     description: 'Fracción de plasma con concentración superior de plaquetas y altos niveles de factores de crecimiento',
     benefits: ['100% autólogo', 'Factores de crecimiento', 'Recuperación rápida'],
-    image: artrosis_6
+    image: artrosis_6,
+    mobileImagePosition: 'bottom', // Prioriza la parte inferior de la imagen en mobile
   },
   {
     id: '4',
@@ -44,6 +47,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Lubricante articular que acelera la cicatrización y fomenta la producción de colágeno',
     benefits: ['Lubricación articular', 'Efecto analgésico', 'Estimula colágeno'],
     image: prp_1,
+    mobileImagePosition: 'top', // Prioriza la parte superior de la imagen en mobile
   },
   {
     id: '5',
@@ -52,6 +56,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Control de inflamación mediante esteroides o biorreguladores con anestésicos locales',
     benefits: ['Control de inflamación', 'Alivio inmediato', 'Mínimamente invasivo'],
     image: proloterapia_2,
+    mobileImagePosition: 'center', // Centra el contenido de la imagen en mobile
   },
   {
     id: '6',
@@ -59,7 +64,8 @@ export const TREATMENTS: Treatment[] = [
     title: 'Sueroterapia',
     description: 'Fórmula personalizada por vía intravenosa para restaurar el equilibrio y bienestar',
     benefits: ['Personalizada', 'Restauración integral', 'Resultados inmediatos'],
-    image: proloterapia_4
+    image: proloterapia_4,
+    mobileImagePosition: 'center', // Prioriza la parte superior de la imagen en mobile
   },
   {
     id: '7',
@@ -67,7 +73,8 @@ export const TREATMENTS: Treatment[] = [
     title: 'Programa de Adelgazamiento',
     description: 'Programa integral multidisciplinario para cambios permanentes en hábitos alimenticios y actividad física',
     benefits: ['Equipo multidisciplinario', 'Cambios permanentes', 'Manejo psicológico'],
-    image: adelgazar_1
+    image: adelgazar_1,
+    mobileImagePosition: 'top', // Prioriza la parte inferior de la imagen en mobile
   },
   {
     id: '8',
@@ -75,7 +82,8 @@ export const TREATMENTS: Treatment[] = [
     title: 'Alto Rendimiento Deportivo',
     description: 'Evaluación y manejo de deportistas élite y aficionados para prevenir y rehabilitar lesiones',
     benefits: ['Prevención de lesiones', 'Mejora de rendimiento', 'Condiciones seguras'],
-    image: alto_rendimiento_deportivo_1
+    image: alto_rendimiento_deportivo_1,
+    mobileImagePosition: 'top', // Centra el contenido de la imagen en mobile
   },
 ];
 

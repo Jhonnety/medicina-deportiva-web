@@ -86,6 +86,24 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
               }
             };
 
+            // Mapear la posición de imagen a clases de Tailwind
+            const getImagePositionClass = (position?: string) => {
+              const positionMap: Record<string, string> = {
+                'center': 'object-center',
+                'top': 'object-top',
+                'bottom': 'object-bottom',
+                'left': 'object-left',
+                'right': 'object-right',
+                'top-left': 'object-left-top',
+                'top-right': 'object-right-top',
+                'bottom-left': 'object-left-bottom',
+                'bottom-right': 'object-right-bottom',
+              };
+              return positionMap[position || 'center'] || 'object-center';
+            };
+
+            const mobileImagePosition = getImagePositionClass(treatment.mobileImagePosition);
+
             return (
               <Link
                 key={treatment.id}
@@ -100,7 +118,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                       src={treatment.image}
                       alt={currentTexts[locale as 'es' | 'en'].title}
                       fill
-                      className="object-cover object-top lg:object-center group-hover:scale-105 transition-transform duration-700"
+                      className={`object-cover ${mobileImagePosition} lg:object-center group-hover:scale-105 transition-transform duration-700`}
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                     {/* Gradient Overlay */}

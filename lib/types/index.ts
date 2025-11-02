@@ -7,6 +7,7 @@ export interface Treatment {
   description: string;
   benefits: string[];
   image: StaticImageData;
+  mobileImagePosition?: 'center' | 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
 }
 
 export interface Testimonial {
