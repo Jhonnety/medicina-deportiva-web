@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { TREATMENTS } from '@/lib/constants/treatments';
@@ -18,13 +20,15 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 badge badge-cool text-gray-900 px-5 py-2.5 rounded-full mb-6">
-            <span className="text-sm font-semibold">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-6 text-white font-semibold"
+               style={{ backgroundColor: '#6ba5a5' }}>
+            <span className="text-sm">
               {locale === 'es' ? 'Tratamientos Especializados' : 'Specialized Treatments'}
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
+              style={{ color: '#182121' }}>
             {locale === 'es' 
               ? 'Soluciones Avanzadas para tu Recuperación' 
               : 'Advanced Solutions for Your Recovery'}
@@ -59,18 +63,16 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
             const treatmentKey = slugToKeyMap[treatment.slug] || treatment.slug;
             const treatmentDict = dictionary.treatments[treatmentKey as keyof typeof dictionary.treatments] || {};
 
-            const colors = [
-              { primary: '#0066FF', light: '#E6F2FF', bg: '#F0F8FF' },
-              { primary: '#00D98E', light: '#E6FDF4', bg: '#F0FDF9' },
-              { primary: '#FF6B35', light: '#FFF2ED', bg: '#FFF7F0' },
-              { primary: '#8B5CF6', light: '#F3F0FF', bg: '#FAF5FF' },
-              { primary: '#F59E0B', light: '#FEF3C7', bg: '#FFFBEB' },
-              { primary: '#EF4444', light: '#FEE2E2', bg: '#FEF2F2' },
-              { primary: '#06B6D4', light: '#CFFAFE', bg: '#ECFEFF' },
-              { primary: '#EC4899', light: '#FCE7F3', bg: '#FDF2F8' },
-            ];
-
-            const currentColor = colors[index % colors.length];
+            // Sistema de colores corporativo
+            const brandColors = {
+              primary: '#283838',        // Verde petróleo oscuro
+              primaryHover: '#202c2c',   // Verde petróleo más oscuro
+              accentCool: '#6ba5a5',     // Menta suave (badges, iconos)
+              accentWarm: '#e55b5b',     // Coral médico (CTAs)
+              textPrimary: '#182121',    // Texto principal
+              border: '#bec3c3',         // Bordes
+              background: '#ffffff',     // Fondo
+            };
 
             // Usar los datos del diccionario
             const currentTexts = {
@@ -110,7 +112,8 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                 href={`/${locale}/tratamientos/${treatment.slug}`}
                 className="group block"
               >
-                <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] flex flex-col lg:flex-row h-full">
+                <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] flex flex-col lg:flex-row h-full"
+                     style={{ borderColor: brandColors.border, borderWidth: '1px' }}>
                   
                   {/* Image Column - Left Side */}
                   <div className="relative w-full lg:w-1/2 h-64 lg:h-auto flex-shrink-0">
@@ -127,7 +130,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                     {/* Badge */}
                     <div 
                       className="absolute top-6 right-6 px-4 py-2 text-white text-sm font-bold rounded-full shadow-lg"
-                      style={{ backgroundColor: currentColor.primary }}
+                      style={{ backgroundColor: brandColors.accentCool }}
                     >
                       {locale === 'es' ? 'Especializado' : 'Specialized'}
                     </div>
@@ -141,7 +144,8 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                   {/* Content Column - Right Side */}
                   <div className="w-full lg:w-1/2 p-6 md:p-8 lg:p-10 flex flex-col justify-center">
                     {/* Title */}
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-accent-cool transition-colors duration-300">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4 transition-colors duration-300"
+                        style={{ color: brandColors.textPrimary }}>
                       {currentTexts[locale as 'es' | 'en'].title}
                     </h3>
                     
@@ -152,7 +156,8 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
 
                     {/* Benefits */}
                     <div className="mb-6">
-                      <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                      <h4 className="text-lg font-semibold mb-3"
+                          style={{ color: brandColors.textPrimary }}>
                         {locale === 'es' ? 'Beneficios' : 'Benefits'}
                       </h4>
                       <ul className="space-y-3">
@@ -160,11 +165,11 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                           <li key={idx} className="flex items-start space-x-3">
                             <div 
                               className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                              style={{ backgroundColor: currentColor.light }}
+                              style={{ backgroundColor: brandColors.accentCool + '30' }}
                             >
                               <svg 
                                 className="w-3 h-3" 
-                                style={{ color: currentColor.primary }}
+                                style={{ color: brandColors.primary }}
                                 fill="currentColor" 
                                 viewBox="0 0 20 20"
                               >
@@ -175,15 +180,17 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                                 />
                               </svg>
                             </div>
-                            <span className="text-gray-900 font-medium">{benefit}</span>
+                            <span className="font-medium" style={{ color: brandColors.textPrimary }}>{benefit}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
                     {/* CTA Button */}
-                    <button className="mt-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white transition-colors duration-300 self-start"
-                            style={{ backgroundColor: currentColor.primary }}>
+                    <button className="mt-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white transition-all duration-300 self-start hover:scale-105"
+                            style={{ backgroundColor: brandColors.accentWarm }}
+                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = brandColors.primaryHover}
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = brandColors.accentWarm}>
                       {locale === 'es' ? 'Conocer Más' : 'Learn More'}
                       <svg
                         className="ml-2 -mr-1 w-4 h-4"
@@ -206,8 +213,10 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
 
         {/* Bottom CTA */}
         <div className="text-center mt-20">
-          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 text-center border border-gray-100 w-full">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 text-center w-full"
+               style={{ borderColor: '#bec3c3', borderWidth: '1px' }}>
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4"
+                style={{ color: '#182121' }}>
               {locale === 'es' 
                 ? '¿No encuentras tu tratamiento?' 
                 : "Can't find your treatment?"}
@@ -220,7 +229,10 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
             
             <a
               href={`/${locale}#contacto`}
-              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-hover text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-3 text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              style={{ backgroundColor: '#283838' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#202c2c'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#283838'}
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
