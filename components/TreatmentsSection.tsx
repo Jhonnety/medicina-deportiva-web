@@ -188,9 +188,9 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
 
                     {/* CTA Button */}
                     <button className="mt-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white transition-all duration-300 self-start hover:scale-105"
-                            style={{ backgroundColor: brandColors.accentWarm }}
+                            style={{ backgroundColor: brandColors.primary }}
                             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = brandColors.primaryHover}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = brandColors.accentWarm}>
+                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = brandColors.primary}>
                       {locale === 'es' ? 'Conocer Más' : 'Learn More'}
                       <svg
                         className="ml-2 -mr-1 w-4 h-4"
