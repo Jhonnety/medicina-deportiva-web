@@ -18,23 +18,23 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#D5F3E5] text-[#1A1A1A] px-5 py-2.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 badge badge-cool text-gray-900 px-5 py-2.5 rounded-full mb-6">
             <span className="text-sm font-semibold">
               {locale === 'es' ? 'Tratamientos Especializados' : 'Specialized Treatments'}
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             {locale === 'es' 
               ? 'Soluciones Avanzadas para tu Recuperación' 
               : 'Advanced Solutions for Your Recovery'}
           </h2>
-          <p className="text-lg md:text-xl text-[#4A5568] mb-4">
+          <p className="text-lg md:text-xl text-gray-700 mb-4">
             {locale === 'es' 
               ? 'Técnicas innovadoras de medicina regenerativa sin cirugía' 
               : 'Innovative regenerative medicine techniques without surgery'}
           </p>
-          <p className="text-base text-[#718096] italic">
+          <p className="text-base text-gray-600 italic">
             {locale === 'es' 
               ? '"Recuperación natural, resultados duraderos."' 
               : '"Natural recovery, lasting results."'}
@@ -212,18 +212,18 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                   {/* Content Column - Right Side */}
                   <div className="w-full lg:w-1/2 p-6 md:p-8 lg:p-10 flex flex-col justify-center">
                     {/* Title */}
-                    <h3 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] mb-4 group-hover:text-[#0066FF] transition-colors duration-300">
+                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-accent-cool transition-colors duration-300">
                       {currentTexts[locale as 'es' | 'en'].title}
                     </h3>
                     
                     {/* Description */}
-                    <p className="text-[#4A5568] mb-6 leading-relaxed">
+                    <p className="text-gray-700 mb-6 leading-relaxed">
                       {currentTexts[locale as 'es' | 'en'].description}
                     </p>
 
                     {/* Benefits */}
                     <div className="mb-6">
-                      <h4 className="text-lg font-semibold text-[#1A1A1A] mb-3">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-3">
                         {locale === 'es' ? 'Beneficios' : 'Benefits'}
                       </h4>
                       <ul className="space-y-3">
@@ -246,7 +246,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                                 />
                               </svg>
                             </div>
-                            <span className="text-[#2D3748] font-medium">{benefit}</span>
+                            <span className="text-gray-900 font-medium">{benefit}</span>
                           </li>
                         ))}
                       </ul>
@@ -278,12 +278,12 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
         {/* Bottom CTA */}
         <div className="text-center mt-20">
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 text-center border border-gray-100 w-full">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1A1A1A] mb-4">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               {locale === 'es' 
                 ? '¿No encuentras tu tratamiento?' 
                 : "Can't find your treatment?"}
             </h3>
-            <p className="text-lg text-[#4A5568] mb-8">
+            <p className="text-lg text-gray-700 mb-8">
               {locale === 'es' 
                 ? 'Consulta con el Dr. James Madrid para una evaluación personalizada' 
                 : 'Consult with Dr. James Madrid for a personalized evaluation'}
@@ -291,7 +291,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
             
             <a
               href={`/${locale}#contacto`}
-              className="inline-flex items-center gap-3 bg-[#00D98E] hover:bg-[#00B876] text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-3 bg-primary hover:bg-primary-hover text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>

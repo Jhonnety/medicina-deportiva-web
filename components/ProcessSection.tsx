@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Calendar, ClipboardCheck, Syringe } from "lucide-react";
+import step1 from '@/assets/images/step_1.jpg';
+import step2 from '@/assets/images/step_2.jpg';
+import step3 from '@/assets/images/step_3.jpg';
 
 interface ProcessSectionProps {
   locale: string;
@@ -18,10 +21,10 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
       description: locale === 'es' 
         ? 'Realizamos una evaluación completa de tu condición física, historial médico y objetivos específicos para entender tus necesidades.'
         : 'We perform a complete evaluation of your physical condition, medical history, and specific objectives to understand your needs.',
-      icon: <Calendar className="w-7 h-7 text-[#0066FF]" />,
-      iconBg: 'bg-[#E6F2FF]',
-      numberBg: 'bg-[#0066FF]',
-      image: '/assets/images/dc_james_7.jpg',
+      icon: <Calendar className="w-7 h-7 text-accent-cool" />,
+      iconBg: 'bg-accent-cool/10',
+      numberBg: 'bg-accent-cool',
+      image: step1,
       overlayTitle: locale === 'es' ? 'Valoración Médica' : 'Medical Assessment',
       overlaySubtitle: locale === 'es' ? 'Diagnóstico preciso y personalizado' : 'Precise and personalized diagnosis',
     },
@@ -31,10 +34,10 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
       description: locale === 'es' 
         ? 'Aplicamos técnicas avanzadas de medicina regenerativa diseñadas específicamente para tu diagnóstico y objetivos de recuperación.'
         : 'We apply advanced regenerative medicine techniques designed specifically for your diagnosis and recovery objectives.',
-      icon: <ClipboardCheck className="w-7 h-7 text-[#00D98E]" />,
-      iconBg: 'bg-[#E6FDF4]',
-      numberBg: 'bg-[#00D98E]',
-      image: '/assets/images/dc_james_8.jpg',
+      icon: <ClipboardCheck className="w-7 h-7 text-accent-cool" />,
+      iconBg: 'bg-accent-cool/10',
+      numberBg: 'bg-primary',
+      image: step2,
       overlayTitle: locale === 'es' ? 'Tratamiento Especializado' : 'Specialized Treatment',
       overlaySubtitle: locale === 'es' ? 'Medicina regenerativa sin cirugía' : 'Regenerative medicine without surgery',
     },
@@ -44,10 +47,10 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
       description: locale === 'es' 
         ? 'Te acompañamos durante todo el proceso con citas de control periódicas, ajustes al tratamiento y soporte continuo hasta alcanzar tus objetivos.'
         : 'We accompany you throughout the entire process with periodic control appointments, treatment adjustments, and continuous support until you achieve your objectives.',
-      icon: <Syringe className="w-7 h-7 text-[#FF6B35]" />,
-      iconBg: 'bg-[#FFF2ED]',
-      numberBg: 'bg-[#FF6B35]',
-      image: '/assets/images/dc_james_9.jpg',
+      icon: <Syringe className="w-7 h-7 text-accent-warm" />,
+      iconBg: 'bg-accent-warm/10',
+      numberBg: 'bg-accent-warm',
+      image: step3,
       overlayTitle: locale === 'es' ? 'Acompañamiento Total' : 'Complete Support',
       overlaySubtitle: locale === 'es' ? 'Seguimiento hasta tu recuperación completa' : 'Follow-up until your complete recovery',
     },
@@ -71,23 +74,23 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#D5F3E5] text-[#1A1A1A] px-5 py-2.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 badge badge-cool text-gray-900 px-5 py-2.5 rounded-full mb-6">
             <span className="text-sm font-semibold">
               {locale === 'es' ? 'Nuestro Proceso' : 'Our Process'}
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             {locale === 'es' 
               ? 'Tu recuperación en 3 pasos simples' 
               : 'Your recovery in 3 simple steps'}
           </h2>
-          <p className="text-lg md:text-xl text-[#4A5568] mb-4">
+          <p className="text-lg md:text-xl text-gray-700 mb-4">
             {locale === 'es' 
               ? 'Un proceso sencillo y estructurado que garantiza los mejores resultados' 
               : 'A simple and structured process that guarantees the best results'}
           </p>
-          <p className="text-base text-[#718096] italic">
+          <p className="text-base text-gray-600 italic">
             {locale === 'es' 
               ? '"Nos enfocamos en resultados reales, sin cirugía."' 
               : '"We focus on real results, without surgery."'}
@@ -105,7 +108,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                 onClick={() => setActiveStep(index)}
                 className={`relative cursor-pointer transition-all duration-500 ${
                   activeStep === index
-                    ? 'bg-white shadow-xl rounded-2xl p-8 md:p-10 border-l-4 border-[#5BA1C8]'
+                    ? 'bg-white shadow-xl rounded-2xl p-8 md:p-10 border-l-4 border-accent-cool'
                     : 'hover:opacity-80'
                 }`}
               >
@@ -114,7 +117,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                   className={`absolute -left-6 -top-6 w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg transition-all duration-300 ${
                     activeStep === index
                       ? `${step.numberBg} scale-110`
-                      : 'bg-[#8DAABA]'
+                      : 'bg-accent-cool/50'
                   }`}
                 >
                   {step.number}
@@ -126,7 +129,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                     className={`w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
                       activeStep === index
                         ? `${step.iconBg}`
-                        : 'bg-[#EDF2F7]'
+                        : 'bg-gray-100'
                     }`}
                   >
                     {step.icon}
@@ -136,14 +139,14 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                   <div className="flex-1">
                     <h3
                       className={`text-xl md:text-2xl font-bold mb-4 transition-colors duration-300 ${
-                        activeStep === index ? 'text-[#1A1A1A]' : 'text-[#2D3748]'
+                        activeStep === index ? 'text-gray-900' : 'text-gray-900'
                       }`}
                     >
                       {step.title}
                     </h3>
                     <p
                       className={`leading-relaxed transition-colors duration-300 ${
-                        activeStep === index ? 'text-[#4A5568]' : 'text-[#718096]'
+                        activeStep === index ? 'text-gray-700' : 'text-gray-600'
                       }`}
                     >
                       {step.description}
@@ -161,8 +164,8 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                   onClick={() => setActiveStep(index)}
                   className={`transition-all duration-300 rounded-full ${
                     activeStep === index
-                      ? 'w-10 h-3 bg-[#1A1A1A]'
-                      : 'w-3 h-3 bg-[#DCE3E8]'
+                      ? 'w-10 h-3 bg-primary'
+                      : 'w-3 h-3 bg-gray-200'
                   }`}
                   aria-label={`Go to step ${index + 1}`}
                 />
@@ -195,7 +198,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
               {/* Active Step Info Overlay */}
               <div className="absolute bottom-8 left-8 right-8 z-20 text-white">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#1A1A1A] font-bold text-xl">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-900 font-bold text-xl">
                     {steps[activeStep].number}
                   </div>
                   <div className="h-px flex-1 bg-white/30"></div>
@@ -226,8 +229,8 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#BFD7EA]/20 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -top-8 -left-8 w-40 h-40 bg-[#D5F3E5]/20 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-accent-cool/20/20 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -top-8 -left-8 w-40 h-40 badge badge-cool/20 rounded-full blur-3xl -z-10"></div>
           </div>
 
         </div>
@@ -237,12 +240,12 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
           <div className="w-full">
             {/* CTA Card */}
             <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 text-center border border-gray-100">
-              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-6">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 {locale === 'es' 
                   ? '¿Listo para comenzar tu recuperación?' 
                   : 'Ready to start your recovery?'}
               </h3>
-              <p className="text-lg md:text-xl text-[#4A5568] mb-8 max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
                 {locale === 'es' 
                   ? 'Agenda tu primera consulta y da el primer paso hacia una vida sin dolor' 
                   : 'Schedule your first consultation and take the first step towards a pain-free life'}
@@ -253,7 +256,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                 href="https://wa.me/573001234567?text=Hola%20Dr.%20James%20Madrid,%20me%20gustaría%20agendar%20una%20consulta"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#00D98E] hover:bg-[#00B876] text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl max-w-md mx-auto"
+                className="inline-flex items-center gap-3 bg-primary hover:bg-primary-hover text-white font-semibold px-8 py-4 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl max-w-md mx-auto"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>

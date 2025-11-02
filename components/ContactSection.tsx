@@ -113,15 +113,15 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 bg-[#D5F3E5] text-[#1A1A1A] px-5 py-2.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 badge badge-cool text-gray-900 px-5 py-2.5 rounded-full mb-6">
             <span className="text-sm font-semibold">
               {locale === 'es' ? 'Contacto' : 'Contact'}
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {locale === 'es' ? 'Agenda tu Consulta' : 'Schedule Your Consultation'}
           </h2>
-          <p className="text-lg md:text-xl text-[#4A5568]">
+          <p className="text-lg md:text-xl text-gray-700">
             {locale === 'es' 
               ? 'Estamos aquí para ayudarte a recuperar tu movilidad y bienestar' 
               : 'We are here to help you recover your mobility and well-being'}
@@ -133,10 +133,10 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
           {/* Left Column - Contact Info */}
           <div className="space-y-4">
             <div className="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
-              <h3 className="text-lg font-bold text-[#1A1A1A] mb-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-6">
                 {locale === 'es' ? 'Información de Contacto' : 'Contact Information'}
               </h3>
-              <p className="text-sm text-[#4A5568] mb-6">
+              <p className="text-sm text-gray-700 mb-6">
                 {locale === 'es' 
                   ? 'Estamos disponibles para atenderte' 
                   : 'We are available to assist you'}
@@ -147,10 +147,10 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                 href={contactInfo.whatsapp.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-[#25D366] hover:bg-[#20BA5A] rounded-xl transition-all duration-300 mb-4 group"
+                className="flex items-center gap-4 p-4 bg-whatsapp hover:bg-whatsapp-hover rounded-xl transition-all duration-300 mb-4 group"
               >
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-[#25D366]" />
+                  <Phone className="w-6 h-6 text-whatsapp" />
                 </div>
                 <div className="flex-1 text-white">
                   <div className="text-sm font-semibold">{contactInfo.whatsapp.title}</div>
@@ -168,8 +168,8 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                   <Mail className="w-6 h-6 text-blue-600" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-semibold text-[#1A1A1A]">{contactInfo.email.title}</div>
-                  <div className="text-xs text-[#4A5568] break-all">{contactInfo.email.value}</div>
+                  <div className="text-sm font-semibold text-gray-900">{contactInfo.email.title}</div>
+                  <div className="text-xs text-gray-700 break-all">{contactInfo.email.value}</div>
                 </div>
               </a>
 
@@ -184,8 +184,8 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                   <Instagram className="w-6 h-6 text-white" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-semibold text-[#1A1A1A]">{contactInfo.instagram.title}</div>
-                  <div className="text-xs text-[#4A5568]">{contactInfo.instagram.value}</div>
+                  <div className="text-sm font-semibold text-gray-900">{contactInfo.instagram.title}</div>
+                  <div className="text-xs text-gray-700">{contactInfo.instagram.value}</div>
                 </div>
               </a>
 
@@ -200,8 +200,8 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                   <MapPin className="w-6 h-6 text-gray-600" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-semibold text-[#1A1A1A]">{contactInfo.location.title}</div>
-                  <div className="text-xs text-[#4A5568]">{contactInfo.location.value}</div>
+                  <div className="text-sm font-semibold text-gray-900">{contactInfo.location.title}</div>
+                  <div className="text-xs text-gray-700">{contactInfo.location.value}</div>
                   <div className="text-xs text-blue-600 mt-1">{contactInfo.location.detail}</div>
                 </div>
               </a>
@@ -212,8 +212,8 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                   <Clock className="w-6 h-6 text-green-600" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-semibold text-[#1A1A1A] mb-2">{contactInfo.hours.title}</div>
-                  <div className="space-y-1 text-xs text-[#4A5568]">
+                  <div className="text-sm font-semibold text-gray-900 mb-2">{contactInfo.hours.title}</div>
+                  <div className="space-y-1 text-xs text-gray-700">
                     <div className="flex justify-between">
                       <span className="font-medium">{contactInfo.hours.weekdays}</span>
                       <span>{contactInfo.hours.weekdaysTime}</span>
@@ -237,7 +237,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
             {/* Map */}
             <div className="bg-white rounded-2xl p-4 shadow-md border border-gray-100">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-bold text-[#1A1A1A]">
+                <h3 className="text-lg font-bold text-gray-900">
                   {locale === 'es' ? 'Torre Medical, El Poblado - Medellín' : 'Torre Medical, El Poblado - Medellin'}
                 </h3>
                 <a
@@ -265,10 +265,10 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
 
             {/* Form */}
             <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-gray-100">
-              <h3 className="text-lg font-bold text-[#1A1A1A] mb-2">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">
                 {locale === 'es' ? 'Enviar Mensaje' : 'Send Message'}
               </h3>
-              <p className="text-sm text-[#4A5568] mb-6">
+              <p className="text-sm text-gray-700 mb-6">
                 {locale === 'es' 
                   ? 'Te responderemos en menos de 24 horas' 
                   : 'We will respond within 24 hours'}
@@ -277,7 +277,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-[#1A1A1A] mb-2">
+                    <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
                       {locale === 'es' ? 'Nombre *' : 'Name *'}
                     </label>
                     <input
@@ -293,7 +293,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-semibold text-[#1A1A1A] mb-2">
+                    <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
                       {locale === 'es' ? 'Teléfono' : 'Phone'}
                     </label>
                     <input
@@ -309,7 +309,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-[#1A1A1A] mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
                     Email *
                   </label>
                   <input
@@ -325,7 +325,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-[#1A1A1A] mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
                     {locale === 'es' ? 'Mensaje *' : 'Message *'}
                   </label>
                   <textarea
@@ -343,7 +343,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#5BA1C8] hover:bg-[#4A8AB0] text-white font-semibold px-6 py-4 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-accent-cool hover:bg-accent-cool-hover text-white font-semibold px-6 py-4 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
@@ -358,7 +358,7 @@ export default function ContactSection({ dictionary, locale }: ContactSectionPro
                   )}
                 </button>
 
-                <p className="text-xs text-center text-[#4A5568] flex items-center justify-center gap-1">
+                <p className="text-xs text-center text-gray-700 flex items-center justify-center gap-1">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>

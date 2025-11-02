@@ -127,19 +127,19 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 mt-16">
         <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-xl p-8 md:p-12 lg:p-16 border border-gray-100">
           <div className="text-center max-w-3xl mx-auto">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1A1A1A] mb-4">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               {locale === 'es' 
                 ? '¿Quieres ser nuestro próximo caso de éxito?' 
                 : 'Want to be our next success story?'}
             </h3>
-            <p className="text-lg md:text-xl text-[#4A5568] mb-8">
+            <p className="text-lg md:text-xl text-gray-700 mb-8">
               {locale === 'es'
                 ? 'Únete a los miles de pacientes que han recuperado su movilidad con nosotros'
                 : 'Join thousands of patients who have recovered their mobility with us'}
             </p>
             <a
               href="#contacto"
-              className="inline-flex items-center gap-2 bg-[#00D98E] hover:bg-[#00B876] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               {locale === 'es' ? 'Comenzar mi Recuperación' : 'Start My Recovery'}
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -164,11 +164,11 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
 function HeaderBlock({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <div className="text-center max-w-3xl mx-auto mb-14">
-      <div className="inline-flex items-center gap-2 bg-[#D5F3E5] text-[#1A1A1A] px-5 py-2.5 rounded-full mb-6">
+      <div className="inline-flex items-center gap-2 badge badge-cool text-gray-900 px-5 py-2.5 rounded-full mb-6">
         <span className="text-sm font-semibold">{title}</span>
       </div>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-4">{title}</h2>
-      <p className="text-lg md:text-xl text-[#4A5568]">{subtitle}</p>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">{title}</h2>
+      <p className="text-lg md:text-xl text-gray-700">{subtitle}</p>
     </div>
   );
 }
@@ -412,10 +412,10 @@ function TextCard({ item }: { item: TestimonialText }) {
         <svg className="w-6 h-6 text-primary/80" fill="currentColor" viewBox="0 0 24 24">
           <path d="M7.17 6A5.17 5.17 0 002 11.17V20h6v-8H5.17A3.17 3.17 0 018.34 8H7.17zM16.83 6A5.17 5.17 0 0011.66 11.17V20h6v-8h-2.83A3.17 3.17 0 0117.66 8h-.83z" />
         </svg>
-        <p className="text-[#2D3748] leading-relaxed mt-3">{item.quote}</p>
+        <p className="text-gray-900 leading-relaxed mt-3">{item.quote}</p>
       </div>
       <div className="mt-5">
-        <span className="inline-block px-3 py-2 text-xs font-semibold rounded-xl bg-[#E6FDF4] text-[#1A1A1A]">
+        <span className="inline-block px-3 py-2 text-xs font-semibold rounded-xl bg-accent-cool/10 text-gray-900">
           {`Resultado: ${item.result}`}
         </span>
       </div>

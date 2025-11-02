@@ -15,16 +15,16 @@ export default function AboutSection({ locale }: AboutSectionProps) {
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#BFD7EA] text-[#1A1A1A] px-5 py-2.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-accent-cool/20 text-gray-900 px-5 py-2.5 rounded-full mb-6">
             <span className="text-sm font-semibold">
               {locale === 'es' ? 'Nuestro Especialista' : 'Our Specialist'}
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1A1A] mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
             Dr. James Madrid
           </h2>
-          <p className="text-base text-[#1A1A1A] italic">
+          <p className="text-base text-gray-900 italic">
             {locale === 'es' 
               ? '"No tratamos enfermedades, transformamos vidas"' 
               : '"We don\'t treat diseases, we transform lives"'}
@@ -60,14 +60,14 @@ export default function AboutSection({ locale }: AboutSectionProps) {
             {/* Floating Stats Badge */}
             {/* <div className="absolute -bottom-8 -right-8 bg-white rounded-3xl p-6 shadow-2xl max-w-[280px] transform hover:scale-105 transition-all duration-300 border border-gray-100">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-8 h-8 bg-[#00D98E] rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <div className="text-3xl font-bold text-[#1A1A1A]">20+</div>
+                <div className="text-3xl font-bold text-gray-900">20+</div>
               </div>
-              <div className="text-sm font-medium text-[#4A5568] leading-tight">
+              <div className="text-sm font-medium text-gray-700 leading-tight">
                 {locale === 'es' 
                   ? 'Años de experiencia médica' 
                   : 'Years of medical experience'}
@@ -76,28 +76,28 @@ export default function AboutSection({ locale }: AboutSectionProps) {
 
             {/* Decorative elements */}
             <div className="absolute -top-8 -left-8 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-            <div className="absolute -bottom-8 left-1/3 w-40 h-40 bg-[#D5F3E5]/20 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -bottom-8 left-1/3 w-40 h-40 badge badge-cool/20 rounded-full blur-3xl -z-10"></div>
           </div>
 
           {/* Content Column */}
           <div className="space-y-8">
             {/* Professional History */}
             <div className="space-y-6">
-              <h3 className="text-xl font-bold text-[#1A1A1A] mb-4 flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#BFD7EA] rounded-lg flex items-center justify-center">
-                  <Stethoscope className="w-5 h-5 text-[#1A1A1A]" />
+              <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                <div className="w-10 h-10 bg-accent-cool/20 rounded-lg flex items-center justify-center">
+                  <Stethoscope className="w-5 h-5 text-gray-900" />
                 </div>
                 {locale === 'es' ? 'Historia Profesional' : 'Professional History'}
               </h3>
               
               <div className="space-y-4">
-                <p className="text-[#4A5568] leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   {locale === 'es' 
                     ? 'Con más de 20 años de experiencia en medicina deportiva, el Dr. James Madrid se ha especializado en el tratamiento no quirúrgico de lesiones deportivas y el manejo integral del dolor. Su enfoque combina la medicina basada en evidencia con un trato humano y personalizado.'
                     : 'With more than 20 years of experience in sports medicine, Dr. James Madrid has specialized in the non-surgical treatment of sports injuries and comprehensive pain management. His approach combines evidence-based medicine with human and personalized treatment.'}
                 </p>
                 
-                <p className="text-[#4A5568] leading-relaxed">
+                <p className="text-gray-700 leading-relaxed">
                   {locale === 'es' 
                     ? 'Su filosofía de trabajo se centra en entender que cada paciente es único, desarrollando planes de tratamiento personalizados que abordan no solo los síntomas, sino las causas subyacentes de cada condición.'
                     : 'His work philosophy focuses on understanding that each patient is unique, developing personalized treatment plans that address not only the symptoms, but also the underlying causes of each condition.'}
@@ -150,7 +150,7 @@ export default function AboutSection({ locale }: AboutSectionProps) {
                       </div>
                     </div>
                     <div className="flex-1">
-                      <span className="text-[#2D3748] font-medium text-base leading-relaxed">{item[locale as 'es' | 'en']}</span>
+                      <span className="text-gray-900 font-medium text-base leading-relaxed">{item[locale as 'es' | 'en']}</span>
                     </div>
                   </div>
                 ))}
