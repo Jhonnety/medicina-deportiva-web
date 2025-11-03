@@ -254,7 +254,9 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 {/* Botón principal - WhatsApp */}
                 <a
-                  href={`/${locale}#contacto`}
+                  href="https://wa.me/573044386208"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"
                   style={{ backgroundColor: '#6ba5a5' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}
@@ -269,10 +271,10 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                   </svg>
                 </a>
 
-                {/* Botón secundario */}
+                {/* Botón secundario - Solo en mobile */}
                 <a
-                  href={`/${locale}#contacto`}
-                  className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full sm:w-auto justify-center"
+                  href="tel:+573044386208"
+                  className="sm:hidden group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full justify-center"
                   style={{ 
                     backgroundColor: 'transparent',
                     border: '2px solid rgba(107, 165, 165, 0.5)',

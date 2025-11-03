@@ -280,7 +280,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 {/* Botón principal - WhatsApp */}
                 <a
-                  href="https://wa.me/573001234567?text=Hola%20Dr.%20James%20Madrid,%20me%20gustaría%20agendar%20una%20consulta"
+                  href="https://wa.me/573044386208"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"
@@ -297,10 +297,10 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                   </svg>
                 </a>
 
-                {/* Botón secundario */}
+                {/* Botón secundario - Solo en mobile */}
                 <a
-                  href={`/${locale}#contacto`}
-                  className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full sm:w-auto justify-center"
+                  href="tel:+573044386208"
+                  className="sm:hidden group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full justify-center"
                   style={{ 
                     backgroundColor: 'transparent',
                     border: '2px solid rgba(107, 165, 165, 0.5)',
@@ -318,7 +318,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                   <svg className="w-5 h-5 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <span>{locale === 'es' ? 'Ver más opciones' : 'View more options'}</span>
+                  <span>{locale === 'es' ? 'Llamar Ahora' : 'Call Now'}</span>
                 </a>
               </div>
 
