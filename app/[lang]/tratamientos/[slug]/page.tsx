@@ -12,6 +12,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import TreatmentHero from '@/components/TreatmentHero';
 import TreatmentFAQs from '@/components/TreatmentFAQs';
 import SymptomsShowcase from '@/components/SymptomsShowcase';
+import ProcessSection from '@/components/ProcessSection';
 
 export async function generateStaticParams() {
   const paths = [];
@@ -377,35 +378,7 @@ export default async function TreatmentPage({
         </section>
 
         {/* Process Section */}
-        <section className="section-padding bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: '#182121' }}>
-                {langContent.process.title}
-              </h2>
-              <div className="space-y-6">
-                {langContent.process.steps.map((step, index) => (
-                  <div key={index} className="flex gap-6 bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100">
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg"
-                           style={{ backgroundColor: '#6ba5a5' }}>
-                        {step.number}
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-3" style={{ color: '#182121' }}>
-                        {step.title}
-                      </h3>
-                      <p className="text-gray-700 leading-relaxed">
-                        {step.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <ProcessSection locale={lang} />
 
         {/* Testimonials */}
         <TestimonialsSection dictionary={dictionary} locale={lang} />
