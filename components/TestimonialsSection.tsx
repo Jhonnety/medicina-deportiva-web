@@ -28,6 +28,7 @@ type BaseTestimonial = {
 type TestimonialVideo = BaseTestimonial & {
   kind: 'video';
   src: string;
+  poster?: string;
 };
 
 type TestimonialText = BaseTestimonial & {
@@ -39,19 +40,25 @@ type TestimonialText = BaseTestimonial & {
 type Testimonial = TestimonialVideo | TestimonialText;
 
 const VIDEOS: TestimonialVideo[] = [
-  { id: 1, kind: 'video', name: 'Carlos Ruiz', condition: 'Recuperación deportiva', rating: 5, src: '/assets/videos/testimonio_1.mp4', language: 'es', typeLabel: 'Lesión deportiva' },
-  { id: 2, kind: 'video', name: 'Javier Mendoza', condition: 'Terapia física post-lesión', rating: 5, src: '/assets/videos/testimonio_2.mp4', language: 'es', typeLabel: 'Rehabilitación' },
-  { id: 3, kind: 'video', name: 'Patricia García', condition: 'Terapia PRP', rating: 5, src: '/assets/videos/testimonio_4.mp4', language: 'es', typeLabel: 'PRP' },
-  { id: 4, kind: 'video', name: 'John Carter', condition: 'Knee osteoarthritis', rating: 5, src: '/assets/videos/testimonio_5.mp4', language: 'en', typeLabel: 'Osteoarthritis' },
-  { id: 5, kind: 'video', name: 'Emily Ross', condition: 'Achilles tendinopathy', rating: 5, src: '/assets/videos/testimonio_6.mp4', language: 'en', typeLabel: 'Sports injury' },
-  { id: 6, kind: 'video', name: 'Diego Morales', condition: 'Lesión menisco', rating: 5, src: '/assets/videos/testimonio_7.mp4', language: 'es', typeLabel: 'Lesión deportiva' },
-  { id: 7, kind: 'video', name: 'Laura Pérez', condition: 'Terapia PRP', rating: 5, src: '/assets/videos/testimonio_8.mp4', language: 'es', typeLabel: 'Regenerativo' },
+  { id: 1, kind: 'video', name: 'Simon Gallego', condition: 'Lesión deportiva', rating: 5, src: '/assets/videos/testimonial_simon_1.mp4', poster: '/assets/images/testimonial_simon_1.jpg', language: 'es', typeLabel: 'Lesión hombro' },
+  { id: 2, kind: 'video', name: 'Beatriz', condition: 'Plasma rico en plaquetas', rating: 5, src: '/assets/videos/testimonial_beatriz_1.mp4', poster: '/assets/images/testimonial_beatriz_1.jpg', language: 'es', typeLabel: 'Dolor rodilla' },
+  { id: 3, kind: 'video', name: 'Lina', condition: 'PRP y suero terapia', rating: 5, src: '/assets/videos/testimonial_lina_1.mp4', poster: '/assets/images/testimonial_lina_1.jpg', language: 'es', typeLabel: 'Dolor arquiculaciones' },
+  { id: 4, kind: 'video', name: 'Emmanuel Mendoza', condition: 'Acido hialurónico, PRP y bioregulador', rating: 5, src: '/assets/videos/testimonial_buffalo_1.mp4', poster: '/assets/images/testimonial_buffalo_1.jpg', language: 'es', typeLabel: 'Dolor hombro - Deportista de alto rendimiento' },
+  { id: 5, kind: 'video', name: 'Camila', condition: 'Intervenciones varias', rating: 5, src: '/assets/videos/testimonial_camila_1.mp4', poster: '/assets/images/testimonial_camila_1.jpg', language: 'es', typeLabel: 'Boxeadora de alto rendimiento' },
+  { id: 6, kind: 'video', name: 'Jane', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_jane_1.mp4', poster: '/assets/images/testimonial_jane_1.jpg', language: 'en', typeLabel: 'Pain in several joints' },
+  { id: 7, kind: 'video', name: 'Bruce', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_bruce_1.mp4', poster: '/assets/images/testimonial_bruce_1.jpg', language: 'en', typeLabel: 'Osteoarthritis - Knee pain' },
+  { id: 8, kind: 'video', name: 'Martin Higuita', condition: 'Plasma rico en plaquetas y exosomas', rating: 5, src: '/assets/videos/testimonial_martin_1.mp4', poster: '/assets/images/testimonial_martin_1.jpg', language: 'es', typeLabel: 'Boxeador - Lesión ligamento' },
+  { id: 9, kind: 'video', name: 'Christopher', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_cristofer_1.mp4', poster: '/assets/images/testimonial_cristofer_1.jpg', language: 'en', typeLabel: 'Right sacroiliitis' },
+  { id: 10, kind: 'video', name: 'John', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_paciemte_eeuu_1.mp4', poster: '/assets/images/testimonial_paciemte_eeuu_1.jpg', language: 'en', typeLabel: 'Pain in several joints' },
+  { id: 11, kind: 'video', name: 'Nalia', condition: 'Celulas madre y plasma rico en plaquetas', rating: 5, src: '/assets/videos/testimonial_natalia_1.mp4', poster: '/assets/images/testimonial_natalia_1.jpg', language: 'es', typeLabel: 'Dolor en la rodilla' },
 ];
 
 const TEXTS: TestimonialText[] = [
-  { id: 101, kind: 'text', name: 'Ana Martínez', condition: 'Dolor lumbar crónico', rating: 5, language: 'es', typeLabel: 'Dolor crónico', quote: 'Sufrí de dolor lumbar crónico por 2 años. Con el programa integral del Dr. Madrid, no solo eliminé el dolor, sino que mejoré mi calidad de vida significativamente.', result: 'Eliminé el dolor después de 2 años' },
-  { id: 102, kind: 'text', name: 'María González', condition: 'Lesión de rodilla', rating: 5, language: 'es', typeLabel: 'Lesión de rodilla', quote: 'Después de 6 meses con dolor en la rodilla, el Dr. Madrid me ayudó a recuperar mi movilidad completa con terapias regenerativas. Ahora puedo correr nuevamente sin dolor.', result: 'Recuperé movilidad completa sin cirugía' },
-  { id: 103, kind: 'text', name: 'Andrew Collins', condition: 'Shoulder impingement', rating: 5, language: 'en', typeLabel: 'Shoulder', quote: 'I thought I would need surgery, but the personalized non-surgical plan worked. I got back to training faster and stronger.', result: 'Returned to training without surgery' },
+  { id: 101, kind: 'text', name: 'Nelly Show', condition: 'Hip pain for 13 years', rating: 5, language: 'en', typeLabel: 'Stem cells', quote: 'After 13 years of hip pain and visiting many doctors without success, Dr. Madrid\'s stem cell treatment finally gave me relief. He is the most caring and knowledgeable professional I\'ve met!', result: '13 years of pain resolved' },
+  { id: 102, kind: 'text', name: 'Blanca Marin', condition: 'Tratamiento médico especializado', rating: 5, language: 'es', typeLabel: 'Atención médica', quote: 'Es un excelente médico, trata muy bien a los pacientes y acompañantes, no tengo palabras para describirlo... adorable.', result: 'Excelente atención médica' },
+  { id: 103, kind: 'text', name: 'Diana Carolina', condition: 'Atención integral', rating: 5, language: 'es', typeLabel: 'Medicina deportiva', quote: 'Excelente profesional y excepcional ser humano. Todos merecemos un Doctor como él en nuestras vidas. Una persona que te brinda atención plena. Lo recomiendo a ojos cerrados.', result: 'Atención plena y profesional' },
+  { id: 104, kind: 'text', name: 'Aroni', condition: 'Tratamiento especializado', rating: 5, language: 'es', typeLabel: 'Medicina regenerativa', quote: 'Excelente profesional, tiene la pedagogía para la enseñanza significativa a los pacientes, buena atención, maneja un conocimiento previo recomendado.', result: 'Excelente pedagogía y atención' },
+  { id: 105, kind: 'text', name: 'Viviana Via', condition: 'Consulta médica', rating: 5, language: 'es', typeLabel: 'Atención médica', quote: 'Excelente profesional, amable, dedicado, explicaciones muy claras, muestra interés, muy receptivo. Un 10.', result: 'Explicaciones claras y dedicación total' },
 ];
 
 export default function TestimonialsSection({ dictionary, locale }: TestimonialsSectionProps) {
@@ -336,7 +343,7 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
     return () => v.removeEventListener('loadedmetadata', handleLoaded);
   }, []);
 
-  const poster = '/assets/images/dc_james_6.jpg';
+  const poster = item.poster || '/assets/images/dc_james_6.jpg';
   return (
     <div className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white">
       <div className="relative aspect-square">
