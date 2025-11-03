@@ -618,25 +618,43 @@
       "metaTitle": "Ácido Hialurónico para Artrosis en Medellín | Dr. James Madrid",
       "metaDescription": "Infiltración de ácido hialurónico para artrosis de rodilla, cadera y hombro. Alivia dolor, mejora movilidad y protege el cartílago. Tratamiento ambulatorio en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué es el Ácido Hialurónico Articular?",
+        "definition": "El ácido hialurónico es una sustancia natural presente en el líquido sinovial de las articulaciones que actúa como lubricante y amortiguador. Con la edad y el desgaste articular, esta sustancia disminuye. La viscosuplementación consiste en inyectar ácido hialurónico de alta calidad directamente en la articulación para restaurar sus propiedades lubricantes y protectoras.",
+        "physiologicalBenefit": "El ácido hialurónico reduce la fricción entre los huesos, mejora la elasticidad del cartílago, tiene propiedades antiinflamatorias y protege las células del cartílago del desgaste. Es especialmente efectivo en artrosis de rodilla, cadera, hombro y otras articulaciones de carga.",
+        "howWorks": "Se infiltra mediante inyección directa en la articulación afectada, guiada por ultrasonido para máxima precisión. El ácido hialurónico de peso molecular alto forma una capa protectora sobre el cartílago, reduce la inflamación y estimula la producción natural de líquido sinovial de mejor calidad."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Condición 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Rodilla que duele al caminar o subir escaleras",
+            "condition": "Artrosis de rodilla (gonartrosis)",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
           },
           {
-            "name": "Condición 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Articulación rígida por las mañanas",
+            "condition": "Artrosis con rigidez articular",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Condición 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Dolor de cadera que limita tus movimientos",
+            "condition": "Artrosis de cadera (coxartrosis)",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
+          },
+          {
+            "name": "Hombro que cruje y duele al moverlo",
+            "condition": "Artrosis de hombro",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Articulación hinchada con líquido",
+            "condition": "Derrame articular con artrosis",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Dolor que empeora con el ejercicio",
+            "condition": "Artrosis degenerativa",
+            "image": "/assets/images/symptoms/artrosis_7.jpeg"
           }
         ]
       },
@@ -644,19 +662,19 @@
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
-            "percentage": "85%"
+            "title": "Alivio del Dolor",
+            "description": "Reducción significativa del dolor articular en las primeras 2-4 semanas.",
+            "percentage": "83%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
+            "title": "Mejor Movilidad",
+            "description": "Incremento en el rango de movimiento y flexibilidad articular.",
+            "percentage": "80%"
           },
           {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
-            "percentage": "85%"
+            "title": "Efecto Prolongado",
+            "description": "Beneficios que duran entre 6-12 meses con tratamiento adecuado.",
+            "percentage": "78%"
           }
         ]
       },
@@ -665,57 +683,79 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Evaluación y Preparación",
+            "description": "Valoración clínica completa y estudios de imagen (radiografías o ecografía) para confirmar el grado de artrosis. Se determina el tipo y dosis de ácido hialurónico más adecuado para tu caso."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Infiltración Ecoguiada",
+            "description": "Inyección del ácido hialurónico guiada por ultrasonido directamente en el espacio articular. Procedimiento ambulatorio de 10-15 minutos con anestesia local. Mínimas molestias durante y después."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Seguimiento y Ciclo Completo",
+            "description": "Reposo relativo las primeras 24-48 horas. Generalmente se requieren 1-3 infiltraciones espaciadas 1-2 semanas según el protocolo. Controles periódicos para evaluar la respuesta y planificar siguiente ciclo si es necesario (cada 6-12 meses)."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿Cuántas infiltraciones de ácido hialurónico necesito?",
+          "a": "Depende del grado de artrosis y del producto utilizado. Los protocolos van desde una sola inyección (productos de alta densidad) hasta 3-5 inyecciones semanales (productos estándar). Tu médico determinará el mejor protocolo para tu caso."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿Cuánto dura el efecto del ácido hialurónico?",
+          "a": "El efecto beneficioso típicamente dura entre 6-12 meses. Algunos pacientes experimentan alivio hasta por 18 meses. Se puede repetir el tratamiento cuando los síntomas reaparezcan, generalmente una vez al año."
+        },
+        {
+          "q": "¿Es dolorosa la infiltración de ácido hialurónico?",
+          "a": "La infiltración se realiza con anestesia local, por lo que las molestias son mínimas. Puede haber ligera hinchazón o molestia las primeras 24-48 horas que se maneja con hielo local. La mayoría de pacientes reanudan actividades normales al día siguiente."
         }
       ]
     },
     "en": {
-      "title": "acido-hialuronico Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "acido-hialuronico Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "Hyaluronic Acid for Joints",
+      "subtitle": "Viscosupplementation for joint lubrication and protection",
+      "metaTitle": "Hyaluronic Acid for Osteoarthritis in Medellín | Dr. James Madrid",
+      "metaDescription": "Hyaluronic acid injection for knee, hip and shoulder osteoarthritis. Relieves pain, improves mobility and protects cartilage. Outpatient treatment in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What is Hyaluronic Acid for Joints?",
+        "definition": "Hyaluronic acid is a natural substance present in the synovial fluid of joints that acts as a lubricant and shock absorber. With age and joint wear, this substance decreases. Viscosupplementation consists of injecting high-quality hyaluronic acid directly into the joint to restore its lubricating and protective properties.",
+        "physiologicalBenefit": "Hyaluronic acid reduces friction between bones, improves cartilage elasticity, has anti-inflammatory properties and protects cartilage cells from wear. It is especially effective in knee, hip, shoulder and other weight-bearing joint osteoarthritis.",
+        "howWorks": "It is infiltrated by direct injection into the affected joint, guided by ultrasound for maximum precision. High molecular weight hyaluronic acid forms a protective layer on the cartilage, reduces inflammation and stimulates natural production of better quality synovial fluid."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Condition 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Knee that hurts when walking or climbing stairs",
+            "condition": "Knee osteoarthritis (gonarthrosis)",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
           },
           {
-            "name": "Condition 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Stiff joint in the mornings",
+            "condition": "Osteoarthritis with joint stiffness",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Condition 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Hip pain that limits your movement",
+            "condition": "Hip osteoarthritis (coxarthrosis)",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
+          },
+          {
+            "name": "Shoulder that crunches and hurts when moving",
+            "condition": "Shoulder osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Swollen joint with fluid",
+            "condition": "Joint effusion with osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Pain that worsens with exercise",
+            "condition": "Degenerative osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_7.jpeg"
           }
         ]
       },
@@ -723,19 +763,19 @@
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
-            "percentage": "85%"
+            "title": "Pain Relief",
+            "description": "Significant reduction in joint pain within the first 2-4 weeks.",
+            "percentage": "83%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
+            "title": "Better Mobility",
+            "description": "Increase in range of motion and joint flexibility.",
+            "percentage": "80%"
           },
           {
-            "title": "Result 3",
-            "description": "Description 3",
-            "percentage": "85%"
+            "title": "Prolonged Effect",
+            "description": "Benefits lasting between 6-12 months with appropriate treatment.",
+            "percentage": "78%"
           }
         ]
       },
@@ -744,59 +784,81 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Evaluation and Preparation",
+            "description": "Complete clinical assessment and imaging studies (X-rays or ultrasound) to confirm the degree of osteoarthritis. The most appropriate type and dose of hyaluronic acid is determined for your case."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Ultrasound-Guided Infiltration",
+            "description": "Injection of hyaluronic acid guided by ultrasound directly into the joint space. Outpatient procedure of 10-15 minutes with local anesthesia. Minimal discomfort during and after."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Follow-up and Complete Cycle",
+            "description": "Relative rest for the first 24-48 hours. Generally 1-3 infiltrations spaced 1-2 weeks apart are required depending on the protocol. Periodic check-ups to evaluate response and plan next cycle if necessary (every 6-12 months)."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "How many hyaluronic acid injections do I need?",
+          "a": "It depends on the degree of osteoarthritis and the product used. Protocols range from a single injection (high-density products) to 3-5 weekly injections (standard products). Your doctor will determine the best protocol for your case."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "How long does the effect of hyaluronic acid last?",
+          "a": "The beneficial effect typically lasts between 6-12 months. Some patients experience relief for up to 18 months. Treatment can be repeated when symptoms reappear, generally once a year."
+        },
+        {
+          "q": "Is hyaluronic acid infiltration painful?",
+          "a": "Infiltration is performed with local anesthesia, so discomfort is minimal. There may be slight swelling or discomfort in the first 24-48 hours that is managed with local ice. Most patients resume normal activities the next day."
         }
       ]
     }
   },
   "infiltracion-convencional": {
     "es": {
-      "title": "Tratamiento infiltracion-convencional",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento infiltracion-convencional en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Infiltración con Corticoides",
+      "subtitle": "Tratamiento antiinflamatorio potente para alivio rápido del dolor",
+      "metaTitle": "Infiltración con Corticoides en Medellín | Tratamiento del Dolor | Dr. James Madrid",
+      "metaDescription": "Infiltraciones con corticosteroides para dolor e inflamación articular aguda. Alivio rápido y efectivo de tendinitis, bursitis y dolor articular. Procedimiento ambulatorio en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué son las Infiltraciones con Corticoides?",
+        "definition": "Las infiltraciones con corticosteroides son inyecciones de medicamentos antiinflamatorios potentes (como triamcinolona, betametasona o metilprednisolona) directamente en la articulación, tendón o bursa afectada. Es un tratamiento clásico y efectivo para procesos inflamatorios agudos que no responden a medicación oral.",
+        "physiologicalBenefit": "Los corticoides reducen rápidamente la inflamación, disminuyen el dolor, mejoran la movilidad articular y permiten iniciar rehabilitación. Son especialmente efectivos en bursitis, tendinitis agudas, sinovitis y procesos inflamatorios articulares que generan limitación funcional importante.",
+        "howWorks": "El corticoide se infiltra con precisión en el sitio de inflamación, guiado por ultrasonido o referencias anatómicas. Actúa inhibiendo la respuesta inflamatoria local, reduciendo edema, dolor y limitación funcional. Los efectos comienzan en 24-48 horas y duran semanas a meses."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Condición 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Hombro muy inflamado que no te deja dormir",
+            "condition": "Bursitis de hombro",
+            "image": "/assets/images/symptoms/artrosis_9.webp"
           },
           {
-            "name": "Condición 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Rodilla hinchada con mucho líquido",
+            "condition": "Derrame articular inflamatorio",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
           },
           {
-            "name": "Condición 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Dolor intenso que no mejora con pastillas",
+            "condition": "Inflamación aguda resistente",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
+          },
+          {
+            "name": "Codo que duele mucho al menor movimiento",
+            "condition": "Epicondilitis aguda",
+            "image": "/assets/images/symptoms/osteopatia_1.jpeg"
+          },
+          {
+            "name": "Tendón muy inflamado y sensible",
+            "condition": "Tendinitis aguda",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Articulación roja, caliente e hinchada",
+            "condition": "Sinovitis o artritis inflamatoria",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
           }
         ]
       },
@@ -804,19 +866,19 @@
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
+            "title": "Alivio Rápido",
+            "description": "Reducción significativa del dolor e inflamación en 24-72 horas.",
+            "percentage": "89%"
+          },
+          {
+            "title": "Mejor Movilidad",
+            "description": "Recuperación del rango de movimiento y función normal.",
             "percentage": "85%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
-          },
-          {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
-            "percentage": "85%"
+            "title": "Efecto Duradero",
+            "description": "Beneficios que duran semanas a meses según el caso.",
+            "percentage": "75%"
           }
         ]
       },
@@ -825,57 +887,79 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Evaluación Clínica",
+            "description": "Valoración del grado de inflamación y selección del corticoide más adecuado. Se determina la dosis y sitio exacto de infiltración según tu condición específica."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Infiltración Precisa",
+            "description": "Inyección del corticoide guiada por ultrasonido o referencias anatómicas directamente en el sitio inflamado. Procedimiento de 5-10 minutos con anestesia local opcional."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Reposo y Seguimiento",
+            "description": "Reposo relativo las primeras 48 horas. El efecto antiinflamatorio se nota en 1-3 días. Evaluación posterior para decidir si se requieren sesiones adicionales o iniciar rehabilitación."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿Cuántas infiltraciones con corticoides puedo recibir?",
+          "a": "Se recomienda máximo 2-3 infiltraciones por articulación al año, espaciadas al menos 6-8 semanas. El uso excesivo puede debilitar tendones y cartílago, por lo que se reserva para situaciones donde el beneficio supera el riesgo."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿Cuándo sentiré alivio después de la infiltración?",
+          "a": "Algunos pacientes notan mejoría en 24 horas, pero el efecto máximo suele alcanzarse entre 3-7 días. Si no hay mejoría en 2 semanas, puede que el diagnóstico deba reevaluarse o considerar otro tratamiento."
+        },
+        {
+          "q": "¿Hay efectos secundarios de las infiltraciones con corticoides?",
+          "a": "Los efectos locales pueden incluir dolor temporal en el sitio de inyección (reacción al corticoide), enrojecimiento facial transitorio o elevación leve de glicemia en diabéticos. Son seguros cuando se usan apropiadamente y con la frecuencia adecuada."
         }
       ]
     },
     "en": {
-      "title": "infiltracion-convencional Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "infiltracion-convencional Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "Corticosteroid Injections",
+      "subtitle": "Powerful anti-inflammatory treatment for rapid pain relief",
+      "metaTitle": "Corticosteroid Injections in Medellín | Pain Treatment | Dr. James Madrid",
+      "metaDescription": "Corticosteroid infiltrations for acute joint pain and inflammation. Fast and effective relief for tendinitis, bursitis and joint pain. Outpatient procedure in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What are Corticosteroid Injections?",
+        "definition": "Corticosteroid infiltrations are injections of powerful anti-inflammatory medications (such as triamcinolone, betamethasone or methylprednisolone) directly into the affected joint, tendon or bursa. It is a classic and effective treatment for acute inflammatory processes that do not respond to oral medication.",
+        "physiologicalBenefit": "Corticosteroids rapidly reduce inflammation, decrease pain, improve joint mobility and allow rehabilitation to begin. They are especially effective in bursitis, acute tendinitis, synovitis and inflammatory joint processes that generate significant functional limitation.",
+        "howWorks": "The corticosteroid is infiltrated with precision at the site of inflammation, guided by ultrasound or anatomical landmarks. It acts by inhibiting the local inflammatory response, reducing edema, pain and functional limitation. Effects begin within 24-48 hours and last weeks to months."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Condition 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Very inflamed shoulder that won't let you sleep",
+            "condition": "Shoulder bursitis",
+            "image": "/assets/images/symptoms/artrosis_9.webp"
           },
           {
-            "name": "Condition 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Swollen knee with lots of fluid",
+            "condition": "Inflammatory joint effusion",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
           },
           {
-            "name": "Condition 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Intense pain that doesn't improve with pills",
+            "condition": "Resistant acute inflammation",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
+          },
+          {
+            "name": "Elbow that hurts a lot with the slightest movement",
+            "condition": "Acute epicondylitis",
+            "image": "/assets/images/symptoms/osteopatia_1.jpeg"
+          },
+          {
+            "name": "Very inflamed and sensitive tendon",
+            "condition": "Acute tendinitis",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Red, hot and swollen joint",
+            "condition": "Synovitis or inflammatory arthritis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
           }
         ]
       },
@@ -883,19 +967,19 @@
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
+            "title": "Rapid Relief",
+            "description": "Significant reduction in pain and inflammation within 24-72 hours.",
+            "percentage": "89%"
+          },
+          {
+            "title": "Better Mobility",
+            "description": "Recovery of range of motion and normal function.",
             "percentage": "85%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
-          },
-          {
-            "title": "Result 3",
-            "description": "Description 3",
-            "percentage": "85%"
+            "title": "Lasting Effect",
+            "description": "Benefits lasting weeks to months depending on the case.",
+            "percentage": "75%"
           }
         ]
       },
@@ -904,59 +988,81 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Clinical Evaluation",
+            "description": "Assessment of the degree of inflammation and selection of the most appropriate corticosteroid. The exact dose and infiltration site are determined according to your specific condition."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Precise Infiltration",
+            "description": "Injection of corticosteroid guided by ultrasound or anatomical landmarks directly at the inflamed site. 5-10 minute procedure with optional local anesthesia."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Rest and Follow-up",
+            "description": "Relative rest for the first 48 hours. Anti-inflammatory effect is noticed within 1-3 days. Subsequent evaluation to decide if additional sessions are required or to begin rehabilitation."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "How many corticosteroid injections can I receive?",
+          "a": "A maximum of 2-3 infiltrations per joint per year is recommended, spaced at least 6-8 weeks apart. Excessive use can weaken tendons and cartilage, so it is reserved for situations where the benefit outweighs the risk."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "When will I feel relief after the infiltration?",
+          "a": "Some patients notice improvement within 24 hours, but maximum effect is usually reached between 3-7 days. If there is no improvement within 2 weeks, the diagnosis may need to be re-evaluated or another treatment considered."
+        },
+        {
+          "q": "Are there side effects of corticosteroid injections?",
+          "a": "Local effects may include temporary pain at the injection site (corticosteroid reaction), transient facial flushing or slight elevation of blood sugar in diabetics. They are safe when used appropriately and with the right frequency."
         }
       ]
     }
   },
   "sueroterapia": {
     "es": {
-      "title": "Tratamiento sueroterapia",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento sueroterapia en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Sueroterapia Deportiva",
+      "subtitle": "Hidratación y nutrición intravenosa para recuperación óptima",
+      "metaTitle": "Sueroterapia Deportiva en Medellín | Vitaminas IV | Dr. James Madrid",
+      "metaDescription": "Sueroterapia con vitaminas, minerales y antioxidantes intravenosos. Mejora energía, recuperación deportiva e hidratación. Tratamiento rápido y efectivo en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué es la Sueroterapia Deportiva?",
+        "definition": "La sueroterapia es la administración intravenosa de soluciones personalizadas que contienen vitaminas, minerales, aminoácidos y antioxidantes directamente al torrente sanguíneo. Al evitar el sistema digestivo, se logra una absorción del 100% de los nutrientes, proporcionando efectos más rápidos y potentes que la suplementación oral.",
+        "physiologicalBenefit": "Mejora la hidratación celular, repone electrolitos, optimiza el rendimiento deportivo, acelera la recuperación muscular, fortalece el sistema inmunológico, combate la fatiga y el estrés oxidativo. Es especialmente útil para atletas, personas con alta exigencia física o durante periodos de agotamiento.",
+        "howWorks": "Se coloca un acceso venoso y se infunde una solución personalizada según tus necesidades específicas (deportivas, recuperación, energía, inmunidad). La sesión dura 30-45 minutos y los efectos se sienten de inmediato. Los nutrientes llegan directamente a las células sin pérdidas por digestión o metabolismo hepático."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Condición 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Cansancio constante que no mejora con descanso",
+            "condition": "Fatiga crónica o agotamiento",
+            "image": "/assets/images/symptoms/sport_1.jpg"
           },
           {
-            "name": "Condición 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Recuperación lenta después de entrenar",
+            "condition": "Recuperación deportiva insuficiente",
+            "image": "/assets/images/symptoms/sport_2.png"
           },
           {
-            "name": "Condición 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Bajo rendimiento físico o mental",
+            "condition": "Disminución del rendimiento",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
+          },
+          {
+            "name": "Defensas bajas o resfriados frecuentes",
+            "condition": "Sistema inmune debilitado",
+            "image": "/assets/images/symptoms/defensas_bajas_1.jpg"
+          },
+          {
+            "name": "Deshidratación por entrenamiento intenso",
+            "condition": "Deshidratación deportiva",
+            "image": "/assets/images/symptoms/sport_4.jpg"
+          },
+          {
+            "name": "Estrés alto o agotamiento laboral",
+            "condition": "Estrés oxidativo y burnout",
+            "image": "/assets/images/symptoms/estres_1.jpg"
           }
         ]
       },
@@ -964,19 +1070,19 @@
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
-            "percentage": "85%"
+            "title": "Energía Inmediata",
+            "description": "Aumento de energía y vitalidad desde la primera sesión.",
+            "percentage": "92%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
+            "title": "Mejor Recuperación",
+            "description": "Aceleración de la recuperación muscular post-entrenamiento.",
+            "percentage": "88%"
           },
           {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
-            "percentage": "85%"
+            "title": "Hidratación Óptima",
+            "description": "Rehidratación celular profunda y reposición de electrolitos.",
+            "percentage": "95%"
           }
         ]
       },
@@ -985,57 +1091,79 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Evaluación Personalizada",
+            "description": "Valoración de tus objetivos, nivel de actividad física y estado nutricional. Se diseña una fórmula personalizada con las vitaminas, minerales y antioxidantes que necesitas."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Administración Intravenosa",
+            "description": "Se coloca un acceso venoso y se administra la solución durante 30-45 minutos en un ambiente cómodo y relajado. Puedes descansar, trabajar o leer durante la sesión."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Disfruta los Resultados",
+            "description": "Los efectos se notan inmediatamente: más energía, claridad mental y sensación de bienestar. Se pueden realizar sesiones semanales, quincenales o según necesidad para mantener niveles óptimos."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿Con qué frecuencia debo recibir sueroterapia?",
+          "a": "Depende de tus objetivos. Para mantenimiento general: 1 sesión mensual. Para deportistas de alto rendimiento: 1-2 sesiones semanales durante periodos de entrenamiento intenso. Para recuperación de fatiga aguda: 2-3 sesiones la primera semana, luego espaciar."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿Cuánto duran los efectos de la sueroterapia?",
+          "a": "Los efectos inmediatos (energía, hidratación) duran 3-7 días. Los beneficios acumulativos con sesiones regulares incluyen mejor rendimiento, recuperación más rápida y sistema inmune fortalecido que se mantienen a largo plazo."
+        },
+        {
+          "q": "¿La sueroterapia es segura? ¿Tiene efectos secundarios?",
+          "a": "Es muy segura cuando es administrada por personal médico calificado. Los efectos secundarios son raros y pueden incluir leve sensación de frío durante la infusión o molestia en el sitio de punción. Las fórmulas se personalizan según tu condición de salud."
         }
       ]
     },
     "en": {
-      "title": "sueroterapia Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "sueroterapia Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "Sports IV Therapy",
+      "subtitle": "Intravenous hydration and nutrition for optimal recovery",
+      "metaTitle": "Sports IV Therapy in Medellín | IV Vitamins | Dr. James Madrid",
+      "metaDescription": "IV therapy with vitamins, minerals and intravenous antioxidants. Improves energy, sports recovery and hydration. Fast and effective treatment in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What is Sports IV Therapy?",
+        "definition": "IV therapy is the intravenous administration of personalized solutions containing vitamins, minerals, amino acids and antioxidants directly into the bloodstream. By bypassing the digestive system, 100% absorption of nutrients is achieved, providing faster and more powerful effects than oral supplementation.",
+        "physiologicalBenefit": "Improves cellular hydration, replenishes electrolytes, optimizes athletic performance, accelerates muscle recovery, strengthens the immune system, fights fatigue and oxidative stress. It is especially useful for athletes, people with high physical demands or during periods of exhaustion.",
+        "howWorks": "A venous access is placed and a personalized solution is infused according to your specific needs (sports, recovery, energy, immunity). The session lasts 30-45 minutes and effects are felt immediately. Nutrients reach cells directly without losses from digestion or hepatic metabolism."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Condition 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Constant tiredness that doesn't improve with rest",
+            "condition": "Chronic fatigue or exhaustion",
+            "image": "/assets/images/symptoms/sport_1.jpg"
           },
           {
-            "name": "Condition 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Slow recovery after training",
+            "condition": "Insufficient sports recovery",
+            "image": "/assets/images/symptoms/sport_2.png"
           },
           {
-            "name": "Condition 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Low physical or mental performance",
+            "condition": "Decreased performance",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
+          },
+          {
+            "name": "Low defenses or frequent colds",
+            "condition": "Weakened immune system",
+            "image": "/assets/images/symptoms/defensas_bajas_1.jpg"
+          },
+          {
+            "name": "Dehydration from intense training",
+            "condition": "Sports dehydration",
+            "image": "/assets/images/symptoms/sport_4.jpg"
+          },
+          {
+            "name": "High stress or work burnout",
+            "condition": "Oxidative stress and burnout",
+            "image": "/assets/images/symptoms/estres_1.jpg"
           }
         ]
       },
@@ -1043,19 +1171,19 @@
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
-            "percentage": "85%"
+            "title": "Immediate Energy",
+            "description": "Increased energy and vitality from the first session.",
+            "percentage": "92%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
+            "title": "Better Recovery",
+            "description": "Accelerated post-workout muscle recovery.",
+            "percentage": "88%"
           },
           {
-            "title": "Result 3",
-            "description": "Description 3",
-            "percentage": "85%"
+            "title": "Optimal Hydration",
+            "description": "Deep cellular rehydration and electrolyte replenishment.",
+            "percentage": "95%"
           }
         ]
       },
@@ -1064,59 +1192,81 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Personalized Evaluation",
+            "description": "Assessment of your goals, physical activity level and nutritional status. A personalized formula is designed with the vitamins, minerals and antioxidants you need."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Intravenous Administration",
+            "description": "A venous access is placed and the solution is administered for 30-45 minutes in a comfortable and relaxed environment. You can rest, work or read during the session."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Enjoy the Results",
+            "description": "Effects are noticed immediately: more energy, mental clarity and sense of well-being. Sessions can be performed weekly, biweekly or as needed to maintain optimal levels."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "How often should I receive IV therapy?",
+          "a": "It depends on your goals. For general maintenance: 1 session monthly. For high-performance athletes: 1-2 weekly sessions during intense training periods. For acute fatigue recovery: 2-3 sessions the first week, then space out."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "How long do the effects of IV therapy last?",
+          "a": "Immediate effects (energy, hydration) last 3-7 days. Cumulative benefits with regular sessions include better performance, faster recovery and strengthened immune system that are maintained long-term."
+        },
+        {
+          "q": "Is IV therapy safe? Does it have side effects?",
+          "a": "It is very safe when administered by qualified medical personnel. Side effects are rare and may include slight cold sensation during infusion or discomfort at the puncture site. Formulas are personalized according to your health condition."
         }
       ]
     }
   },
   "programa-adelgazamiento": {
     "es": {
-      "title": "Tratamiento programa-adelgazamiento",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento programa-adelgazamiento en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Programa Médico de Adelgazamiento",
+      "subtitle": "Pérdida de peso saludable con supervisión médica integral",
+      "metaTitle": "Programa de Adelgazamiento Médico en Medellín | Pérdida de Peso | Dr. James Madrid",
+      "metaDescription": "Programa médico personalizado para adelgazar de forma saludable y sostenible. Incluye nutrición, ejercicio, seguimiento médico y técnicas avanzadas. Resultados reales en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué es el Programa Médico de Adelgazamiento?",
+        "definition": "Es un programa integral supervisado médicamente que combina evaluación metabólica, plan nutricional personalizado, rutinas de ejercicio adaptadas, seguimiento continuo y técnicas complementarias (sueroterapia, suplementación, manejo hormonal si necesario). No es una dieta temporal, sino un cambio de estilo de vida sostenible.",
+        "physiologicalBenefit": "Mejora la composición corporal (reduce grasa, preserva músculo), optimiza el metabolismo, reduce riesgos cardiovasculares, mejora marcadores de salud (colesterol, glucosa, presión arterial), aumenta la energía y el rendimiento físico. El enfoque médico asegura pérdida de peso saludable sin comprometer la salud.",
+        "howWorks": "Iniciamos con evaluación completa: composición corporal, análisis metabólico, estado hormonal y nutricional. Diseñamos un plan personalizado que incluye alimentación balanceada, ejercicio progresivo y técnicas complementarias. Seguimiento semanal/quincenal con ajustes según evolución. El objetivo es perder 0.5-1kg por semana de forma sostenible."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Condición 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Sobrepeso que afecta tu salud y movilidad",
+            "condition": "Sobrepeso u obesidad",
+            "image": "/assets/images/symptoms/obesidad_1.webp"
           },
           {
-            "name": "Condición 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Dificultad para bajar de peso con dietas",
+            "condition": "Resistencia metabólica",
+            "image": "/assets/images/symptoms/obesidad_4.jpg"
           },
           {
-            "name": "Condición 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Grasa abdominal que no se reduce",
+            "condition": "Adiposidad abdominal",
+            "image": "/assets/images/symptoms/obesidad_7.jpg"
+          },
+          {
+            "name": "Bajo rendimiento físico por exceso de peso",
+            "condition": "Limitación funcional",
+            "image": "/assets/images/symptoms/obesidad_5.jpg"
+          },
+          {
+            "name": "Efecto rebote después de dietas",
+            "condition": "Ciclo de pérdida-recuperación",
+            "image": "/assets/images/symptoms/obesidad_3.jpg"
+          },
+          {
+            "name": "Quieres optimizar tu composición corporal",
+            "condition": "Mejora de rendimiento deportivo",
+            "image": "/assets/images/symptoms/obesidad_6.jpg"
           }
         ]
       },
@@ -1124,18 +1274,18 @@
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
-            "percentage": "85%"
+            "title": "Pérdida de Peso Sostenible",
+            "description": "Reducción progresiva de 2-4 kg mensuales de forma saludable.",
+            "percentage": "91%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
+            "title": "Mejor Composición Corporal",
+            "description": "Reducción de grasa corporal preservando masa muscular.",
+            "percentage": "88%"
           },
           {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
+            "title": "Cambio de Hábitos Duradero",
+            "description": "Adopción de estilo de vida saludable sin efecto rebote.",
             "percentage": "85%"
           }
         ]
@@ -1145,57 +1295,79 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Evaluación Integral",
+            "description": "Análisis completo de composición corporal (bioimpedancia), mediciones antropométricas, evaluación metabólica, análisis de sangre (perfil hormonal, lipídico, glucémico), historial médico y nutricional. Se identifican factores que dificultan la pérdida de peso."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Plan Personalizado",
+            "description": "Diseño de programa nutricional adaptado a tu metabolismo y preferencias, rutina de ejercicio progresiva, suplementación si necesario, técnicas complementarias (sueroterapia, manejo hormonal). Todo ajustado a tu ritmo de vida y objetivos."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Seguimiento y Ajustes",
+            "description": "Controles cada 1-2 semanas para evaluar progreso, ajustar plan según resultados, resolver dudas y mantener motivación. Mediciones periódicas de composición corporal. Educación continua para mantener resultados a largo plazo."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿Cuánto peso puedo perder con este programa?",
+          "a": "De forma saludable y sostenible, se espera perder 2-4 kg por mes, dependiendo del peso inicial y metabolismo. En 3 meses: 6-12 kg, en 6 meses: 12-24 kg. Lo importante no es solo el peso perdido, sino mejorar la composición corporal y mantener los resultados."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿En qué se diferencia de una dieta comercial?",
+          "a": "Incluye supervisión médica continua, análisis de laboratorio, evaluación hormonal y metabólica, ajustes personalizados según tu respuesta, manejo de comorbilidades, técnicas complementarias médicas y educación para mantener resultados. No es restrictivo ni temporal, sino un cambio de estilo de vida."
+        },
+        {
+          "q": "¿Tendré efecto rebote después del programa?",
+          "a": "El programa se diseña específicamente para evitar el efecto rebote mediante pérdida gradual, preservación de masa muscular, educación nutricional y cambio de hábitos sostenibles. El seguimiento a largo plazo ayuda a mantener los resultados. La clave es el cambio de estilo de vida, no dietas temporales."
         }
       ]
     },
     "en": {
-      "title": "programa-adelgazamiento Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "programa-adelgazamiento Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "Medical Weight Loss Program",
+      "subtitle": "Healthy weight loss with comprehensive medical supervision",
+      "metaTitle": "Medical Weight Loss Program in Medellín | Weight Loss | Dr. James Madrid",
+      "metaDescription": "Personalized medical program for healthy and sustainable weight loss. Includes nutrition, exercise, medical monitoring and advanced techniques. Real results in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What is the Medical Weight Loss Program?",
+        "definition": "It is a comprehensive medically supervised program that combines metabolic evaluation, personalized nutritional plan, adapted exercise routines, continuous monitoring and complementary techniques (IV therapy, supplementation, hormonal management if necessary). It's not a temporary diet, but a sustainable lifestyle change.",
+        "physiologicalBenefit": "Improves body composition (reduces fat, preserves muscle), optimizes metabolism, reduces cardiovascular risks, improves health markers (cholesterol, glucose, blood pressure), increases energy and physical performance. The medical approach ensures healthy weight loss without compromising health.",
+        "howWorks": "We start with complete evaluation: body composition, metabolic analysis, hormonal and nutritional status. We design a personalized plan that includes balanced nutrition, progressive exercise and complementary techniques. Weekly/biweekly follow-up with adjustments according to progress. The goal is to lose 0.5-1kg per week sustainably."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Condition 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Overweight affecting your health and mobility",
+            "condition": "Overweight or obesity",
+            "image": "/assets/images/symptoms/obesidad_1.webp"
           },
           {
-            "name": "Condition 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Difficulty losing weight with diets",
+            "condition": "Metabolic resistance",
+            "image": "/assets/images/symptoms/obesidad_4.jpg"
           },
           {
-            "name": "Condition 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Abdominal fat that won't reduce",
+            "condition": "Abdominal adiposity",
+            "image": "/assets/images/symptoms/obesidad_7.jpg"
+          },
+          {
+            "name": "Low physical performance due to excess weight",
+            "condition": "Functional limitation",
+            "image": "/assets/images/symptoms/obesidad_5.jpg"
+          },
+          {
+            "name": "Rebound effect after diets",
+            "condition": "Loss-recovery cycle",
+            "image": "/assets/images/symptoms/obesidad_3.jpg"
+          },
+          {
+            "name": "Want to optimize your body composition",
+            "condition": "Sports performance improvement",
+            "image": "/assets/images/symptoms/obesidad_6.jpg"
           }
         ]
       },
@@ -1203,18 +1375,18 @@
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
-            "percentage": "85%"
+            "title": "Sustainable Weight Loss",
+            "description": "Progressive reduction of 2-4 kg monthly in a healthy way.",
+            "percentage": "91%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
+            "title": "Better Body Composition",
+            "description": "Reduction of body fat while preserving muscle mass.",
+            "percentage": "88%"
           },
           {
-            "title": "Result 3",
-            "description": "Description 3",
+            "title": "Lasting Habit Change",
+            "description": "Adoption of healthy lifestyle without rebound effect.",
             "percentage": "85%"
           }
         ]
@@ -1224,59 +1396,81 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Comprehensive Evaluation",
+            "description": "Complete body composition analysis (bioimpedance), anthropometric measurements, metabolic evaluation, blood tests (hormonal, lipid, glycemic profile), medical and nutritional history. Factors that hinder weight loss are identified."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Personalized Plan",
+            "description": "Design of nutritional program adapted to your metabolism and preferences, progressive exercise routine, supplementation if necessary, complementary techniques (IV therapy, hormonal management). Everything adjusted to your lifestyle and goals."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Follow-up and Adjustments",
+            "description": "Check-ups every 1-2 weeks to evaluate progress, adjust plan according to results, resolve doubts and maintain motivation. Periodic body composition measurements. Continuous education to maintain long-term results."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "How much weight can I lose with this program?",
+          "a": "In a healthy and sustainable way, you can expect to lose 2-4 kg per month, depending on initial weight and metabolism. In 3 months: 6-12 kg, in 6 months: 12-24 kg. What matters is not just weight lost, but improving body composition and maintaining results."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "How is it different from a commercial diet?",
+          "a": "Includes continuous medical supervision, laboratory tests, hormonal and metabolic evaluation, personalized adjustments according to your response, comorbidity management, medical complementary techniques and education to maintain results. It's not restrictive or temporary, but a lifestyle change."
+        },
+        {
+          "q": "Will I have a rebound effect after the program?",
+          "a": "The program is specifically designed to avoid rebound effect through gradual loss, muscle mass preservation, nutritional education and sustainable habit changes. Long-term follow-up helps maintain results. The key is lifestyle change, not temporary diets."
         }
       ]
     }
   },
   "alto-rendimiento-deportivo": {
     "es": {
-      "title": "Tratamiento alto-rendimiento-deportivo",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento alto-rendimiento-deportivo en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Medicina de Alto Rendimiento Deportivo",
+      "subtitle": "Maximiza tu rendimiento atlético con medicina deportiva de vanguardia",
+      "metaTitle": "Medicina de Alto Rendimiento Deportivo en Medellín | Optimización Atlética | Dr. James Madrid",
+      "metaDescription": "Programa médico integral para atletas y deportistas de alto nivel. Optimización del rendimiento, prevención de lesiones, recuperación avanzada y mejora del desempeño físico en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué es la Medicina de Alto Rendimiento Deportivo?",
+        "definition": "Es un programa médico especializado que combina evaluación biomecánica avanzada, análisis de rendimiento físico, optimización nutricional, medicina regenerativa, entrenamiento personalizado y técnicas de recuperación de vanguardia. Diseñado para atletas profesionales, deportistas de élite y personas con objetivos deportivos exigentes.",
+        "physiologicalBenefit": "Mejora la fuerza, velocidad, resistencia y potencia muscular. Optimiza la recuperación post-entrenamiento, reduce el riesgo de lesiones, mejora la composición corporal, aumenta la capacidad aeróbica y anaeróbica, potencia la salud articular y tendinosa. Acelera la vuelta al deporte después de lesiones. Maximiza el potencial atlético.",
+        "howWorks": "Evaluación integral: biomecánica, composición corporal, perfil metabólico, análisis hormonal, pruebas de rendimiento físico. Diseño de plan personalizado que incluye entrenamiento optimizado, nutrición deportiva avanzada, suplementación estratégica, técnicas de recuperación (PRP, sueroterapia, fisioterapia), seguimiento de marcadores de rendimiento. Ajustes constantes según objetivos y competiciones."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Condición 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Quieres llevar tu rendimiento al siguiente nivel",
+            "condition": "Optimización del desempeño deportivo",
+            "image": "/assets/images/symptoms/sport_5.jpg"
           },
           {
-            "name": "Condición 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Recuperación lenta entre entrenamientos intensos",
+            "condition": "Fatiga muscular persistente",
+            "image": "/assets/images/symptoms/sport_2.png"
           },
           {
-            "name": "Condición 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Lesiones deportivas recurrentes o crónicas",
+            "condition": "Predisposición a lesiones",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Meseta en tu progreso deportivo",
+            "condition": "Estancamiento del rendimiento",
+            "image": "/assets/images/symptoms/sport_6.jpg"
+          },
+          {
+            "name": "Preparación para competencia importante",
+            "condition": "Optimización pre-competitiva",
+            "image": "/assets/images/symptoms/sport_7.png"
+          },
+          {
+            "name": "Necesitas volver al deporte después de lesión",
+            "condition": "Rehabilitación deportiva avanzada",
+            "image": "/assets/images/symptoms/sport_8.png"
           }
         ]
       },
@@ -1284,19 +1478,19 @@
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
-            "percentage": "85%"
+            "title": "Mejora del Rendimiento",
+            "description": "Aumento medible en fuerza, velocidad, resistencia y potencia.",
+            "percentage": "92%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
+            "title": "Recuperación Más Rápida",
+            "description": "Reducción del tiempo de recuperación entre entrenamientos intensos.",
+            "percentage": "89%"
           },
           {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
-            "percentage": "85%"
+            "title": "Prevención de Lesiones",
+            "description": "Disminución significativa del riesgo de lesiones deportivas.",
+            "percentage": "87%"
           }
         ]
       },
@@ -1305,57 +1499,79 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Evaluación Deportiva Integral",
+            "description": "Análisis biomecánico completo, evaluación de composición corporal avanzada (músculo, grasa, agua), pruebas de rendimiento físico (fuerza, potencia, VO2 máx), análisis de sangre (perfil hormonal, marcadores inflamatorios, micronutrientes), evaluación de técnica deportiva y patrones de movimiento. Identificación de limitaciones y fortalezas."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Plan de Optimización Personalizado",
+            "description": "Diseño de programa de entrenamiento periodizado según objetivos y calendario de competencias, plan nutricional deportivo con timing de nutrientes, suplementación estratégica basada en evidencia, técnicas de recuperación avanzada (PRP, sueroterapia, crioterapia), prevención de lesiones específica, estrategias de descanso y recuperación. Todo adaptado a tu deporte."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Monitoreo y Ajuste Continuo",
+            "description": "Seguimiento constante de marcadores de rendimiento, análisis periódicos de composición corporal y biomarcadores, ajuste de cargas de entrenamiento según fatiga y recuperación, optimización nutricional según fase de entrenamiento, aplicación de técnicas regenerativas cuando necesario. Preparación específica para competencias clave. Análisis post-competencia para mejora continua."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿Es solo para atletas profesionales?",
+          "a": "No. Aunque diseñado para alto rendimiento, también es ideal para deportistas amateur con objetivos ambiciosos, personas que entrenan regularmente y buscan optimizar resultados, atletas que vuelven de lesión, o cualquiera que quiera llevar su desempeño deportivo al máximo potencial con supervisión médica especializada."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿Qué técnicas de recuperación incluye el programa?",
+          "a": "Incluye técnicas avanzadas como Plasma Rico en Plaquetas (PRP) para lesiones y recuperación muscular, sueroterapia deportiva para rehidratación y nutrientes, células madre si necesario, fisioterapia especializada, crioterapia, técnicas de liberación miofascial, compresión neumática, análisis de sueño y recuperación, suplementación estratégica."
+        },
+        {
+          "q": "¿Cuánto tiempo tarda en verse mejora en el rendimiento?",
+          "a": "Depende del punto de partida y objetivos. Mejoras en recuperación y energía: 2-3 semanas. Mejoras en composición corporal y fuerza: 4-6 semanas. Optimización completa del rendimiento: 8-12 semanas. El programa se diseña a largo plazo, con picos de forma para competencias específicas. El seguimiento constante asegura progreso continuo."
         }
       ]
     },
     "en": {
-      "title": "alto-rendimiento-deportivo Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "alto-rendimiento-deportivo Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "High Performance Sports Medicine",
+      "subtitle": "Maximize your athletic performance with cutting-edge sports medicine",
+      "metaTitle": "High Performance Sports Medicine in Medellín | Athletic Optimization | Dr. James Madrid",
+      "metaDescription": "Comprehensive medical program for high-level athletes and sports enthusiasts. Performance optimization, injury prevention, advanced recovery and physical performance enhancement in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What is High Performance Sports Medicine?",
+        "definition": "It is a specialized medical program that combines advanced biomechanical evaluation, physical performance analysis, nutritional optimization, regenerative medicine, personalized training and cutting-edge recovery techniques. Designed for professional athletes, elite sports enthusiasts and people with demanding sports goals.",
+        "physiologicalBenefit": "Improves strength, speed, endurance and muscle power. Optimizes post-training recovery, reduces injury risk, improves body composition, increases aerobic and anaerobic capacity, enhances joint and tendon health. Accelerates return to sport after injuries. Maximizes athletic potential.",
+        "howWorks": "Comprehensive evaluation: biomechanics, body composition, metabolic profile, hormonal analysis, physical performance tests. Design of personalized plan including optimized training, advanced sports nutrition, strategic supplementation, recovery techniques (PRP, IV therapy, physiotherapy), performance marker tracking. Constant adjustments according to goals and competitions."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Condition 1",
-            "image": "/assets/images/artrosis_1.jpeg"
+            "name": "Want to take your performance to the next level",
+            "condition": "Sports performance optimization",
+            "image": "/assets/images/symptoms/sport_5.jpg"
           },
           {
-            "name": "Condition 2",
-            "image": "/assets/images/artrosis_2.jpeg"
+            "name": "Slow recovery between intense training sessions",
+            "condition": "Persistent muscle fatigue",
+            "image": "/assets/images/symptoms/sport_2.png"
           },
           {
-            "name": "Condition 3",
-            "image": "/assets/images/artrosis_3.jpeg"
+            "name": "Recurring or chronic sports injuries",
+            "condition": "Injury predisposition",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Plateau in your sports progress",
+            "condition": "Performance stagnation",
+            "image": "/assets/images/symptoms/sport_6.jpg"
+          },
+          {
+            "name": "Preparing for important competition",
+            "condition": "Pre-competitive optimization",
+            "image": "/assets/images/symptoms/sport_7.png"
+          },
+          {
+            "name": "Need to return to sport after injury",
+            "condition": "Advanced sports rehabilitation",
+            "image": "/assets/images/symptoms/sport_8.png"
           }
         ]
       },
@@ -1363,19 +1579,19 @@
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
-            "percentage": "85%"
+            "title": "Performance Improvement",
+            "description": "Measurable increase in strength, speed, endurance and power.",
+            "percentage": "92%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
+            "title": "Faster Recovery",
+            "description": "Reduction of recovery time between intense training sessions.",
+            "percentage": "89%"
           },
           {
-            "title": "Result 3",
-            "description": "Description 3",
-            "percentage": "85%"
+            "title": "Injury Prevention",
+            "description": "Significant decrease in sports injury risk.",
+            "percentage": "87%"
           }
         ]
       },
@@ -1384,29 +1600,33 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Comprehensive Sports Evaluation",
+            "description": "Complete biomechanical analysis, advanced body composition evaluation (muscle, fat, water), physical performance tests (strength, power, VO2 max), blood analysis (hormonal profile, inflammatory markers, micronutrients), sports technique evaluation and movement patterns. Identification of limitations and strengths."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Personalized Optimization Plan",
+            "description": "Design of periodized training program according to goals and competition calendar, sports nutritional plan with nutrient timing, evidence-based strategic supplementation, advanced recovery techniques (PRP, IV therapy, cryotherapy), specific injury prevention, rest and recovery strategies. Everything adapted to your sport."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Continuous Monitoring and Adjustment",
+            "description": "Constant tracking of performance markers, periodic body composition and biomarker analysis, training load adjustment according to fatigue and recovery, nutritional optimization according to training phase, application of regenerative techniques when necessary. Specific preparation for key competitions. Post-competition analysis for continuous improvement."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "Is it only for professional athletes?",
+          "a": "No. Although designed for high performance, it is also ideal for amateur athletes with ambitious goals, people who train regularly and seek to optimize results, athletes returning from injury, or anyone who wants to take their sports performance to maximum potential with specialized medical supervision."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "What recovery techniques does the program include?",
+          "a": "Includes advanced techniques such as Platelet Rich Plasma (PRP) for injuries and muscle recovery, sports IV therapy for rehydration and nutrients, stem cells if necessary, specialized physiotherapy, cryotherapy, myofascial release techniques, pneumatic compression, sleep and recovery analysis, strategic supplementation."
+        },
+        {
+          "q": "How long does it take to see performance improvement?",
+          "a": "Depends on starting point and goals. Improvements in recovery and energy: 2-3 weeks. Improvements in body composition and strength: 4-6 weeks. Complete performance optimization: 8-12 weeks. The program is designed long-term, with peak performance for specific competitions. Constant monitoring ensures continuous progress."
         }
       ]
     }
