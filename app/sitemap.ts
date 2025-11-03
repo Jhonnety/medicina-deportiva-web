@@ -1,3 +1,45 @@
-export { default } from './sitemap';
+import { MetadataRoute } from 'next';
+import { TREATMENTS } from '@/lib/constants/treatments';
+import { i18n } from '@/lib/i18n/config';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://drjamesmadrid.com';
+  
+  const routes: MetadataRoute.Sitemap = [];
+
+  // Add main pages for each language
+  i18n.locales.forEach((locale) => {
+    routes.push({
+      url: `${baseUrl}/${locale}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 1,
+      alternates: {
+        languages: Object.fromEntries(
+          i18n.locales.map(lang => [lang, `${baseUrl}/${lang}`])
+        ),
+      },
+    });
+  });
+
+  // Add treatment pages for both languages
+  TREATMENTS.forEach((treatment) => {
+    i18n.locales.forEach((locale) => {
+      routes.push({
+        url: `${baseUrl}/${locale}/tratamientos/${treatment.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: Object.fromEntries(
+            i18n.locales.map(lang => [lang, `${baseUrl}/${lang}/tratamientos/${treatment.slug}`])
+          ),
+        },
+      });
+    });
+  });
+
+  return routes;
+}
 
 

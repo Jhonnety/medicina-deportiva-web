@@ -1,16 +1,11 @@
 import { MetadataRoute } from 'next';
+import { TREATMENTS } from '@/lib/constants/treatments';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://drjamesmadrid.com';
   
-  const treatments = [
-    'tratamiento-artrosis',
-    'proloterapia',
-    'plasma-rico-plaquetas',
-    'lesiones-deportivas',
-    'diagnostico-ecoguiado',
-    'programa-adelgazamiento',
-  ];
+  // Usar los slugs directamente del archivo treatments.ts
+  const treatments = TREATMENTS.map(t => t.slug);
 
   const routes: MetadataRoute.Sitemap = [
     {
