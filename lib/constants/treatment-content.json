@@ -12,30 +12,36 @@
         "howWorks": "El procedimiento consiste en la extracción, procesamiento y aplicación de células madre, ya sea autólogas (del mismo paciente) o alogénicas (de donante compatible). Estas células se aplican directamente en la zona afectada guiadas por ultrasonido para máxima precisión."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Artrosis avanzada",
+            "name": "Dolor de rodilla que no te deja caminar bien",
+            "condition": "Artrosis avanzada",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Lesiones de cartílago articular",
+            "name": "Rodilla que cruje y duele al subir escaleras",
+            "condition": "Lesión de cartílago articular",
             "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
           {
-            "name": "Tendinopatías crónicas",
+            "name": "Dolor constante en hombro o codo",
+            "condition": "Tendinopatía crónica",
             "image": "/assets/images/symptoms/artrosis_3.jpeg"
           },
           {
-            "name": "Lesiones meniscales",
+            "name": "Dolor dentro de la rodilla al flexionarla",
+            "condition": "Lesión meniscal",
             "image": "/assets/images/symptoms/artrosis_1.jpeg"
           },
           {
-            "name": "Daño del manguito rotador",
+            "name": "Hombro que duele al levantar el brazo",
+            "condition": "Lesión del manguito rotador",
             "image": "/assets/images/symptoms/artrosis_7.webp"
           },
           {
-            "name": "Lesiones ligamentarias crónicas",
+            "name": "Tobillo que se tuerce fácilmente",
+            "condition": "Lesión ligamentaria crónica",
             "image": "/assets/images/symptoms/artrosis_6.jpeg"
           }
         ]
@@ -107,30 +113,36 @@
         "howWorks": "The procedure consists of extraction, processing, and application of stem cells, either autologous (from the same patient) or allogeneic (from a compatible donor). These cells are applied directly to the affected area guided by ultrasound for maximum precision."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Advanced osteoarthritis",
+            "name": "Knee pain that makes walking difficult",
+            "condition": "Advanced osteoarthritis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Articular cartilage injuries",
+            "name": "Knee that cracks and hurts going upstairs",
+            "condition": "Articular cartilage injury",
             "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
           {
-            "name": "Chronic tendinopathies",
+            "name": "Constant pain in shoulder or elbow",
+            "condition": "Chronic tendinopathy",
             "image": "/assets/images/symptoms/artrosis_3.jpeg"
           },
           {
-            "name": "Meniscal injuries",
+            "name": "Pain inside your knee when bending it",
+            "condition": "Meniscal tear",
             "image": "/assets/images/symptoms/artrosis_1.jpeg"
           },
           {
-            "name": "Rotator cuff damage",
+            "name": "Shoulder that hurts when lifting your arm",
+            "condition": "Rotator cuff injury",
             "image": "/assets/images/symptoms/artrosis_7.webp"
           },
           {
-            "name": "Chronic ligament injuries",
+            "name": "Ankle that twists easily",
+            "condition": "Chronic ligament injury",
             "image": "/assets/images/symptoms/artrosis_6.jpeg"
           }
         ]
@@ -204,31 +216,37 @@
         "howWorks": "Se aplican mediante infiltración guiada por ultrasonido en la zona afectada. Los exosomas liberan su contenido bioactivo directamente en el tejido lesionado, activando procesos de regeneración celular, reduciendo la inflamación y mejorando la función del tejido sin necesidad de células vivas."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Artrosis de rodilla, cadera y hombro",
+            "name": "Rodilla o cadera que duele todos los días",
+            "condition": "Artrosis degenerativa",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Tendinitis crónica y tendinosis",
+            "name": "Tendón que duele desde hace meses",
+            "condition": "Tendinitis crónica",
             "image": "/assets/images/symptoms/tendinitis_1.jpg"
           },
           {
-            "name": "Lesiones del cartílago articular",
+            "name": "Articulación que truena y se inflama",
+            "condition": "Lesión de cartílago articular",
             "image": "/assets/images/symptoms/artrosis_1.jpeg"
           },
           {
-            "name": "Lesiones musculares recurrentes",
+            "name": "Músculo que se lesiona una y otra vez",
+            "condition": "Lesión muscular recurrente",
             "image": "/assets/images/symptoms/artrosis_5.jpeg"
           },
           {
-            "name": "Fascitis plantar crónica",
+            "name": "Dolor en la planta del pie al caminar",
+            "condition": "Fascitis plantar crónica",
             "image": "/assets/images/symptoms/fascitis_1.jpg"
           },
           {
-            "name": "Epicondilitis (codo de tenista)",
-            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+            "name": "Codo que duele al agarrar cosas",
+            "condition": "Epicondilitis (codo de tenista)",
+            "image": "/assets/images/symptoms/osteopatia_1.jpeg"
           }
         ]
       },
@@ -299,30 +317,36 @@
         "howWorks": "Applied through ultrasound-guided infiltration into the affected area. Exosomes release their bioactive content directly into the injured tissue, activating cellular regeneration processes, reducing inflammation, and improving tissue function without the need for live cells."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Knee, hip and shoulder osteoarthritis",
+            "name": "Knee or hip that hurts every day",
+            "condition": "Degenerative osteoarthritis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Chronic tendinitis and tendinosis",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "name": "Tendon that's been hurting for months",
+            "condition": "Chronic tendinitis",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
           },
           {
-            "name": "Articular cartilage injuries",
-            "image": "/assets/images/symptoms/artrosis_3.jpeg"
-          },
-          {
-            "name": "Recurrent muscle injuries",
+            "name": "Joint that pops and gets swollen",
+            "condition": "Articular cartilage injury",
             "image": "/assets/images/symptoms/artrosis_1.jpeg"
           },
           {
-            "name": "Chronic plantar fasciitis",
-            "image": "/assets/images/symptoms/artrosis_7.webp"
+            "name": "Muscle that keeps getting injured",
+            "condition": "Recurrent muscle injury",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
           },
           {
-            "name": "Epicondylitis (tennis elbow)",
+            "name": "Pain in the bottom of your foot when walking",
+            "condition": "Chronic plantar fasciitis",
+            "image": "/assets/images/symptoms/fascitis_1.jpg"
+          },
+          {
+            "name": "Elbow that hurts when grabbing things",
+            "condition": "Epicondylitis (tennis elbow)",
             "image": "/assets/images/symptoms/artrosis_6.jpeg"
           }
         ]
@@ -396,31 +420,37 @@
         "howWorks": "Se extrae una muestra de tu sangre (similar a un análisis de laboratorio), se procesa en centrífuga especializada para concentrar las plaquetas, y el PRP resultante se infiltra con precisión guiada por ecografía en el tejido lesionado. Todo el proceso toma aproximadamente 45-60 minutos."
       },
       "symptoms": {
-        "title": "Condiciones que Tratamos",
+        "title": "¿Presentas alguno de estos síntomas?",
         "list": [
           {
-            "name": "Tendinitis de hombro, codo y aquiles",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "name": "Hombro, codo o talón que duele al hacer deporte",
+            "condition": "Tendinitis deportiva",
+            "image": "/assets/images/symptoms/artrosis_9.webp"
           },
           {
-            "name": "Epicondilitis lateral y medial",
+            "name": "Dolor en el lado del codo que no se quita",
+            "condition": "Epicondilitis lateral o medial",
             "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
           {
-            "name": "Artrosis leve a moderada",
-            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+            "name": "Articulación que duele y está desgastada",
+            "condition": "Artrosis leve a moderada",
+            "image": "/assets/images/symptoms/artrosis_8.webp"
           },
           {
-            "name": "Lesiones del manguito rotador",
-            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+            "name": "Dolor en el hombro al dormir de lado",
+            "condition": "Lesión del manguito rotador",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
           },
           {
-            "name": "Esguinces ligamentarios crónicos",
-            "image": "/assets/images/symptoms/artrosis_7.webp"
+            "name": "Tobillo o muñeca que no termina de sanar",
+            "condition": "Esguince ligamentario crónico",
+            "image": "/assets/images/symptoms/artrosis_7.jpeg"
           },
           {
-            "name": "Fascitis plantar persistente",
-            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+            "name": "Dolor intenso en el talón al levantarte",
+            "condition": "Fascitis plantar persistente",
+            "image": "/assets/images/symptoms/fascitis_2.jpg"
           }
         ]
       },
@@ -491,30 +521,36 @@
         "howWorks": "A blood sample is drawn (similar to a lab test), processed in a specialized centrifuge to concentrate platelets, and the resulting PRP is infiltrated with ultrasound-guided precision into the injured tissue. The entire process takes approximately 45-60 minutes."
       },
       "symptoms": {
-        "title": "Conditions We Treat",
+        "title": "Do you have any of these symptoms?",
         "list": [
           {
-            "name": "Shoulder, elbow and achilles tendinitis",
+            "name": "Shoulder, elbow or heel that hurts when playing sports",
+            "condition": "Sports tendinitis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
           },
           {
-            "name": "Lateral and medial epicondylitis",
+            "name": "Pain on the side of your elbow that won't go away",
+            "condition": "Lateral or medial epicondylitis",
             "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
           {
-            "name": "Mild to moderate osteoarthritis",
+            "name": "Joint that hurts and feels worn out",
+            "condition": "Mild to moderate osteoarthritis",
             "image": "/assets/images/symptoms/artrosis_3.jpeg"
           },
           {
-            "name": "Rotator cuff injuries",
+            "name": "Shoulder pain when sleeping on your side",
+            "condition": "Rotator cuff injury",
             "image": "/assets/images/symptoms/artrosis_1.jpeg"
           },
           {
-            "name": "Chronic ligament sprains",
+            "name": "Ankle or wrist that won't fully heal",
+            "condition": "Chronic ligament sprain",
             "image": "/assets/images/symptoms/artrosis_7.webp"
           },
           {
-            "name": "Persistent plantar fasciitis",
+            "name": "Intense heel pain when you get up",
+            "condition": "Persistent plantar fasciitis",
             "image": "/assets/images/symptoms/artrosis_6.jpeg"
           }
         ]

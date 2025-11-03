@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 interface Symptom {
   name: string;
+  condition: string;
   image: string;
 }
 
@@ -76,7 +77,7 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                       <MedicalIcon />
                     </div>
                   </div>
-                  {/* Texto */}
+                  {/* Título del síntoma */}
                   <h3 
                     className="text-sm font-bold leading-tight" 
                     style={{ color: '#182121' }}
@@ -84,6 +85,16 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                   >
                     {symptom.name}
                   </h3>
+                  {/* Condición médica */}
+                  <p 
+                    className="text-xs font-medium leading-tight px-2 py-1 rounded-lg"
+                    style={{ 
+                      color: '#6ba5a5',
+                      backgroundColor: 'rgba(107, 165, 165, 0.08)'
+                    }}
+                  >
+                    {symptom.condition}
+                  </p>
                 </div>
               </article>
             ))}
@@ -136,14 +147,24 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
 
                     {/* Texto inferior */}
                     <div>
+                      {/* Título del síntoma */}
                       <h3 
-                        className={`text-2xl md:text-3xl font-bold !text-white leading-tight mb-3 transition-all duration-300 ${
+                        className={`text-xl md:text-2xl font-bold !text-white leading-tight mb-2 transition-all duration-300 ${
                           hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-2'
                         }`}
                         itemProp="name"
                       >
                         {symptom.name}
                       </h3>
+                      
+                      {/* Condición médica */}
+                      <p 
+                        className={`text-sm font-semibold !text-white/90 mb-3 transition-all duration-300 ${
+                          hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-80'
+                        }`}
+                      >
+                        {symptom.condition}
+                      </p>
                       
                       {/* Check badge */}
                       <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-md transition-all duration-300 ${
