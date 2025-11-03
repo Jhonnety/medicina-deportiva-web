@@ -33,30 +33,12 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
     return symptomImages[index % symptomImages.length];
   };
 
-  // Iconos médicos mejorados
-  const getSymptomIcon = (index: number) => {
-    const icons = [
-      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-      </svg>,
-      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-      </svg>,
-      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-      </svg>,
-      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>,
-      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-      </svg>,
-      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>,
-    ];
-    return icons[index % icons.length];
-  };
+  // Ícono genérico médico para todos los síntomas
+  const MedicalIcon = () => (
+    <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  );
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-white">
@@ -108,7 +90,7 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                        style={{ backgroundColor: 'rgba(107, 165, 165, 0.12)' }}
                        aria-hidden="true">
                     <div className="w-6 h-6" style={{ color: '#6ba5a5' }}>
-                      {getSymptomIcon(index)}
+                      <MedicalIcon />
                     </div>
                   </div>
                   {/* Texto */}
@@ -119,14 +101,6 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                   >
                     {symptom}
                   </h3>
-                  {/* Check sutil */}
-                  <div className="w-5 h-5 rounded-full flex items-center justify-center"
-                       style={{ backgroundColor: 'rgba(107, 165, 165, 0.15)' }}
-                       aria-label={lang === 'es' ? 'Tratamiento disponible' : 'Treatment available'}>
-                    <svg className="w-3 h-3" style={{ color: '#6ba5a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
                 </div>
               </article>
             ))}
@@ -165,14 +139,14 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                   {/* Contenido */}
                   <div className="absolute inset-0 p-6 flex flex-col justify-between">
                     {/* Ícono superior */}
-                    <div className="flex justify-end">
+                     <div className="flex justify-end">
                       <div className={`w-12 h-12 rounded-2xl backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
                         hoveredIndex === index ? 'scale-110' : ''
                       }`}
                            style={{ backgroundColor: 'rgba(107, 165, 165, 0.9)' }}
                            aria-hidden="true">
                         <div className="w-7 h-7 text-white">
-                          {getSymptomIcon(index)}
+                          <MedicalIcon />
                         </div>
                       </div>
                     </div>
