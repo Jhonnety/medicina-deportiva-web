@@ -384,7 +384,7 @@ export default async function TreatmentPage({
         <TestimonialsSection dictionary={dictionary} locale={lang} />
 
         {/* FAQs Section */}
-        <TreatmentFAQs faqs={langContent.faqs} title={dictionary.faqs.title} />
+        <TreatmentFAQs faqs={langContent.faqs} title={dictionary.faqs.title} locale={lang} />
 
         {/* Contact Section */}
         <ContactSection dictionary={dictionary} locale={lang} />
