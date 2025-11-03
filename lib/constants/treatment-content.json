@@ -14,12 +14,30 @@
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Artrosis avanzada",
-          "Lesiones de cartílago articular",
-          "Tendinopatías crónicas",
-          "Lesiones meniscales",
-          "Daño del manguito rotador",
-          "Lesiones ligamentarias crónicas"
+          {
+            "name": "Artrosis avanzada",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          },
+          {
+            "name": "Lesiones de cartílago articular",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Tendinopatías crónicas",
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+          },
+          {
+            "name": "Lesiones meniscales",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Daño del manguito rotador",
+            "image": "/assets/images/symptoms/artrosis_7.webp"
+          },
+          {
+            "name": "Lesiones ligamentarias crónicas",
+            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+          }
         ]
       },
       "results": {
@@ -91,12 +109,30 @@
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Advanced osteoarthritis",
-          "Articular cartilage injuries",
-          "Chronic tendinopathies",
-          "Meniscal injuries",
-          "Rotator cuff damage",
-          "Chronic ligament injuries"
+          {
+            "name": "Advanced osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          },
+          {
+            "name": "Articular cartilage injuries",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Chronic tendinopathies",
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+          },
+          {
+            "name": "Meniscal injuries",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Rotator cuff damage",
+            "image": "/assets/images/symptoms/artrosis_7.webp"
+          },
+          {
+            "name": "Chronic ligament injuries",
+            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+          }
         ]
       },
       "results": {
@@ -157,41 +193,62 @@
   },
   "exosomas": {
     "es": {
-      "title": "Tratamiento exosomas",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento exosomas en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Terapia con Exosomas",
+      "subtitle": "Regeneración celular avanzada mediante vesículas extracelulares",
+      "metaTitle": "Terapia con Exosomas en Medellín | Medicina Regenerativa | Dr. James Madrid",
+      "metaDescription": "Tratamiento con exosomas para regeneración de tejidos, reducción de inflamación y reparación celular. Tecnología de vanguardia en medicina deportiva. +20 años de experiencia en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué son los Exosomas y cómo funcionan?",
+        "definition": "Los exosomas son vesículas extracelulares nanométricas (30-150nm) que contienen proteínas, ácidos nucleicos y factores de crecimiento. Son secretados naturalmente por las células y actúan como mensajeros intercelulares, facilitando la comunicación y regeneración celular.",
+        "physiologicalBenefit": "Los exosomas modulan la respuesta inflamatoria, estimulan la angiogénesis (formación de nuevos vasos sanguíneos), promueven la diferenciación celular y aceleran la reparación de tejidos dañados. Son especialmente efectivos en lesiones deportivas, artrosis y procesos degenerativos articulares.",
+        "howWorks": "Se aplican mediante infiltración guiada por ultrasonido en la zona afectada. Los exosomas liberan su contenido bioactivo directamente en el tejido lesionado, activando procesos de regeneración celular, reduciendo la inflamación y mejorando la función del tejido sin necesidad de células vivas."
       },
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Artrosis de rodilla, cadera y hombro",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          },
+          {
+            "name": "Tendinitis crónica y tendinosis",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Lesiones del cartílago articular",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Lesiones musculares recurrentes",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
+          },
+          {
+            "name": "Fascitis plantar crónica",
+            "image": "/assets/images/symptoms/fascitis_1.jpg"
+          },
+          {
+            "name": "Epicondilitis (codo de tenista)",
+            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+          }
         ]
       },
       "results": {
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
-            "percentage": "85%"
+            "title": "Reducción de Inflamación",
+            "description": "Disminución significativa del dolor y la inflamación en las primeras 2-4 semanas.",
+            "percentage": "92%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
+            "title": "Regeneración Tisular",
+            "description": "Mejora en la calidad del tejido y función articular en 4-8 semanas.",
+            "percentage": "88%"
           },
           {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
-            "percentage": "85%"
+            "title": "Recuperación Funcional",
+            "description": "Retorno a actividades normales con menor dolor y mayor movilidad.",
+            "percentage": "90%"
           }
         ]
       },
@@ -200,68 +257,93 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Evaluación Diagnóstica",
+            "description": "Valoración completa con ecografía musculoesquelética para identificar con precisión la lesión. Análisis de tu historial médico y determinación del protocolo de exosomas más adecuado para tu caso."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Aplicación Guiada",
+            "description": "Infiltración de exosomas guiada por ultrasonido para asegurar que el tratamiento llegue exactamente al tejido afectado. Procedimiento ambulatorio, mínimamente invasivo, con anestesia local."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Seguimiento y Rehabilitación",
+            "description": "Protocolo de rehabilitación personalizado con controles periódicos para monitorear la regeneración tisular. Evaluaciones ecográficas de seguimiento para documentar la mejoría."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿Cuántas sesiones de exosomas necesito?",
+          "a": "La mayoría de pacientes requieren 1-3 sesiones dependiendo de la severidad de la lesión. Las lesiones agudas pueden responder con una sola aplicación, mientras que condiciones crónicas o degenerativas pueden necesitar 2-3 sesiones espaciadas cada 4-6 semanas."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿Cuándo veré resultados con el tratamiento de exosomas?",
+          "a": "Los efectos antiinflamatorios se notan en las primeras 1-2 semanas. La regeneración tisular es progresiva, con mejoría funcional significativa entre las semanas 4-8. Los resultados óptimos se observan a los 3-6 meses."
+        },
+        {
+          "q": "¿Los exosomas son seguros? ¿Hay rechazo?",
+          "a": "Los exosomas son acelulares (no contienen células vivas), por lo que no hay riesgo de rechazo inmunológico. Son extremadamente seguros con mínimos efectos secundarios, generalmente limitados a leve molestia en el sitio de inyección."
         }
       ]
     },
     "en": {
-      "title": "exosomas Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "exosomas Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "Exosome Therapy",
+      "subtitle": "Advanced cellular regeneration through extracellular vesicles",
+      "metaTitle": "Exosome Therapy in Medellín | Regenerative Medicine | Dr. James Madrid",
+      "metaDescription": "Exosome treatment for tissue regeneration, inflammation reduction and cellular repair. Cutting-edge sports medicine technology. +20 years of experience in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What are Exosomes and how do they work?",
+        "definition": "Exosomes are nanometric extracellular vesicles (30-150nm) containing proteins, nucleic acids, and growth factors. They are naturally secreted by cells and act as intercellular messengers, facilitating communication and cellular regeneration.",
+        "physiologicalBenefit": "Exosomes modulate inflammatory response, stimulate angiogenesis (formation of new blood vessels), promote cellular differentiation, and accelerate repair of damaged tissues. They are especially effective in sports injuries, osteoarthritis, and degenerative joint processes.",
+        "howWorks": "Applied through ultrasound-guided infiltration into the affected area. Exosomes release their bioactive content directly into the injured tissue, activating cellular regeneration processes, reducing inflammation, and improving tissue function without the need for live cells."
       },
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Knee, hip and shoulder osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          },
+          {
+            "name": "Chronic tendinitis and tendinosis",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Articular cartilage injuries",
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+          },
+          {
+            "name": "Recurrent muscle injuries",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Chronic plantar fasciitis",
+            "image": "/assets/images/symptoms/artrosis_7.webp"
+          },
+          {
+            "name": "Epicondylitis (tennis elbow)",
+            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+          }
         ]
       },
       "results": {
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
-            "percentage": "85%"
+            "title": "Inflammation Reduction",
+            "description": "Significant decrease in pain and inflammation within the first 2-4 weeks.",
+            "percentage": "92%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
+            "title": "Tissue Regeneration",
+            "description": "Improvement in tissue quality and joint function within 4-8 weeks.",
+            "percentage": "88%"
           },
           {
-            "title": "Result 3",
-            "description": "Description 3",
-            "percentage": "85%"
+            "title": "Functional Recovery",
+            "description": "Return to normal activities with less pain and greater mobility.",
+            "percentage": "90%"
           }
         ]
       },
@@ -270,70 +352,95 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Diagnostic Evaluation",
+            "description": "Complete assessment with musculoskeletal ultrasound to precisely identify the injury. Analysis of your medical history and determination of the most appropriate exosome protocol for your case."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Guided Application",
+            "description": "Ultrasound-guided exosome infiltration to ensure treatment reaches exactly the affected tissue. Outpatient procedure, minimally invasive, with local anesthesia."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Follow-up and Rehabilitation",
+            "description": "Personalized rehabilitation protocol with periodic check-ups to monitor tissue regeneration. Follow-up ultrasound evaluations to document improvement."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "How many exosome sessions do I need?",
+          "a": "Most patients require 1-3 sessions depending on injury severity. Acute injuries may respond with a single application, while chronic or degenerative conditions may need 2-3 sessions spaced every 4-6 weeks."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "When will I see results from exosome treatment?",
+          "a": "Anti-inflammatory effects are noticeable within the first 1-2 weeks. Tissue regeneration is progressive, with significant functional improvement between weeks 4-8. Optimal results are observed at 3-6 months."
+        },
+        {
+          "q": "Are exosomes safe? Is there rejection?",
+          "a": "Exosomes are acellular (contain no live cells), so there is no risk of immune rejection. They are extremely safe with minimal side effects, generally limited to mild discomfort at the injection site."
         }
       ]
     }
   },
   "plasma-rico-plaquetas": {
     "es": {
-      "title": "Tratamiento plasma-rico-plaquetas",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento plasma-rico-plaquetas en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Plasma Rico en Plaquetas (PRP)",
+      "subtitle": "Tratamiento biológico autólogo para regeneración natural",
+      "metaTitle": "Plasma Rico en Plaquetas PRP en Medellín | Medicina Regenerativa | Dr. James Madrid",
+      "metaDescription": "Tratamiento PRP con tu propia sangre para lesiones deportivas, tendinitis, artrosis y dolor articular. Procedimiento ambulatorio, resultados naturales. +20 años de experiencia en Medellín.",
       "whatIs": {
-        "title": "¿Qué es este tratamiento?",
-        "definition": "Definición pendiente",
-        "physiologicalBenefit": "Beneficio pendiente",
-        "howWorks": "Funcionamiento pendiente"
+        "title": "¿Qué es el Plasma Rico en Plaquetas (PRP)?",
+        "definition": "El PRP es un concentrado autólogo de plaquetas obtenido de tu propia sangre que contiene factores de crecimiento y proteínas bioactivas. Mediante centrifugación, se separan y concentran las plaquetas (hasta 5-10 veces más que en sangre normal), creando un poderoso agente regenerativo natural.",
+        "physiologicalBenefit": "Las plaquetas concentradas liberan factores de crecimiento (PDGF, TGF-β, VEGF, EGF) que estimulan la proliferación celular, aceleran la cicatrización, mejoran la vascularización del tejido y modulan la respuesta inflamatoria. Es efectivo en tendinitis, lesiones ligamentarias, artrosis inicial y lesiones musculares.",
+        "howWorks": "Se extrae una muestra de tu sangre (similar a un análisis de laboratorio), se procesa en centrífuga especializada para concentrar las plaquetas, y el PRP resultante se infiltra con precisión guiada por ecografía en el tejido lesionado. Todo el proceso toma aproximadamente 45-60 minutos."
       },
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Tendinitis de hombro, codo y aquiles",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          },
+          {
+            "name": "Epicondilitis lateral y medial",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Artrosis leve a moderada",
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+          },
+          {
+            "name": "Lesiones del manguito rotador",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Esguinces ligamentarios crónicos",
+            "image": "/assets/images/symptoms/artrosis_7.webp"
+          },
+          {
+            "name": "Fascitis plantar persistente",
+            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+          }
         ]
       },
       "results": {
         "title": "Resultados que Puedes Esperar",
         "items": [
           {
-            "title": "Resultado 1",
-            "description": "Descripción 1",
+            "title": "Alivio del Dolor",
+            "description": "Reducción significativa del dolor entre 2-4 semanas después del tratamiento.",
+            "percentage": "87%"
+          },
+          {
+            "title": "Mejora Funcional",
+            "description": "Incremento en fuerza y rango de movilidad articular en 4-6 semanas.",
             "percentage": "85%"
           },
           {
-            "title": "Resultado 2",
-            "description": "Descripción 2",
-            "percentage": "85%"
-          },
-          {
-            "title": "Resultado 3",
-            "description": "Descripción 3",
-            "percentage": "85%"
+            "title": "Recuperación Sostenida",
+            "description": "Beneficios que se mantienen entre 6-12 meses con tratamiento adecuado.",
+            "percentage": "82%"
           }
         ]
       },
@@ -342,68 +449,93 @@
         "steps": [
           {
             "number": "01",
-            "title": "Paso 1",
-            "description": "Descripción paso 1"
+            "title": "Extracción y Preparación",
+            "description": "Extracción de sangre venosa (15-60 ml según el área a tratar). Procesamiento inmediato en centrífuga de grado médico para separar y concentrar las plaquetas. El proceso toma 15-20 minutos."
           },
           {
             "number": "02",
-            "title": "Paso 2",
-            "description": "Descripción paso 2"
+            "title": "Infiltración Ecoguiada",
+            "description": "Aplicación precisa del PRP guiada por ecografía directamente en el tejido lesionado. Se usa anestesia local para minimizar molestias. El procedimiento es ambulatorio y toma 10-15 minutos."
           },
           {
             "number": "03",
-            "title": "Paso 3",
-            "description": "Descripción paso 3"
+            "title": "Recuperación y Seguimiento",
+            "description": "Reposo relativo de 24-48 horas. Protocolo de rehabilitación gradual personalizado. Controles periódicos para evaluar evolución. Sesiones adicionales si son necesarias (generalmente 2-3 sesiones espaciadas 4-6 semanas)."
           }
         ]
       },
       "faqs": [
         {
-          "q": "¿Pregunta 1?",
-          "a": "Respuesta 1"
+          "q": "¿El tratamiento con PRP es doloroso?",
+          "a": "La extracción de sangre es similar a un análisis de laboratorio común. La infiltración se realiza con anestesia local, por lo que las molestias son mínimas. Después puede haber dolor leve que se maneja con hielo y analgésicos simples."
         },
         {
-          "q": "¿Pregunta 2?",
-          "a": "Respuesta 2"
+          "q": "¿Cuántas sesiones de PRP necesito?",
+          "a": "Depende de la lesión. Lesiones agudas pueden responder con 1-2 aplicaciones. Condiciones crónicas o artrosis generalmente requieren 2-3 sesiones espaciadas cada 4-6 semanas para resultados óptimos."
+        },
+        {
+          "q": "¿Qué cuidados debo tener después del PRP?",
+          "a": "Evita antiinflamatorios (ibuprofeno, naproxeno) durante 7-10 días ya que interfieren con el proceso de curación. Reposo relativo las primeras 24-48 horas. No aplicar hielo las primeras 24 horas. Puedes retomar actividad progresivamente según indicaciones médicas."
         }
       ]
     },
     "en": {
-      "title": "plasma-rico-plaquetas Treatment",
-      "subtitle": "Specialized treatment",
-      "metaTitle": "plasma-rico-plaquetas Treatment in Medellín | Dr. James Madrid",
-      "metaDescription": "Specialized sports medicine treatment",
+      "title": "Platelet-Rich Plasma (PRP)",
+      "subtitle": "Autologous biological treatment for natural regeneration",
+      "metaTitle": "Platelet-Rich Plasma PRP in Medellín | Regenerative Medicine | Dr. James Madrid",
+      "metaDescription": "PRP treatment using your own blood for sports injuries, tendinitis, osteoarthritis and joint pain. Outpatient procedure, natural results. +20 years of experience in Medellín.",
       "whatIs": {
-        "title": "What is this treatment?",
-        "definition": "Definition pending",
-        "physiologicalBenefit": "Benefit pending",
-        "howWorks": "How it works pending"
+        "title": "What is Platelet-Rich Plasma (PRP)?",
+        "definition": "PRP is an autologous platelet concentrate obtained from your own blood containing growth factors and bioactive proteins. Through centrifugation, platelets are separated and concentrated (up to 5-10 times more than in normal blood), creating a powerful natural regenerative agent.",
+        "physiologicalBenefit": "Concentrated platelets release growth factors (PDGF, TGF-β, VEGF, EGF) that stimulate cell proliferation, accelerate healing, improve tissue vascularization, and modulate inflammatory response. It's effective for tendinitis, ligament injuries, early osteoarthritis, and muscle injuries.",
+        "howWorks": "A blood sample is drawn (similar to a lab test), processed in a specialized centrifuge to concentrate platelets, and the resulting PRP is infiltrated with ultrasound-guided precision into the injured tissue. The entire process takes approximately 45-60 minutes."
       },
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Shoulder, elbow and achilles tendinitis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          },
+          {
+            "name": "Lateral and medial epicondylitis",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Mild to moderate osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+          },
+          {
+            "name": "Rotator cuff injuries",
+            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+          },
+          {
+            "name": "Chronic ligament sprains",
+            "image": "/assets/images/symptoms/artrosis_7.webp"
+          },
+          {
+            "name": "Persistent plantar fasciitis",
+            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+          }
         ]
       },
       "results": {
         "title": "Results You Can Expect",
         "items": [
           {
-            "title": "Result 1",
-            "description": "Description 1",
+            "title": "Pain Relief",
+            "description": "Significant pain reduction between 2-4 weeks after treatment.",
+            "percentage": "87%"
+          },
+          {
+            "title": "Functional Improvement",
+            "description": "Increased strength and joint mobility range within 4-6 weeks.",
             "percentage": "85%"
           },
           {
-            "title": "Result 2",
-            "description": "Description 2",
-            "percentage": "85%"
-          },
-          {
-            "title": "Result 3",
-            "description": "Description 3",
-            "percentage": "85%"
+            "title": "Sustained Recovery",
+            "description": "Benefits maintained between 6-12 months with appropriate treatment.",
+            "percentage": "82%"
           }
         ]
       },
@@ -412,39 +544,43 @@
         "steps": [
           {
             "number": "01",
-            "title": "Step 1",
-            "description": "Description step 1"
+            "title": "Extraction and Preparation",
+            "description": "Venous blood extraction (15-60 ml depending on treatment area). Immediate processing in medical-grade centrifuge to separate and concentrate platelets. Process takes 15-20 minutes."
           },
           {
             "number": "02",
-            "title": "Step 2",
-            "description": "Description step 2"
+            "title": "Ultrasound-Guided Infiltration",
+            "description": "Precise PRP application guided by ultrasound directly into injured tissue. Local anesthesia used to minimize discomfort. Outpatient procedure takes 10-15 minutes."
           },
           {
             "number": "03",
-            "title": "Step 3",
-            "description": "Description step 3"
+            "title": "Recovery and Follow-up",
+            "description": "Relative rest for 24-48 hours. Personalized gradual rehabilitation protocol. Periodic check-ups to evaluate progress. Additional sessions if necessary (usually 2-3 sessions spaced 4-6 weeks)."
           }
         ]
       },
       "faqs": [
         {
-          "q": "Question 1?",
-          "a": "Answer 1"
+          "q": "Is PRP treatment painful?",
+          "a": "Blood extraction is similar to a common lab test. Infiltration is performed with local anesthesia, so discomfort is minimal. Mild pain may occur afterward, managed with ice and simple analgesics."
         },
         {
-          "q": "Question 2?",
-          "a": "Answer 2"
+          "q": "How many PRP sessions do I need?",
+          "a": "Depends on the injury. Acute injuries may respond with 1-2 applications. Chronic conditions or osteoarthritis generally require 2-3 sessions spaced every 4-6 weeks for optimal results."
+        },
+        {
+          "q": "What care should I take after PRP?",
+          "a": "Avoid anti-inflammatories (ibuprofen, naproxen) for 7-10 days as they interfere with healing. Relative rest for first 24-48 hours. Don't apply ice for first 24 hours. You can progressively resume activity according to medical indications."
         }
       ]
     }
   },
   "acido-hialuronico": {
     "es": {
-      "title": "Tratamiento acido-hialuronico",
-      "subtitle": "Tratamiento especializado",
-      "metaTitle": "Tratamiento acido-hialuronico en Medellín | Dr. James Madrid",
-      "metaDescription": "Tratamiento especializado en medicina deportiva",
+      "title": "Ácido Hialurónico Articular",
+      "subtitle": "Viscosuplementación para lubricación y protección articular",
+      "metaTitle": "Ácido Hialurónico para Artrosis en Medellín | Dr. James Madrid",
+      "metaDescription": "Infiltración de ácido hialurónico para artrosis de rodilla, cadera y hombro. Alivia dolor, mejora movilidad y protege el cartílago. Tratamiento ambulatorio en Medellín.",
       "whatIs": {
         "title": "¿Qué es este tratamiento?",
         "definition": "Definición pendiente",
@@ -454,9 +590,18 @@
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Condición 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condición 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condición 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -524,9 +669,18 @@
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Condition 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condition 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condition 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -596,9 +750,18 @@
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Condición 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condición 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condición 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -666,9 +829,18 @@
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Condition 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condition 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condition 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -738,9 +910,18 @@
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Condición 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condición 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condición 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -808,9 +989,18 @@
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Condition 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condition 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condition 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -880,9 +1070,18 @@
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Condición 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condición 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condición 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -950,9 +1149,18 @@
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Condition 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condition 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condition 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -1022,9 +1230,18 @@
       "symptoms": {
         "title": "Condiciones que Tratamos",
         "list": [
-          "Condición 1",
-          "Condición 2",
-          "Condición 3"
+          {
+            "name": "Condición 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condición 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condición 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {
@@ -1092,9 +1309,18 @@
       "symptoms": {
         "title": "Conditions We Treat",
         "list": [
-          "Condition 1",
-          "Condition 2",
-          "Condition 3"
+          {
+            "name": "Condition 1",
+            "image": "/assets/images/artrosis_1.jpeg"
+          },
+          {
+            "name": "Condition 2",
+            "image": "/assets/images/artrosis_2.jpeg"
+          },
+          {
+            "name": "Condition 3",
+            "image": "/assets/images/artrosis_3.jpeg"
+          }
         ]
       },
       "results": {

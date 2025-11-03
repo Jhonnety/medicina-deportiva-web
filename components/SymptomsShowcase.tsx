@@ -3,35 +3,18 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-// Importar imágenes de ejemplo
-import artrosis1 from '@/assets/images/artrosis_1.jpeg';
-import artrosis2 from '@/assets/images/artrosis_2.jpeg';
-import artrosis3 from '@/assets/images/artrosis_3.jpeg';
-import proloterapia1 from '@/assets/images/proloterapia_1.jpeg';
-import prp1 from '@/assets/images/prp_1.jpeg';
-import diagnostico1 from '@/assets/images/diagnostico_ecoguiado_1.png';
+interface Symptom {
+  name: string;
+  image: string;
+}
 
 interface SymptomsShowcaseProps {
-  symptoms: string[];
+  symptoms: Symptom[];
   lang: string;
 }
 
 export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcaseProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
-  // Mapeo de síntomas a imágenes de ejemplo
-  const symptomImages = [
-    artrosis1,
-    artrosis2,
-    artrosis3,
-    proloterapia1,
-    prp1,
-    diagnostico1,
-  ];
-
-  const getSymptomImage = (index: number) => {
-    return symptomImages[index % symptomImages.length];
-  };
 
   // Ícono genérico médico para todos los síntomas
   const MedicalIcon = () => (
@@ -99,7 +82,7 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                     style={{ color: '#182121' }}
                     itemProp="name"
                   >
-                    {symptom}
+                    {symptom.name}
                   </h3>
                 </div>
               </article>
@@ -120,8 +103,8 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
                   {/* Imagen de fondo - Lazy loading */}
                   <Image
-                    src={getSymptomImage(index)}
-                    alt={`${symptom} - ${lang === 'es' ? 'Tratamiento disponible con Dr. James Madrid' : 'Treatment available with Dr. James Madrid'}`}
+                    src={symptom.image}
+                    alt={`${symptom.name} - ${lang === 'es' ? 'Tratamiento disponible con Dr. James Madrid' : 'Treatment available with Dr. James Madrid'}`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                     sizes="(max-width: 768px) 50vw, (max-width: 1024px) 50vw, 33vw"
@@ -159,7 +142,7 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
                         }`}
                         itemProp="name"
                       >
-                        {symptom}
+                        {symptom.name}
                       </h3>
                       
                       {/* Check badge */}
