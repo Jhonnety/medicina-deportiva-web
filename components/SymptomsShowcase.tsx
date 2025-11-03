@@ -1,0 +1,232 @@
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+
+// Importar imágenes de ejemplo
+import artrosis1 from '@/assets/images/artrosis_1.jpeg';
+import artrosis2 from '@/assets/images/artrosis_2.jpeg';
+import artrosis3 from '@/assets/images/artrosis_3.jpeg';
+import proloterapia1 from '@/assets/images/proloterapia_1.jpeg';
+import prp1 from '@/assets/images/prp_1.jpeg';
+import diagnostico1 from '@/assets/images/diagnostico_ecoguiado_1.png';
+
+interface SymptomsShowcaseProps {
+  symptoms: string[];
+  lang: string;
+}
+
+export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcaseProps) {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  // Mapeo de síntomas a imágenes de ejemplo
+  const symptomImages = [
+    artrosis1,
+    artrosis2,
+    artrosis3,
+    proloterapia1,
+    prp1,
+    diagnostico1,
+  ];
+
+  const getSymptomImage = (index: number) => {
+    return symptomImages[index % symptomImages.length];
+  };
+
+  // Iconos médicos mejorados
+  const getSymptomIcon = (index: number) => {
+    const icons = [
+      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+      </svg>,
+      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+      </svg>,
+      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+      </svg>,
+      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>,
+      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+      </svg>,
+      <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" key={index}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>,
+    ];
+    return icons[index % icons.length];
+  };
+
+  return (
+    <section className="relative py-20 md:py-28 overflow-hidden bg-white">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        {/* Header */}
+        <div className="max-w-4xl mx-auto text-center mb-16">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full mb-6"
+               style={{ backgroundColor: 'rgba(107, 165, 165, 0.1)', border: '2px solid rgba(107, 165, 165, 0.2)' }}>
+            <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="text-sm font-bold" style={{ color: '#6ba5a5' }}>
+              {lang === 'es' ? 'SÍNTOMAS TRATABLES' : 'TREATABLE SYMPTOMS'}
+            </span>
+          </div>
+
+          {/* Title */}
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6" style={{ color: '#182121' }}>
+            {lang === 'es' ? '¿Presentas alguno de ' : 'Do you have any of '}
+            <span style={{ color: '#6ba5a5' }}>
+              {lang === 'es' ? 'estos síntomas' : 'these symptoms'}
+            </span>
+            ?
+          </h2>
+          
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+            {lang === 'es' 
+              ? 'Este tratamiento está diseñado específicamente para aliviar estos síntomas'
+              : 'This treatment is specifically designed to relieve these symptoms'}
+          </p>
+        </div>
+
+        {/* Grid de Síntomas - Responsive */}
+        <div className="max-w-7xl mx-auto">
+          {/* Mobile: Grid compacto 2 columnas - Solo iconos */}
+          <div className="grid grid-cols-2 gap-3 md:hidden">
+            {symptoms.map((symptom, index) => (
+              <article
+                key={index}
+                className="bg-white rounded-2xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+                itemScope
+                itemType="https://schema.org/MedicalCondition"
+              >
+                <div className="flex flex-col items-center text-center gap-2.5">
+                  {/* Ícono */}
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
+                       style={{ backgroundColor: 'rgba(107, 165, 165, 0.12)' }}
+                       aria-hidden="true">
+                    <div className="w-6 h-6" style={{ color: '#6ba5a5' }}>
+                      {getSymptomIcon(index)}
+                    </div>
+                  </div>
+                  {/* Texto */}
+                  <h3 
+                    className="text-sm font-bold leading-tight" 
+                    style={{ color: '#182121' }}
+                    itemProp="name"
+                  >
+                    {symptom}
+                  </h3>
+                  {/* Check sutil */}
+                  <div className="w-5 h-5 rounded-full flex items-center justify-center"
+                       style={{ backgroundColor: 'rgba(107, 165, 165, 0.15)' }}
+                       aria-label={lang === 'es' ? 'Tratamiento disponible' : 'Treatment available'}>
+                    <svg className="w-3 h-3" style={{ color: '#6ba5a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* Tablet y Desktop: Grid con imágenes */}
+          <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {symptoms.map((symptom, index) => (
+              <article
+                key={index}
+                className="group relative"
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                itemScope
+                itemType="https://schema.org/MedicalCondition"
+              >
+                <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+                  {/* Imagen de fondo - Lazy loading */}
+                  <Image
+                    src={getSymptomImage(index)}
+                    alt={`${symptom} - ${lang === 'es' ? 'Tratamiento disponible con Dr. James Madrid' : 'Treatment available with Dr. James Madrid'}`}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 50vw, 33vw"
+                    loading={index < 3 ? 'eager' : 'lazy'}
+                    quality={85}
+                  />
+                  
+                  {/* Overlay degradado */}
+                  <div className={`absolute inset-0 transition-all duration-500 ${
+                    hoveredIndex === index 
+                      ? 'bg-gradient-to-t from-black/90 via-black/60 to-black/30' 
+                      : 'bg-gradient-to-t from-black/70 via-black/40 to-transparent'
+                  }`}></div>
+                  
+                  {/* Contenido */}
+                  <div className="absolute inset-0 p-6 flex flex-col justify-between">
+                    {/* Ícono superior */}
+                    <div className="flex justify-end">
+                      <div className={`w-12 h-12 rounded-2xl backdrop-blur-md flex items-center justify-center transition-all duration-300 ${
+                        hoveredIndex === index ? 'scale-110' : ''
+                      }`}
+                           style={{ backgroundColor: 'rgba(107, 165, 165, 0.9)' }}
+                           aria-hidden="true">
+                        <div className="w-7 h-7 text-white">
+                          {getSymptomIcon(index)}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Texto inferior */}
+                    <div>
+                      <h3 
+                        className={`text-2xl md:text-3xl font-bold !text-white leading-tight mb-3 transition-all duration-300 ${
+                          hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-2'
+                        }`}
+                        itemProp="name"
+                      >
+                        {symptom}
+                      </h3>
+                      
+                      {/* Check badge */}
+                      <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-md transition-all duration-300 ${
+                        hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+                      }`}
+                           style={{ backgroundColor: 'rgba(255, 255, 255, 0.95)' }}>
+                        <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-sm font-bold" style={{ color: '#182121' }}>
+                          {lang === 'es' ? 'Tratamiento disponible' : 'Treatment available'}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA Footer */}
+        <div className="mt-16 text-center">
+          <a
+            href="https://wa.me/573044386208"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+            style={{ backgroundColor: '#6ba5a5' }}
+            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}
+            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6ba5a5'}
+          >
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            <span>{lang === 'es' ? 'Consultar mi caso' : 'Consult my case'}</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
