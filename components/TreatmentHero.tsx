@@ -142,7 +142,7 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
       </div>
 
       {/* Enlaces rápidos de navegación - ancho completo debajo del grid */}
-        <div className="flex flex-wrap items-center justify-center text-center gap-4 sm:gap-6 mt-10 pt-4 border-t border-gray-200">
+        <div className="flex flex-wrap items-center justify-start text-center gap-4 sm:gap-6 mt-10 ">
           <button
             onClick={() => scrollToSection('what-is-section')}
             className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
