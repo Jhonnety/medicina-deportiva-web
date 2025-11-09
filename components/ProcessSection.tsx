@@ -100,7 +100,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-start px-4 md:!px-0">
           
           {/* Left Column - Steps */}
           <div className="space-y-12">
