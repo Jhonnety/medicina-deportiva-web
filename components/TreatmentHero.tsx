@@ -114,7 +114,7 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
                 href="https://wa.me/573044386208"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-bold text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="group inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 !bg-[#6ba5a5]"
                 style={{ backgroundColor: '#25D366' }}
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -124,70 +124,71 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
               </a>
             </div>
 
-            {/* Enlaces rápidos de navegación */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-gray-200">
-              <button
-                onClick={() => scrollToSection('what-is-section')}
-                className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
-                style={{ color: '#6ba5a5' }}
-              >
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-                <span className="group-hover:underline">
-                  {lang === 'es' 
-                    ? `¿Qué ${langContent.title.toLowerCase().includes('células') || langContent.title.toLowerCase().includes('cells') ? 'son' : 'es'} ${langContent.title.split('|')[0].trim().toLowerCase()}?`
-                    : `What ${langContent.title.toLowerCase().includes('cells') ? 'are' : 'is'} ${langContent.title.split('|')[0].trim().toLowerCase()}?`
-                  }
-                </span>
-              </button>
-              
-              <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
-              
-              <button
-                onClick={() => scrollToSection('symptoms-section')}
-                className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
-                style={{ color: '#6ba5a5' }}
-              >
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-                <span className="group-hover:underline">
-                  {lang === 'es' ? 'Ver síntomas tratables' : 'View treatable symptoms'}
-                </span>
-              </button>
-              
-              <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
-              
-              <button
-                onClick={() => scrollToSection('results-section')}
-                className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
-                style={{ color: '#6ba5a5' }}
-              >
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-                <span className="group-hover:underline">
-                  {lang === 'es' ? 'Resultados esperados' : 'Expected results'}
-                </span>
-              </button>
-            </div>
-          </div>
-
-          {/* Columna Derecha - Imagen Principal */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-            <Image
-              src={treatment.image}
-              alt={`${langContent.title} - Dr. James Madrid, Medicina Deportiva Medellín`}
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            {/* Overlay sutil */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
-          </div>
         </div>
+
+        {/* Columna Derecha - Imagen Principal */}
+        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+          <Image
+            src={treatment.image}
+            alt={`${langContent.title} - Dr. James Madrid, Medicina Deportiva Medellín`}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+          />
+          {/* Overlay sutil */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+        </div>
+      </div>
+
+      {/* Enlaces rápidos de navegación - ancho completo debajo del grid */}
+        <div className="flex flex-wrap items-center justify-center text-center gap-4 sm:gap-6 mt-10 pt-4 border-t border-gray-200">
+          <button
+            onClick={() => scrollToSection('what-is-section')}
+            className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
+            style={{ color: '#6ba5a5' }}
+          >
+            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            <span className="group-hover:underline">
+              {lang === 'es' 
+                ? `¿Qué ${langContent.title.toLowerCase().includes('células') || langContent.title.toLowerCase().includes('cells') ? 'son' : 'es'} ${langContent.title.split('|')[0].trim().toLowerCase()}?`
+                : `What ${langContent.title.toLowerCase().includes('cells') ? 'are' : 'is'} ${langContent.title.split('|')[0].trim().toLowerCase()}?`}
+            </span>
+          </button>
+          
+          <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
+          
+          <button
+            onClick={() => scrollToSection('symptoms-section')}
+            className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
+            style={{ color: '#6ba5a5' }}
+          >
+            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            <span className="group-hover:underline">
+              {lang === 'es' ? 'Ver síntomas tratables' : 'View treatable symptoms'}
+            </span>
+          </button>
+          
+          <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
+          
+          <button
+            onClick={() => scrollToSection('results-section')}
+            className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
+            style={{ color: '#6ba5a5' }}
+          >
+            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            <span className="group-hover:underline">
+              {lang === 'es' ? 'Resultados esperados' : 'Expected results'}
+            </span>
+          </button>
+        </div>
+
       </div>
     </section>
   );
