@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
-import teamMobile from '@/assets/images/team_4.png';
-import teamDesktop from '@/assets/images/team_5.png';
+import teamMobile from '@/assets/images/team_mobile_1.png';
+import teamDesktop from '@/assets/images/team_desktop_1.png';
 
 interface HeroSectionProps {
   dictionary: Dictionary;
