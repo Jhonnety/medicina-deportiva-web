@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import type { Dictionary } from '@/lib/types';
 
 interface HeaderProps {
@@ -14,16 +14,43 @@ interface HeaderProps {
 export default function Header({ dictionary, locale }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   const navLinks = [
-    { href: `/${locale}#tratamientos`, label: dictionary.nav.treatments },
-    { href: `/${locale}#sobre-mi`, label: dictionary.nav.about },
-    { href: `/${locale}#testimonios`, label: dictionary.nav.testimonials },
-    { href: `/${locale}#contacto`, label: dictionary.nav.contact },
+    { href: `/${locale}#tratamientos`, label: dictionary.nav.treatments, section: 'tratamientos' },
+    { href: `/${locale}#sobre-mi`, label: dictionary.nav.about, section: 'sobre-mi' },
+    { href: `/${locale}#testimonios`, label: dictionary.nav.testimonials, section: 'testimonios' },
+    { href: `/${locale}#contacto`, label: dictionary.nav.contact, section: 'contacto' },
   ];
 
   const otherLocale = locale === 'es' ? 'en' : 'es';
   const currentPath = pathname.replace(`/${locale}`, '');
+  
+  // Check if we're on the home page
+  const isHomePage = pathname === `/${locale}` || pathname === `/${locale}/`;
+
+  // Handle navigation to sections
+  const handleSectionClick = (e: React.MouseEvent<HTMLAnchorElement>, section: string) => {
+    if (isHomePage) {
+      // We're on the home page, just scroll to the section
+      e.preventDefault();
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // We're on another page, navigate to home first then scroll
+      e.preventDefault();
+      router.push(`/${locale}`);
+      // Wait for navigation and then scroll
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-md shadow-sm">
@@ -47,7 +74,8 @@ export default function Header({ dictionary, locale }: HeaderProps) {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary font-medium transition-all duration-200 relative group"
+                onClick={(e) => handleSectionClick(e, link.section)}
+                className="text-gray-700 hover:text-primary font-medium transition-all duration-200 relative group cursor-pointer"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
@@ -65,7 +93,8 @@ export default function Header({ dictionary, locale }: HeaderProps) {
             {/* CTA Button */}
             <a
               href={`/${locale}#contacto`}
-              className="btn btn-primary px-6 py-2.5"
+              onClick={(e) => handleSectionClick(e, 'contacto')}
+              className="btn btn-primary px-6 py-2.5 cursor-pointer"
             >
               {dictionary.nav.schedule}
             </a>
@@ -110,8 +139,11 @@ export default function Header({ dictionary, locale }: HeaderProps) {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  className="text-gray-700 hover:text-primary font-medium transition-colors py-2 cursor-pointer"
+                  onClick={(e) => {
+                    handleSectionClick(e, link.section);
+                    setIsMenuOpen(false);
+                  }}
                 >
                   {link.label}
                 </a>
@@ -126,8 +158,11 @@ export default function Header({ dictionary, locale }: HeaderProps) {
 
               <a
                 href={`/${locale}#contacto`}
-                className="btn btn-primary text-center"
-                onClick={() => setIsMenuOpen(false)}
+                className="btn btn-primary text-center cursor-pointer"
+                onClick={(e) => {
+                  handleSectionClick(e, 'contacto');
+                  setIsMenuOpen(false);
+                }}
               >
                 {dictionary.nav.schedule}
               </a>

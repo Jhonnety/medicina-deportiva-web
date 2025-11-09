@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
-import team2 from '@/assets/images/team_5.png';
+import teamMobile from '@/assets/images/team_4.png';
+import teamDesktop from '@/assets/images/team_5.png';
 
 interface HeroSectionProps {
   dictionary: Dictionary;
@@ -23,7 +24,7 @@ export default function HeroSection({ dictionary, locale }: HeroSectionProps) {
       </div>
       
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center lg:items-end">
           
           {/* Content Column */}
           <div className="flex flex-col justify-center pb-12 lg:pb-20 order-2 lg:order-1">
@@ -68,6 +69,21 @@ export default function HeroSection({ dictionary, locale }: HeroSectionProps) {
                 : 'Over 20 years helping patients treat arthritis, sports injuries and chronic pain with regenerative therapies.'}
             </p>
 
+            {/* Imagen Mobile - team_4.png - Solo visible en mobile */}
+            <div className="w-full md:hidden mb-10">
+              <div className="relative w-full max-w-lg mx-auto">
+                <Image
+                  src={teamMobile}
+                  alt="Dr. James Madrid y Equipo Médico - Medicina Deportiva"
+                  width={800}
+                  height={1000}
+                  priority
+                  quality={95}
+                  className="w-full h-auto drop-shadow-2xl rounded-2xl"
+                />
+              </div>
+            </div>
+
             {/* CTA Buttons mejorados */}
             <div className="flex flex-col sm:flex-row gap-5 mb-12">
               <a
@@ -107,8 +123,8 @@ export default function HeroSection({ dictionary, locale }: HeroSectionProps) {
               </a>
             </div>
 
-            {/* Stats mejoradas */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-10" style={{ borderTop: '2px solid rgba(107, 165, 165, 0.2)' }}>
+            {/* Stats mejoradas - Solo Desktop */}
+            <div className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-8 pt-10" style={{ borderTop: '2px solid rgba(107, 165, 165, 0.2)' }}>
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg"
                      style={{ backgroundColor: 'rgba(107, 165, 165, 0.1)' }}>
@@ -156,11 +172,12 @@ export default function HeroSection({ dictionary, locale }: HeroSectionProps) {
             </div>
           </div>
 
-          {/* Image Column - Aligned to bottom */}
-          <div className="relative flex items-end justify-center lg:justify-end order-1 lg:order-2 h-full">
+          {/* Image Column - Aligned to bottom - Solo Desktop */}
+          <div className="relative hidden md:flex items-end justify-center lg:justify-end order-1 lg:order-2 w-full">
+            {/* Imagen Desktop - team_5.png */}
             <div className="relative w-full max-w-2xl">
               <Image
-                src={team2}
+                src={teamDesktop}
                 alt="Dr. James Madrid y Equipo Médico - Medicina Deportiva"
                 width={800}
                 height={1000}

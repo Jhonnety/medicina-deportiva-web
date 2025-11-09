@@ -4,6 +4,7 @@ import { getDictionary } from '@/lib/i18n/dictionaries';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
+import TrustBarMobile from '@/components/TrustBarMobile';
 import ProcessSection from '@/components/ProcessSection';
 import TreatmentsSection from '@/components/TreatmentsSection';
 import AboutSection from '@/components/AboutSection';
@@ -161,6 +162,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
       
       <main>
         <HeroSection dictionary={dictionary} locale={lang} />
+        <TrustBarMobile locale={lang} />
         <ProcessSection locale={lang} />
         <TreatmentsSection dictionary={dictionary} locale={lang} />
         <AboutSection locale={lang} />
