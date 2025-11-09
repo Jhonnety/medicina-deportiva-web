@@ -62,7 +62,7 @@ export default function Footer({ dictionary, locale }: FooterProps) {
                 className="h-16 w-auto brightness-0 invert"
               />
             </Link>
-            <p className="text-gray-400 text-lg mb-6 leading-relaxed">
+            <p className="!text-white text-lg mb-6 leading-relaxed">
               {dictionary.footer.description}
             </p>
             <div className="flex space-x-4">
@@ -72,7 +72,7 @@ export default function Footer({ dictionary, locale }: FooterProps) {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-white/10 hover:bg-primary rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                  className="w-12 h-12 bg-white/10 hover:bg-primary rounded-xl flex items-center justify-center !text-white hover:text-gray-400 transition-all duration-300 hover:scale-110"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -83,15 +83,15 @@ export default function Footer({ dictionary, locale }: FooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6">{dictionary.footer.quickLinks}</h3>
+            <h3 className="text-xl font-bold mb-6 !text-white">{dictionary.footer.quickLinks}</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-primary transition-colors text-lg flex items-center group"
+                    className="!text-white hover:!text-white transition-colors text-lg flex items-center group"
                   >
-                    <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="!text-white w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                     {link.label}
@@ -103,22 +103,22 @@ export default function Footer({ dictionary, locale }: FooterProps) {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6">{dictionary.nav.contact}</h3>
-            <ul className="space-y-4 text-gray-400">
+            <h3 className="text-xl font-bold mb-6 !text-white">{dictionary.nav.contact}</h3>
+            <ul className="space-y-4 !text-white">
               <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 !text-white flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 <span>+57 304 438 6208</span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 !text-white flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <span>contacto@drjamesmadrid.com</span>
               </li>
               <li className="flex items-start space-x-3">
-                <svg className="w-5 h-5 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 !text-white flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -130,10 +130,10 @@ export default function Footer({ dictionary, locale }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-gray-400 text-center md:text-left">
+          <p className="!text-white text-center md:text-left">
             © {currentYear} Dr. James Madrid. {dictionary.footer.rights}
           </p>
-          <div className="flex items-center space-x-2 text-gray-400">
+          <div className="flex items-center space-x-2 !text-white">
             <span>Made with</span>
             <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
