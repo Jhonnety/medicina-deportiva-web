@@ -245,10 +245,12 @@ export default async function TreatmentPage({
         </section>
 
         {/* Symptoms Showcase */}
-        <SymptomsShowcase symptoms={langContent.symptoms.list} lang={lang} />
+        <div id="symptoms-section">
+          <SymptomsShowcase symptoms={langContent.symptoms.list} lang={lang} />
+        </div>
 
         {/* Results Section */}
-        <section className="relative section-padding overflow-hidden"
+        <section id="results-section" className="relative section-padding overflow-hidden"
                  style={{ 
                    background: 'linear-gradient(135deg, #283838 0%, #1a2626 50%, #283838 100%)'
                  }}>
