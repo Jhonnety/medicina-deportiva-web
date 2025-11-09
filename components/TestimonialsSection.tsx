@@ -29,6 +29,7 @@ type TestimonialVideo = BaseTestimonial & {
   kind: 'video';
   src: string;
   poster?: string;
+  instagramUrl?: string;
 };
 
 type TestimonialText = BaseTestimonial & {
@@ -40,17 +41,17 @@ type TestimonialText = BaseTestimonial & {
 type Testimonial = TestimonialVideo | TestimonialText;
 
 const VIDEOS: TestimonialVideo[] = [
-  { id: 1, kind: 'video', name: 'Simon Gallego', condition: 'Lesión deportiva', rating: 5, src: '/assets/videos/testimonial_simon_1.mp4', poster: '/assets/images/testimonial_simon_1.jpg', language: 'es', typeLabel: 'Lesión hombro' },
-  { id: 2, kind: 'video', name: 'Beatriz', condition: 'Plasma rico en plaquetas', rating: 5, src: '/assets/videos/testimonial_beatriz_1.mp4', poster: '/assets/images/testimonial_beatriz_1.jpg', language: 'es', typeLabel: 'Dolor rodilla' },
-  { id: 3, kind: 'video', name: 'Lina', condition: 'PRP y suero terapia', rating: 5, src: '/assets/videos/testimonial_lina_1.mp4', poster: '/assets/images/testimonial_lina_1.jpg', language: 'es', typeLabel: 'Dolor arquiculaciones' },
-  { id: 4, kind: 'video', name: 'Emmanuel Mendoza', condition: 'Acido hialurónico, PRP y bioregulador', rating: 5, src: '/assets/videos/testimonial_buffalo_1.mp4', poster: '/assets/images/testimonial_buffalo_1.jpg', language: 'es', typeLabel: 'Dolor hombro - Deportista de alto rendimiento' },
-  { id: 5, kind: 'video', name: 'Camila', condition: 'Intervenciones varias', rating: 5, src: '/assets/videos/testimonial_camila_1.mp4', poster: '/assets/images/testimonial_camila_1.jpg', language: 'es', typeLabel: 'Boxeadora de alto rendimiento' },
-  { id: 6, kind: 'video', name: 'Jane', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_jane_1.mp4', poster: '/assets/images/testimonial_jane_1.jpg', language: 'en', typeLabel: 'Pain in several joints' },
-  { id: 7, kind: 'video', name: 'Bruce', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_bruce_1.mp4', poster: '/assets/images/testimonial_bruce_1.jpg', language: 'en', typeLabel: 'Osteoarthritis - Knee pain' },
-  { id: 8, kind: 'video', name: 'Martin Higuita', condition: 'Plasma rico en plaquetas y exosomas', rating: 5, src: '/assets/videos/testimonial_martin_1.mp4', poster: '/assets/images/testimonial_martin_1.jpg', language: 'es', typeLabel: 'Boxeador - Lesión ligamento' },
-  { id: 9, kind: 'video', name: 'Christopher', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_cristofer_1.mp4', poster: '/assets/images/testimonial_cristofer_1.jpg', language: 'en', typeLabel: 'Right sacroiliitis' },
-  { id: 10, kind: 'video', name: 'John', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_paciemte_eeuu_1.mp4', poster: '/assets/images/testimonial_paciemte_eeuu_1.jpg', language: 'en', typeLabel: 'Pain in several joints' },
-  { id: 11, kind: 'video', name: 'Nalia', condition: 'Celulas madre y plasma rico en plaquetas', rating: 5, src: '/assets/videos/testimonial_natalia_1.mp4', poster: '/assets/images/testimonial_natalia_1.jpg', language: 'es', typeLabel: 'Dolor en la rodilla' },
+  { id: 1, kind: 'video', name: 'Simon Gallego', condition: 'Lesión deportiva', rating: 5, src: '/assets/videos/testimonial_simon_1.mp4', poster: '/assets/images/testimonial_simon_1.jpg', language: 'es', typeLabel: 'Lesión hombro', instagramUrl: 'https://www.instagram.com/p/DEV15UfxIe-' },
+  { id: 2, kind: 'video', name: 'Beatriz', condition: 'Plasma rico en plaquetas', rating: 5, src: '/assets/videos/testimonial_beatriz_1.mp4', poster: '/assets/images/testimonial_beatriz_1.jpg', language: 'es', typeLabel: 'Dolor rodilla', instagramUrl: 'https://www.instagram.com/p/DEx_3fRxf8o' },
+  { id: 3, kind: 'video', name: 'Lina', condition: 'PRP y suero terapia', rating: 5, src: '/assets/videos/testimonial_lina_1.mp4', poster: '/assets/images/testimonial_lina_1.jpg', language: 'es', typeLabel: 'Dolor arquiculaciones', instagramUrl: 'https://www.instagram.com/p/DFGjDNtxlHC' },
+  { id: 4, kind: 'video', name: 'Emmanuel Mendoza', condition: 'Acido hialurónico, PRP y bioregulador', rating: 5, src: '/assets/videos/testimonial_buffalo_1.mp4', poster: '/assets/images/testimonial_buffalo_1.jpg', language: 'es', typeLabel: 'Dolor hombro - Deportista de alto rendimiento', instagramUrl: 'https://www.instagram.com/p/DHW-2iDxzqD' },
+  { id: 5, kind: 'video', name: 'Camila', condition: 'Intervenciones varias', rating: 5, src: '/assets/videos/testimonial_camila_1.mp4', poster: '/assets/images/testimonial_camila_1.jpg', language: 'es', typeLabel: 'Boxeadora de alto rendimiento', instagramUrl: 'https://www.instagram.com/p/DOw5KjmkW2k' },
+  { id: 6, kind: 'video', name: 'Jane', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_jane_1.mp4', poster: '/assets/images/testimonial_jane_1.jpg', language: 'en', typeLabel: 'Pain in several joints', instagramUrl: 'https://www.instagram.com/p/Czbzjy6xZ2Z' },
+  { id: 7, kind: 'video', name: 'Bruce', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_bruce_1.mp4', poster: '/assets/images/testimonial_bruce_1.jpg', language: 'en', typeLabel: 'Osteoarthritis - Knee pain', instagramUrl: 'https://www.instagram.com/p/CzpCWVTxgUH' },
+  { id: 8, kind: 'video', name: 'Martin Higuita', condition: 'Plasma rico en plaquetas y exosomas', rating: 5, src: '/assets/videos/testimonial_martin_1.mp4', poster: '/assets/images/testimonial_martin_1.jpg', language: 'es', typeLabel: 'Boxeador - Lesión ligamento', instagramUrl: 'https://www.instagram.com/p/CzE9_MLRRn5' },
+  { id: 9, kind: 'video', name: 'Christopher', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_cristofer_1.mp4', poster: '/assets/images/testimonial_cristofer_1.jpg', language: 'en', typeLabel: 'Right sacroiliitis', instagramUrl: 'https://www.instagram.com/p/CyMlbW0RixK' },
+  { id: 10, kind: 'video', name: 'John', condition: 'Platelet-rich plasma', rating: 5, src: '/assets/videos/testimonial_paciemte_eeuu_1.mp4', poster: '/assets/images/testimonial_paciemte_eeuu_1.jpg', language: 'en', typeLabel: 'Pain in several joints', instagramUrl: 'https://www.instagram.com/p/C4BiC01xj-Z' },
+  { id: 11, kind: 'video', name: 'Nalia', condition: 'Celulas madre y plasma rico en plaquetas', rating: 5, src: '/assets/videos/testimonial_natalia_1.mp4', poster: '/assets/images/testimonial_natalia_1.jpg', language: 'es', typeLabel: 'Dolor en la rodilla', instagramUrl: 'https://www.instagram.com/p/DE7LbYWRkKo' },
 ];
 
 const TEXTS: TestimonialText[] = [
@@ -76,8 +77,58 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
   const rowA = ordered.slice(0, midpoint);
   const rowB = ordered.slice(midpoint);
 
+  // Schema.org JSON-LD para SEO
+  const reviewsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    name: 'Dr. James Madrid - Medicina Deportiva',
+    url: 'https://drjamesmadrid.com',
+    image: 'https://drjamesmadrid.com/assets/images/dc_james_1.png',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Torre Medical - El Poblado',
+      addressLocality: 'Medellín',
+      addressRegion: 'Antioquia',
+      postalCode: '050021',
+      addressCountry: 'CO'
+    },
+    telephone: '+573044386208',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: all.length.toString(),
+      bestRating: '5',
+      worstRating: '5'
+    },
+    review: all.map((testimonial) => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: testimonial.name
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: testimonial.rating.toString(),
+        bestRating: '5',
+        worstRating: '1'
+      },
+      reviewBody: testimonial.kind === 'text' 
+        ? testimonial.quote 
+        : `${testimonial.condition} - ${testimonial.typeLabel}`,
+      itemReviewed: {
+        '@type': 'MedicalProcedure',
+        name: testimonial.condition
+      }
+    }))
+  };
+
   return (
     <section id="testimonios" className="section-padding bg-white overflow-hidden">
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
+      />
       {/* Header centrado */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 mb-14">
         <HeaderBlock title={dictionary.testimonials.title} subtitle={dictionary.testimonials.subtitle} />
@@ -428,8 +479,14 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
   }, []);
 
   const poster = item.poster || '/assets/images/dc_james_6.jpg';
+  const altText = `Testimonio en video de ${item.name} - ${item.typeLabel} - Tratamiento: ${item.condition} - Dr. James Madrid Medicina Deportiva Medellín`;
+  
   return (
-    <div className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white">
+    <article 
+      className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white"
+      itemScope
+      itemType="https://schema.org/Review"
+    >
       <div className="relative aspect-square">
         {!broken ? (
           <video
@@ -440,25 +497,50 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
             preload="metadata"
             poster={poster}
             onError={() => setBroken(true)}
+            aria-label={altText}
+            title={altText}
           />
         ) : (
           <Image
             src={poster}
-            alt={item.name}
+            alt={altText}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 320px, 380px"
+            title={`Testimonio de ${item.name} sobre ${item.condition}`}
           />
         )}
         {/* overlay gradient bottom for title */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
+        
         {/* badges */}
-        <div className="absolute top-3 left-3 flex items-center gap-2 z-10 pointer-events-none">
-          <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-white/90 text-gray-900">{item.typeLabel}</span>
+        <div className="absolute top-3 left-3 flex items-center gap-2 z-10">
+          <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-white/90 text-gray-900">
+            {item.typeLabel}
+          </span>
+          {item.instagramUrl && (
+            <a
+              href={item.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-7 h-7 rounded-full bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300"
+              aria-label={`Ver testimonio de ${item.name} en Instagram`}
+              title="Ver en Instagram"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          )}
         </div>
+        
         <div className="absolute top-3 right-3 z-10 pointer-events-none">
-          <span className="px-2 py-1 text-xs font-bold rounded-full bg-black/70 text-white">{item.language.toUpperCase()}</span>
+          <span className="px-2 py-1 text-xs font-bold rounded-full bg-black/70 text-white">
+            {item.language.toUpperCase()}
+          </span>
         </div>
+        
         {/* play button - solo este es clickeable */}
         <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
           <button
@@ -467,50 +549,75 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
               e.stopPropagation();
               onOpen();
             }}
-            aria-label="Ver video"
+            aria-label={`Reproducir testimonio en video de ${item.name} sobre ${item.condition}`}
+            title={`Ver testimonio completo de ${item.name}`}
             className="w-16 h-16 md:w-20 md:h-20 bg-white/95 rounded-full flex items-center justify-center shadow-xl hover:bg-white hover:scale-110 transition-all duration-300 cursor-pointer pointer-events-auto"
           >
-            <svg className="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M8 5v14l11-7z" />
             </svg>
           </button>
         </div>
+        
         {/* bottom text */}
         <div className="absolute bottom-4 left-4 right-4 z-10 text-white pointer-events-none">
-          <div className="font-semibold">{item.name}</div>
-          <div className="text-sm opacity-90">{item.condition}</div>
+          <div className="font-semibold" itemProp="author">{item.name}</div>
+          <div className="text-sm opacity-90" itemProp="reviewBody">{item.condition}</div>
+          <meta itemProp="ratingValue" content={item.rating.toString()} />
         </div>
       </div>
-    </div>
+    </article>
   );
 }
 
 function TextCard({ item }: { item: TestimonialText }) {
   return (
-    <div className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white p-6">
+    <article 
+      className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white p-6"
+      itemScope
+      itemType="https://schema.org/Review"
+      aria-label={`Testimonio escrito de ${item.name} sobre ${item.condition}`}
+    >
       <div className="flex items-start gap-3 mb-3">
-        <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 font-semibold">
+        <div 
+          className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 font-semibold"
+          aria-hidden="true"
+        >
           {item.name.split(' ').map(p => p[0]).join('').slice(0, 2).toUpperCase()}
         </div>
         <div className="flex-1">
-          <div className="font-semibold text-gray-900 leading-tight">{item.name}</div>
+          <div className="font-semibold text-gray-900 leading-tight" itemProp="author" itemScope itemType="https://schema.org/Person">
+            <span itemProp="name">{item.name}</span>
+          </div>
           <div className="text-xs text-gray-600 leading-tight">{item.condition}</div>
         </div>
-        <span className="px-2 py-1 text-xs font-semibold rounded-full bg-black/70 text-white">{item.language.toUpperCase()}</span>
-      </div>
-      <Stars rating={item.rating} />
-      <div className="mt-3">
-        <svg className="w-6 h-6 text-primary/80" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M7.17 6A5.17 5.17 0 002 11.17V20h6v-8H5.17A3.17 3.17 0 018.34 8H7.17zM16.83 6A5.17 5.17 0 0011.66 11.17V20h6v-8h-2.83A3.17 3.17 0 0117.66 8h-.83z" />
-        </svg>
-        <p className="text-gray-900 leading-relaxed mt-3">{item.quote}</p>
-      </div>
-      <div className="mt-5">
-        <span className="inline-block px-3 py-2 text-xs font-semibold rounded-xl bg-accent-cool/10 text-gray-900">
-          {`Resultado: ${item.result}`}
+        <span className="px-2 py-1 text-xs font-semibold rounded-full bg-black/70 text-white" aria-label={`Idioma: ${item.language === 'es' ? 'Español' : 'English'}`}>
+          {item.language.toUpperCase()}
         </span>
       </div>
-    </div>
+      
+      <div aria-label={`Calificación: ${item.rating} de 5 estrellas`}>
+        <Stars rating={item.rating} />
+        <meta itemProp="ratingValue" content={item.rating.toString()} />
+      </div>
+      
+      <div className="mt-3">
+        <svg className="w-6 h-6 text-primary/80" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.17 6A5.17 5.17 0 002 11.17V20h6v-8H5.17A3.17 3.17 0 018.34 8H7.17zM16.83 6A5.17 5.17 0 0011.66 11.17V20h6v-8h-2.83A3.17 3.17 0 0117.66 8h-.83z" />
+        </svg>
+        <p className="text-gray-900 leading-relaxed mt-3" itemProp="reviewBody">
+          {item.quote}
+        </p>
+      </div>
+      
+      <div className="mt-5">
+        <span className="inline-block px-3 py-2 text-xs font-semibold rounded-xl bg-accent-cool/10 text-gray-900">
+          {item.language === 'es' ? 'Resultado: ' : 'Result: '}{item.result}
+        </span>
+      </div>
+      
+      <meta itemProp="itemReviewed" itemScope itemType="https://schema.org/MedicalProcedure" content={item.condition} />
+    </article>
   );
 }
 
@@ -543,6 +650,9 @@ function VideoModal({ video, onClose }: { video: TestimonialVideo; onClose: () =
     <div 
       className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4" 
       onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`Reproduciendo testimonio de ${video.name}`}
     >
       <div 
         className="relative w-full max-w-6xl" 
@@ -556,6 +666,8 @@ function VideoModal({ video, onClose }: { video: TestimonialVideo; onClose: () =
           controls
           playsInline
           style={{ maxHeight: '90vh' }}
+          aria-label={`Testimonio en video completo de ${video.name} - ${video.condition} - ${video.typeLabel}`}
+          title={`Testimonio de ${video.name}: ${video.condition}`}
         />
         
         {/* Botón cerrar */}
@@ -563,9 +675,10 @@ function VideoModal({ video, onClose }: { video: TestimonialVideo; onClose: () =
           type="button"
           onClick={onClose}
           className="absolute -top-4 -right-4 bg-white text-gray-900 rounded-full w-12 h-12 shadow-2xl flex items-center justify-center hover:bg-gray-100 transition-colors"
-          aria-label="Cerrar video"
+          aria-label={`Cerrar video de testimonio de ${video.name}`}
+          title="Cerrar video (ESC)"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
