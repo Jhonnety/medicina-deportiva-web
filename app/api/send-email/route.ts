@@ -49,8 +49,8 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         from: 'Medicina Deportiva <onboarding@resend.dev>', // Cambiar a tu dominio verificado
-        to: ['jhon@lokl.life'],
-        subject: `Nuevo mensaje de contacto de ${name}`,
+        to: ['consultoriomedicodrjamesmadrid@gmail.com'],
+        subject: `Alguien se ha contactado con nosotros a través de la página web: ${name}`,
         html: emailContent,
         reply_to: email,
       }),
