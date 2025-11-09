@@ -116,13 +116,28 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                   
                   {/* Image Column - Left Side */}
                   <div className="relative w-full lg:w-1/2 h-64 lg:h-auto flex-shrink-0 overflow-hidden">
-                    <Image
-                      src={treatment.image}
-                      alt={currentTexts[locale as 'es' | 'en'].title}
-                      fill
-                      className={`object-cover ${mobileImagePosition} lg:object-center group-hover:scale-105 transition-transform duration-700`}
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
+                    {/* Mobile image */}
+                    <div className="absolute inset-0 lg:hidden">
+                      <Image
+                        src={treatment.mobileImage || treatment.image}
+                        alt={currentTexts[locale as 'es' | 'en'].title}
+                        fill
+                        className={`object-cover ${mobileImagePosition} group-hover:scale-105 transition-transform duration-700`}
+                        sizes="100vw"
+                        priority={index < 2}
+                      />
+                    </div>
+                    {/* Desktop image */}
+                    <div className="absolute inset-0 hidden lg:block">
+                      <Image
+                        src={treatment.image}
+                        alt={currentTexts[locale as 'es' | 'en'].title}
+                        fill
+                        className={`object-cover lg:object-center group-hover:scale-105 transition-transform duration-700`}
+                        sizes="50vw"
+                        priority={index < 2}
+                      />
+                    </div>
                     {/* Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:scale-105 transition-transform duration-700"></div>
                     

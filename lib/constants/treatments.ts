@@ -6,6 +6,9 @@ import treatment_platelet_rich_plasma_desktop_1 from '@/assets/images/treaments/
 import treatment_hyaluronic_acid_desktop_1 from '@/assets/images/treaments/treatment_hyaluronic_acid_desktop_1.jpeg';
 import treatment_conventional_infiltration_desktop_1 from '@/assets/images/treaments/treatment_conventional_infiltration_desktop_1.jpeg';
 import treatment_serum_therapy_desktop_1 from '@/assets/images/treaments/treatment_serum_therapy_desktop_1.jpg';
+import treatment_serum_therapy_mobile_1 from '@/assets/images/treaments/treatment_serum_therapy_mobile_1.jpg';
+import treatment_high_performance_sports_mobile_1 from '@/assets/images/treaments/treatment_high_performance_sports_mobile_1.jpg';
+import treatment_platelet_rich_plasma_mobile_1 from '@/assets/images/treaments/treatment_platelet_rich_plasma_mobile_1.jpg';
 import treatment_weight_loss_program_desktop_1 from '@/assets/images/treaments/treatment_weight_loss_program_desktop_1.png';
 import treatment_high_performance_sports_desktop_1 from '@/assets/images/treaments/treatment_high_performance_sports_desktop_1.png';
 
@@ -17,6 +20,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Células totipotenciales con capacidad de convertir tejido enfermo en sano',
     benefits: ['Regeneración total', 'Autólogas o alogénicas', 'Tratamiento avanzado'],
     image: treatment_stem_cells_desktop_1,
+    mobileImage: treatment_stem_cells_desktop_1,
     mobileImagePosition: 'center', // Prioriza la parte superior de la imagen en mobile
   },
   {
@@ -26,6 +30,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Vesículas extraídas de células madre con microRNA, proteínas y factores de crecimiento',
     benefits: ['Alta concentración', 'Regeneración celular', 'Tecnología avanzada'],
     image: treatment_exosomes_desktop_1,
+    mobileImage: treatment_exosomes_desktop_1,
     mobileImagePosition: 'center', // Centra el contenido de la imagen en mobile
   },
   {
@@ -35,7 +40,8 @@ export const TREATMENTS: Treatment[] = [
     description: 'Fracción de plasma con concentración superior de plaquetas y altos niveles de factores de crecimiento',
     benefits: ['100% autólogo', 'Factores de crecimiento', 'Recuperación rápida'],
     image: treatment_platelet_rich_plasma_desktop_1,
-    mobileImagePosition: 'bottom', // Prioriza la parte inferior de la imagen en mobile
+    mobileImage: treatment_platelet_rich_plasma_mobile_1,
+    mobileImagePosition: 'center', // Prioriza la parte inferior de la imagen en mobile
   },
   {
     id: '4',
@@ -44,6 +50,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Lubricante articular que acelera la cicatrización y fomenta la producción de colágeno',
     benefits: ['Lubricación articular', 'Efecto analgésico', 'Estimula colágeno'],
     image: treatment_hyaluronic_acid_desktop_1,
+    mobileImage: treatment_hyaluronic_acid_desktop_1,
     mobileImagePosition: 'top', // Prioriza la parte superior de la imagen en mobile
   },
   {
@@ -53,6 +60,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Control de inflamación mediante esteroides o biorreguladores con anestésicos locales',
     benefits: ['Control de inflamación', 'Alivio inmediato', 'Mínimamente invasivo'],
     image: treatment_conventional_infiltration_desktop_1,
+    mobileImage: treatment_conventional_infiltration_desktop_1,
     mobileImagePosition: 'center', // Centra el contenido de la imagen en mobile
   },
   {
@@ -62,7 +70,8 @@ export const TREATMENTS: Treatment[] = [
     description: 'Fórmula personalizada por vía intravenosa para restaurar el equilibrio y bienestar',
     benefits: ['Personalizada', 'Restauración integral', 'Resultados inmediatos'],
     image: treatment_serum_therapy_desktop_1,
-    mobileImagePosition: 'center', // Prioriza la parte superior de la imagen en mobile
+    mobileImage: treatment_serum_therapy_mobile_1,
+    mobileImagePosition: 'top', // Prioriza la parte superior de la imagen en mobile
   },
   {
     id: '7',
@@ -71,6 +80,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Programa integral multidisciplinario para cambios permanentes en hábitos alimenticios y actividad física',
     benefits: ['Equipo multidisciplinario', 'Cambios permanentes', 'Manejo psicológico'],
     image: treatment_weight_loss_program_desktop_1,
+    mobileImage: treatment_weight_loss_program_desktop_1,
     mobileImagePosition: 'top', // Prioriza la parte inferior de la imagen en mobile
   },
   {
@@ -80,6 +90,7 @@ export const TREATMENTS: Treatment[] = [
     description: 'Evaluación y manejo de deportistas élite y aficionados para prevenir y rehabilitar lesiones',
     benefits: ['Prevención de lesiones', 'Mejora de rendimiento', 'Condiciones seguras'],
     image: treatment_high_performance_sports_desktop_1,
+    mobileImage: treatment_high_performance_sports_mobile_1,
     mobileImagePosition: 'top', // Centra el contenido de la imagen en mobile
   },
 ];
