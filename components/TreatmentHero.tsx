@@ -125,7 +125,25 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
             </div>
 
             {/* Enlaces rápidos de navegación */}
-            <div className="flex items-center gap-6 pt-4 border-t border-gray-200">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-gray-200">
+              <button
+                onClick={() => scrollToSection('what-is-section')}
+                className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
+                style={{ color: '#6ba5a5' }}
+              >
+                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+                <span className="group-hover:underline">
+                  {lang === 'es' 
+                    ? `¿Qué ${langContent.title.toLowerCase().includes('células') || langContent.title.toLowerCase().includes('cells') ? 'son' : 'es'} ${langContent.title.split('|')[0].trim().toLowerCase()}?`
+                    : `What ${langContent.title.toLowerCase().includes('cells') ? 'are' : 'is'} ${langContent.title.split('|')[0].trim().toLowerCase()}?`
+                  }
+                </span>
+              </button>
+              
+              <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
+              
               <button
                 onClick={() => scrollToSection('symptoms-section')}
                 className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
@@ -139,22 +157,8 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
                 </span>
               </button>
               
-              <div className="w-px h-4 bg-gray-300"></div>
+              <div className="hidden sm:block w-px h-4 bg-gray-300"></div>
               
-              <button
-                onClick={() => scrollToSection('results-section')}
-                className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
-                style={{ color: '#6ba5a5' }}
-              >
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-                <span className="group-hover:underline">
-                  {lang === 'es' ? 'Resultados esperados' : 'Expected results'}
-                </span>
-              </button>
-
-
               <button
                 onClick={() => scrollToSection('results-section')}
                 className="group flex items-center gap-2 text-sm font-medium transition-all duration-200"
