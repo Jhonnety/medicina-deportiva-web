@@ -107,16 +107,15 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
             const mobileImagePosition = getImagePositionClass(treatment.mobileImagePosition);
 
             return (
-              <Link
+              <div
                 key={treatment.id}
-                href={`/${locale}/tratamientos/${treatment.slug}`}
-                className="group block"
+                className="group"
               >
-                <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.02] flex flex-col lg:flex-row h-full"
+                <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col lg:flex-row h-full"
                      style={{ borderColor: brandColors.border, borderWidth: '1px' }}>
                   
                   {/* Image Column - Left Side */}
-                  <div className="relative w-full lg:w-1/2 h-64 lg:h-auto flex-shrink-0">
+                  <div className="relative w-full lg:w-1/2 h-64 lg:h-auto flex-shrink-0 overflow-hidden">
                     <Image
                       src={treatment.image}
                       alt={currentTexts[locale as 'es' | 'en'].title}
@@ -125,7 +124,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                     {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:scale-105 transition-transform duration-700"></div>
                     
                     {/* Badge */}
                     <div 
@@ -187,10 +186,13 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                     </div>
 
                     {/* CTA Button */}
-                    <button className="mt-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white transition-all duration-300 self-start hover:scale-105"
-                            style={{ backgroundColor: brandColors.primary }}
-                            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = brandColors.primaryHover}
-                            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = brandColors.primary}>
+                    <Link 
+                      href={`/${locale}/tratamientos/${treatment.slug}`}
+                      className="mt-auto inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white transition-all duration-300 self-start hover:scale-105"
+                      style={{ backgroundColor: brandColors.primary }}
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = brandColors.primaryHover}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = brandColors.primary}
+                    >
                       {locale === 'es' ? 'Conocer Más' : 'Learn More'}
                       <svg
                         className="ml-2 -mr-1 w-4 h-4"
@@ -203,10 +205,10 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                           clipRule="evenodd"
                         />
                       </svg>
-                    </button>
+                    </Link>
                   </div>
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>
