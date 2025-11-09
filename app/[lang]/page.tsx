@@ -11,6 +11,7 @@ import AboutSection from '@/components/AboutSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQsSection from '@/components/FAQsSection';
 import ContactSection from '@/components/ContactSection';
+import ScrollHandler from '@/components/ScrollHandler';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -158,6 +159,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(doctorJsonLd) }}
       />
       
+      <ScrollHandler />
       <Header dictionary={dictionary} locale={lang} />
       
       <main>

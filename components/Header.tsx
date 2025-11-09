@@ -39,16 +39,29 @@ export default function Header({ dictionary, locale }: HeaderProps) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // We're on another page, navigate to home first then scroll
+      // We're on another page, navigate to home with hash and scroll when ready
       e.preventDefault();
-      router.push(`/${locale}`);
-      // Wait for navigation and then scroll
-      setTimeout(() => {
-        const element = document.getElementById(section);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
+      
+      // Store the target section in sessionStorage
+      sessionStorage.setItem('scrollToSection', section);
+      
+      // Navigate to home page
+      router.push(`/${locale}#${section}`);
+      
+      // Attempt to scroll multiple times with increasing delays
+      const attemptScroll = (attempts = 0, maxAttempts = 10) => {
+        setTimeout(() => {
+          const element = document.getElementById(section);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            sessionStorage.removeItem('scrollToSection');
+          } else if (attempts < maxAttempts) {
+            attemptScroll(attempts + 1, maxAttempts);
+          }
+        }, 100 + (attempts * 50)); // Increasing delay: 100ms, 150ms, 200ms, etc.
+      };
+      
+      attemptScroll();
     }
   };
 
