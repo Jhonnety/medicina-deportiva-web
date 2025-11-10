@@ -1,11 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import type { Treatment } from '@/lib/types';
 
 interface TreatmentHeroProps {
-  treatment: {
-    image: string;
-  };
+  treatment: Treatment;
   langContent: {
     title: string;
     subtitle: string;

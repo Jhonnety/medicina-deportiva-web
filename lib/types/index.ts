@@ -91,37 +91,12 @@ export interface Dictionary {
   treatments: {
     title: string;
     subtitle: string;
-    artrosis: {
-      title: string;
-      description: string;
-      benefits: string[];
-    };
-    proloterapia: {
-      title: string;
-      description: string;
-      benefits: string[];
-    };
-    prp: {
-      title: string;
-      description: string;
-      benefits: string[];
-    };
-    lesiones: {
-      title: string;
-      description: string;
-      benefits: string[];
-    };
-    ecoguiado: {
-      title: string;
-      description: string;
-      benefits: string[];
-    };
-    adelgazamiento: {
-      title: string;
-      description: string;
-      benefits: string[];
-    };
     cta: string;
+    [key: string]: string | {
+      title: string;
+      description: string;
+      benefits: string[];
+    };
   };
   about: {
     title: string;
