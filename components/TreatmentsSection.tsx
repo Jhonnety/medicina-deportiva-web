@@ -11,6 +11,7 @@ interface TreatmentsSectionProps {
 }
 
 export default function TreatmentsSection({ dictionary, locale }: TreatmentsSectionProps) {
+  const localeKey = (locale === 'en' ? 'en' : 'es') as 'es' | 'en';
   return (
     <section id="tratamientos" className="section-padding bg-white relative overflow-hidden">
       {/* Background decoration */}
@@ -160,12 +161,12 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                     {/* Title */}
                     <h3 className="text-2xl md:text-3xl font-bold mb-4 transition-colors duration-300"
                         style={{ color: brandColors.textPrimary }}>
-                      {currentTexts[locale as 'es' | 'en'].title}
+                      {currentTexts[localeKey]?.title ?? treatment.title}
                     </h3>
                     
                     {/* Description */}
                     <p className="text-gray-700 mb-6 leading-relaxed">
-                      {currentTexts[locale as 'es' | 'en'].description}
+                      {currentTexts[localeKey]?.description ?? treatment.description}
                     </p>
 
                     {/* Benefits */}
@@ -175,7 +176,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                         {locale === 'es' ? 'Beneficios' : 'Benefits'}
                       </h4>
                       <ul className="space-y-3">
-                        {currentTexts[locale as 'es' | 'en'].benefits.slice(0, 3).map((benefit: string, idx: number) => (
+                        {(currentTexts[localeKey]?.benefits ?? treatment.benefits ?? []).slice(0, 3).map((benefit: string, idx: number) => (
                           <li key={idx} className="flex items-start space-x-3">
                             <div 
                               className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"

@@ -131,7 +131,10 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
       />
       {/* Header centrado */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 mb-14">
-        <HeaderBlock title={dictionary.testimonials.title} subtitle={dictionary.testimonials.subtitle} />
+        <HeaderBlock
+          title={dictionary?.testimonials?.title ?? (locale === 'es' ? 'Historias reales de recuperación' : 'Real recovery stories')}
+          subtitle={dictionary?.testimonials?.subtitle ?? (locale === 'es' ? 'Lo que dicen nuestros pacientes' : 'What our patients say')}
+        />
       </div>
 
       {/* Desktop: dos filas auto-rotando - ancho completo */}
