@@ -134,6 +134,7 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
             fill
             priority
             className="object-cover"
+            style={{ objectPosition: '20% 35%' }}
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
           {/* Overlay sutil */}
