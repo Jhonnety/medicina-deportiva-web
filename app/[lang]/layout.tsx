@@ -1,17 +1,12 @@
-import { i18n, type Locale } from '@/lib/i18n/config';
+import { i18n } from '@/lib/i18n/config';
 import '@/app/globals.css';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function LangLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { lang: Locale };
-}) {
+export default function LangLayout(props: unknown) {
+  const { children, params } = (props as { children: React.ReactNode; params: { lang: string } });
   const { lang } = params;
   return (
     <html lang={lang}>
