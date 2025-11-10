@@ -20,9 +20,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Locale };
+  params: Promise<{ lang: Locale }>;
 }): Promise<Metadata> {
-  const { lang } = params;
+  const { lang } = await params;
   const dictionary = await getDictionary(lang);
   const baseUrl = 'https://drjamesmadrid.com';
 
@@ -95,8 +95,8 @@ export async function generateMetadata({
   };
 }
 
-export default async function Home({ params }: { params: { lang: Locale } }) {
-  const { lang } = params;
+export default async function Home({ params }: { params: Promise<{ lang: Locale }> }) {
+  const { lang } = await params;
   const dictionary = await getDictionary(lang);
 
   // JSON-LD Structured Data

@@ -32,9 +32,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: Locale; slug: string };
+  params: Promise<{ lang: Locale; slug: string }>;
 }): Promise<Metadata> {
-  const { lang, slug } = params;
+  const { lang, slug } = await params;
   const treatment = TREATMENTS.find((t) => t.slug === slug);
   if (!treatment) return {};
 
@@ -101,9 +101,9 @@ export async function generateMetadata({
 export default async function TreatmentPage({
   params,
 }: {
-  params: { lang: Locale; slug: string };
+  params: Promise<{ lang: Locale; slug: string }>;
 }) {
-  const { lang, slug } = params;
+  const { lang, slug } = await params;
   const dictionary = await getDictionary(lang);
   const treatment = TREATMENTS.find((t) => t.slug === slug);
   
