@@ -13,9 +13,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: { lang: Locale };
 }): Promise<Metadata> {
-  const { lang } = await params;
+  const { lang } = params;
   const titleEs = 'Glosario de medicina del deporte y terapias regenerativas en Medellín';
   const titleEn = 'Glossary of sports medicine and regenerative therapies in Medellín';
   const descriptionEs =
@@ -40,9 +40,9 @@ export async function generateMetadata({
 export default async function GlossaryRoute({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: { lang: Locale };
 }) {
-  const { lang } = await params;
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
 
   const faqJsonLd = {
