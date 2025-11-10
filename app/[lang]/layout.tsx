@@ -5,20 +5,20 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default async function LangLayout({
+export default function LangLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
+  params: { lang: Locale };
 }) {
-  const { lang } = await params;
+  const { lang } = params;
   return (
     <html lang={lang}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" />
       </head>
       <body className="antialiased">{children}</body>
     </html>
