@@ -27,29 +27,35 @@ export async function generateMetadata({
   const baseUrl = 'https://drjamesmadrid.com';
 
   return {
-    title: dictionary.seo.home.title,
-    description: dictionary.seo.home.description,
+    title: dictionary?.seo?.home?.title ?? (lang === 'es'
+      ? 'Dr. James Madrid - Medicina Deportiva en Medellín'
+      : 'Dr. James Madrid - Sports Medicine in Medellín'),
+    description: dictionary?.seo?.home?.description ?? (lang === 'es'
+      ? 'Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
+      : 'Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
     keywords: [
-      'medicina deportiva',
+      lang === 'es' ? 'medicina deportiva' : 'sports medicine',
       'deportólogo Medellín',
       'PRP',
       'proloterapia',
-      'tratamiento artrosis',
-      'lesiones deportivas',
+      lang === 'es' ? 'tratamiento artrosis' : 'arthritis treatment',
+      lang === 'es' ? 'lesiones deportivas' : 'sports injuries',
       'Dr. James Madrid',
-      'sports medicine',
-      'sports doctor Medellin',
-      'arthritis treatment',
+      lang === 'es' ? 'especialista en deporte' : 'sports doctor Medellin',
     ],
     authors: [{ name: 'Dr. James Madrid' }],
     openGraph: {
-      title: dictionary.seo.home.title,
-      description: dictionary.seo.home.description,
+      title: dictionary?.seo?.home?.title ?? (lang === 'es'
+        ? 'Dr. James Madrid - Medicina Deportiva en Medellín'
+        : 'Dr. James Madrid - Sports Medicine in Medellín'),
+      description: dictionary?.seo?.home?.description ?? (lang === 'es'
+        ? 'Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
+        : 'Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
       url: `${baseUrl}/${lang}`,
       siteName: 'Dr. James Madrid',
       images: [
         {
-          url: `${baseUrl}/assets/images/dc_james_1.png`,
+          url: `${baseUrl}/icon.svg`,
           width: 1200,
           height: 630,
           alt: 'Dr. James Madrid - Medicina Deportiva',
@@ -60,9 +66,13 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: dictionary.seo.home.title,
-      description: dictionary.seo.home.description,
-      images: [`${baseUrl}/assets/images/dc_james_1.png`],
+      title: dictionary?.seo?.home?.title ?? (lang === 'es'
+        ? 'Dr. James Madrid - Medicina Deportiva en Medellín'
+        : 'Dr. James Madrid - Sports Medicine in Medellín'),
+      description: dictionary?.seo?.home?.description ?? (lang === 'es'
+        ? 'Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
+        : 'Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
+      images: [`${baseUrl}/icon.svg`],
     },
     alternates: {
       canonical: `${baseUrl}/${lang}`,
