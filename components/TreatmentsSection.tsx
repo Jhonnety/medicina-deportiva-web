@@ -62,7 +62,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
             };
             
             const treatmentKey = slugToKeyMap[treatment.slug] || treatment.slug;
-            const treatmentDict = dictionary.treatments[treatmentKey as keyof typeof dictionary.treatments] || {};
+            const treatmentDict = dictionary?.treatments?.[treatmentKey as keyof typeof dictionary.treatments];
 
             // Sistema de colores corporativo
             const brandColors = {
@@ -75,17 +75,23 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
               background: '#ffffff',     // Fondo
             };
 
+            // Verificar si treatmentDict es un objeto con las propiedades esperadas
+            const isTreatmentObject = typeof treatmentDict === 'object' && treatmentDict !== null && 
+                                      'title' in treatmentDict && 
+                                      'description' in treatmentDict && 
+                                      'benefits' in treatmentDict;
+
             // Usar los datos del diccionario
             const currentTexts = {
               es: {
-                title: (treatmentDict as { title?: string; description?: string; benefits?: string[] }).title || treatment.title,
-                description: (treatmentDict as { title?: string; description?: string; benefits?: string[] }).description || treatment.description,
-                benefits: (treatmentDict as { title?: string; description?: string; benefits?: string[] }).benefits || treatment.benefits
+                title: isTreatmentObject ? treatmentDict.title : treatment.title,
+                description: isTreatmentObject ? treatmentDict.description : treatment.description,
+                benefits: isTreatmentObject ? treatmentDict.benefits : treatment.benefits
               },
               en: {
-                title: (treatmentDict as { title?: string; description?: string; benefits?: string[] }).title || treatment.title,
-                description: (treatmentDict as { title?: string; description?: string; benefits?: string[] }).description || treatment.description,
-                benefits: (treatmentDict as { title?: string; description?: string; benefits?: string[] }).benefits || treatment.benefits
+                title: isTreatmentObject ? treatmentDict.title : treatment.title,
+                description: isTreatmentObject ? treatmentDict.description : treatment.description,
+                benefits: isTreatmentObject ? treatmentDict.benefits : treatment.benefits
               }
             };
 
@@ -121,7 +127,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                     <div className="absolute inset-0 lg:hidden">
                       <Image
                         src={treatment.mobileImage || treatment.image}
-                        alt={currentTexts[locale as 'es' | 'en'].title}
+                        alt={currentTexts[localeKey]?.title ?? treatment.title}
                         fill
                         className={`object-cover ${mobileImagePosition} group-hover:scale-105 transition-transform duration-700`}
                         sizes="100vw"
@@ -132,7 +138,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                     <div className="absolute inset-0 hidden lg:block">
                       <Image
                         src={treatment.image}
-                        alt={currentTexts[locale as 'es' | 'en'].title}
+                        alt={currentTexts[localeKey]?.title ?? treatment.title}
                         fill
                         className={`object-cover lg:object-center group-hover:scale-105 transition-transform duration-700`}
                         sizes="50vw"
@@ -176,7 +182,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                         {locale === 'es' ? 'Beneficios' : 'Benefits'}
                       </h4>
                       <ul className="space-y-3">
-                        {(currentTexts[localeKey]?.benefits ?? treatment.benefits ?? []).slice(0, 3).map((benefit: string, idx: number) => (
+                        {(Array.isArray(currentTexts[localeKey]?.benefits) ? currentTexts[localeKey].benefits : Array.isArray(treatment.benefits) ? treatment.benefits : []).slice(0, 3).map((benefit: string, idx: number) => (
                           <li key={idx} className="flex items-start space-x-3">
                             <div 
                               className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
