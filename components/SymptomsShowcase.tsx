@@ -2,6 +2,10 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 interface Symptom {
   name: string;
@@ -59,45 +63,55 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
 
         {/* Grid de Síntomas - Responsive */}
         <div className="max-w-7xl mx-auto">
-          {/* Mobile: Grid compacto 2 columnas - Solo iconos */}
-          <div className="grid grid-cols-2 gap-3 md:hidden">
-            {symptoms.map((symptom, index) => (
-              <article
-                key={index}
-                className="bg-white rounded-2xl p-4 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
-                itemScope
-                itemType="https://schema.org/MedicalCondition"
-              >
-                <div className="flex flex-col items-center text-center gap-2.5">
-                  {/* Ícono */}
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-                       style={{ backgroundColor: 'rgba(107, 165, 165, 0.12)' }}
-                       aria-hidden="true">
-                    <div className="w-6 h-6" style={{ color: '#6ba5a5' }}>
-                      <MedicalIcon />
+          {/* Mobile: Carrusel de síntomas con imagen */}
+          <div className="md:hidden">
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={14}
+              slidesPerView={1.05}
+              centeredSlides
+              pagination={{ clickable: true, dynamicBullets: true }}
+              className="!pb-10"
+            >
+              {symptoms.map((symptom, index) => (
+                <SwiperSlide key={`s-${index}`} className="!w-[86%]">
+                  <article
+                    className="group relative rounded-3xl overflow-hidden shadow-xl border border-gray-100"
+                    itemScope
+                    itemType="https://schema.org/MedicalCondition"
+                  >
+                    <div className="relative aspect-[4/3]">
+                      <Image
+                        src={symptom.image}
+                        alt={`${symptom.name} - ${lang === 'es' ? 'Síntoma tratable' : 'Treatable symptom'}`}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        sizes="100vw"
+                        loading={index < 2 ? 'eager' : 'lazy'}
+                        quality={85}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
+                      <div className="absolute inset-0 p-5 flex flex-col justify-end">
+                        <h3 className="text-xl font-bold !text-white leading-tight mb-1" itemProp="name">
+                          {symptom.name}
+                        </h3>
+                        <p className="text-sm !text-white/90 font-semibold">
+                          {symptom.condition}
+                        </p>
+                        <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/95">
+                          <div className="w-4 h-4 text-[#6ba5a5]" aria-hidden="true">
+                            <MedicalIcon />
+                          </div>
+                          <span className="text-xs font-bold" style={{ color: '#182121' }}>
+                            {lang === 'es' ? 'Tratamiento disponible' : 'Treatment available'}
+                          </span>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  {/* Título del síntoma */}
-                  <h3 
-                    className="text-sm font-bold leading-tight" 
-                    style={{ color: '#182121' }}
-                    itemProp="name"
-                  >
-                    {symptom.name}
-                  </h3>
-                  {/* Condición médica */}
-                  <p 
-                    className="text-xs font-medium leading-tight px-2 py-1 rounded-lg"
-                    style={{ 
-                      color: '#6ba5a5',
-                      backgroundColor: 'rgba(107, 165, 165, 0.08)'
-                    }}
-                  >
-                    {symptom.condition}
-                  </p>
-                </div>
-              </article>
-            ))}
+                  </article>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
 
           {/* Tablet y Desktop: Grid con imágenes */}

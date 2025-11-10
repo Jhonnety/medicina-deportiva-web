@@ -3,7 +3,8 @@ import { Treatment } from '@/lib/types';
 import treatment_stem_cells_desktop_1 from '@/assets/images/treaments/treatment_stem_cells_desktop_1.jpg';
 import treatment_exosomes_desktop_1 from '@/assets/images/treaments/treatment_exosomes_desktop_1.jpg';
 import treatment_platelet_rich_plasma_desktop_1 from '@/assets/images/treaments/treatment_platelet_rich_plasma_desktop_1.jpg';
-import treatment_hyaluronic_acid_desktop_1 from '@/assets/images/treaments/treatment_hyaluronic_acid_desktop_1.jpeg';
+import treatment_hyaluronic_acid_desktop_2 from '@/assets/images/treaments/treatment_hyaluronic_acid_desktop_2.jpg';
+import treatment_hyaluronic_acid_mobile_2 from '@/assets/images/treaments/treatment_hyaluronic_acid_mobile_2.jpg';
 import treatment_conventional_infiltration_desktop_1 from '@/assets/images/treaments/treatment_conventional_infiltration_desktop_1.jpeg';
 import treatment_serum_therapy_desktop_1 from '@/assets/images/treaments/treatment_serum_therapy_desktop_1.jpg';
 import treatment_serum_therapy_mobile_1 from '@/assets/images/treaments/treatment_serum_therapy_mobile_1.jpg';
@@ -49,8 +50,8 @@ export const TREATMENTS: Treatment[] = [
     title: 'Ácido Hialurónico',
     description: 'Lubricante articular que acelera la cicatrización y fomenta la producción de colágeno',
     benefits: ['Lubricación articular', 'Efecto analgésico', 'Estimula colágeno'],
-    image: treatment_hyaluronic_acid_desktop_1,
-    mobileImage: treatment_hyaluronic_acid_desktop_1,
+    image: treatment_hyaluronic_acid_desktop_2,
+    mobileImage: treatment_hyaluronic_acid_mobile_2,
     mobileImagePosition: 'top', // Prioriza la parte superior de la imagen en mobile
   },
   {
