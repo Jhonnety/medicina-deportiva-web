@@ -29,6 +29,11 @@ export const metadata = {
     site: '@drjamesmadrid',
     creator: '@drjamesmadrid',
   },
+  themeColor: '#6ba5a5',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/favicon.ico',
+  },
   verification: {
     google: 'your-google-verification-code',
   },
