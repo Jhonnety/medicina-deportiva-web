@@ -14,7 +14,7 @@ type FAQItem = {
   icon: React.ComponentType<{ className?: string }>;
 };
 
-export default function FAQsSection({ dictionary, locale }: FAQsSectionProps) {
+export default function FAQsSection({ locale }: FAQsSectionProps) {
   const faqsData: FAQItem[] = locale === 'es' ? [
     {
       question: '¿Qué es la medicina deportiva y quién puede beneficiarse?',
@@ -129,8 +129,7 @@ export default function FAQsSection({ dictionary, locale }: FAQsSectionProps) {
                     }}
                   >
                     <IconComponent 
-                      className="w-8 h-8 transition-all duration-300" 
-                      style={{ color: '#6ba5a5' }}
+                      className="w-8 h-8 transition-all duration-300 text-[#6ba5a5]"
                     />
                   </div>
                   
