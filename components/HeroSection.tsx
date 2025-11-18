@@ -65,8 +65,8 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             {/* Description mejorada */}
             <p className="text-lg lg:text-xl text-gray-700 leading-relaxed max-w-xl mb-10">
               {locale === 'es'
-                ? 'Más de 20 años ayudando a pacientes a tratar la artrosis, lesiones deportivas y dolor crónico con terapias regenerativas.'
-                : 'Over 20 years helping patients treat arthritis, sports injuries and chronic pain with regenerative therapies.'}
+                ? 'Más de 20 años ayudando a pacientes a superar la artrosis, lesiones deportivas y sobrepeso.'
+                : 'Over 20 years helping patients overcome osteoarthritis, sports injuries, and obesity.'}
             </p>
 
             {/* Imagen Mobile - team_4.png - Solo visible en mobile */}

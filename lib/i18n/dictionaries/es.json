@@ -8,7 +8,7 @@
     "schedule": "Agendar Consulta"
   },
   "hero": {
-    "title": "Recupera tu movilidad y bienestar con Cirugía Mínimamente Invasiva",
+    "title": "Movilidad segura y sin dolor",
     "subtitle": "Tratamientos especializados en medicina deportiva y manejo del dolor. Técnicas avanzadas para tu recuperación óptima.",
     "cta_primary": "Agendar Consulta",
     "cta_secondary": "Conocer Tratamientos",
@@ -41,12 +41,12 @@
     "celulas_madre": {
       "title": "Células Madre Mesenquimales",
       "description": "Células totipotenciales con capacidad de convertir tejido enfermo en sano. Pueden ser autólogas o alogénicas",
-      "benefits": ["Regeneración total", "Autólogas o alogénicas", "Tratamiento avanzado"]
+      "benefits": ["Regeneración o cicatrización", "Autólogas o alogénicas", "Tratamiento avanzado"]
     },
     "exosomas": {
       "title": "Exosomas",
       "description": "Vesículas extraídas de células madre mesenquimales que contienen microRNA, proteínas y factores de crecimiento",
-      "benefits": ["Alta concentración", "Regeneración celular", "Tecnología avanzada"]
+      "benefits": ["Alta concentración", "Reparación celular", "Tecnología avanzada"]
     },
     "prp": {
       "title": "Plasma Rico en Plaquetas (PRP)",
@@ -144,7 +144,7 @@
   },
   "seo": {
     "home": {
-      "title": "Dr. James Madrid - Medicina Deportiva y Tratamientos Regenerativos | Medellín",
+      "title": "Dr. James Madrid Jaramillo - Especialista en Medicina Física y del Deporte | Medicina Regenerativa",
       "description": "Especialista en medicina deportiva en Medellín. Tratamientos de artrosis, PRP, proloterapia y lesiones deportivas con técnicas mínimamente invasivas. +15 años de experiencia."
     }
   }

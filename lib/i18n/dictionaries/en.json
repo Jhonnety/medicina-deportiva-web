@@ -8,7 +8,7 @@
     "schedule": "Schedule Appointment"
   },
   "hero": {
-    "title": "Recover Your Mobility and Wellness with Minimally Invasive Surgery",
+    "title": "Safe and Pain-Free Mobility",
     "subtitle": "Specialized treatments in sports medicine and pain management. Advanced techniques for optimal recovery.",
     "cta_primary": "Schedule Appointment",
     "cta_secondary": "View Treatments",
@@ -41,12 +41,12 @@
     "celulas_madre": {
       "title": "Mesenchymal Stem Cells",
       "description": "Totipotent cells capable of converting diseased tissue into healthy tissue. Can be autologous or allogeneic",
-      "benefits": ["Total regeneration", "Autologous or allogeneic", "Advanced treatment"]
+      "benefits": ["Regeneration or healing", "Autologous or allogeneic", "Advanced treatment"]
     },
     "exosomas": {
       "title": "Exosomes",
       "description": "Vesicles extracted from mesenchymal stem cells containing microRNA, proteins and growth factors",
-      "benefits": ["High concentration", "Cellular regeneration", "Advanced technology"]
+      "benefits": ["High concentration", "Cellular repair", "Advanced technology"]
     },
     "prp": {
       "title": "Platelet-Rich Plasma (PRP)",
@@ -144,7 +144,7 @@
   },
   "seo": {
     "home": {
-      "title": "Dr. James Madrid - Sports Medicine & Regenerative Treatments | Medellín",
+      "title": "Dr. James Madrid Jaramillo - Sports & Physical Medicine Specialist | Regenerative Medicine",
       "description": "Sports medicine specialist in Medellín. Arthritis treatments, PRP, prolotherapy and sports injuries with minimally invasive techniques. +15 years of experience."
     }
   }

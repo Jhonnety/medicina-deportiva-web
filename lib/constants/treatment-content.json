@@ -2,14 +2,14 @@
   "celulas-madre-mesenquimales": {
     "es": {
       "title": "Células Madre Mesenquimales",
-      "subtitle": "Regeneración total con células totipotenciales",
+      "subtitle": "Reparacción con células totipotenciales",
       "metaTitle": "Células Madre Mesenquimales en Medellín | Dr. James Madrid",
       "metaDescription": "Tratamiento con células madre mesenquimales para regeneración de tejidos. Terapia avanzada autóloga o alogénica. +20 años de experiencia.",
       "whatIs": {
         "title": "¿Qué son las Células Madre Mesenquimales y cómo funcionan?",
-        "definition": "Las células madre mesenquimales son células totipotenciales con la capacidad única de diferenciarse en diversos tipos de tejidos. Tienen la capacidad de convertir tejido enfermo en tejido sano mediante procesos de regeneración natural.",
-        "physiologicalBenefit": "Estas células estimulan la reparación y regeneración de tejidos dañados, reducen la inflamación, modulan el sistema inmunológico y promueven la formación de nuevos vasos sanguíneos. Son especialmente efectivas en lesiones articulares, tendinosas y degenerativas.",
-        "howWorks": "El procedimiento consiste en la extracción, procesamiento y aplicación de células madre, ya sea autólogas (del mismo paciente) o alogénicas (de donante compatible). Estas células se aplican directamente en la zona afectada guiadas por ultrasonido para máxima precisión."
+        "definition": "Las células madre mesenquimales son células totipotenciales con la capacidad única de diferenciarse  o señalizarse en diversos tipos de tejidos. Tienen la capacidad de reconocer el tejido enfermo y señalizarlo para inducir procesos de cicatrización o regeneración de manera de natural.",
+        "physiologicalBenefit": "Estas células estimulan la reparación y cicatrización de tejidos dañados, reducen la inflamación, modulan el sistema inmunológico y promueven la formación de nuevos vasos sanguíneos. Son especialmente efectivas en lesiones articulares, tendinosas y degenerativas.",
+        "howWorks": "El procedimiento consiste en la extracción, procesamiento y aplicación de células madre, ya sean autólogas (del mismo paciente) o alogénicas (de donante compatible). Estas células se aplican directamente en la zona afectada, guiadas por ultrasonido, para máxima precisión. De acuerdo a las condiciones médicas del paciente, su uso también puede ser intravenoso."
       },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
@@ -51,15 +51,15 @@
         "items": [
           {
             "title": "Vuelve a Moverte Sin Dolor",
-            "description": "Imagina despertar sin ese dolor que te acompaña cada día. Con células madre, tu cuerpo regenera el tejido dañado naturalmente, permitiéndote recuperar esa libertad de movimiento que tanto extrañas."
+            "description": "Imagina despertar sin ese dolor que te acompaña cada día. Con células madre, tu cuerpo repara el tejido dañado naturalmente, permitiéndote recuperar esa libertad de movimiento que tanto extrañas."
           },
           {
             "title": "Recupera Tu Vida Activa",
-            "description": "Vuelve a jugar con tus hijos, retoma ese deporte que dejaste, camina sin limitaciones. Este tratamiento te devuelve la posibilidad de vivir plenamente, haciendo todo lo que el dolor te había arrebatado."
+            "description":"Vuelve a jugar con tus hijos, retoma ese deporte que dejaste, camina sin limitaciones o rinde nuevamente en tu deporte favorito. Este tratamiento te devuelve la posibilidad de vivir plenamente."
           },
           {
             "title": "Una Solución Duradera y Natural",
-            "description": "No es solo aliviar síntomas temporalmente. Tu propio cuerpo se regenera desde adentro, creando tejido nuevo y sano que perdura en el tiempo. Es tu oportunidad de evitar cirugías y recuperarte de verdad."
+            "description": "No es solo aliviar síntomas temporalmente. Tu propio cuerpo se repara desde adentro, creando tejido nuevo y sano que perdura en el tiempo. Es tu oportunidad de evitar el riesgo de cirugías, recuperarte de verdad y optimizar tu rendimiento."
           }
         ]
       },
@@ -100,14 +100,14 @@
     },
     "en": {
       "title": "Mesenchymal Stem Cells",
-      "subtitle": "Total regeneration with totipotential cells",
+      "subtitle": "Repair with totipotential cells",
       "metaTitle": "Mesenchymal Stem Cells in Medellín | Dr. James Madrid",
       "metaDescription": "Treatment with mesenchymal stem cells for tissue regeneration. Advanced autologous or allogeneic therapy. +20 years of experience.",
       "whatIs": {
         "title": "What are Mesenchymal Stem Cells and how do they work?",
-        "definition": "Mesenchymal stem cells are totipotential cells with the unique ability to differentiate into various types of tissues. They have the capacity to convert diseased tissue into healthy tissue through natural regeneration processes.",
-        "physiologicalBenefit": "These cells stimulate the repair and regeneration of damaged tissues, reduce inflammation, modulate the immune system, and promote the formation of new blood vessels. They are especially effective in joint, tendon, and degenerative injuries.",
-        "howWorks": "The procedure consists of extraction, processing, and application of stem cells, either autologous (from the same patient) or allogeneic (from a compatible donor). These cells are applied directly to the affected area guided by ultrasound for maximum precision."
+        "definition": "Mesenchymal stem cells are totipotent cells with the unique ability to differentiate and signal across various tissue types. They can recognize damaged tissue and trigger natural healing and regeneration processes through cellular signaling.",
+        "physiologicalBenefit": "These cells stimulate the repair and cicatrization of damaged tissues, reduce inflammation, modulate the immune system, and promote the formation of new blood vessels. They are especially effective in joint, tendon, and degenerative injuries.",
+        "howWorks": "The procedure consists of extraction, processing, and application of stem cells, whether autologous (from the same patient) or allogeneic (from compatible donor). These cells are applied directly in the affected area, guided by ultrasound, for maximum precision. According to the medical conditions of the patient, their use can also be intravenous."
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",
@@ -149,15 +149,15 @@
         "items": [
           {
             "title": "Move Again Without Pain",
-            "description": "Imagine waking up without that pain that accompanies you every day. With stem cells, your body naturally regenerates damaged tissue, allowing you to recover that freedom of movement you miss so much."
+            "description": "Imagine waking up without that pain that accompanies you every day. With stem cells, your body naturally repair damaged tissue, allowing you to recover that freedom of movement you miss so much."
           },
           {
             "title": "Get Your Active Life Back",
-            "description": "Play with your kids again, return to that sport you left behind, walk without limitations. This treatment gives you back the possibility to live fully, doing everything that pain had taken away from you."
+            "description": "Play again with your children, resume that sport you left, walk without limitations or perform again in your favorite sport. This treatment returns you the possibility of living fully."
           },
           {
             "title": "A Lasting and Natural Solution",
-            "description": "It's not just about temporarily relieving symptoms. Your own body regenerates from within, creating new, healthy tissue that lasts over time. It's your chance to avoid surgery and truly recover."
+            "description": "It is not just relieving symptoms temporarily. Your own body repairs itself from within, creating new and healthy tissue that endures over time. It is your opportunity to avoid the risk of surgeries, truly recover and optimize your performance."
           }
         ]
       },
