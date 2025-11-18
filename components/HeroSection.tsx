@@ -163,7 +163,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-1" style={{ color: '#6ba5a5' }}>6+</div>
+                  <div className="text-4xl font-bold mb-1" style={{ color: '#6ba5a5' }}>2</div>
                   <div className="text-sm font-medium text-gray-700">
                     {locale === 'es' ? 'Especialidades' : 'Specialties'}
                   </div>

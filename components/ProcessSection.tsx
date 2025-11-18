@@ -19,8 +19,8 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
       number: '1',
       title: locale === 'es' ? 'Valoración Médica' : 'Medical Assessment',
       description: locale === 'es' 
-        ? 'Realizamos una evaluación completa de tu condición física, historial médico y objetivos específicos para entender tus necesidades.'
-        : 'We perform a complete evaluation of your physical condition, medical history, and specific objectives to understand your needs.',
+        ? 'Realizamos una evaluación completa de tus objetivos específicos, historial médico y condición física para entender tus necesidades.'
+        : 'We perform a complete evaluation of your specific objectives, medical history, and physical condition to understand your needs.',
       icon: <Calendar className="w-7 h-7 text-accent-cool" />,
       iconBg: 'bg-accent-cool/10',
       numberBg: 'bg-accent-cool',
@@ -94,8 +94,8 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
           </p>
           <p className="text-base text-gray-600 italic">
             {locale === 'es' 
-              ? '"Nos enfocamos en resultados reales, sin cirugía."' 
-              : '"We focus on real results, without surgery."'}
+              ? '"Nos enfocamos en resultados reales y alcanzables."' 
+              : '"We focus on real results and achievable results."'}
           </p>
         </div>
 

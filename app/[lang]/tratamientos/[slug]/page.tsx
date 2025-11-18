@@ -357,8 +357,8 @@ export default async function TreatmentPage({
                     </div>
                     <span className="text-lg font-semibold !text-white">
                       {lang === 'es' 
-                        ? '¿Listo para comenzar tu transformación?' 
-                        : 'Ready to start your transformation?'}
+                        ? '¿Listo para comenzar tu recuperación?' 
+                        : 'Ready to start your recovery?'}
                     </span>
                   </div>
                   <a href={`https://wa.me/573044386208?text=${encodeURIComponent(lang === 'es' ? '¡Hola! Me interesa el tratamiento y quiero más información' : 'Hello! I am interested in the treatment and would like more information')}`}
