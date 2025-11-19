@@ -18,22 +18,22 @@ export default function FAQsSection({ locale }: FAQsSectionProps) {
   const faqsData: FAQItem[] = locale === 'es' ? [
     {
       question: '¿Qué es la medicina deportiva y quién puede beneficiarse?',
-      answer: 'La medicina deportiva es una especialidad médica enfocada en prevenir, diagnosticar y tratar lesiones relacionadas con la actividad física. Tratamos desde deportistas de alto rendimiento hasta personas con actividades cotidianas que presentan molestias.',
+      answer: 'La medicina deportiva es una especialidad médica enfocada en prevenir, diagnosticar y tratar lesiones relacionadas con la actividad física. Tratamos desde deportistas de alto rendimiento hasta personas con actividades cotidianas que presentan molestias. Además, tenemos como objetivo prevenir la muerte súbita durante la actividad física, por eso analizamos el sistema cardiovascular. Por último, evaluamos de manera integral el sistema metabólico y tenemos las competencias para ayudar al paciente al control del peso.',
       icon: Stethoscope,
     },
     {
       question: '¿Los tratamientos requieren cirugía?',
-      answer: 'No. Nuestra especialidad es el tratamiento NO quirúrgico. Utilizamos técnicas avanzadas como proloterapia, plasma rico en plaquetas (PRP), terapias regenerativas e infiltraciones ecoguiadas.',
+      answer: 'No, realizamos tratamiento médico con células madre, exosomas, péptidos, plasma rico en plaquetas, ácido hialurónico, medicina funcional y convencional. Utilizamos técnicas de fisioterapia avanzada, tales como: ondas de choque y medicina hiperbárica.',
       icon: ShieldOff,
     },
     {
       question: '¿Necesito cita previa?',
-      answer: 'Trabajamos con cita previa para garantizar atención personalizada. Para urgencias, contáctanos por WhatsApp al +57 304 438 62 08 y haremos lo posible por atenderte el mismo día.',
+      answer: 'Trabajamos con cita previa para garantizar atención personalizada. Contáctanos por WhatsApp al +57 304 438 62 08 y haremos lo posible por atenderte el mismo día. Contamos con la modalidad virtual y presencial para agendamiento de acuerdo a la necesidad. Modalidad muy útil para pacientes que viven fuera de Medellín, útil para citas iniciales y seguimiento.',
       icon: Calendar,
     },
     {
       question: '¿Dónde están ubicados?',
-      answer: 'Estamos en Torre Medical, El Poblado, Medellín. Zona accesible con parqueadero, cerca del Metro Estación Poblado. Puedes ver la ubicación exacta en nuestra sección de contacto.',
+      answer: 'Estamos en Torre Medical, El Poblado, Medellín. Zona accesible con parqueadero, cerca del Metro Estación Poblado. Calle 7 #39-107, Torre Medical, Consultorio 1009.',
       icon: MapPin,
     },
     {
@@ -43,28 +43,28 @@ export default function FAQsSection({ locale }: FAQsSectionProps) {
     },
     {
       question: '¿Aceptan seguros médicos?',
-      answer: 'Sí, trabajamos con los principales seguros médicos y medicina prepagada de Colombia. Verifica tu cobertura con tu aseguradora antes de la cita.',
+      answer: 'Solo Sura pólizas y Coomeva medicina prepagada.',
       icon: CreditCard,
     },
   ] : [
     {
       question: 'What is sports medicine and who can benefit?',
-      answer: 'Sports medicine is a medical specialty focused on preventing, diagnosing, and treating injuries related to physical activity. We treat everyone from high-performance athletes to people with everyday activities who experience discomfort.',
+      answer: 'Sports medicine is a medical specialty focused on preventing, diagnosing and treating injuries related to physical activity. We treat from high-performance athletes to people with daily activities who present discomfort. Additionally, we aim to prevent sudden death during physical activity, which is why we analyze the cardiovascular system. Finally, we comprehensively evaluate the metabolic system and have the competencies to help the patient with weight control.',
       icon: Stethoscope,
     },
     {
       question: 'Do treatments require surgery?',
-      answer: 'No. Our specialty is NON-surgical treatment. We use advanced techniques such as prolotherapy, platelet-rich plasma (PRP), regenerative therapies, and ultrasound-guided infiltrations.',
+      answer: 'No, we perform medical treatment with stem cells, exosomes, peptides, platelet-rich plasma, hyaluronic acid, functional and conventional medicine. We use advanced physiotherapy techniques, such as: shock waves and hyperbaric medicine.',
       icon: ShieldOff,
     },
     {
       question: 'Do I need an appointment?',
-      answer: 'We work by appointment to ensure personalized attention. For emergencies, contact us via WhatsApp at +57 304 438 62 08 and we will do our best to see you the same day.',
+      answer: 'We work by appointment to guarantee personalized attention. Contact us by WhatsApp at +57 304 438 62 08 and we will do our best to serve you the same day. We have virtual and in-person modality for scheduling according to need. Modality very useful for patients who live outside Medellín, useful for initial appointments and follow-up.',
       icon: Calendar,
     },
     {
       question: 'Where are you located?',
-      answer: 'We are in Torre Medical, El Poblado, Medellín. Accessible area with parking, near Metro Estación Poblado. You can see the exact location in our contact section.',
+      answer: 'We are in Torre Medical, El Poblado, Medellín. Accessible area with parking, near Metro Estación Poblado. Calle 7 #39-107, Torre Medical, Consultorio 1009.',
       icon: MapPin,
     },
     {
@@ -74,7 +74,7 @@ export default function FAQsSection({ locale }: FAQsSectionProps) {
     },
     {
       question: 'Do you accept medical insurance?',
-      answer: 'Yes, we work with the main medical insurance and prepaid medicine companies in Colombia. Verify your coverage with your insurer before the appointment.',
+      answer: 'Only Sura policies and Coomeva prepaid medicine.',
       icon: CreditCard,
     },
   ];
