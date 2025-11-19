@@ -17,7 +17,7 @@
           {
             "name": "Dolor de rodilla que no te deja caminar bien",
             "condition": "Artrosis avanzada",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_16.jpg"
           },
           {
             "name": "Rodilla que cruje y duele al subir escaleras",
@@ -42,7 +42,7 @@
           {
             "name": "Tobillo que se tuerce fácilmente",
             "condition": "Lesión ligamentaria crónica",
-            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+            "image": "/assets/images/symptoms/artrosis_12.jpg"
           }
         ]
       },
@@ -115,7 +115,7 @@
           {
             "name": "Knee pain that makes walking difficult",
             "condition": "Advanced osteoarthritis",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_16.jpg"
           },
           {
             "name": "Knee that cracks and hurts going upstairs",
@@ -140,7 +140,7 @@
           {
             "name": "Ankle that twists easily",
             "condition": "Chronic ligament injury",
-            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+            "image": "/assets/images/symptoms/artrosis_12.jpg"
           }
         ]
       },
@@ -205,9 +205,9 @@
       "metaDescription": "Tratamiento con exosomas para regeneración de tejidos, reducción de inflamación y reparación celular. Tecnología de vanguardia en medicina deportiva. +20 años de experiencia en Medellín.",
       "whatIs": {
         "title": "¿Qué son los Exosomas y cómo funcionan?",
-        "definition": "Los exosomas son vesículas extracelulares nanométricas (30-150nm) que contienen proteínas, ácidos nucleicos y factores de crecimiento. Son secretados naturalmente por las células y actúan como mensajeros intercelulares, facilitando la comunicación y regeneración celular.",
-        "physiologicalBenefit": "Los exosomas modulan la respuesta inflamatoria, estimulan la angiogénesis (formación de nuevos vasos sanguíneos), promueven la diferenciación celular y aceleran la reparación de tejidos dañados. Son especialmente efectivos en lesiones deportivas, artrosis y procesos degenerativos articulares.",
-        "howWorks": "Se aplican mediante infiltración guiada por ultrasonido en la zona afectada. Los exosomas liberan su contenido bioactivo directamente en el tejido lesionado, activando procesos de regeneración celular, reduciendo la inflamación y mejorando la función del tejido sin necesidad de células vivas."
+        "definition": "Los exosomas son vesículas extracelulares nanométricas (30-150nm) que contienen proteínas, ácidos nucleicos y factores de crecimiento. Son secretados naturalmente por las células y actúan como mensajeros intercelulares, facilitando la comunicación y reparación celular.",
+        "physiologicalBenefit": "Los exosomas modulan la respuesta inflamatoria, estimulan la angiogénesis (formación de nuevos vasos sanguíneos), promueven la diferenciación celular y aceleran la reparación de tejidos dañados. Son especialmente efectivos en lesiones deportivas y procesos degenerativos articulares como la artrosis de rodilla.",
+        "howWorks": "Se aplican mediante infiltración guiada por ultrasonido en la zona afectada. Los exosomas liberan su contenido bioactivo directamente en el tejido lesionado, activando procesos de reparación celular, reduciendo la inflamación y mejorando la función del tejido sin necesidad de células vivas."
       },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
@@ -215,7 +215,7 @@
           {
             "name": "Rodilla o cadera que duele todos los días",
             "condition": "Artrosis degenerativa",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_12.jpg"
           },
           {
             "name": "Tendón que duele desde hace meses",
@@ -252,7 +252,7 @@
             "description": "Siente cómo el dolor disminuye semana a semana. Los exosomas actúan directamente sobre la inflamación, dándote ese alivio que tanto necesitas para volver a tu rutina sin sufrimiento constante."
           },
           {
-            "title": "Regeneración Mientras Vives",
+            "title": "Reparación Mientras Vives",
             "description": "Tu cuerpo se repara mientras sigues con tu vida. Sin cirugías, sin hospitalizaciones largas. Este tratamiento trabaja en segundo plano para que recuperes tu movilidad de forma natural y progresiva."
           },
           {
@@ -284,7 +284,7 @@
       "faqs": [
         {
           "q": "¿Cuántas sesiones de exosomas necesito?",
-          "a": "La mayoría de pacientes requieren 1-3 sesiones dependiendo de la severidad de la lesión. Las lesiones agudas pueden responder con una sola aplicación, mientras que condiciones crónicas o degenerativas pueden necesitar 2-3 sesiones espaciadas cada 4-6 semanas."
+          "a": "La mayoría de pacientes requieren 1-3 sesiones dependiendo de la severidad de la lesión. Las lesiones agudas pueden responder con una sola aplicación, mientras que condiciones crónicas o degenerativas pueden necesitar 2-3 sesiones espaciadas cada 4-12 semanas."
         },
         {
           "q": "¿Cuándo veré resultados con el tratamiento de exosomas?",
@@ -303,9 +303,9 @@
       "metaDescription": "Exosome treatment for tissue regeneration, inflammation reduction and cellular repair. Cutting-edge sports medicine technology. +20 years of experience in Medellín.",
       "whatIs": {
         "title": "What are Exosomes and how do they work?",
-        "definition": "Exosomes are nanometric extracellular vesicles (30-150nm) containing proteins, nucleic acids, and growth factors. They are naturally secreted by cells and act as intercellular messengers, facilitating communication and cellular regeneration.",
-        "physiologicalBenefit": "Exosomes modulate inflammatory response, stimulate angiogenesis (formation of new blood vessels), promote cellular differentiation, and accelerate repair of damaged tissues. They are especially effective in sports injuries, osteoarthritis, and degenerative joint processes.",
-        "howWorks": "Applied through ultrasound-guided infiltration into the affected area. Exosomes release their bioactive content directly into the injured tissue, activating cellular regeneration processes, reducing inflammation, and improving tissue function without the need for live cells."
+        "definition": "Exosomes are nanometric extracellular vesicles (30-150nm) containing proteins, nucleic acids, and growth factors. They are naturally secreted by cells and act as intercellular messengers, facilitating communication and cellular repair.",
+        "physiologicalBenefit": "Exosomes modulate inflammatory response, stimulate angiogenesis (formation of new blood vessels), promote cellular differentiation, and accelerate repair of damaged tissues. They are especially effective in sports injuries and degenerative joint conditions such as knee osteoarthritis.",
+        "howWorks": "Applied through ultrasound-guided infiltration into the affected area. Exosomes release their bioactive content directly into the injured tissue, activating cellular repair processes, reducing inflammation, and improving tissue function without the need for live cells."
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",
@@ -313,7 +313,7 @@
           {
             "name": "Knee or hip that hurts every day",
             "condition": "Degenerative osteoarthritis",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_12.jpg"
           },
           {
             "name": "Tendon that's been hurting for months",
@@ -350,7 +350,7 @@
             "description": "Feel how the pain decreases week by week. Exosomes act directly on inflammation, giving you that relief you need so much to return to your routine without constant suffering."
           },
           {
-            "title": "Regeneration While You Live",
+            "title": "Repair While You Live",
             "description": "Your body repairs itself while you continue with your life. No surgeries, no long hospitalizations. This treatment works in the background so you can recover your mobility naturally and progressively."
           },
           {
@@ -382,7 +382,7 @@
       "faqs": [
         {
           "q": "How many exosome sessions do I need?",
-          "a": "Most patients require 1-3 sessions depending on injury severity. Acute injuries may respond with a single application, while chronic or degenerative conditions may need 2-3 sessions spaced every 4-6 weeks."
+          "a": "Most patients require 1-3 sessions depending on injury severity. Acute injuries may respond with a single application, while chronic or degenerative conditions may need 2-3 sessions spaced every 4-12 weeks."
         },
         {
           "q": "When will I see results from exosome treatment?",
@@ -398,13 +398,13 @@
   "plasma-rico-plaquetas": {
     "es": {
       "title": "Plasma Rico en Plaquetas (PRP)",
-      "subtitle": "Tratamiento biológico autólogo para regeneración natural",
+      "subtitle": "Tratamiento biológico autólogo para reparación natural",
       "metaTitle": "Plasma Rico en Plaquetas PRP en Medellín | Medicina Regenerativa | Dr. James Madrid",
       "metaDescription": "Tratamiento PRP con tu propia sangre para lesiones deportivas, tendinitis, artrosis y dolor articular. Procedimiento ambulatorio, resultados naturales. +20 años de experiencia en Medellín.",
       "whatIs": {
         "title": "¿Qué es el Plasma Rico en Plaquetas (PRP)?",
-        "definition": "El PRP es un concentrado autólogo de plaquetas obtenido de tu propia sangre que contiene factores de crecimiento y proteínas bioactivas. Mediante centrifugación, se separan y concentran las plaquetas (hasta 5-10 veces más que en sangre normal), creando un poderoso agente regenerativo natural.",
-        "physiologicalBenefit": "Las plaquetas concentradas liberan factores de crecimiento (PDGF, TGF-β, VEGF, EGF) que estimulan la proliferación celular, aceleran la cicatrización, mejoran la vascularización del tejido y modulan la respuesta inflamatoria. Es efectivo en tendinitis, lesiones ligamentarias, artrosis inicial y lesiones musculares.",
+        "definition": "El PRP es un concentrado autólogo de plaquetas obtenido de tu propia sangre que contiene factores de crecimiento y proteínas bioactivas. Mediante centrifugación, se separan y concentran las plaquetas (hasta 5-10 veces más que en sangre normal), creando un poderoso agente reparativo natural.",
+        "physiologicalBenefit": "Las plaquetas concentradas liberan factores de crecimiento (PDGF, TGF-β, VEGF, EGF) que estimulan la proliferación celular, aceleran la cicatrización o regeneración, mejoran la vascularización del tejido y modulan la respuesta inflamatoria. Es efectivo en tendinitis, lesiones ligamentarias, artrosis inicial y lesiones musculares.",
         "howWorks": "Se extrae una muestra de tu sangre (similar a un análisis de laboratorio), se procesa en centrífuga especializada para concentrar las plaquetas, y el PRP resultante se infiltra con precisión guiada por ecografía en el tejido lesionado. Todo el proceso toma aproximadamente 45-60 minutos."
       },
       "symptoms": {
@@ -496,12 +496,12 @@
     },
     "en": {
       "title": "Platelet-Rich Plasma (PRP)",
-      "subtitle": "Autologous biological treatment for natural regeneration",
+      "subtitle": "Autologous biological treatment for natural repair",
       "metaTitle": "Platelet-Rich Plasma PRP in Medellín | Regenerative Medicine | Dr. James Madrid",
       "metaDescription": "PRP treatment using your own blood for sports injuries, tendinitis, osteoarthritis and joint pain. Outpatient procedure, natural results. +20 years of experience in Medellín.",
       "whatIs": {
         "title": "What is Platelet-Rich Plasma (PRP)?",
-        "definition": "PRP is an autologous platelet concentrate obtained from your own blood containing growth factors and bioactive proteins. Through centrifugation, platelets are separated and concentrated (up to 5-10 times more than in normal blood), creating a powerful natural regenerative agent.",
+        "definition": "PRP is an autologous platelet concentrate obtained from your own blood containing growth factors and bioactive proteins. Through centrifugation, platelets are separated and concentrated (up to 5-10 times more than in normal blood), creating a powerful natural reparative agent.",
         "physiologicalBenefit": "Concentrated platelets release growth factors (PDGF, TGF-β, VEGF, EGF) that stimulate cell proliferation, accelerate healing, improve tissue vascularization, and modulate inflammatory response. It's effective for tendinitis, ligament injuries, early osteoarthritis, and muscle injuries.",
         "howWorks": "A blood sample is drawn (similar to a lab test), processed in a specialized centrifuge to concentrate platelets, and the resulting PRP is infiltrated with ultrasound-guided precision into the injured tissue. The entire process takes approximately 45-60 minutes."
       },
