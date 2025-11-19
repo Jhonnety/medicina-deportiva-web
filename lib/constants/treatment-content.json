@@ -22,12 +22,12 @@
           {
             "name": "Rodilla que cruje y duele al subir escaleras",
             "condition": "Lesión de cartílago articular",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
           },
           {
             "name": "Dolor constante en hombro o codo",
             "condition": "Tendinopatía crónica",
-            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+            "image": "/assets/images/symptoms/artrosis_20.jpg"
           },
           {
             "name": "Dolor dentro de la rodilla al flexionarla",
@@ -43,6 +43,23 @@
             "name": "Tobillo que se tuerce fácilmente",
             "condition": "Lesión ligamentaria crónica",
             "image": "/assets/images/symptoms/artrosis_12.jpg"
+          },
+          {
+            "name": "Punzadas en el lado interno de la rodilla al caminar",
+            "condition": "Bursitis Pata de Ganso",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
+            "condition": "Bursitis Trocantérea Mayor",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
+            "condition": "Bursitis Subacromio Subdeltoidea",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -120,12 +137,12 @@
           {
             "name": "Knee that cracks and hurts going upstairs",
             "condition": "Articular cartilage injury",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "image": "/assets/images/symptoms/artrosis_3.jpeg"
           },
           {
             "name": "Constant pain in shoulder or elbow",
             "condition": "Chronic tendinopathy",
-            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+            "image": "/assets/images/symptoms/artrosis_20.jpg"
           },
           {
             "name": "Pain inside your knee when bending it",
@@ -141,6 +158,23 @@
             "name": "Ankle that twists easily",
             "condition": "Chronic ligament injury",
             "image": "/assets/images/symptoms/artrosis_12.jpg"
+          },
+          {
+            "name": "Stabbing pain on the inner side of the knee when walking",
+            "condition": "Pes Anserine Bursitis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Pain on the side of the hip that won't let you sleep on your side",
+            "condition": "Greater Trochanteric Bursitis",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
+            "condition": "Subacromial Subdeltoid Bursitis",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -241,6 +275,23 @@
             "name": "Codo que duele al agarrar cosas",
             "condition": "Epicondilitis (codo de tenista)",
             "image": "/assets/images/symptoms/osteopatia_1.jpeg"
+          },
+          {
+            "name": "Punzadas en el lado interno de la rodilla al caminar",
+            "condition": "Bursitis Pata de Ganso",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
+            "condition": "Bursitis Trocantérea Mayor",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
+            "condition": "Bursitis Subacromio Subdeltoidea",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -338,7 +389,24 @@
           {
             "name": "Elbow that hurts when grabbing things",
             "condition": "Epicondylitis (tennis elbow)",
-            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+            "image": "/assets/images/symptoms/osteopatia_1.jpeg"
+          },
+          {
+            "name": "Stabbing pain on the inner side of the knee when walking",
+            "condition": "Pes Anserine Bursitis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Pain on the side of the hip that won't let you sleep on your side",
+            "condition": "Greater Trochanteric Bursitis",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
+            "condition": "Subacromial Subdeltoid Bursitis",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -418,7 +486,7 @@
           {
             "name": "Dolor en el lado del codo que no se quita",
             "condition": "Epicondilitis lateral o medial",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "image": "/assets/images/symptoms/osteopatia_1.jpeg"
           },
           {
             "name": "Articulación que duele y está desgastada",
@@ -428,7 +496,7 @@
           {
             "name": "Dolor en el hombro al dormir de lado",
             "condition": "Lesión del manguito rotador",
-            "image": "/assets/images/symptoms/artrosis_10.jpg"
+            "image": "/assets/images/symptoms/artrosis_19.jpg"
           },
           {
             "name": "Tobillo o muñeca que no termina de sanar",
@@ -439,6 +507,23 @@
             "name": "Dolor intenso en el talón al levantarte",
             "condition": "Fascitis plantar persistente",
             "image": "/assets/images/symptoms/fascitis_2.jpg"
+          },
+          {
+            "name": "Punzadas en el lado interno de la rodilla al caminar",
+            "condition": "Bursitis Pata de Ganso",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
+            "condition": "Bursitis Trocantérea Mayor",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
+            "condition": "Bursitis Subacromio Subdeltoidea",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -511,32 +596,49 @@
           {
             "name": "Shoulder, elbow or heel that hurts when playing sports",
             "condition": "Sports tendinitis",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_9.webp"
           },
           {
             "name": "Pain on the side of your elbow that won't go away",
             "condition": "Lateral or medial epicondylitis",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "image": "/assets/images/symptoms/osteopatia_1.jpeg"
           },
           {
             "name": "Joint that hurts and feels worn out",
             "condition": "Mild to moderate osteoarthritis",
-            "image": "/assets/images/symptoms/artrosis_3.jpeg"
+            "image": "/assets/images/symptoms/artrosis_8.webp"
           },
           {
             "name": "Shoulder pain when sleeping on your side",
             "condition": "Rotator cuff injury",
-            "image": "/assets/images/symptoms/artrosis_1.jpeg"
+            "image": "/assets/images/symptoms/artrosis_19.jpg"
           },
           {
             "name": "Ankle or wrist that won't fully heal",
             "condition": "Chronic ligament sprain",
-            "image": "/assets/images/symptoms/artrosis_7.webp"
+            "image": "/assets/images/symptoms/artrosis_7.jpeg"
           },
           {
             "name": "Intense heel pain when you get up",
             "condition": "Persistent plantar fasciitis",
-            "image": "/assets/images/symptoms/artrosis_6.jpeg"
+            "image": "/assets/images/symptoms/fascitis_2.jpg"
+          },
+          {
+            "name": "Stabbing pain on the inner side of the knee when walking",
+            "condition": "Pes Anserine Bursitis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Pain on the side of the hip that won't let you sleep on your side",
+            "condition": "Greater Trochanteric Bursitis",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
+            "condition": "Subacromial Subdeltoid Bursitis",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -611,12 +713,12 @@
           {
             "name": "Rodilla que duele al caminar o subir escaleras",
             "condition": "Artrosis de rodilla (gonartrosis)",
-            "image": "/assets/images/symptoms/artrosis_5.jpeg"
+            "image": "/assets/images/symptoms/artrosis_12.jpg"
           },
           {
             "name": "Articulación rígida por las mañanas",
             "condition": "Artrosis con rigidez articular",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
           {
             "name": "Dolor de cadera que limita tus movimientos",
@@ -626,7 +728,7 @@
           {
             "name": "Hombro que cruje y duele al moverlo",
             "condition": "Artrosis de hombro",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "image": "/assets/images/symptoms/artrosis_20.jpg"
           },
           {
             "name": "Articulación hinchada con líquido",
@@ -636,7 +738,24 @@
           {
             "name": "Dolor que empeora con el ejercicio",
             "condition": "Artrosis degenerativa",
-            "image": "/assets/images/symptoms/artrosis_7.jpeg"
+            "image": "/assets/images/symptoms/artrosis_16.jpg"
+          },
+          {
+            "name": "Punzadas en el lado interno de la rodilla al caminar",
+            "condition": "Bursitis Pata de Ganso",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
+            "condition": "Bursitis Trocantérea Mayor",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
+            "condition": "Bursitis Subacromio Subdeltoidea",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
@@ -709,12 +828,12 @@
           {
             "name": "Knee that hurts when walking or climbing stairs",
             "condition": "Knee osteoarthritis (gonarthrosis)",
-            "image": "/assets/images/symptoms/artrosis_5.jpeg"
+            "image": "/assets/images/symptoms/artrosis_12.jpg"
           },
           {
             "name": "Stiff joint in the mornings",
             "condition": "Osteoarthritis with joint stiffness",
-            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
           {
             "name": "Hip pain that limits your movement",
@@ -724,7 +843,7 @@
           {
             "name": "Shoulder that crunches and hurts when moving",
             "condition": "Shoulder osteoarthritis",
-            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+            "image": "/assets/images/symptoms/artrosis_20.jpg"
           },
           {
             "name": "Swollen joint with fluid",
@@ -734,7 +853,24 @@
           {
             "name": "Pain that worsens with exercise",
             "condition": "Degenerative osteoarthritis",
-            "image": "/assets/images/symptoms/artrosis_7.jpeg"
+            "image": "/assets/images/symptoms/artrosis_17.jpg"
+          },
+          {
+            "name": "Stabbing pain on the inner side of the knee when walking",
+            "condition": "Pes Anserine Bursitis",
+            "image": "/assets/images/symptoms/artrosis_2.jpeg"
+          }
+          ,
+          {
+            "name": "Pain on the side of the hip that won't let you sleep on your side",
+            "condition": "Greater Trochanteric Bursitis",
+            "image": "/assets/images/symptoms/artrosis_10.jpg"
+          }
+          ,
+          {
+            "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
+            "condition": "Subacromial Subdeltoid Bursitis",
+            "image": "/assets/images/symptoms/artrosis_18.jpg"
           }
         ]
       },
