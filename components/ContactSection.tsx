@@ -57,13 +57,13 @@ export default function ContactSection({ locale }: ContactSectionProps) {
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('consultorio.medico.drjamesmadrid@gmail.com');
+      await navigator.clipboard.writeText('consultoriomedicodrjamesmadrid@gmail.com');
       setEmailCopied(true);
       setTimeout(() => setEmailCopied(false), 2000);
     } catch {
       // Fallback para navegadores que no soportan clipboard API
       const textArea = document.createElement('textarea');
-      textArea.value = 'consultorio.medico.drjamesmadrid@gmail.com';
+      textArea.value = 'consultoriomedicodrjamesmadrid@gmail.com';
       document.body.appendChild(textArea);
       textArea.select();
       try {
@@ -86,8 +86,8 @@ export default function ContactSection({ locale }: ContactSectionProps) {
     },
     email: {
       title: 'Email',
-      value: 'consultorio.medico.drjamesmadrid@gmail.com',
-      link: 'mailto:consultorio.medico.drjamesmadrid@gmail.com',
+      value: 'consultoriomedicodrjamesmadrid@gmail.com',
+      link: 'mailto:consultoriomedicodrjamesmadrid@gmail.com',
     },
     instagram: {
       title: 'Instagram',
@@ -117,8 +117,8 @@ export default function ContactSection({ locale }: ContactSectionProps) {
     },
     email: {
       title: 'Email',
-      value: 'consultorio.medico.drjamesmadrid@gmail.com',
-      link: 'mailto:consultorio.medico.drjamesmadrid@gmail.com',
+      value: 'consultoriomedicodrjamesmadrid@gmail.com',
+      link: 'mailto:consultoriomedicodrjamesmadrid@gmail.com',
     },
     instagram: {
       title: 'Instagram',

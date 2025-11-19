@@ -108,7 +108,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
     '@id': 'https://drjamesmadrid.com',
     url: `https://drjamesmadrid.com/${lang}`,
     telephone: '+573001234567',
-    email: 'contacto@drjamesmadrid.com',
+    email: 'consultoriomedicodrjamesmadrid@gmail.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Calle 123 #45-67',
