@@ -272,8 +272,8 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
               
               <p className="text-lg md:text-xl !text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
                 {locale === 'es' 
-                  ? 'Agenda tu primera consulta con el Dr. James Madrid y da el primer paso hacia una vida sin dolor' 
-                  : 'Schedule your first consultation with Dr. James Madrid and take the first step towards a pain-free life'}
+                  ? 'Agenda tu primera consulta con el Dr. James Madrid Jaramillo y da el primer paso hacia una vida sin dolor' 
+                  : 'Schedule your first consultation with Dr. James Madrid Jaramillo and take the first step towards a pain-free life'}
               </p>
 
               {/* Botones de acción */}

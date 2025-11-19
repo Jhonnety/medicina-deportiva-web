@@ -5,13 +5,14 @@ import treatment_exosomes_desktop_1 from '@/assets/images/treaments/treatment_ex
 import treatment_platelet_rich_plasma_desktop_1 from '@/assets/images/treaments/treatment_platelet_rich_plasma_desktop_1.jpg';
 import treatment_hyaluronic_acid_desktop_2 from '@/assets/images/treaments/treatment_hyaluronic_acid_desktop_2.jpg';
 import treatment_hyaluronic_acid_mobile_2 from '@/assets/images/treaments/treatment_hyaluronic_acid_mobile_2.jpg';
-import treatment_conventional_infiltration_desktop_1 from '@/assets/images/treaments/treatment_conventional_infiltration_desktop_1.jpeg';
+import treatment_conventional_infiltration_desktop_1 from '@/assets/images/treaments/treatment_conventional_infiltration_desktop_1.jpg';
 import treatment_serum_therapy_desktop_1 from '@/assets/images/treaments/treatment_serum_therapy_desktop_1.jpg';
 import treatment_serum_therapy_mobile_1 from '@/assets/images/treaments/treatment_serum_therapy_mobile_1.jpg';
 import treatment_high_performance_sports_mobile_1 from '@/assets/images/treaments/treatment_high_performance_sports_mobile_1.jpg';
 import treatment_platelet_rich_plasma_mobile_1 from '@/assets/images/treaments/treatment_platelet_rich_plasma_mobile_1.jpg';
-import treatment_weight_loss_program_desktop_1 from '@/assets/images/treaments/treatment_weight_loss_program_desktop_1.png';
-import treatment_high_performance_sports_desktop_1 from '@/assets/images/treaments/treatment_high_performance_sports_desktop_1.png';
+import treatment_weight_loss_program_mobile_1 from '@/assets/images/treaments/treatment_weight_loss_program_desktop_1.png';
+import treatment_weight_loss_program_desktop_1 from '@/assets/images/treaments/treatment_weight_loss_program_desktop_1.jpg';
+import treatment_high_performance_sports_desktop_1 from '@/assets/images/treaments/treatment_high_performance_sports_desktop_1.jpg';
 
 export const TREATMENTS: Treatment[] = [
   {
@@ -80,7 +81,7 @@ export const TREATMENTS: Treatment[] = [
     title: 'Programa de Adelgazamiento',
     description: 'Programa integral multidisciplinario para cambios permanentes en hábitos alimenticios y actividad física',
     benefits: ['Equipo multidisciplinario', 'Cambios permanentes', 'Manejo psicológico'],
-    image: treatment_weight_loss_program_desktop_1,
+    image: treatment_weight_loss_program_mobile_1,
     mobileImage: treatment_weight_loss_program_desktop_1,
     mobileImagePosition: 'top', // Prioriza la parte inferior de la imagen en mobile
   },
@@ -91,8 +92,8 @@ export const TREATMENTS: Treatment[] = [
     description: 'Evaluación y manejo de deportistas élite y aficionados para prevenir y rehabilitar lesiones',
     benefits: ['Prevención de lesiones', 'Mejora de rendimiento', 'Condiciones seguras'],
     image: treatment_high_performance_sports_desktop_1,
-    mobileImage: treatment_high_performance_sports_mobile_1,
-    mobileImagePosition: 'top', // Centra el contenido de la imagen en mobile
+    mobileImage: treatment_high_performance_sports_desktop_1,
+    mobileImagePosition: 'center', // Centra el contenido de la imagen en mobile
   },
 ];
 
