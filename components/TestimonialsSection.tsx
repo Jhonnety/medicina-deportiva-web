@@ -139,8 +139,8 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
 
       {/* Desktop: dos filas auto-rotando - ancho completo */}
       <div className="hidden lg:block space-y-10">
-        <AutoMarquee items={rowA} direction="left" onOpenVideo={(v) => setModalVideo(v)} />
-        <AutoMarquee items={rowB} direction="right" onOpenVideo={(v) => setModalVideo(v)} />
+        <AutoMarquee items={rowA} direction="left" onOpenVideo={(v) => setModalVideo(v)} locale={locale} />
+        <AutoMarquee items={rowB} direction="right" onOpenVideo={(v) => setModalVideo(v)} locale={locale} />
       </div>
 
       {/* Mobile: Swiper optimizado */}
@@ -178,7 +178,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             ...ordered.filter(t => !(t.kind === 'video' && t.language === (locale === 'en' ? 'en' : 'es'))),
           ].map(item => (
             <SwiperSlide key={`m-${item.id}`} className="!w-[320px] md:!w-[380px]">
-              <TestimonialCard item={item} onOpenVideo={(v) => setModalVideo(v)} />
+              <TestimonialCard item={item} onOpenVideo={(v) => setModalVideo(v)} locale={locale} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -324,7 +324,7 @@ function HeaderBlock({ title, subtitle }: { title: string; subtitle: string }) {
   );
 }
 
-function AutoMarquee({ items, direction, onOpenVideo }: { items: Testimonial[]; direction: 'left' | 'right'; onOpenVideo: (v: TestimonialVideo) => void }) {
+function AutoMarquee({ items, direction, onOpenVideo, locale }: { items: Testimonial[]; direction: 'left' | 'right'; onOpenVideo: (v: TestimonialVideo) => void; locale: string }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
@@ -444,15 +444,15 @@ function AutoMarquee({ items, direction, onOpenVideo }: { items: Testimonial[]; 
         className="flex gap-6 will-change-transform"
       >
         {infiniteItems.map((item, idx) => (
-          <TestimonialCard key={`${item.id}-${idx}`} item={item} onOpenVideo={onOpenVideo} />
+          <TestimonialCard key={`${item.id}-${idx}`} item={item} onOpenVideo={onOpenVideo} locale={locale} />
         ))}
       </div>
     </div>
   );
 }
 
-function TestimonialCard({ item, onOpenVideo }: { item: Testimonial; onOpenVideo: (v: TestimonialVideo) => void }) {
-  return item.kind === 'video' ? <VideoCard item={item} onOpen={() => onOpenVideo(item)} /> : <TextCard item={item} />;
+function TestimonialCard({ item, onOpenVideo, locale }: { item: Testimonial; onOpenVideo: (v: TestimonialVideo) => void; locale: string }) {
+  return item.kind === 'video' ? <VideoCard item={item} onOpen={() => onOpenVideo(item)} locale={locale} /> : <TextCard item={item} />;
 }
 
 function Stars({ rating }: { rating: 1 | 2 | 3 | 4 | 5 }) {
@@ -467,7 +467,7 @@ function Stars({ rating }: { rating: 1 | 2 | 3 | 4 | 5 }) {
   );
 }
 
-function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => void }) {
+function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: () => void; locale: string }) {
   const vidRef = useRef<HTMLVideoElement>(null);
   const [broken, setBroken] = useState(false);
 
@@ -490,6 +490,12 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
   const poster = item.poster || '/assets/images/dc_james_6.jpg';
   const altText = `Testimonio en video de ${item.name} - ${item.typeLabel} - Tratamiento: ${item.condition} - Dr. James Madrid Medicina Deportiva Medellín`;
   
+  const isHighPerformance = item.typeLabel === 'Deportista de alto rendimiento';
+  const labelText = isHighPerformance && locale === 'en' ? 'High Performance Athlete' : item.typeLabel;
+  const labelStyle = isHighPerformance
+    ? "px-2.5 py-1 text-xs font-bold rounded-full bg-[#212e2e] text-white shadow-md"
+    : "px-2.5 py-1 text-xs font-semibold rounded-full bg-white/90 text-gray-900";
+
   return (
     <article 
       className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white"
@@ -524,8 +530,8 @@ function VideoCard({ item, onOpen }: { item: TestimonialVideo; onOpen: () => voi
         
         {/* badges */}
         <div className="absolute top-3 left-3 flex items-center gap-2 z-10">
-          <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-white/90 text-gray-900">
-            {item.typeLabel}
+          <span className={labelStyle}>
+            {labelText}
           </span>
           {item.instagramUrl && (
             <a
