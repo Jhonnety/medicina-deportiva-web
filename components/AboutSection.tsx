@@ -38,7 +38,7 @@ export default function AboutSection({ locale }: AboutSectionProps) {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold !text-white mb-6">
-            Dr. James Madrid
+            Dr. James Madrid Jaramillo
           </h2>
           <p className="text-xl md:text-2xl !text-gray-300 italic font-light leading-relaxed">
             {locale === 'es' 
@@ -72,7 +72,7 @@ export default function AboutSection({ locale }: AboutSectionProps) {
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  {locale === 'es' ? 'Medicina Deportiva • Tratamiento sin cirugía' : 'Sports Medicine • Non-surgical treatment'}
+                  {locale === 'es' ? 'Especialista en medicina Deportiva' : 'Specialist in Sports Medicine'}
                 </p>
               </div>
 
@@ -108,8 +108,8 @@ export default function AboutSection({ locale }: AboutSectionProps) {
               <div className="space-y-5">
                 <p className="!text-gray-300 leading-relaxed text-lg">
                   {locale === 'es' 
-                    ? 'Con más de 20 años de experiencia en medicina deportiva, el Dr. James Madrid se ha especializado en el tratamiento no quirúrgico de lesiones deportivas y el manejo integral del dolor. Su enfoque combina la medicina basada en evidencia con un trato humano y personalizado.'
-                    : 'With more than 20 years of experience in sports medicine, Dr. James Madrid has specialized in the non-surgical treatment of sports injuries and comprehensive pain management. His approach combines evidence-based medicine with human and personalized treatment.'}
+                    ? 'Con más de 20 años de experiencia en medicina deportiva, el Dr. James Madrid se ha especializado en el tratamiento no quirúrgico de lesiones deportivas y de enfermedades degenerativas como la artrosis, en especial de rodillas y caderas. Su enfoque combina la medicina basada en evidencia con un trato humano y personalizado.'
+                    : 'With more than 20 years of experience in sports medicine, Dr. James Madrid specializes in non-surgical treatment of sports injuries and degenerative conditions such as osteoarthritis, particularly affecting the knees and hips. His approach integrates evidence-based medicine with personalized, patient-centered care.'}
                 </p>
                 
                 <p className="!text-gray-300 leading-relaxed text-lg">
@@ -136,13 +136,13 @@ export default function AboutSection({ locale }: AboutSectionProps) {
                   },
                   {
                     icon: <Microscope className="w-6 h-6" />,
-                    es: 'Equipos de diagnóstico ecoguiado',
-                    en: 'Eco-guided diagnostic equipment'
+                    es: 'Procedimientos ecoguiados',
+                    en: 'Eco-guided procedures'
                   },
                   {
                     icon: <UsersRound className="w-6 h-6" />,
-                    es: 'Seguimiento multidisciplinario completo',
-                    en: 'Complete multidisciplinary follow-up'
+                    es: 'Seguimiento multidisciplinario',
+                    en: 'Multidisciplinary follow-up'
                   },
                   {
                     icon: <MapPin className="w-6 h-6" />,

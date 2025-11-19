@@ -219,8 +219,8 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             
             <p className="text-lg md:text-xl !text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
               {locale === 'es'
-                ? 'Únete a los miles de pacientes que han recuperado su movilidad y mejorado su calidad de vida con nuestros tratamientos especializados'
-                : 'Join thousands of patients who have recovered their mobility and improved their quality of life with our specialized treatments'}
+                ? 'Forma parte de quienes ya  recuperaron su bienestar con nuestros tratamientos médicos avanzados.'
+                : 'Be part of those who have already recovered their well-being with our advanced medical treatments.'}
             </p>
 
             {/* Botones de acción */}
@@ -271,25 +271,31 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
 
             {/* Info adicional */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-300">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                </svg>
-                <span>{locale === 'es' ? 'Respuesta en menos de 24h' : 'Response in less than 24h'}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <span>{locale === 'es' ? 'Sin compromiso' : 'No commitment'}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span>{locale === 'es' ? 'Atención profesional' : 'Professional care'}</span>
-              </div>
+            <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                  <span>{locale === 'es' ? 'Primera cita enfocada en entender tu dolor' : 'First appointment focused on understanding your pain'}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                  <span>{locale === 'es' ? 'Analizamos la causa, no solo el síntoma' : 'We analyze the cause, not just the symptom'}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span>{locale === 'es' ? 'Plan de tratamiento personalizado' : 'Personalized treatment plan'}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                  </svg>
+                  <span>{locale === 'es' ? 'Resultados medibles y realistas' : 'Measurable and realistic results'}</span>
+                </div>
             </div>
           </div>
         </div>
