@@ -704,7 +704,7 @@
       "whatIs": {
         "title": "¿Qué es el Ácido Hialurónico Articular?",
         "definition": "El ácido hialurónico es una sustancia natural presente en el líquido sinovial de las articulaciones que actúa como lubricante y amortiguador. Con la edad y el desgaste articular, esta sustancia disminuye. La viscosuplementación consiste en inyectar ácido hialurónico de alta calidad directamente en la articulación para restaurar sus propiedades lubricantes y protectoras.",
-        "physiologicalBenefit": "El ácido hialurónico reduce la fricción entre los huesos, mejora la elasticidad del cartílago, tiene propiedades antiinflamatorias y protege las células del cartílago del desgaste. Es especialmente efectivo en artrosis de rodilla, cadera, hombro y otras articulaciones de carga.",
+        "physiologicalBenefit": "El ácido hialurónico reduce la fricción entre los huesos, mejora la elasticidad del cartílago, tiene propiedades antiinflamatorias y protege las células del cartílago del desgaste. Es especialmente efectivo en artrosis de rodilla, cadera, hombro y otras articulaciones de carga. Además, es útil en el manejo de las bursitis. De la pata de ganso, del trocánter mayor y de hombro.",
         "howWorks": "Se infiltra mediante inyección directa en la articulación afectada, guiada por ultrasonido para máxima precisión. El ácido hialurónico de peso molecular alto forma una capa protectora sobre el cartílago, reduce la inflamación y estimula la producción natural de líquido sinovial de mejor calidad."
       },
       "symptoms": {
@@ -716,7 +716,7 @@
             "image": "/assets/images/symptoms/artrosis_12.jpg"
           },
           {
-            "name": "Articulación rígida por las mañanas",
+            "name": "Articulación dolorosa en las noches",
             "condition": "Artrosis con rigidez articular",
             "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
@@ -773,6 +773,10 @@
           {
             "title": "Retrasa La Cirugía",
             "description": "Si te dijeron que necesitas reemplazo de rodilla o cadera, este tratamiento puede darte años de calidad de vida antes de llegar a eso. Es tu oportunidad de postergar o incluso evitar una operación mayor."
+          },
+          {
+            "title": "Recupera tu alto rendimiento y desempeño físico.",
+            "description": "Tienes la oportunidad de volver a rendir como antes y ganarte la medalla por la que has trabajado."
           }
         ]
       },
@@ -819,7 +823,7 @@
       "whatIs": {
         "title": "What is Hyaluronic Acid for Joints?",
         "definition": "Hyaluronic acid is a natural substance present in the synovial fluid of joints that acts as a lubricant and shock absorber. With age and joint wear, this substance decreases. Viscosupplementation consists of injecting high-quality hyaluronic acid directly into the joint to restore its lubricating and protective properties.",
-        "physiologicalBenefit": "Hyaluronic acid reduces friction between bones, improves cartilage elasticity, has anti-inflammatory properties and protects cartilage cells from wear. It is especially effective in knee, hip, shoulder and other weight-bearing joint osteoarthritis.",
+        "physiologicalBenefit": "Hyaluronic acid reduces friction between bones, improves cartilage elasticity, has anti-inflammatory properties and protects cartilage cells from wear. It is especially effective in knee, hip, shoulder and other weight-bearing joint osteoarthritis. Additionally, it is useful in managing pes anserine, greater trochanteric and shoulder bursitis.",
         "howWorks": "It is infiltrated by direct injection into the affected joint, guided by ultrasound for maximum precision. High molecular weight hyaluronic acid forms a protective layer on the cartilage, reduces inflammation and stimulates natural production of better quality synovial fluid."
       },
       "symptoms": {
@@ -831,7 +835,7 @@
             "image": "/assets/images/symptoms/artrosis_12.jpg"
           },
           {
-            "name": "Stiff joint in the mornings",
+            "name": "Stiff joint in the nights",
             "condition": "Osteoarthritis with joint stiffness",
             "image": "/assets/images/symptoms/artrosis_4.jpeg"
           },
@@ -888,6 +892,10 @@
           {
             "title": "Delay Surgery",
             "description": "If you were told you need knee or hip replacement, this treatment can give you years of quality life before getting there. It's your chance to postpone or even avoid major surgery."
+          },
+          {
+            "title": "Recover your high performance and physical performance.",
+            "description": "You have the opportunity to return to your former performance and earn the medal you have worked for."
           }
         ]
       },
