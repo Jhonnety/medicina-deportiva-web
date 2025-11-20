@@ -4,10 +4,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
 
 interface TestimonialsSectionProps {
   dictionary: Dictionary;
@@ -144,22 +143,15 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
       </div>
 
       {/* Mobile: Swiper optimizado */}
-      <div className="lg:hidden px-6 md:px-8">
+      <div className="lg:hidden px-4 md:px-8">
         <Swiper
-          modules={[Pagination, Autoplay, EffectCoverflow]}
-          effect="coverflow"
+          modules={[Pagination, Autoplay]}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView="auto"
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2,
-            slideShadows: false,
-          }}
+          spaceBetween={24}
           autoplay={{
-            delay: 3500,
+            delay: 4000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
@@ -168,8 +160,8 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             dynamicBullets: true,
           }}
           loop={true}
-          speed={800}
-          className="testimonials-swiper !pb-14"
+          speed={600}
+          className="testimonials-swiper !pb-16"
         >
           {[
             // Primero videos del mismo idioma
@@ -177,11 +169,29 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             // Luego los demás
             ...ordered.filter(t => !(t.kind === 'video' && t.language === (locale === 'en' ? 'en' : 'es'))),
           ].map(item => (
-            <SwiperSlide key={`m-${item.id}`} className="!w-[320px] md:!w-[380px]">
-              <TestimonialCard item={item} onOpenVideo={(v) => setModalVideo(v)} locale={locale} />
+            <SwiperSlide key={`m-${item.id}`} className="!w-[300px] xs:!w-[320px] md:!w-[380px]">
+              <div className="transform transition-transform duration-300 hover:scale-[1.02]">
+                <TestimonialCard item={item} onOpenVideo={(v) => setModalVideo(v)} locale={locale} />
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
+        
+        {/* Indicador visual de scroll extra (opcional, para reforzar "hay más contenido") */}
+        <style jsx global>{`
+          .testimonials-swiper .swiper-pagination-bullet {
+            background: #6ba5a5;
+            opacity: 0.4;
+            width: 8px;
+            height: 8px;
+            transition: all 0.3s ease;
+          }
+          .testimonials-swiper .swiper-pagination-bullet-active {
+            opacity: 1;
+            width: 20px;
+            border-radius: 4px;
+          }
+        `}</style>
       </div>
 
       {/* CTA - Próximo caso de éxito */}
