@@ -771,12 +771,12 @@
             "description": "No es solo una semana de mejora. Este tratamiento te da entre 6 a 12 meses de alivio sostenido, permitiéndote vivir tu vida sin estar pendiente del dolor cada momento del día."
           },
           {
-            "title": "Retrasa La Cirugía",
-            "description": "Si te dijeron que necesitas reemplazo de rodilla o cadera, este tratamiento puede darte años de calidad de vida antes de llegar a eso. Es tu oportunidad de postergar o incluso evitar una operación mayor."
-          },
-          {
             "title": "Recupera tu alto rendimiento y desempeño físico.",
             "description": "Tienes la oportunidad de volver a rendir como antes y ganarte la medalla por la que has trabajado."
+          },
+          {
+            "title": "Retrasa La Cirugía",
+            "description": "Si te dijeron que necesitas reemplazo de rodilla o cadera, este tratamiento puede darte años de calidad de vida antes de llegar a eso. Es tu oportunidad de postergar o incluso evitar una operación mayor."
           }
         ]
       },
@@ -890,12 +890,12 @@
             "description": "It's not just a week of improvement. This treatment gives you 6 to 12 months of sustained relief, allowing you to live your life without being aware of the pain every moment of the day."
           },
           {
-            "title": "Delay Surgery",
-            "description": "If you were told you need knee or hip replacement, this treatment can give you years of quality life before getting there. It's your chance to postpone or even avoid major surgery."
-          },
-          {
             "title": "Recover your high performance and physical performance.",
             "description": "You have the opportunity to return to your former performance and earn the medal you have worked for."
+          },
+          {
+            "title": "Delay Surgery",
+            "description": "If you were told you need knee or hip replacement, this treatment can give you years of quality life before getting there. It's your chance to postpone or even avoid major surgery."
           }
         ]
       },
@@ -1142,8 +1142,8 @@
       "whatIs": {
         "title": "¿Qué es la Sueroterapia Deportiva?",
         "definition": "La sueroterapia es la administración intravenosa de soluciones personalizadas que contienen vitaminas, minerales, aminoácidos y antioxidantes directamente al torrente sanguíneo. Al evitar el sistema digestivo, se logra una absorción del 100% de los nutrientes, proporcionando efectos más rápidos y potentes que la suplementación oral.",
-        "physiologicalBenefit": "Mejora la hidratación celular, repone electrolitos, optimiza el rendimiento deportivo, acelera la recuperación muscular, fortalece el sistema inmunológico, combate la fatiga y el estrés oxidativo. Es especialmente útil para atletas, personas con alta exigencia física o durante periodos de agotamiento.",
-        "howWorks": "Se coloca un acceso venoso y se infunde una solución personalizada según tus necesidades específicas (deportivas, recuperación, energía, inmunidad). La sesión dura 30-45 minutos y los efectos se sienten de inmediato. Los nutrientes llegan directamente a las células sin pérdidas por digestión o metabolismo hepático."
+        "physiologicalBenefit": "Mejora la hidratación celular, repone electrolitos, optimiza el rendimiento deportivo, acelera la recuperación muscular, fortalece el sistema inmunológico, combate la fatiga y el estrés oxidativo. Es especialmente útil para atletas, personas con alta exigencia física, durante periodos de agotamiento, en personas con enfermedades degenerativas como la artrosis de rodilla o personas con sobrepeso.",
+        "howWorks": "Se coloca un acceso venoso y se infunde una solución personalizada según tus necesidades específicas (deportivas, recuperación, energía, inmunidad y metabolismo). La sesión dura 30-45 minutos y los efectos se sienten de inmediato. Los nutrientes llegan directamente a las células sin pérdidas por digestión o metabolismo hepático."
       },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
@@ -1164,9 +1164,9 @@
             "image": "/assets/images/symptoms/artrosis_8.webp"
           },
           {
-            "name": "Defensas bajas o resfriados frecuentes",
-            "condition": "Sistema inmune debilitado",
-            "image": "/assets/images/symptoms/defensas_bajas_1.jpg"
+            "name": "Dolor articular",
+            "condition": "Artrosis de rodilla, cadera, hombro o articulaciones de carga",
+            "image": "/assets/images/symptoms/artrosis_15.jpg"
           },
           {
             "name": "Deshidratación por entrenamiento intenso",
@@ -1185,15 +1185,15 @@
         "items": [
           {
             "title": "Energía Que Sientes Al Instante",
-            "description": "Sal de la sesión y siente la diferencia. Esa fatiga que te agobia desaparece, recuperas tu vitalidad y claridad mental. Es como recargar las baterías de tu cuerpo directamente, sin esperas."
+            "description": "Sal de la sesión y siente la diferencia. Esa fatiga que te agobia desaparece, recuperas tu vitalidad y claridad mental. Es como recargar las baterías de tu cuerpo directamente, sin esperas. Además, puedes modular la inflamación y el dolor, sintiendo bienestar."
           },
           {
             "title": "Rendimiento Sin Límites",
-            "description": "Si entrenas duro, tu cuerpo merece recuperarse rápido. La sueroterapia te da esa ventaja: músculos que se recuperan más rápido, menos dolores post-entrenamiento, más energía para seguir superándote."
+            "description": "Si entrenas duro, tu cuerpo merece recuperarse rápido. La sueroterapia te da esa ventaja: músculos que se recuperan más rápido, menos dolores post-entrenamiento, más energía para seguir superándote. Este tipo de terapia complementa el tratamiento biológico que te estás haciendo para mejorar tu rendimiento o recuperar tu calidad de vida."
           },
           {
             "title": "Fortalece Tus Defensas",
-            "description": "¿Cansado de enfermarte seguido? Este tratamiento refuerza tu sistema inmune desde adentro, dándote la protección que necesitas para mantenerte saludable y activo todo el año."
+            "description": "¿Cansado de enfermarte seguido? Este tratamiento refuerza tu sistema inmune desde adentro, dándote la protección que necesitas para mantenerte saludable y activo todo el año. Además, prepara tu cuerpo para que responda mejor a la terapia biológica y que se puedan reparar tus tejidos con mayor facilidad."
           }
         ]
       },
@@ -1240,8 +1240,8 @@
       "whatIs": {
         "title": "What is Sports IV Therapy?",
         "definition": "IV therapy is the intravenous administration of personalized solutions containing vitamins, minerals, amino acids and antioxidants directly into the bloodstream. By bypassing the digestive system, 100% absorption of nutrients is achieved, providing faster and more powerful effects than oral supplementation.",
-        "physiologicalBenefit": "Improves cellular hydration, replenishes electrolytes, optimizes athletic performance, accelerates muscle recovery, strengthens the immune system, fights fatigue and oxidative stress. It is especially useful for athletes, people with high physical demands or during periods of exhaustion.",
-        "howWorks": "A venous access is placed and a personalized solution is infused according to your specific needs (sports, recovery, energy, immunity). The session lasts 30-45 minutes and effects are felt immediately. Nutrients reach cells directly without losses from digestion or hepatic metabolism."
+        "physiologicalBenefit": "It improves cellular hydration, replenishes electrolytes, optimizes athletic performance, accelerates muscle recovery, strengthens the immune system, combats fatigue and oxidative stress. It is especially useful for athletes, people with high physical demands, during periods of exhaustion, in people with degenerative diseases such as knee osteoarthritis or people with excess weight.",
+        "howWorks": "A venous access is placed and a personalized solution is infused according to your specific needs (sports, recovery, energy, immunity and metabolism). The session lasts 30-45 minutes and effects are felt immediately. Nutrients reach cells directly without losses from digestion or hepatic metabolism."
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",
@@ -1262,9 +1262,9 @@
             "image": "/assets/images/symptoms/artrosis_8.webp"
           },
           {
-            "name": "Low defenses or frequent colds",
-            "condition": "Weakened immune system",
-            "image": "/assets/images/symptoms/defensas_bajas_1.jpg"
+            "name": "Joint pain",
+            "condition": "Knee, hip, shoulder or weight-bearing joint osteoarthritis",
+            "image": "/assets/images/symptoms/artrosis_15.jpg"
           },
           {
             "name": "Dehydration from intense training",
@@ -1283,15 +1283,15 @@
         "items": [
           {
             "title": "Energy You Feel Instantly",
-            "description": "Leave the session and feel the difference. That fatigue that overwhelms you disappears, you recover your vitality and mental clarity. It's like recharging your body's batteries directly, without waiting."
+            "description": "Leave the session and feel the difference. That fatigue that overwhelms you disappears, you recover your vitality and mental clarity. It's like recharging your body's batteries directly, without waiting. Additionally, you can modulate inflammation and pain, feeling wellness."
           },
           {
             "title": "Unlimited Performance",
-            "description": "If you train hard, your body deserves to recover fast. IV therapy gives you that edge: muscles that recover faster, less post-workout pain, more energy to keep surpassing yourself."
+            "description": "If you train hard, your body deserves to recover fast. IV therapy gives you that edge: muscles that recover faster, less post-workout pain, more energy to keep surpassing yourself. This type of therapy complements the biological treatment you are undergoing to improve your performance or recover your quality of life."
           },
           {
             "title": "Strengthen Your Defenses",
-            "description": "Tired of getting sick often? This treatment reinforces your immune system from within, giving you the protection you need to stay healthy and active all year round."
+            "description": "Tired of getting sick often? This treatment reinforces your immune system from within, giving you the protection you need to stay healthy and active all year round. Additionally, it prepares your body to respond better to biological therapy and allows your tissues to repair more easily."
           }
         ]
       },
@@ -1339,9 +1339,9 @@
       "metaDescription": "Programa médico personalizado para adelgazar de forma saludable y sostenible. Incluye nutrición, ejercicio, seguimiento médico y técnicas avanzadas. Resultados reales en Medellín.",
       "whatIs": {
         "title": "¿Qué es el Programa Médico de Adelgazamiento?",
-        "definition": "Es un programa integral supervisado médicamente que combina evaluación metabólica, plan nutricional personalizado, rutinas de ejercicio adaptadas, seguimiento continuo y técnicas complementarias (sueroterapia, suplementación, manejo hormonal si necesario). No es una dieta temporal, sino un cambio de estilo de vida sostenible.",
+        "definition": "Es un programa integral supervisado médicamente que combina evaluación metabólica, plan nutricional personalizado, rutinas de ejercicio adaptadas, seguimiento continuo y técnicas complementarias (sueroterapia, suplementación, péptidos, balón gástrico si es necesario.). No es una dieta temporal, sino un cambio de estilo de vida sostenible.",
         "physiologicalBenefit": "Mejora la composición corporal (reduce grasa, preserva músculo), optimiza el metabolismo, reduce riesgos cardiovasculares, mejora marcadores de salud (colesterol, glucosa, presión arterial), aumenta la energía y el rendimiento físico. El enfoque médico asegura pérdida de peso saludable sin comprometer la salud.",
-        "howWorks": "Iniciamos con evaluación completa: composición corporal, análisis metabólico, estado hormonal y nutricional. Diseñamos un plan personalizado que incluye alimentación balanceada, ejercicio progresivo y técnicas complementarias. Seguimiento semanal/quincenal con ajustes según evolución. El objetivo es perder 0.5-1kg por semana de forma sostenible."
+        "howWorks": "Iniciamos con evaluación completa: composición corporal, análisis metabólico, estado hormonal y nutricional. Diseñamos un plan personalizado que incluye alimentación balanceada, ejercicio progresivo y técnicas complementarias. Seguimiento mensual con ajustes según evolución. El objetivo es perder 0.5-1kg por semana de forma sostenible."
       },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
@@ -1374,7 +1374,7 @@
           {
             "name": "Quieres optimizar tu composición corporal",
             "condition": "Mejora de rendimiento deportivo",
-            "image": "/assets/images/symptoms/obesidad_6.jpg"
+            "image": "/assets/images/optimized_body_1.jpg"
           }
         ]
       },
@@ -1387,7 +1387,11 @@
           },
           {
             "title": "Sin Efecto Rebote Esta Vez",
-            "description": "¿Cansado de bajar y volver a subir? Este programa es diferente. Aprendes a comer bien, a cuidarte, a mantener resultados. No es magia, es educación y acompañamiento médico para que esta sea la última vez que necesites bajar de peso."
+            "description": "¿Cansado de bajar y volver a subir? Este programa es diferente. Aprendes a comer bien, a cuidarte, a mantener resultados. No es magia, es educación y acompañamiento médico especializado para que esta sea la última vez que necesites bajar de peso."
+          },
+          {
+            "title": "Mejora tu Rendimiento Deportivo",
+            "description": "Este programa no solo te ayuda a bajar de peso, sino que también te ayuda a mejorar tu rendimiento deportivo. Con un plan nutricional personalizado y técnicas complementarias, podrás recuperar tu forma física y mental."
           },
           {
             "title": "Más Salud, Más Vida",
@@ -1437,9 +1441,9 @@
       "metaDescription": "Personalized medical program for healthy and sustainable weight loss. Includes nutrition, exercise, medical monitoring and advanced techniques. Real results in Medellín.",
       "whatIs": {
         "title": "What is the Medical Weight Loss Program?",
-        "definition": "It is a comprehensive medically supervised program that combines metabolic evaluation, personalized nutritional plan, adapted exercise routines, continuous monitoring and complementary techniques (IV therapy, supplementation, hormonal management if necessary). It's not a temporary diet, but a sustainable lifestyle change.",
+        "definition": "It is a comprehensive medically supervised program that combines metabolic evaluation, personalized nutritional plan, adapted exercise routines, continuous monitoring and complementary techniques (IV therapy, supplementation, peptides, gastric balloon if necessary.). It's not a temporary diet, but a sustainable lifestyle change.",
         "physiologicalBenefit": "Improves body composition (reduces fat, preserves muscle), optimizes metabolism, reduces cardiovascular risks, improves health markers (cholesterol, glucose, blood pressure), increases energy and physical performance. The medical approach ensures healthy weight loss without compromising health.",
-        "howWorks": "We start with complete evaluation: body composition, metabolic analysis, hormonal and nutritional status. We design a personalized plan that includes balanced nutrition, progressive exercise and complementary techniques. Weekly/biweekly follow-up with adjustments according to progress. The goal is to lose 0.5-1kg per week sustainably."
+        "howWorks": "We start with complete evaluation: body composition, metabolic analysis, hormonal and nutritional status. We design a personalized plan that includes balanced nutrition, progressive exercise and complementary techniques. Monthly follow-up with adjustments according to progress. The goal is to lose 0.5-1kg per week sustainably."
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",
@@ -1472,7 +1476,7 @@
           {
             "name": "Want to optimize your body composition",
             "condition": "Sports performance improvement",
-            "image": "/assets/images/symptoms/obesidad_6.jpg"
+            "image": "/assets/images/optimized_body_1.jpg"
           }
         ]
       },
@@ -1485,7 +1489,11 @@
           },
           {
             "title": "No Rebound Effect This Time",
-            "description": "Tired of losing and gaining back? This program is different. You learn to eat well, to take care of yourself, to maintain results. It's not magic, it's education and medical support so this is the last time you need to lose weight."
+            "description": "Tired of losing and gaining back? This program is different. You learn to eat well, to take care of yourself, to maintain results. It's not magic, it's education and specialized medical support so this is the last time you need to lose weight."
+          },
+          {
+            "title": "Improve Your Sports Performance",
+            "description": "This program not only helps you lose weight, but also helps you improve your sports performance. With a personalized nutritional plan and complementary techniques, you can recover your physical and mental form."
           },
           {
             "title": "More Health, More Life",
@@ -1539,7 +1547,7 @@
         "title": "¿Qué es la Medicina de Alto Rendimiento Deportivo?",
         "definition": "Es un programa médico especializado que combina evaluación biomecánica avanzada, análisis de rendimiento físico, optimización nutricional, medicina regenerativa, entrenamiento personalizado y técnicas de recuperación de vanguardia. Diseñado para atletas profesionales, deportistas de élite y personas con objetivos deportivos exigentes.",
         "physiologicalBenefit": "Mejora la fuerza, velocidad, resistencia y potencia muscular. Optimiza la recuperación post-entrenamiento, reduce el riesgo de lesiones, mejora la composición corporal, aumenta la capacidad aeróbica y anaeróbica, potencia la salud articular y tendinosa. Acelera la vuelta al deporte después de lesiones. Maximiza el potencial atlético.",
-        "howWorks": "Evaluación integral: biomecánica, composición corporal, perfil metabólico, análisis hormonal, pruebas de rendimiento físico. Diseño de plan personalizado que incluye entrenamiento optimizado, nutrición deportiva avanzada, suplementación estratégica, técnicas de recuperación (PRP, sueroterapia, fisioterapia), seguimiento de marcadores de rendimiento. Ajustes constantes según objetivos y competiciones."
+        "howWorks": "Evaluación integral: biomecánica, composición corporal, perfil metabólico, análisis hormonal, pruebas de rendimiento físico. Diseño de plan personalizado que incluye entrenamiento optimizado, nutrición deportiva avanzada, suplementación estratégica, técnicas de recuperación (PRP, sueroterapia, fisioterapia convencional y avanzada), seguimiento de marcadores de rendimiento. Ajustes constantes según objetivos y competiciones."
       },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
@@ -1637,7 +1645,7 @@
         "title": "What is High Performance Sports Medicine?",
         "definition": "It is a specialized medical program that combines advanced biomechanical evaluation, physical performance analysis, nutritional optimization, regenerative medicine, personalized training and cutting-edge recovery techniques. Designed for professional athletes, elite sports enthusiasts and people with demanding sports goals.",
         "physiologicalBenefit": "Improves strength, speed, endurance and muscle power. Optimizes post-training recovery, reduces injury risk, improves body composition, increases aerobic and anaerobic capacity, enhances joint and tendon health. Accelerates return to sport after injuries. Maximizes athletic potential.",
-        "howWorks": "Comprehensive evaluation: biomechanics, body composition, metabolic profile, hormonal analysis, physical performance tests. Design of personalized plan including optimized training, advanced sports nutrition, strategic supplementation, recovery techniques (PRP, IV therapy, physiotherapy), performance marker tracking. Constant adjustments according to goals and competitions."
+        "howWorks": "Comprehensive evaluation: biomechanics, body composition, metabolic profile, hormonal analysis, physical performance tests. Design of personalized plan including optimized training, advanced sports nutrition, strategic supplementation, recovery techniques (PRP, IV therapy, conventional and advanced physiotherapy), performance marker tracking. Constant adjustments according to goals and competitions."
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",
