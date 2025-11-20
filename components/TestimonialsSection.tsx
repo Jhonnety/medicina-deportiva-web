@@ -179,6 +179,12 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
         
         {/* Indicador visual de scroll extra (opcional, para reforzar "hay más contenido") */}
         <style jsx global>{`
+          .testimonials-swiper .swiper-wrapper {
+            align-items: center;
+          }
+          .testimonials-swiper .swiper-slide {
+            height: auto;
+          }
           .testimonials-swiper .swiper-pagination-bullet {
             background: #6ba5a5;
             opacity: 0.4;
