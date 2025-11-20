@@ -521,8 +521,6 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
   return (
     <article 
       className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white"
-      itemScope
-      itemType="https://schema.org/Review"
     >
       <div className="relative aspect-square">
         {!broken ? (
@@ -598,9 +596,8 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
         
         {/* bottom text */}
         <div className="absolute bottom-4 left-4 right-4 z-10 text-white pointer-events-none">
-          <div className="font-semibold" itemProp="author">{item.name}</div>
-          <div className="text-sm opacity-90" itemProp="reviewBody">{item.condition}</div>
-          <meta itemProp="ratingValue" content={item.rating.toString()} />
+          <div className="font-semibold">{item.name}</div>
+          <div className="text-sm opacity-90">{item.condition}</div>
         </div>
       </div>
     </article>
@@ -611,8 +608,6 @@ function TextCard({ item }: { item: TestimonialText }) {
   return (
     <article 
       className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white p-6"
-      itemScope
-      itemType="https://schema.org/Review"
       aria-label={`Testimonio escrito de ${item.name} sobre ${item.condition}`}
     >
       <div className="flex items-start gap-3 mb-3">
@@ -623,8 +618,8 @@ function TextCard({ item }: { item: TestimonialText }) {
           {item.name.split(' ').map(p => p[0]).join('').slice(0, 2).toUpperCase()}
         </div>
         <div className="flex-1">
-          <div className="font-semibold text-gray-900 leading-tight" itemProp="author" itemScope itemType="https://schema.org/Person">
-            <span itemProp="name">{item.name}</span>
+          <div className="font-semibold text-gray-900 leading-tight">
+            <span>{item.name}</span>
           </div>
           <div className="text-xs text-gray-600 leading-tight">{item.condition}</div>
         </div>
@@ -635,14 +630,13 @@ function TextCard({ item }: { item: TestimonialText }) {
       
       <div aria-label={`Calificación: ${item.rating} de 5 estrellas`}>
         <Stars rating={item.rating} />
-        <meta itemProp="ratingValue" content={item.rating.toString()} />
       </div>
       
       <div className="mt-3">
         <svg className="w-6 h-6 text-primary/80" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M7.17 6A5.17 5.17 0 002 11.17V20h6v-8H5.17A3.17 3.17 0 018.34 8H7.17zM16.83 6A5.17 5.17 0 0011.66 11.17V20h6v-8h-2.83A3.17 3.17 0 0117.66 8h-.83z" />
         </svg>
-        <p className="text-gray-900 leading-relaxed mt-3" itemProp="reviewBody">
+        <p className="text-gray-900 leading-relaxed mt-3">
           {item.quote}
         </p>
       </div>
@@ -652,8 +646,6 @@ function TextCard({ item }: { item: TestimonialText }) {
           {item.language === 'es' ? 'Resultado: ' : 'Result: '}{item.result}
         </span>
       </div>
-      
-      <meta itemProp="itemReviewed" itemScope itemType="https://schema.org/MedicalProcedure" content={item.condition} />
     </article>
   );
 }
