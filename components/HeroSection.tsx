@@ -44,13 +44,11 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             <h1 className="text-[44px] sm:text-[52px] lg:text-[56px] xl:text-[64px] leading-[1.05] font-bold tracking-tight mb-8" style={{ color: '#182121' }}>
               {locale === 'es' ? (
                 <>
-                  Recupera tu <span style={{ color: '#6ba5a5' }}>movilidad</span><br className="hidden sm:block" /> y bienestar{' '}
-                  <span style={{ color: '#6ba5a5' }}>sin cirugía</span>
+                  Movilidad <span style={{ color: '#6ba5a5' }}>segura</span> y sin <span style={{ color: '#6ba5a5' }}>dolor</span>
                 </>
               ) : (
                 <>
-                  Recover your <span style={{ color: '#6ba5a5' }}>mobility</span><br className="hidden sm:block" /> and wellness{' '}
-                  <span style={{ color: '#6ba5a5' }}>without surgery</span>
+                  <span style={{ color: '#6ba5a5' }}>Safe</span> and <span style={{ color: '#6ba5a5' }}>painless</span> mobility
                 </>
               )}
             </h1>
@@ -58,8 +56,8 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             {/* Subtitle mejorado */}
             <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-semibold leading-tight mb-8" style={{ color: '#182121' }}>
               {locale === 'es' 
-                ? 'Dr. James Madrid – Medicina del Deporte en Medellín'
-                : 'Dr. James Madrid – Sports Medicine in Medellín'}
+                ? 'Dr. James Madrid Jaramillo – Medicina física y del deporte / Medicina regenerativa.'
+                : 'Dr. James Madrid – Medicina física y del deporte / Medicina regenerativa.'}
             </h2>
 
             {/* Description mejorada */}
