@@ -54,10 +54,16 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             </h1>
 
             {/* Subtitle mejorado */}
-            <h2 className="text-2xl sm:text-3xl lg:text-[34px] font-semibold leading-tight mb-8" style={{ color: '#182121' }}>
+            <h2 className="text-xl sm:text-2xl lg:text-[26px] font-medium leading-relaxed mb-8 text-slate-600 max-w-2xl">
+              <span className="block text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#182121] mb-3">
+                {locale === 'es' ? 'Dr. James Madrid' : 'Dr. James Madrid'}
+              </span>
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-1 w-12 bg-[#6ba5a5] rounded-full"></div>
+              </div>
               {locale === 'es' 
-                ? 'Dr. James Madrid Jaramillo – Medicina física y del deporte / Medicina regenerativa.'
-                : 'Dr. James Madrid – Medicina física y del deporte / Medicina regenerativa.'}
+                ? 'Medicina física y del deporte / Medicina regenerativa.'
+                : 'Physical Medicine and Sports / Regenerative Medicine.'}
             </h2>
 
             {/* Description mejorada */}
