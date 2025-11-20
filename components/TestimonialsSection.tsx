@@ -115,8 +115,14 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
         ? testimonial.quote 
         : `${testimonial.condition} - ${testimonial.typeLabel}`,
       itemReviewed: {
-        '@type': 'MedicalProcedure',
-        name: testimonial.condition
+        '@type': 'LocalBusiness',
+        name: 'Clínica del Movimiento',
+        image: 'https://clinicadelmovimiento.com/assets/images/logo.png',
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: 'Medellín',
+          addressCountry: 'CO'
+        }
       }
     }))
   };
