@@ -28,12 +28,13 @@ export async function generateMetadata({
 
   return {
     title: dictionary?.seo?.home?.title ?? (lang === 'es'
-      ? 'Dr. James Madrid - Medicina Deportiva en Medellín'
-      : 'Dr. James Madrid - Sports Medicine in Medellín'),
+      ? 'Clínica del Movimiento | Dr. James Madrid - Medicina Deportiva en Medellín'
+      : 'Clínica del Movimiento | Dr. James Madrid - Sports Medicine in Medellín'),
     description: dictionary?.seo?.home?.description ?? (lang === 'es'
-      ? 'Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
-      : 'Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
+      ? 'Clínica del Movimiento. Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
+      : 'Clínica del Movimiento. Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
     keywords: [
+      'Clínica del Movimiento',
       lang === 'es' ? 'medicina deportiva' : 'sports medicine',
       'deportólogo Medellín',
       'PRP',
@@ -46,19 +47,19 @@ export async function generateMetadata({
     authors: [{ name: 'Dr. James Madrid' }],
     openGraph: {
       title: dictionary?.seo?.home?.title ?? (lang === 'es'
-        ? 'Dr. James Madrid - Medicina Deportiva en Medellín'
-        : 'Dr. James Madrid - Sports Medicine in Medellín'),
+        ? 'Clínica del Movimiento | Dr. James Madrid - Medicina Deportiva en Medellín'
+        : 'Clínica del Movimiento | Dr. James Madrid - Sports Medicine in Medellín'),
       description: dictionary?.seo?.home?.description ?? (lang === 'es'
-        ? 'Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
-        : 'Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
+        ? 'Clínica del Movimiento. Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
+        : 'Clínica del Movimiento. Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
       url: `${baseUrl}/${lang}`,
-      siteName: 'Dr. James Madrid',
+      siteName: 'Clínica del Movimiento - Dr. James Madrid',
       images: [
         {
           url: `${baseUrl}/icon.svg`,
           width: 1200,
           height: 630,
-          alt: 'Dr. James Madrid - Medicina Deportiva',
+          alt: 'Clínica del Movimiento - Dr. James Madrid',
         },
       ],
       locale: lang === 'es' ? 'es_CO' : 'en_US',
@@ -67,11 +68,11 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: dictionary?.seo?.home?.title ?? (lang === 'es'
-        ? 'Dr. James Madrid - Medicina Deportiva en Medellín'
-        : 'Dr. James Madrid - Sports Medicine in Medellín'),
+        ? 'Clínica del Movimiento | Dr. James Madrid - Medicina Deportiva en Medellín'
+        : 'Clínica del Movimiento | Dr. James Madrid - Sports Medicine in Medellín'),
       description: dictionary?.seo?.home?.description ?? (lang === 'es'
-        ? 'Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
-        : 'Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
+        ? 'Clínica del Movimiento. Especialista en medicina deportiva, tratamientos regenerativos y manejo del dolor en Medellín.'
+        : 'Clínica del Movimiento. Sports medicine specialist, regenerative treatments and pain management in Medellín.'),
       images: [`${baseUrl}/icon.svg`],
     },
     alternates: {
@@ -103,7 +104,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
-    name: 'Dr. James Madrid - Medicina Deportiva',
+    name: 'Clínica del Movimiento - Dr. James Madrid',
     image: 'https://drjamesmadrid.com/assets/images/dc_james_1.png',
     '@id': 'https://drjamesmadrid.com',
     url: `https://drjamesmadrid.com/${lang}`,
@@ -152,7 +153,7 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
     jobTitle: lang === 'es' ? 'Especialista en Medicina Deportiva' : 'Sports Medicine Specialist',
     worksFor: {
       '@type': 'MedicalBusiness',
-      name: 'Dr. James Madrid - Medicina Deportiva',
+      name: 'Clínica del Movimiento',
     },
     medicalSpecialty: 'SportsMedicine',
     yearsOfExperience: 15,
