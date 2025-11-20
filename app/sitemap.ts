@@ -15,9 +15,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
       alternates: {
-        languages: Object.fromEntries(
-          i18n.locales.map(lang => [lang, `${baseUrl}/${lang}`])
-        ),
+        languages: {
+          ...Object.fromEntries(
+            i18n.locales.map((lang) => [lang, `${baseUrl}/${lang}`])
+          ),
+          // x-default apunta a la versión en español por defecto
+          'x-default': `${baseUrl}/es`,
+        },
+      },
+    });
+
+    // Add glossary page
+    routes.push({
+      url: `${baseUrl}/${locale}/glosario`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(
+            i18n.locales.map((lang) => [lang, `${baseUrl}/${lang}/glosario`])
+          ),
+          'x-default': `${baseUrl}/es/glosario`,
+        },
       },
     });
   });
@@ -31,9 +51,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly',
         priority: 0.8,
         alternates: {
-          languages: Object.fromEntries(
-            i18n.locales.map(lang => [lang, `${baseUrl}/${lang}/tratamientos/${treatment.slug}`])
-          ),
+          languages: {
+            ...Object.fromEntries(
+              i18n.locales.map((lang) => [
+                lang,
+                `${baseUrl}/${lang}/tratamientos/${treatment.slug}`,
+              ])
+            ),
+            'x-default': `${baseUrl}/es/tratamientos/${treatment.slug}`,
+          },
         },
       });
     });
