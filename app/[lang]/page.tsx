@@ -24,7 +24,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
   const dictionary = await getDictionary(lang);
-  const baseUrl = 'https://drjamesmadrid.com';
+  const baseUrl = 'https://clinicadelmovimiento.com';
 
   return {
     title: dictionary?.seo?.home?.title ?? (lang === 'es'
@@ -105,9 +105,9 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
     name: 'Clínica del Movimiento - Dr. James Madrid',
-    image: 'https://drjamesmadrid.com/assets/images/dc_james_1.png',
-    '@id': 'https://drjamesmadrid.com',
-    url: `https://drjamesmadrid.com/${lang}`,
+    image: 'https://clinicadelmovimiento.com/assets/images/dc_james_1.png',
+    '@id': 'https://clinicadelmovimiento.com',
+    url: `https://clinicadelmovimiento.com/${lang}`,
     telephone: '+573001234567',
     email: 'consultoriomedicodrjamesmadrid@gmail.com',
     address: {

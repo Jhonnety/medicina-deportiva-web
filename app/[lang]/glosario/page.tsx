@@ -22,7 +22,7 @@ export async function generateMetadata({
     'Glosario para pacientes con definiciones claras de lesiones, dolor, terapias regenerativas, control de peso y rehabilitación en Medellín.';
   const descriptionEn =
     'Patient-friendly glossary with clear definitions of injuries, pain, regenerative therapies, weight management and rehabilitation in Medellín.';
-  const baseUrl = 'https://drjamesmadrid.com';
+  const baseUrl = 'https://clinicadelmovimiento.com';
 
   return {
     title: lang === 'es' ? titleEs : titleEn,

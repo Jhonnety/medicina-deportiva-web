@@ -43,7 +43,7 @@ export async function generateMetadata({
   if (!content) return {};
 
   const langContent = content[lang];
-  const baseUrl = 'https://drjamesmadrid.com';
+  const baseUrl = 'https://clinicadelmovimiento.com';
 
   return {
     title: langContent.metaTitle,
@@ -148,19 +148,19 @@ export default async function TreatmentPage({
         '@type': 'ListItem',
         position: 1,
         name: lang === 'es' ? 'Inicio' : 'Home',
-        item: `https://drjamesmadrid.com/${lang}`,
+        item: `https://clinicadelmovimiento.com/${lang}`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: lang === 'es' ? 'Tratamientos' : 'Treatments',
-        item: `https://drjamesmadrid.com/${lang}#tratamientos`,
+        item: `https://clinicadelmovimiento.com/${lang}#tratamientos`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: langContent.title,
-        item: `https://drjamesmadrid.com/${lang}/tratamientos/${slug}`,
+        item: `https://clinicadelmovimiento.com/${lang}/tratamientos/${slug}`,
       },
     ],
   };

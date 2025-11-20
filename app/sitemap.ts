@@ -3,7 +3,7 @@ import { TREATMENTS } from '@/lib/constants/treatments';
 import { i18n } from '@/lib/i18n/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://drjamesmadrid.com';
+  const baseUrl = 'https://clinicadelmovimiento.com';
   
   const routes: MetadataRoute.Sitemap = [];
 

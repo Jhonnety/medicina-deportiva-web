@@ -81,8 +81,8 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
     name: 'Dr. James Madrid - Medicina Deportiva',
-    url: 'https://drjamesmadrid.com',
-    image: 'https://drjamesmadrid.com/assets/images/dc_james_1.png',
+    url: 'https://clinicadelmovimiento.com',
+    image: 'https://clinicadelmovimiento.com/assets/images/dc_james_1.png',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Torre Medical - El Poblado',

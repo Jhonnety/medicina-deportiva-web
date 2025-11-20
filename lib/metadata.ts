@@ -1,6 +1,6 @@
 /** @type {import('next').Metadata} */
 export const metadata = {
-  metadataBase: new URL('https://drjamesmadrid.com'),
+  metadataBase: new URL('https://clinicadelmovimiento.com'),
   title: {
     template: '%s | Dr. James Madrid',
     default: 'Dr. James Madrid - Medicina Deportiva',
@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'es_CO',
-    url: 'https://drjamesmadrid.com',
+    url: 'https://clinicadelmovimiento.com',
     siteName: 'Dr. James Madrid',
   },
   twitter: {

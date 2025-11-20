@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/admin/'],
       },
     ],
-    sitemap: 'https://drjamesmadrid.com/sitemap.xml',
+    sitemap: 'https://clinicadelmovimiento.com/sitemap.xml',
   };
 }
 

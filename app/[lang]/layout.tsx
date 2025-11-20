@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    metadataBase: new URL('https://drjamesmadrid.com'),
+    metadataBase: new URL('https://clinicadelmovimiento.com'),
     icons: {
       icon: '/icon.svg',
     },

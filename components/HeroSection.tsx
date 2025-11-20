@@ -41,7 +41,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             </div>
 
             {/* Main Heading mejorado */}
-            <h1 className="text-[44px] sm:text-[52px] lg:text-[56px] xl:text-[64px] leading-[1.05] font-bold tracking-tight mb-8" style={{ color: '#182121' }}>
+            <h1 className="text-[44px] sm:text-[52px] lg:text-[56px] xl:text-[64px] leading-tight font-bold tracking-normal mb-8" style={{ color: '#182121' }}>
               {locale === 'es' ? (
                 <>
                   Movilidad <span style={{ color: '#6ba5a5' }}>segura</span> y sin <span style={{ color: '#6ba5a5' }}>dolor</span>
