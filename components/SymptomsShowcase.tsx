@@ -199,7 +199,7 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
         {/* CTA Footer */}
         <div className="mt-16 text-center">
           <a
-            href={getWhatsAppLink()}
+            href={getWhatsAppLink(lang)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"

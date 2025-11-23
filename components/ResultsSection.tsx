@@ -192,7 +192,7 @@ export default function ResultsSection({ langContent, lang }: ResultsSectionProp
                     : 'Ready to start your recovery?'}
                 </span>
               </div>
-              <a href={getWhatsAppLink(lang === 'es' ? '¡Hola! Los vi en la página web y me interesa el tratamiento y quiero más información' : 'Hello! I saw them on the website and I am interested in the treatment and would like more information')}
+              <a href={getWhatsAppLink(lang, lang === 'es' ? '¡Hola! Los vi en la página web y me interesa el tratamiento y quiero más información' : 'Hello! I saw you on the website and I am interested in the treatment and would like more information')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-full font-bold !text-white shadow-lg 

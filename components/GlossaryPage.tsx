@@ -218,7 +218,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => getWhatsAppLink(),
+          href: (lang: string) => getWhatsAppLink(lang),
         },
       ],
     },
@@ -250,7 +250,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => getWhatsAppLink(),
+          href: (lang: string) => getWhatsAppLink(lang),
         },
       ],
     },
@@ -295,7 +295,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => getWhatsAppLink(),
+          href: (lang: string) => getWhatsAppLink(lang),
         },
       ],
     },
@@ -310,7 +310,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Rehabilitación cardíaca', en: '👉 Cardiac rehabilitation' },
-          href: () => getWhatsAppLink(),
+          href: (lang: string) => getWhatsAppLink(lang),
         },
       ],
     },
@@ -325,7 +325,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => getWhatsAppLink(),
+          href: (lang: string) => getWhatsAppLink(lang),
         },
       ],
     },
@@ -749,7 +749,7 @@ export default function GlossaryPage({ locale }: GlossaryPageProps) {
                   : 'Schedule your consultation and receive clear, personalized guidance on the best management for your case.'}
               </p>
               <a
-                href={getWhatsAppLink()}
+                href={getWhatsAppLink(lang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all"

@@ -250,7 +250,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               {/* Botón principal - WhatsApp */}
               <a
-                href={getWhatsAppLink()}
+                href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"

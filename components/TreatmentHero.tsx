@@ -111,7 +111,7 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
             {/* Botón principal de acción */}
             <div className="pt-2">
               <a
-                href={getWhatsAppLink()}
+                href={getWhatsAppLink(lang)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 !bg-[#6ba5a5]"

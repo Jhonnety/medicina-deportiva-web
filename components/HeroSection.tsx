@@ -92,7 +92,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             {/* CTA Buttons mejorados */}
             <div className="flex flex-col sm:flex-row gap-5 mb-12">
               <a
-                href={getWhatsAppLink()}
+                href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
