@@ -27,7 +27,7 @@ export default function TreatmentHero({ treatment, langContent, lang }: Treatmen
   };
 
   return (
-    <section className="relative section-padding overflow-hidden bg-white">
+    <section className="relative section-padding overflow-hidden" style={{ background: 'linear-gradient(135deg, #F9F6F0 0%, #F5F1E8 50%, #EBE6DA 100%)' }}>
       {/* Patrón decorativo de fondo */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-20 left-10 w-96 h-96 rounded-full"
