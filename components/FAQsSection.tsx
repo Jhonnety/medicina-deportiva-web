@@ -18,17 +18,22 @@ export default function FAQsSection({ locale }: FAQsSectionProps) {
   const faqsData: FAQItem[] = locale === 'es' ? [
     {
       question: '¿Qué es la medicina deportiva y quién puede beneficiarse?',
-      answer: 'La medicina deportiva es una especialidad médica enfocada en prevenir, diagnosticar y tratar lesiones relacionadas con la actividad física. Tratamos desde deportistas de alto rendimiento hasta personas con actividades cotidianas que presentan molestias.',
+      answer: 'La medicina deportiva es una especialidad médica enfocada en prevenir, diagnosticar y tratar lesiones relacionadas con la actividad física. Tratamos desde deportistas de alto rendimiento hasta personas con actividades cotidianas que presentan molestias. Además, tenemos como objetivo prevenir la muerte súbita durante la actividad física, por eso analizamos el sistema cardiovascular. Por último, evaluamos de manera integral el sistema metabólico y tenemos las competencias para ayudar al paciente al control del peso.',
       icon: Stethoscope,
     },
     {
       question: '¿Necesito cita previa?',
-      answer: 'Trabajamos con cita previa para garantizar atención personalizada. Contáctanos por WhatsApp al +57 304 438 62 08 y haremos lo posible por atenderte el mismo día.',
+      answer: 'Trabajamos con cita previa para garantizar atención personalizada. Contáctanos por WhatsApp al +57 304 438 62 08 y haremos lo posible por atenderte el mismo día. Contamos con la modalidad virtual y presencial para agendamiento de acuerdo a la necesidad. Modalidad muy útil para pacientes que viven fuera de Medellín, útil para citas iniciales y seguimiento.',
       icon: Calendar,
     },
     {
+      question: '¿Cuántas sesiones necesito?',
+      answer: 'Depende de tu condición específica. Algunas condiciones mejoran en 2-4 sesiones, mientras que lesiones complejas pueden requerir 8-12 sesiones. El Dr. Madrid te dará un estimado en la primera consulta.',
+      icon: Clock,
+    },
+    {
       question: '¿Los tratamientos requieren cirugía?',
-      answer: 'No, realizamos tratamiento médico con células madre, exosomas, péptidos, plasma rico en plaquetas, ácido hialurónico, medicina funcional y convencional. Utilizamos técnicas de fisioterapia avanzada.',
+      answer: 'No, realizamos tratamiento médico con células madre, exosomas, péptidos, plasma rico en plaquetas, ácido hialurónico, medicina funcional y convencional. Utilizamos técnicas de fisioterapia avanzada, tales como: ondas de choque y medicina hiperbárica.',
       icon: ShieldOff,
     },
     {
@@ -41,40 +46,35 @@ export default function FAQsSection({ locale }: FAQsSectionProps) {
       answer: 'Solo Sura pólizas y Coomeva medicina prepagada.',
       icon: CreditCard,
     },
-    {
-      question: '¿Cuánto vale la consulta?',
-      answer: 'Cita particular el costo es de $253.000 e incluye una revisión gratuita antes del mes.',
-      icon: CreditCard, // Usaré CreditCard también o Clock si prefieres
-    },
   ] : [
     {
       question: 'What is sports medicine and who can benefit?',
-      answer: 'Sports medicine is a medical specialty focused on preventing, diagnosing and treating injuries related to physical activity. We treat from high-performance athletes to people with daily activities who present discomfort.',
+      answer: 'Sports medicine is a medical specialty focused on preventing, diagnosing and treating injuries related to physical activity. We treat from high-performance athletes to people with daily activities who present discomfort. Additionally, we aim to prevent sudden death during physical activity, which is why we analyze the cardiovascular system. Finally, we comprehensively evaluate the metabolic system and have the competencies to help the patient with weight control.',
       icon: Stethoscope,
     },
     {
       question: 'Do I need an appointment?',
-      answer: 'We work by appointment to guarantee personalized attention. Contact us by WhatsApp at +57 304 438 62 08 and we will do our best to serve you the same day.',
+      answer: 'We work by appointment to guarantee personalized attention. Contact us by WhatsApp at +57 304 438 62 08 and we will do our best to serve you the same day. We have virtual and in-person modality for scheduling according to need. Modality very useful for patients who live outside Medellín, useful for initial appointments and follow-up.',
       icon: Calendar,
     },
     {
+      question: 'How many sessions do I need?',
+      answer: 'It depends on your specific condition. Some conditions improve in 2-4 sessions, while complex injuries may require 8-12 sessions. Dr. Madrid will give you an estimate at the first consultation.',
+      icon: Clock,
+    },
+    {
       question: 'Do treatments require surgery?',
-      answer: 'No, we perform medical treatment with stem cells, exosomes, peptides, platelet-rich plasma, hyaluronic acid, functional and conventional medicine. We use advanced physiotherapy techniques.',
+      answer: 'No, we perform medical treatment with stem cells, exosomes, peptides, platelet-rich plasma, hyaluronic acid, functional and conventional medicine. We use advanced physiotherapy techniques, such as: shock waves and hyperbaric medicine.',
       icon: ShieldOff,
     },
     {
       question: 'Where are you located?',
-      answer: 'We are in Torre Medical, El Poblado, Medellín. Accessible area with parking, near Metro Estación Poblado. Calle 7 #39-107, Torre Medical, Office 1009.',
+      answer: 'We are in Torre Medical, El Poblado, Medellín. Accessible area with parking, near Metro Estación Poblado. Calle 7 #39-107, Torre Medical, Consultorio 1009.',
       icon: MapPin,
     },
     {
       question: 'Do you accept medical insurance?',
       answer: 'Only Sura policies and Coomeva prepaid medicine.',
-      icon: CreditCard,
-    },
-    {
-      question: 'How much does the consultation cost?',
-      answer: 'The private consultation cost is COP $253,000 and includes a free follow-up visit within the month.',
       icon: CreditCard,
     },
   ];
