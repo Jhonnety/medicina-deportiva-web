@@ -103,15 +103,15 @@
       "faqs": [
         {
           "q": "¿Cuánto tiempo dura el tratamiento completo?",
-          "a": "El proceso completo desde la extracción hasta la aplicación puede tomar entre 3-4 semanas. Los resultados comienzan a notarse entre 4-8 semanas y continúan mejorando hasta los 6 meses."
-        },
-        {
-          "q": "¿Es doloroso el procedimiento?",
-          "a": "Tanto la extracción como la aplicación se realizan con anestesia local. La molestia es mínima y se maneja adecuadamente con analgésicos comunes durante los primeros días."
+          "a": "El proceso completo desde la extracción hasta la aplicación puede tomar entre 1-12 semanas. Los resultados comienzan a notarse entre 4-8 semanas y continúan mejorando hasta los 10 meses."
         },
         {
           "q": "¿Cuál es la diferencia entre células autólogas y alogénicas?",
-          "a": "Las células autólogas provienen del mismo paciente, eliminando riesgo de rechazo. Las alogénicas provienen de donante compatible y están disponibles inmediatamente. Ambas son efectivas y la elección depende de cada caso."
+          "a": "Las células autólogas provienen del mismo paciente, deben extraerse y cultivarse este proceso puede durar de 2-3 meses. Las células alogénicas provienen de donante (gelatina de wharton) y están disponibles inmediatamente. Ambas son efectivas."
+        },
+        {
+          "q": "¿Es doloroso el procedimiento?",
+          "a": "La extracción de células madre autólogas es un procedimiento que requiere personal entrenado y capacitado, un quirófano y medios anestésicos, puede generar dolor después del procedimiento. Durante la aplicación de las células madre autólogas o alogénicas se usa anestesia local. La aplicación de las células madre puede generar dolor e inflamación hasta 7 días después del procedimiento. Existen medios físicos y farmacológicos para controlar estos síntomas, si hay persistencia del dolor o de la hinchazón el paciente debe ser valorado nuevamente en consulta. En general la mayoría de los pacientes toleran el procedimiento bastante bien."
         }
       ]
     },
@@ -218,15 +218,15 @@
       "faqs": [
         {
           "q": "How long does the complete treatment take?",
-          "a": "The complete process from extraction to application can take 3-4 weeks. Results begin to be noticed between 4-8 weeks and continue to improve up to 6 months."
-        },
-        {
-          "q": "Is the procedure painful?",
-          "a": "Both extraction and application are performed with local anesthesia. Discomfort is minimal and is adequately managed with common analgesics during the first days."
+          "a": "The complete process from extraction to application can take between 1-12 weeks. Results begin to be noticed between 4-8 weeks and continue to improve up to 10 months."
         },
         {
           "q": "What is the difference between autologous and allogeneic cells?",
-          "a": "Autologous cells come from the same patient, eliminating rejection risk. Allogeneic cells come from a compatible donor and are immediately available. Both are effective and the choice depends on each case."
+          "a": "Autologous cells come from the patient themselves, must be extracted and cultured; this process can take 2-3 months. Allogeneic cells come from a donor (Wharton's jelly) and are available immediately. Both are effective."
+        },
+        {
+          "q": "Is the procedure painful?",
+          "a": "The extraction of autologous stem cells is a procedure that requires trained and qualified personnel, an operating room, and anesthetic means; it can generate pain after the procedure. Local anesthesia is used during the application of autologous or allogeneic stem cells. The application of stem cells can generate pain and inflammation up to 7 days after the procedure. Physical and pharmacological means exist to control these symptoms; if pain or swelling persists, the patient must be evaluated again in consultation. In general, most patients tolerate the procedure quite well."
         }
       ]
     }
@@ -335,15 +335,15 @@
       "faqs": [
         {
           "q": "¿Cuántas sesiones de exosomas necesito?",
-          "a": "La mayoría de pacientes requieren 1-3 sesiones dependiendo de la severidad de la lesión. Las lesiones agudas pueden responder con una sola aplicación, mientras que condiciones crónicas o degenerativas pueden necesitar 2-3 sesiones espaciadas cada 4-12 semanas."
-        },
-        {
-          "q": "¿Cuándo veré resultados con el tratamiento de exosomas?",
-          "a": "Los efectos antiinflamatorios se notan en las primeras 1-2 semanas. La regeneración tisular es progresiva, con mejoría funcional significativa entre las semanas 4-8. Los resultados óptimos se observan a los 3-6 meses."
+          "a": "La mayoría de pacientes requieren 1-3 sesiones dependiendo de la respuesta al tratamiento. Las lesiones agudas pueden responder con una sola aplicación, mientras que condiciones crónicas o degenerativas pueden necesitar 2-3 sesiones espaciadas cada 4-8 semanas."
         },
         {
           "q": "¿Los exosomas son seguros? ¿Hay rechazo?",
           "a": "Los exosomas son acelulares (no contienen células vivas), por lo que no hay riesgo de rechazo inmunológico. Son extremadamente seguros con mínimos efectos secundarios, generalmente limitados a leve molestia en el sitio de inyección."
+        },
+        {
+          "q": "¿Cuándo veré resultados con el tratamiento de exosomas?",
+          "a": "Los efectos antiinflamatorios se notan en las primeras 1-2 semanas. La regeneración tisular es progresiva, con mejoría funcional entre las semanas 4-8. Los resultados óptimos se observan a los 3-6 meses, ya que los exosomas continúan modulando la inflamación y estimulando la reparación del tejido durante ese periodo. Es importante tener en cuenta que la respuesta puede variar según la edad del paciente, el tipo de lesión, el tamaño de la lesión, el estado previo de la articulación (hueso, cartílago, ligamentos, meniscos, labrum) del tendón, del musculo y el nivel de actividad del paciente. Además, los exosomas no actúan como un analgésico inmediato, sino como un modulador biológico, por lo que la mejoría es gradual y acumulativa."
         }
       ]
     },
@@ -450,15 +450,15 @@
       "faqs": [
         {
           "q": "How many exosome sessions do I need?",
-          "a": "Most patients require 1-3 sessions depending on injury severity. Acute injuries may respond with a single application, while chronic or degenerative conditions may need 2-3 sessions spaced every 4-12 weeks."
-        },
-        {
-          "q": "When will I see results from exosome treatment?",
-          "a": "Anti-inflammatory effects are noticeable within the first 1-2 weeks. Tissue regeneration is progressive, with significant functional improvement between weeks 4-8. Optimal results are observed at 3-6 months."
+          "a": "Most patients require 1-3 sessions depending on the response to treatment. Acute injuries may respond with a single application, while chronic or degenerative conditions may need 2-3 sessions spaced 4-8 weeks apart."
         },
         {
           "q": "Are exosomes safe? Is there rejection?",
-          "a": "Exosomes are acellular (contain no live cells), so there is no risk of immune rejection. They are extremely safe with minimal side effects, generally limited to mild discomfort at the injection site."
+          "a": "Exosomes are acellular (contain no living cells), so there is no risk of immunological rejection. They are extremely safe with minimal side effects, generally limited to mild discomfort at the injection site."
+        },
+        {
+          "q": "When will I see results from exosome treatment?",
+          "a": "Anti-inflammatory effects are noticeable within the first 1-2 weeks. Tissue regeneration is progressive, with functional improvement between weeks 4-8. Optimal results are observed at 3-6 months, as exosomes continue to modulate inflammation and stimulate tissue repair during that period. It is important to note that the response may vary according to the patient's age, type of injury, size of injury, previous state of the joint (bone, cartilage, ligaments, meniscus, labrum), tendon, muscle, and the patient's activity level. Also, exosomes do not act as an immediate analgesic but as a biological modulator, so improvement is gradual and cumulative."
         }
       ]
     }
@@ -570,12 +570,12 @@
           "a": "La extracción de sangre es similar a un análisis de laboratorio común. La infiltración se realiza con anestesia local, por lo que las molestias son mínimas. Después puede haber dolor leve que se maneja con hielo y analgésicos simples."
         },
         {
-          "q": "¿Cuántas sesiones de PRP necesito?",
-          "a": "Depende de la lesión. Lesiones agudas pueden responder con 1-2 aplicaciones. Condiciones crónicas o artrosis generalmente requieren 2-3 sesiones espaciadas cada 4-6 semanas para resultados óptimos."
-        },
-        {
           "q": "¿Qué cuidados debo tener después del PRP?",
           "a": "Evita antiinflamatorios (ibuprofeno, naproxeno) durante 7-10 días ya que interfieren con el proceso de curación. Reposo relativo las primeras 24-48 horas. No aplicar hielo las primeras 24 horas. Puedes retomar actividad progresivamente según indicaciones médicas."
+        },
+        {
+          "q": "¿Cuántas sesiones de PRP necesito?",
+          "a": "Depende de la lesión. Lesiones agudas pueden responder con 1-2 aplicaciones. Condiciones crónicas o artrosis generalmente requieren 2-3 sesiones espaciadas cada 4-6 semanas para resultados óptimos."
         }
       ]
     },
@@ -682,15 +682,15 @@
       "faqs": [
         {
           "q": "Is PRP treatment painful?",
-          "a": "Blood extraction is similar to a common lab test. Infiltration is performed with local anesthesia, so discomfort is minimal. Mild pain may occur afterward, managed with ice and simple analgesics."
-        },
-        {
-          "q": "How many PRP sessions do I need?",
-          "a": "Depends on the injury. Acute injuries may respond with 1-2 applications. Chronic conditions or osteoarthritis generally require 2-3 sessions spaced every 4-6 weeks for optimal results."
+          "a": "Blood extraction is similar to a common lab test. The infiltration is performed with local anesthesia, so discomfort is minimal. Afterward, there may be mild pain managed with ice and simple analgesics."
         },
         {
           "q": "What care should I take after PRP?",
-          "a": "Avoid anti-inflammatories (ibuprofen, naproxen) for 7-10 days as they interfere with healing. Relative rest for first 24-48 hours. Don't apply ice for first 24 hours. You can progressively resume activity according to medical indications."
+          "a": "Avoid anti-inflammatories (ibuprofen, naproxen) for 7-10 days as they interfere with the healing process. Relative rest for the first 24-48 hours. Do not apply ice for the first 24 hours. You can resume activity progressively according to medical indications."
+        },
+        {
+          "q": "How many PRP sessions do I need?",
+          "a": "It depends on the injury. Acute injuries may respond with 1-2 applications. Chronic conditions or osteoarthritis generally require 2-3 sessions spaced 4-6 weeks apart for optimal results."
         }
       ]
     }
@@ -806,12 +806,12 @@
           "a": "Depende del grado de artrosis y del producto utilizado. Los protocolos van desde una sola inyección (productos de alta densidad) hasta 3-5 inyecciones semanales (productos estándar). Tu médico determinará el mejor protocolo para tu caso."
         },
         {
-          "q": "¿Cuánto dura el efecto del ácido hialurónico?",
-          "a": "El efecto beneficioso típicamente dura entre 6-12 meses. Algunos pacientes experimentan alivio hasta por 18 meses. Se puede repetir el tratamiento cuando los síntomas reaparezcan, generalmente una vez al año."
-        },
-        {
           "q": "¿Es dolorosa la infiltración de ácido hialurónico?",
           "a": "La infiltración se realiza con anestesia local, por lo que las molestias son mínimas. Puede haber ligera hinchazón o molestia las primeras 24-48 horas que se maneja con hielo local. La mayoría de pacientes reanudan actividades normales al día siguiente."
+        },
+        {
+          "q": "¿Cuánto dura el efecto del ácido hialurónico?",
+          "a": "El efecto beneficioso típicamente dura entre 6-12 meses. Algunos pacientes experimentan alivio hasta por 18 meses. Se puede repetir el tratamiento cuando los síntomas reaparezcan, generalmente una vez al año. Es importante recordar que el ácido hialurónico no regenera el cartílago, pero sí ayuda a mejorar el dolor, la movilidad y la calidad de vida, permitiendo que el paciente realice actividades diarias con mayor comodidad. La duración del beneficio también puede mejorar cuando el tratamiento se combina con ejercicio terapéutico, control del peso y otras medidas recomendadas por el especialista."
         }
       ]
     },
@@ -925,12 +925,12 @@
           "a": "It depends on the degree of osteoarthritis and the product used. Protocols range from a single injection (high-density products) to 3-5 weekly injections (standard products). Your doctor will determine the best protocol for your case."
         },
         {
-          "q": "How long does the effect of hyaluronic acid last?",
-          "a": "The beneficial effect typically lasts between 6-12 months. Some patients experience relief for up to 18 months. Treatment can be repeated when symptoms reappear, generally once a year."
+          "q": "Is the hyaluronic acid injection painful?",
+          "a": "The infiltration is performed with local anesthesia, so discomfort is minimal. There may be slight swelling or discomfort for the first 24-48 hours, managed with local ice. Most patients resume normal activities the next day."
         },
         {
-          "q": "Is hyaluronic acid infiltration painful?",
-          "a": "Infiltration is performed with local anesthesia, so discomfort is minimal. There may be slight swelling or discomfort in the first 24-48 hours that is managed with local ice. Most patients resume normal activities the next day."
+          "q": "How long does the effect of hyaluronic acid last?",
+          "a": "The beneficial effect typically lasts between 6-12 months. Some patients experience relief for up to 18 months. The treatment can be repeated when symptoms reappear, generally once a year. It is important to remember that hyaluronic acid does not regenerate cartilage, but it helps improve pain, mobility, and quality of life, allowing the patient to perform daily activities more comfortably. The duration of benefit can also improve when treatment is combined with therapeutic exercise, weight control, and other measures recommended by the specialist."
         }
       ]
     }
@@ -1025,12 +1025,12 @@
           "a": "Se recomienda máximo 2-3 infiltraciones por articulación al año, espaciadas al menos 6-8 semanas. El uso excesivo puede debilitar tendones y cartílago, por lo que se reserva para situaciones donde el beneficio supera el riesgo."
         },
         {
-          "q": "¿Cuándo sentiré alivio después de la infiltración?",
-          "a": "Algunos pacientes notan mejoría en 24 horas, pero el efecto máximo suele alcanzarse entre 3-7 días. Si no hay mejoría en 2 semanas, puede que el diagnóstico deba reevaluarse o considerar otro tratamiento."
-        },
-        {
           "q": "¿Hay efectos secundarios de las infiltraciones con corticoides?",
           "a": "Los efectos locales pueden incluir dolor temporal en el sitio de inyección (reacción al corticoide), enrojecimiento facial transitorio o elevación leve de glicemia en diabéticos. Son seguros cuando se usan apropiadamente y con la frecuencia adecuada."
+        },
+        {
+          "q": "¿Cuándo sentiré alivio después de la infiltración?",
+          "a": "Algunos pacientes notan mejoría en 24 horas, pero el efecto máximo suele alcanzarse entre 3-7 días. Si no hay mejoría en 2 semanas, puede que el diagnóstico deba reevaluarse o considerar otro tratamiento."
         }
       ]
     },
@@ -1120,15 +1120,15 @@
       "faqs": [
         {
           "q": "How many corticosteroid injections can I receive?",
-          "a": "A maximum of 2-3 infiltrations per joint per year is recommended, spaced at least 6-8 weeks apart. Excessive use can weaken tendons and cartilage, so it is reserved for situations where the benefit outweighs the risk."
-        },
-        {
-          "q": "When will I feel relief after the infiltration?",
-          "a": "Some patients notice improvement within 24 hours, but maximum effect is usually reached between 3-7 days. If there is no improvement within 2 weeks, the diagnosis may need to be re-evaluated or another treatment considered."
+          "a": "It is recommended maximum 2-3 injections per joint per year, spaced at least 6-8 weeks apart. Excessive use can weaken tendons and cartilage, so it is reserved for situations where the benefit outweighs the risk."
         },
         {
           "q": "Are there side effects of corticosteroid injections?",
-          "a": "Local effects may include temporary pain at the injection site (corticosteroid reaction), transient facial flushing or slight elevation of blood sugar in diabetics. They are safe when used appropriately and with the right frequency."
+          "a": "Local effects can include temporary pain at the injection site (corticosteroid flare), transient facial flushing, or slight elevation of blood sugar in diabetics. They are safe when used appropriately and with the proper frequency."
+        },
+        {
+          "q": "When will I feel relief after the injection?",
+          "a": "Some patients notice improvement in 24 hours, but the maximum effect is usually reached between 3-7 days. If there is no improvement in 2 weeks, the diagnosis may need to be re-evaluated or another treatment considered."
         }
       ]
     }
@@ -1223,12 +1223,12 @@
           "a": "Depende de tus objetivos. Para mantenimiento general: 1 sesión mensual. Para deportistas de alto rendimiento: 1-2 sesiones semanales durante periodos de entrenamiento intenso. Para recuperación de fatiga aguda: 2-3 sesiones la primera semana, luego espaciar."
         },
         {
-          "q": "¿Cuánto duran los efectos de la sueroterapia?",
-          "a": "Los efectos inmediatos (energía, hidratación) duran 3-7 días. Los beneficios acumulativos con sesiones regulares incluyen mejor rendimiento, recuperación más rápida y sistema inmune fortalecido que se mantienen a largo plazo."
-        },
-        {
           "q": "¿La sueroterapia es segura? ¿Tiene efectos secundarios?",
           "a": "Es muy segura cuando es administrada por personal médico calificado. Los efectos secundarios son raros y pueden incluir leve sensación de frío durante la infusión o molestia en el sitio de punción. Las fórmulas se personalizan según tu condición de salud."
+        },
+        {
+          "q": "¿Cuánto duran los efectos de la sueroterapia?",
+          "a": "Los efectos inmediatos (energía, hidratación) duran 3-7 días. Los beneficios acumulativos con sesiones regulares incluyen mejor rendimiento, recuperación más rápida y sistema inmune fortalecido que se mantienen a largo plazo."
         }
       ]
     },
@@ -1318,15 +1318,15 @@
       "faqs": [
         {
           "q": "How often should I receive IV therapy?",
-          "a": "It depends on your goals. For general maintenance: 1 session monthly. For high-performance athletes: 1-2 weekly sessions during intense training periods. For acute fatigue recovery: 2-3 sessions the first week, then space out."
-        },
-        {
-          "q": "How long do the effects of IV therapy last?",
-          "a": "Immediate effects (energy, hydration) last 3-7 days. Cumulative benefits with regular sessions include better performance, faster recovery and strengthened immune system that are maintained long-term."
+          "a": "It depends on your goals. For general maintenance: 1 monthly session. For high-performance athletes: 1-2 weekly sessions during intense training periods. For acute fatigue recovery: 2-3 sessions the first week, then spaced out."
         },
         {
           "q": "Is IV therapy safe? Does it have side effects?",
-          "a": "It is very safe when administered by qualified medical personnel. Side effects are rare and may include slight cold sensation during infusion or discomfort at the puncture site. Formulas are personalized according to your health condition."
+          "a": "It is very safe when administered by qualified medical personnel. Side effects are rare and may include a slight cold sensation during infusion or discomfort at the puncture site. Formulas are personalized according to your health condition."
+        },
+        {
+          "q": "How long do the effects of IV therapy last?",
+          "a": "Immediate effects (energy, hydration) last 3-7 days. Cumulative benefits with regular sessions include better performance, faster recovery, and strengthened immune system which are maintained long-term."
         }
       ]
     }
@@ -1425,12 +1425,12 @@
           "a": "De forma saludable y sostenible, se espera perder 2-4 kg por mes, dependiendo del peso inicial y metabolismo. En 3 meses: 6-12 kg, en 6 meses: 12-24 kg. Lo importante no es solo el peso perdido, sino mejorar la composición corporal y mantener los resultados."
         },
         {
-          "q": "¿En qué se diferencia de una dieta comercial?",
-          "a": "Incluye supervisión médica continua, análisis de laboratorio, evaluación hormonal y metabólica, ajustes personalizados según tu respuesta, manejo de comorbilidades, técnicas complementarias médicas y educación para mantener resultados. No es restrictivo ni temporal, sino un cambio de estilo de vida."
-        },
-        {
           "q": "¿Tendré efecto rebote después del programa?",
           "a": "El programa se diseña específicamente para evitar el efecto rebote mediante pérdida gradual, preservación de masa muscular, educación nutricional y cambio de hábitos sostenibles. El seguimiento a largo plazo ayuda a mantener los resultados. La clave es el cambio de estilo de vida, no dietas temporales."
+        },
+        {
+          "q": "¿En qué se diferencia de una dieta comercial?",
+          "a": "Incluye supervisión médica continua, análisis de laboratorio, evaluación hormonal y metabólica, ajustes personalizados según tu respuesta, manejo de comorbilidades, técnicas complementarias médicas y educación para mantener resultados. No es restrictivo ni temporal, sino un cambio de estilo de vida."
         }
       ]
     },
@@ -1524,15 +1524,15 @@
       "faqs": [
         {
           "q": "How much weight can I lose with this program?",
-          "a": "In a healthy and sustainable way, you can expect to lose 2-4 kg per month, depending on initial weight and metabolism. In 3 months: 6-12 kg, in 6 months: 12-24 kg. What matters is not just weight lost, but improving body composition and maintaining results."
+          "a": "In a healthy and sustainable way, 2-4 kg per month is expected, depending on initial weight and metabolism. In 3 months: 6-12 kg, in 6 months: 12-24 kg. The important thing is not just weight loss, but improving body composition and maintaining results."
         },
         {
           "q": "How is it different from a commercial diet?",
-          "a": "Includes continuous medical supervision, laboratory tests, hormonal and metabolic evaluation, personalized adjustments according to your response, comorbidity management, medical complementary techniques and education to maintain results. It's not restrictive or temporary, but a lifestyle change."
+          "a": "It includes continuous medical supervision, lab tests, hormonal and metabolic evaluation, personalized adjustments according to your response, management of comorbidities, complementary medical techniques, and education to maintain results. It is not restrictive or temporary, but a lifestyle change."
         },
         {
           "q": "Will I have a rebound effect after the program?",
-          "a": "The program is specifically designed to avoid rebound effect through gradual loss, muscle mass preservation, nutritional education and sustainable habit changes. Long-term follow-up helps maintain results. The key is lifestyle change, not temporary diets."
+          "a": "The program is specifically designed to avoid the rebound effect through gradual loss, muscle mass preservation, nutritional education, and sustainable habit change. Long-term follow-up helps maintain results. The key is lifestyle change, not temporary diets."
         }
       ]
     }
@@ -1627,12 +1627,12 @@
           "a": "No. Aunque diseñado para alto rendimiento, también es ideal para deportistas amateur con objetivos ambiciosos, personas que entrenan regularmente y buscan optimizar resultados, atletas que vuelven de lesión, o cualquiera que quiera llevar su desempeño deportivo al máximo potencial con supervisión médica especializada."
         },
         {
-          "q": "¿Qué técnicas de recuperación incluye el programa?",
-          "a": "Incluye técnicas avanzadas como Plasma Rico en Plaquetas (PRP) para lesiones y recuperación muscular, sueroterapia deportiva para rehidratación y nutrientes, células madre si necesario, fisioterapia especializada, crioterapia, técnicas de liberación miofascial, compresión neumática, análisis de sueño y recuperación, suplementación estratégica."
-        },
-        {
           "q": "¿Cuánto tiempo tarda en verse mejora en el rendimiento?",
           "a": "Depende del punto de partida y objetivos. Mejoras en recuperación y energía: 2-3 semanas. Mejoras en composición corporal y fuerza: 4-6 semanas. Optimización completa del rendimiento: 8-12 semanas. El programa se diseña a largo plazo, con picos de forma para competencias específicas. El seguimiento constante asegura progreso continuo."
+        },
+        {
+          "q": "¿Qué técnicas de recuperación incluye el programa?",
+          "a": "Incluye técnicas avanzadas como Plasma Rico en Plaquetas (PRP) para lesiones y recuperación muscular, sueroterapia deportiva para rehidratación y nutrientes, células madre si necesario, fisioterapia especializada, crioterapia, técnicas de liberación miofascial, compresión neumática, análisis de sueño y recuperación, suplementación estratégica."
         }
       ]
     },
@@ -1725,12 +1725,12 @@
           "a": "No. Although designed for high performance, it is also ideal for amateur athletes with ambitious goals, people who train regularly and seek to optimize results, athletes returning from injury, or anyone who wants to take their sports performance to maximum potential with specialized medical supervision."
         },
         {
-          "q": "What recovery techniques does the program include?",
-          "a": "Includes advanced techniques such as Platelet Rich Plasma (PRP) for injuries and muscle recovery, sports IV therapy for rehydration and nutrients, stem cells if necessary, specialized physiotherapy, cryotherapy, myofascial release techniques, pneumatic compression, sleep and recovery analysis, strategic supplementation."
+          "q": "How long does it take to see improvement in performance?",
+          "a": "Depends on starting point and goals. Recovery and energy improvements: 2-3 weeks. Body composition and strength improvements: 4-6 weeks. Full performance optimization: 8-12 weeks. The program is designed long-term, with peak shape for specific competitions. Constant monitoring ensures continuous progress."
         },
         {
-          "q": "How long does it take to see performance improvement?",
-          "a": "Depends on starting point and goals. Improvements in recovery and energy: 2-3 weeks. Improvements in body composition and strength: 4-6 weeks. Complete performance optimization: 8-12 weeks. The program is designed long-term, with peak performance for specific competitions. Constant monitoring ensures continuous progress."
+          "q": "What recovery techniques does the program include?",
+          "a": "Includes advanced techniques such as Platelet-Rich Plasma (PRP) for injuries and muscle recovery, sports IV therapy for rehydration and nutrients, stem cells if necessary, specialized physiotherapy, cryotherapy, myofascial release techniques, pneumatic compression, sleep and recovery analysis, strategic supplementation."
         }
       ]
     }

@@ -40,6 +40,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     });
+
+    // Add FAQs page
+    routes.push({
+      url: `${baseUrl}/${locale}/faqs`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+      alternates: {
+        languages: {
+          ...Object.fromEntries(
+            i18n.locales.map((lang) => [lang, `${baseUrl}/${lang}/faqs`])
+          ),
+          'x-default': `${baseUrl}/es/faqs`,
+        },
+      },
+    });
   });
 
   // Add treatment pages for both languages
