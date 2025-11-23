@@ -13,7 +13,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ locale }: HeroSectionProps) {
   return (
-    <section className="relative pt-28 md:pt-32 lg:pt-36 pb-0 overflow-hidden" style={{ background: 'linear-gradient(135deg, #FDFBF7 0%, #FAF8F5 50%, #F5F2EB 100%)' }}>
+    <section className="relative pt-28 md:pt-32 lg:pt-36 pb-0 overflow-hidden" style={{ background: 'linear-gradient(135deg, #F9F6F0 0%, #F5F1E8 50%, #EBE6DA 100%)' }}>
       {/* Patrón decorativo de fondo */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute top-20 left-10 w-96 h-96 rounded-full"
