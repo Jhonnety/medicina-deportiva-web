@@ -1,5 +1,11 @@
 import { ContactInfo } from '@/lib/types';
 
+export const WHATSAPP_DEFAULT_MESSAGE = "Hola, vi su información en clinicadelmovimiento.com y quiero saber más. 🩺💬";
+
+export const getWhatsAppLink = (message: string = WHATSAPP_DEFAULT_MESSAGE) => {
+  return `https://wa.me/573044386208?text=${encodeURIComponent(message)}`;
+};
+
 export const CONTACT_INFO: ContactInfo = {
   phone: '+57 304 438 62 08',
   whatsapp: '573044386208',

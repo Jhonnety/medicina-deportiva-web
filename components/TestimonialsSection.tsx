@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
+import { getWhatsAppLink } from '@/lib/constants/contact';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -111,8 +112,8 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
         bestRating: '5',
         worstRating: '1'
       },
-      reviewBody: testimonial.kind === 'text' 
-        ? testimonial.quote 
+      reviewBody: testimonial.kind === 'text'
+        ? testimonial.quote
         : `${testimonial.condition} - ${testimonial.typeLabel}`,
       itemReviewed: {
         '@type': 'LocalBusiness',
@@ -182,7 +183,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             </SwiperSlide>
           ))}
         </Swiper>
-        
+
         {/* Indicador visual de scroll extra (opcional, para reforzar "hay más contenido") */}
         <style jsx global>{`
           .testimonials-swiper .swiper-wrapper {
@@ -209,22 +210,22 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
       {/* CTA - Próximo caso de éxito */}
       <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 mt-20">
         <div className="relative rounded-3xl shadow-2xl p-10 md:p-14 lg:p-16 text-center w-full overflow-hidden"
-             style={{ 
-               background: 'linear-gradient(135deg, #283838 0%, #1a2626 50%, #283838 100%)',
-             }}>
+          style={{
+            background: 'linear-gradient(135deg, #283838 0%, #1a2626 50%, #283838 100%)',
+          }}>
           {/* Patrón decorativo de fondo */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-0 left-0 w-40 h-40 rounded-full"
-                 style={{ background: 'radial-gradient(circle, #6ba5a5 0%, transparent 70%)' }}></div>
+              style={{ background: 'radial-gradient(circle, #6ba5a5 0%, transparent 70%)' }}></div>
             <div className="absolute bottom-0 right-0 w-60 h-60 rounded-full"
-                 style={{ background: 'radial-gradient(circle, #6ba5a5 0%, transparent 70%)' }}></div>
+              style={{ background: 'radial-gradient(circle, #6ba5a5 0%, transparent 70%)' }}></div>
           </div>
 
           {/* Contenido */}
           <div className="relative z-10">
             {/* Badge superior */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6"
-                 style={{ backgroundColor: 'rgba(107, 165, 165, 0.2)', border: '1px solid rgba(107, 165, 165, 0.3)' }}>
+              style={{ backgroundColor: 'rgba(107, 165, 165, 0.2)', border: '1px solid rgba(107, 165, 165, 0.3)' }}>
               <svg className="w-4 h-4" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
@@ -234,11 +235,11 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             </div>
 
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 !text-white leading-tight">
-              {locale === 'es' 
-                ? '¿Quieres ser nuestro próximo caso de éxito?' 
+              {locale === 'es'
+                ? '¿Quieres ser nuestro próximo caso de éxito?'
                 : 'Want to be our next success story?'}
             </h3>
-            
+
             <p className="text-lg md:text-xl !text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
               {locale === 'es'
                 ? 'Forma parte de quienes ya  recuperaron su bienestar con nuestros tratamientos médicos avanzados.'
@@ -249,7 +250,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               {/* Botón principal - WhatsApp */}
               <a
-                href="https://wa.me/573044386208"
+                href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"
@@ -258,7 +259,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#6ba5a5'}
               >
                 <svg className="w-6 h-6 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
                 </svg>
                 <span>{locale === 'es' ? 'Comenzar mi Recuperación' : 'Start My Recovery'}</span>
                 <svg className="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -270,7 +271,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
               <a
                 href="tel:+573044386208"
                 className="sm:hidden group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 w-full justify-center"
-                style={{ 
+                style={{
                   backgroundColor: 'transparent',
                   border: '2px solid rgba(107, 165, 165, 0.5)',
                   color: '#ffffff'
@@ -293,31 +294,31 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
 
             {/* Info adicional */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-300">
-            <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                  </svg>
-                  <span>{locale === 'es' ? 'Primera cita enfocada en entender tu dolor' : 'First appointment focused on understanding your pain'}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  <span>{locale === 'es' ? 'Analizamos la causa, no solo el síntoma' : 'We analyze the cause, not just the symptom'}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span>{locale === 'es' ? 'Plan de tratamiento personalizado' : 'Personalized treatment plan'}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
-                  </svg>
-                  <span>{locale === 'es' ? 'Resultados medibles y realistas' : 'Measurable and realistic results'}</span>
-                </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                </svg>
+                <span>{locale === 'es' ? 'Primera cita enfocada en entender tu dolor' : 'First appointment focused on understanding your pain'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+                <span>{locale === 'es' ? 'Analizamos la causa, no solo el síntoma' : 'We analyze the cause, not just the symptom'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span>{locale === 'es' ? 'Plan de tratamiento personalizado' : 'Personalized treatment plan'}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5" style={{ color: '#6ba5a5' }} fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                </svg>
+                <span>{locale === 'es' ? 'Resultados medibles y realistas' : 'Measurable and realistic results'}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -354,7 +355,7 @@ function AutoMarquee({ items, direction, onOpenVideo, locale }: { items: Testimo
   const isDraggingRef = useRef(false);
   const startXRef = useRef(0);
   const startPositionRef = useRef(0);
-  
+
   // Triplicar items para bucle suave sin saltos
   const infiniteItems = [...items, ...items, ...items, ...items];
 
@@ -375,10 +376,10 @@ function AutoMarquee({ items, direction, onOpenVideo, locale }: { items: Testimo
 
     const animate = () => {
       positionRef.current += speed;
-      
+
       // Calcular el ancho de un set (1/4 del total)
       const setWidth = track.scrollWidth / 4;
-      
+
       if (direction === 'left') {
         // Si se movió un set completo hacia la izquierda, reiniciar
         if (positionRef.current <= -setWidth) {
@@ -390,7 +391,7 @@ function AutoMarquee({ items, direction, onOpenVideo, locale }: { items: Testimo
           positionRef.current = -setWidth;
         }
       }
-      
+
       track.style.transform = `translateX(${positionRef.current}px)`;
       animationId = requestAnimationFrame(animate);
     };
@@ -412,13 +413,13 @@ function AutoMarquee({ items, direction, onOpenVideo, locale }: { items: Testimo
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDraggingRef.current || !trackRef.current) return;
-    
+
     const deltaX = e.clientX - startXRef.current;
     const newPosition = startPositionRef.current + deltaX;
-    
+
     // Aplicar límites del bucle
     const setWidth = trackRef.current.scrollWidth / 4;
-    
+
     if (newPosition <= -setWidth) {
       positionRef.current = newPosition + setWidth;
       startPositionRef.current = positionRef.current;
@@ -430,7 +431,7 @@ function AutoMarquee({ items, direction, onOpenVideo, locale }: { items: Testimo
     } else {
       positionRef.current = newPosition;
     }
-    
+
     trackRef.current.style.transform = `translateX(${positionRef.current}px)`;
   };
 
@@ -511,7 +512,7 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
 
   const poster = item.poster || '/assets/images/dc_james_6.jpg';
   const altText = `Testimonio en video de ${item.name} - ${item.typeLabel} - Tratamiento: ${item.condition} - Dr. James Madrid Medicina Deportiva Medellín`;
-  
+
   const isHighPerformance = item.typeLabel === 'Deportista de alto rendimiento';
   const labelText = isHighPerformance && locale === 'en' ? 'High Performance Athlete' : item.typeLabel;
   const labelStyle = isHighPerformance
@@ -519,7 +520,7 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
     : "px-2.5 py-1 text-xs font-semibold rounded-full bg-white/90 text-gray-900";
 
   return (
-    <article 
+    <article
       className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white"
     >
       <div className="relative aspect-square">
@@ -547,7 +548,7 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
         )}
         {/* overlay gradient bottom for title */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
-        
+
         {/* badges */}
         <div className="absolute top-3 left-3 flex items-center gap-2 z-10">
           <span className={labelStyle}>
@@ -564,18 +565,18 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
               onClick={(e) => e.stopPropagation()}
             >
               <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
             </a>
           )}
         </div>
-        
+
         <div className="absolute top-3 right-3 z-10 pointer-events-none">
           <span className="px-2 py-1 text-xs font-bold rounded-full bg-black/70 text-white">
             {item.language.toUpperCase()}
           </span>
         </div>
-        
+
         {/* play button - solo este es clickeable */}
         <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
           <button
@@ -593,7 +594,7 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
             </svg>
           </button>
         </div>
-        
+
         {/* bottom text */}
         <div className="absolute bottom-4 left-4 right-4 z-10 text-white pointer-events-none">
           <div className="font-semibold">{item.name}</div>
@@ -606,12 +607,12 @@ function VideoCard({ item, onOpen, locale }: { item: TestimonialVideo; onOpen: (
 
 function TextCard({ item }: { item: TestimonialText }) {
   return (
-    <article 
+    <article
       className="flex-shrink-0 w-[320px] md:w-[380px] rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-white p-6"
       aria-label={`Testimonio escrito de ${item.name} sobre ${item.condition}`}
     >
       <div className="flex items-start gap-3 mb-3">
-        <div 
+        <div
           className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 font-semibold"
           aria-hidden="true"
         >
@@ -627,11 +628,11 @@ function TextCard({ item }: { item: TestimonialText }) {
           {item.language.toUpperCase()}
         </span>
       </div>
-      
+
       <div aria-label={`Calificación: ${item.rating} de 5 estrellas`}>
         <Stars rating={item.rating} />
       </div>
-      
+
       <div className="mt-3">
         <svg className="w-6 h-6 text-primary/80" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M7.17 6A5.17 5.17 0 002 11.17V20h6v-8H5.17A3.17 3.17 0 018.34 8H7.17zM16.83 6A5.17 5.17 0 0011.66 11.17V20h6v-8h-2.83A3.17 3.17 0 0117.66 8h-.83z" />
@@ -640,7 +641,7 @@ function TextCard({ item }: { item: TestimonialText }) {
           {item.quote}
         </p>
       </div>
-      
+
       <div className="mt-5">
         <span className="inline-block px-3 py-2 text-xs font-semibold rounded-xl bg-accent-cool/10 text-gray-900">
           {item.language === 'es' ? 'Resultado: ' : 'Result: '}{item.result}
@@ -676,15 +677,15 @@ function VideoModal({ video, onClose }: { video: TestimonialVideo; onClose: () =
   }, [onClose]);
 
   return (
-    <div 
-      className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4" 
+    <div
+      className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-label={`Reproduciendo testimonio de ${video.name}`}
     >
-      <div 
-        className="relative w-full max-w-6xl" 
+      <div
+        className="relative w-full max-w-6xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Video */}
@@ -698,7 +699,7 @@ function VideoModal({ video, onClose }: { video: TestimonialVideo; onClose: () =
           aria-label={`Testimonio en video completo de ${video.name} - ${video.condition} - ${video.typeLabel}`}
           title={`Testimonio de ${video.name}: ${video.condition}`}
         />
-        
+
         {/* Botón cerrar */}
         <button
           type="button"

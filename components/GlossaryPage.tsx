@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import heroImageDesktop from '@/assets/images/team_desktop_1.png';
 import heroImageMobile from '@/assets/images/team_mobile_1.png';
+import { getWhatsAppLink } from '@/lib/constants/contact';
 
 type Locale = 'es' | 'en';
 
@@ -217,7 +218,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => `https://wa.me/573044386208`,
+          href: () => getWhatsAppLink(),
         },
       ],
     },
@@ -249,7 +250,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => `https://wa.me/573044386208`,
+          href: () => getWhatsAppLink(),
         },
       ],
     },
@@ -294,7 +295,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => `https://wa.me/573044386208`,
+          href: () => getWhatsAppLink(),
         },
       ],
     },
@@ -309,7 +310,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Rehabilitación cardíaca', en: '👉 Cardiac rehabilitation' },
-          href: () => `https://wa.me/573044386208`,
+          href: () => getWhatsAppLink(),
         },
       ],
     },
@@ -324,7 +325,7 @@ function buildTerms(): Term[] {
       links: [
         {
           label: { es: '👉 Agenda valoración', en: '👉 Schedule consultation' },
-          href: () => `https://wa.me/573044386208`,
+          href: () => getWhatsAppLink(),
         },
       ],
     },
@@ -420,16 +421,16 @@ export default function GlossaryPage({ locale }: GlossaryPageProps) {
           <div className="absolute inset-0" style={{ backgroundColor: '#1e2b2b' }} />
           {/* Decorative radial lights */}
           <div className="absolute -top-10 -left-10 w-72 h-72 rounded-full opacity-20"
-               style={{ background: 'radial-gradient(circle, rgba(107,165,165,0.35) 0%, transparent 70%)' }} />
+            style={{ background: 'radial-gradient(circle, rgba(107,165,165,0.35) 0%, transparent 70%)' }} />
           <div className="absolute -bottom-10 -right-10 w-96 h-96 rounded-full opacity-10"
-               style={{ background: 'radial-gradient(circle, rgba(107,165,165,0.45) 0%, transparent 70%)' }} />
+            style={{ background: 'radial-gradient(circle, rgba(107,165,165,0.45) 0%, transparent 70%)' }} />
           <div className="relative max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Copy */}
               <div className="text-center lg:text-left">
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-5"
-                     style={{ backgroundColor: 'rgba(107,165,165,0.15)' }}>
+                  style={{ backgroundColor: 'rgba(107,165,165,0.15)' }}>
                   <span className="text-sm font-semibold" style={{ color: '#6ba5a5' }}>
                     {locale === 'es' ? 'Glosario Médico' : 'Medical Glossary'}
                   </span>
@@ -501,11 +502,10 @@ export default function GlossaryPage({ locale }: GlossaryPageProps) {
               <button
                 key={c.key}
                 onClick={() => setCategory(c.key)}
-                className={`px-4 py-2 rounded-full text-sm font-semibold border transition-all ${
-                  category === c.key
-                    ? '!text-white'
-                    : 'text-gray-700 hover:text-[#6ba5a5]'
-                }`}
+                className={`px-4 py-2 rounded-full text-sm font-semibold border transition-all ${category === c.key
+                  ? '!text-white'
+                  : 'text-gray-700 hover:text-[#6ba5a5]'
+                  }`}
                 style={{
                   backgroundColor: category === c.key ? '#6ba5a5' : 'transparent',
                   borderColor: 'rgba(107,165,165,0.3)',
@@ -558,17 +558,6 @@ export default function GlossaryPage({ locale }: GlossaryPageProps) {
                           <span className="text-[#6ba5a5] font-semibold hover:underline">{lnk.label[lang]}</span>
                         </Link>
                       ))}
-                    </div>
-                    <div className="mt-4">
-                      <a
-                        href="https://wa.me/573044386208"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-4 py-2 text-sm font-bold rounded-full shadow"
-                        style={{ backgroundColor: '#6ba5a5', color: 'white' }}
-                      >
-                        {lang === 'es' ? 'Agendar valoración' : 'Schedule consultation'}
-                      </a>
                     </div>
                   </article>
                 ))}
@@ -747,7 +736,7 @@ export default function GlossaryPage({ locale }: GlossaryPageProps) {
         <section className="mt-20">
           <div className="relative overflow-hidden rounded-3xl shadow-xl p-8 md:p-12" style={{ backgroundColor: '#1e2b2b' }}>
             <div className="pointer-events-none absolute -top-10 -right-10 w-72 h-72 rounded-full opacity-10"
-                 style={{ background: 'radial-gradient(circle, rgba(107,165,165,0.55) 0%, transparent 70%)' }} />
+              style={{ background: 'radial-gradient(circle, rgba(107,165,165,0.55) 0%, transparent 70%)' }} />
             <div className="relative text-center">
               <h2 className="text-2xl md:text-3xl font-bold mb-3 !text-white">
                 {lang === 'es'
@@ -760,7 +749,7 @@ export default function GlossaryPage({ locale }: GlossaryPageProps) {
                   : 'Schedule your consultation and receive clear, personalized guidance on the best management for your case.'}
               </p>
               <a
-                href="https://wa.me/573044386208"
+                href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-white shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all"
