@@ -55,7 +55,7 @@ export default async function FAQsPage({ params }: { params: Promise<{ lang: Loc
     },
     {
       q: "¿Cuánto vale la consulta?",
-      a: "Cita particular el costo es de $253.000 e incluye una revisión gratuita antes del mes."
+      a: "Cita particular el costo es de $253.000 COP e incluye una revisión gratuita antes del mes."
     },
     {
       q: "¿Atienden por las pólizas? ¿Cuáles?",
@@ -154,7 +154,7 @@ export default async function FAQsPage({ params }: { params: Promise<{ lang: Loc
     },
     {
       q: "How much does the consultation cost?",
-      a: "The private consultation cost is COP $253,000 and includes a free follow-up visit within the month."
+      a: "The private consultation cost is COP $253,000 (around $67 USD) and includes a free follow-up visit within the month."
     },
     {
       q: "Do you see patients with insurance policies? Which ones?",
@@ -266,16 +266,22 @@ export default async function FAQsPage({ params }: { params: Promise<{ lang: Loc
         </div>
 
         <div className="container mx-auto px-4 pb-24">
-          <div className="max-w-4xl mx-auto grid gap-6">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold mb-4 text-[#182121] flex gap-3">
-                  <span className="text-[#6ba5a5]">Q.</span>
-                  {faq.q}
-                </h3>
-                <p className="text-gray-700 leading-relaxed pl-8 border-l-2 border-gray-100">
-                  {faq.a}
-                </p>
+              <div key={index} className="bg-white p-6 md:p-8 rounded-2xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07)] border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full group">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#6ba5a5]/10 flex items-center justify-center text-[#6ba5a5] font-bold text-lg group-hover:bg-[#6ba5a5] group-hover:text-white transition-colors duration-300">
+                    ?
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold mb-3 text-[#182121] leading-snug">
+                      {faq.q}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {faq.a}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
