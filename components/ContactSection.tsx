@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Phone, Mail, Instagram, MapPin, Clock } from 'lucide-react';
 import type { Dictionary } from '@/lib/types';
 import { getWhatsAppLink } from '@/lib/constants/contact';
-import { sendWhatsAppConversion } from '@/lib/analytics';
+import { sendWhatsAppConversion, sendEmailConversion } from '@/lib/analytics';
 
 interface ContactSectionProps {
   dictionary: Dictionary;
@@ -42,6 +42,7 @@ export default function ContactSection({ locale }: ContactSectionProps) {
 
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
+      sendEmailConversion();
     } catch (error) {
       console.error('Error:', error);
       setSubmitStatus('error');

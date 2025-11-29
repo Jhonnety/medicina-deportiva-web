@@ -15,3 +15,18 @@ export const sendWhatsAppConversion = (location: string) => {
     source: location
   });
 };
+
+export const sendEmailConversion = () => {
+  // Evento personalizado para fácil lectura en reportes
+  sendGAEvent('event', 'email_sent', {
+    event_category: 'conversion',
+    event_label: 'contact_form_submit'
+  });
+
+  // Evento de conversión estándar
+  sendGAEvent('event', 'generate_lead', {
+    currency: 'COP',
+    value: 0,
+    source: 'contact_form'
+  });
+};
