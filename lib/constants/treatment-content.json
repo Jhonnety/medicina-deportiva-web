@@ -1150,32 +1150,37 @@
         "intro": "Ofrecemos sueroterapias diseñadas para elevar tu bienestar de forma segura y personalizada. Cada infusión incluye nutrientes esenciales como glutatión y vitamina C, que apoyan la energía, la recuperación y el equilibrio del organismo.",
         "list": [
           {
-            "name": "Detox",
-            "description": "Apoya los procesos naturales de depuración y te ayuda a sentirte más ligero(a) y renovado(a).",
-            "icon": "🧪"
-          },
-          {
             "name": "Osteomuscular",
             "description": "Contribuye a una mejor recuperación muscular y articular, ideal para quienes buscan más comodidad y movilidad.",
-            "icon": "💪🦴"
+            "icon": "💪🦴",
+            "image": "/assets/images/treatment_platelet_rich_plasma_desktop_1.jpg"
+          },
+          {
+            "name": "Detox",
+            "description": "Apoya los procesos naturales de depuración y te ayuda a sentirte más ligero(a) y renovado(a).",
+            "icon": "🧪",
+            "image": "/assets/images/treatment_serum_therapy_desktop_1.jpg"
           },
           {
             "name": "Rendimiento Deportivo",
             "description": "Apoya el rendimiento, la resistencia y la recuperación física en personas activas y deportistas.",
-            "icon": "⚡🏃‍♂"
+            "icon": "⚡🏃‍♂",
+            "image": "/assets/images/symptoms/sport_7.png"
           },
           {
             "name": "Vitamina C",
             "description": "Una infusión concentrada de vitamina C para apoyar el sistema inmunológico, favorecer la energía y contribuir a una adecuada recuperación celular.",
-            "icon": "🍊"
+            "icon": "🍊",
+            "image": "/assets/images/vitaminac.jpeg"
           },
           {
             "name": "Glutatión",
             "description": "Un refuerzo antioxidante premium que apoya los procesos de detoxificación y contribuye al equilibrio del organismo desde adentro.",
-            "icon": "💎"
+            "icon": "💎",
+            "image": "/assets/images/glutanex.jpg"
           }
         ],
-        "cta": "¿Cuál de estos sueros te gustaría explorar para apoyar tu bienestar: Detox, Osteomuscular, Rendimiento Deportivo, Vitamina C o Glutatión?"
+        "cta": "¿Cuál de estos sueros te gustaría explorar para apoyar tu bienestar?"
       },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
@@ -1280,32 +1285,37 @@
         "intro": "We offer IV therapies designed to elevate your well-being safely and personally. Each infusion includes essential nutrients such as glutathione and Vitamin C, which support energy, recovery, and the body's balance.",
         "list": [
           {
-            "name": "Detox",
-            "description": "Supports natural detoxification processes and helps you feel lighter and renewed.",
-            "icon": "🧪"
-          },
-          {
             "name": "Osteomuscular",
             "description": "Contributes to better muscle and joint recovery, ideal for those seeking more comfort and mobility.",
-            "icon": "💪🦴"
+            "icon": "💪🦴",
+            "image": "/assets/images/treatment_platelet_rich_plasma_desktop_1.jpg"
+          },
+          {
+            "name": "Detox",
+            "description": "Supports natural detoxification processes and helps you feel lighter and renewed.",
+            "icon": "🧪",
+            "image": "/assets/images/treatment_serum_therapy_desktop_1.jpg"
           },
           {
             "name": "Sports Performance",
             "description": "Supports performance, endurance, and physical recovery in active people and athletes.",
-            "icon": "⚡🏃‍♂"
+            "icon": "⚡🏃‍♂",
+            "image": "/assets/images/symptoms/sport_7.png"
           },
           {
             "name": "Vitamin C",
             "description": "A concentrated Vitamin C infusion to support the immune system, promote energy, and contribute to adequate cellular recovery.",
-            "icon": "🍊"
+            "icon": "🍊",
+            "image": "/assets/images/vitaminac.jpeg"
           },
           {
             "name": "Glutathione",
             "description": "A premium antioxidant boost that supports detoxification processes and contributes to the body's balance from within.",
-            "icon": "💎"
+            "icon": "💎",
+            "image": "/assets/images/glutanex.jpg"
           }
         ],
-        "cta": "Which of these serums would you like to explore to support your well-being: Detox, Osteomuscular, Sports Performance, Vitamin C, or Glutathione?"
+        "cta": "Which of these serums would you like to explore to support your well-being?"
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",
