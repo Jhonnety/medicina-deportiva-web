@@ -1145,6 +1145,38 @@
         "physiologicalBenefit": "Mejora la hidratación celular, repone electrolitos, optimiza el rendimiento deportivo, acelera la recuperación muscular, fortalece el sistema inmunológico, combate la fatiga y el estrés oxidativo. Es especialmente útil para atletas, personas con alta exigencia física, durante periodos de agotamiento, en personas con enfermedades degenerativas como la artrosis de rodilla o personas con sobrepeso.",
         "howWorks": "Se coloca un acceso venoso y se infunde una solución personalizada según tus necesidades específicas (deportivas, recuperación, energía, inmunidad y metabolismo). La sesión dura 30-45 minutos y los efectos se sienten de inmediato. Los nutrientes llegan directamente a las células sin pérdidas por digestión o metabolismo hepático."
       },
+      "types": {
+        "title": "Tipos de Sueroterapia",
+        "intro": "Ofrecemos sueroterapias diseñadas para elevar tu bienestar de forma segura y personalizada. Cada infusión incluye nutrientes esenciales como glutatión y vitamina C, que apoyan la energía, la recuperación y el equilibrio del organismo.",
+        "list": [
+          {
+            "name": "Detox",
+            "description": "Apoya los procesos naturales de depuración y te ayuda a sentirte más ligero(a) y renovado(a).",
+            "icon": "🧪"
+          },
+          {
+            "name": "Osteomuscular",
+            "description": "Contribuye a una mejor recuperación muscular y articular, ideal para quienes buscan más comodidad y movilidad.",
+            "icon": "💪🦴"
+          },
+          {
+            "name": "Rendimiento Deportivo",
+            "description": "Apoya el rendimiento, la resistencia y la recuperación física en personas activas y deportistas.",
+            "icon": "⚡🏃‍♂"
+          },
+          {
+            "name": "Vitamina C",
+            "description": "Una infusión concentrada de vitamina C para apoyar el sistema inmunológico, favorecer la energía y contribuir a una adecuada recuperación celular.",
+            "icon": "🍊"
+          },
+          {
+            "name": "Glutatión",
+            "description": "Un refuerzo antioxidante premium que apoya los procesos de detoxificación y contribuye al equilibrio del organismo desde adentro.",
+            "icon": "💎"
+          }
+        ],
+        "cta": "¿Cuál de estos sueros te gustaría explorar para apoyar tu bienestar: Detox, Osteomuscular, Rendimiento Deportivo, Vitamina C o Glutatión?"
+      },
       "symptoms": {
         "title": "¿Presentas alguno de estos síntomas?",
         "list": [
@@ -1242,6 +1274,38 @@
         "definition": "IV therapy is the intravenous administration of personalized solutions containing vitamins, minerals, amino acids and antioxidants directly into the bloodstream. By bypassing the digestive system, 100% absorption of nutrients is achieved, providing faster and more powerful effects than oral supplementation.",
         "physiologicalBenefit": "It improves cellular hydration, replenishes electrolytes, optimizes athletic performance, accelerates muscle recovery, strengthens the immune system, combats fatigue and oxidative stress. It is especially useful for athletes, people with high physical demands, during periods of exhaustion, in people with degenerative diseases such as knee osteoarthritis or people with excess weight.",
         "howWorks": "A venous access is placed and a personalized solution is infused according to your specific needs (sports, recovery, energy, immunity and metabolism). The session lasts 30-45 minutes and effects are felt immediately. Nutrients reach cells directly without losses from digestion or hepatic metabolism."
+      },
+      "types": {
+        "title": "Types of IV Therapy",
+        "intro": "We offer IV therapies designed to elevate your well-being safely and personally. Each infusion includes essential nutrients such as glutathione and Vitamin C, which support energy, recovery, and the body's balance.",
+        "list": [
+          {
+            "name": "Detox",
+            "description": "Supports natural detoxification processes and helps you feel lighter and renewed.",
+            "icon": "🧪"
+          },
+          {
+            "name": "Osteomuscular",
+            "description": "Contributes to better muscle and joint recovery, ideal for those seeking more comfort and mobility.",
+            "icon": "💪🦴"
+          },
+          {
+            "name": "Sports Performance",
+            "description": "Supports performance, endurance, and physical recovery in active people and athletes.",
+            "icon": "⚡🏃‍♂"
+          },
+          {
+            "name": "Vitamin C",
+            "description": "A concentrated Vitamin C infusion to support the immune system, promote energy, and contribute to adequate cellular recovery.",
+            "icon": "🍊"
+          },
+          {
+            "name": "Glutathione",
+            "description": "A premium antioxidant boost that supports detoxification processes and contributes to the body's balance from within.",
+            "icon": "💎"
+          }
+        ],
+        "cta": "Which of these serums would you like to explore to support your well-being: Detox, Osteomuscular, Sports Performance, Vitamin C, or Glutathione?"
       },
       "symptoms": {
         "title": "Do you have any of these symptoms?",

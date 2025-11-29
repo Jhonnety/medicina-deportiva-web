@@ -10,6 +10,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactSection from '@/components/ContactSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import TreatmentHero from '@/components/TreatmentHero';
+import TreatmentTypes from '@/components/TreatmentTypes';
 import TreatmentFAQs from '@/components/TreatmentFAQs';
 import SymptomsShowcase from '@/components/SymptomsShowcase';
 import ProcessSection from '@/components/ProcessSection';
@@ -244,6 +245,13 @@ export default async function TreatmentPage({
             </div>
           </div>
         </section>
+
+        {/* Types Section (Optional) */}
+        {/* @ts-ignore - types property might not exist on all treatments */}
+        {langContent.types && (
+          // @ts-ignore
+          <TreatmentTypes types={langContent.types} lang={lang} />
+        )}
 
         {/* Symptoms Showcase */}
         <div id="symptoms-section">
