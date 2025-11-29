@@ -7,6 +7,7 @@ import step1 from '@/assets/images/step_1.jpg';
 import step2 from '@/assets/images/step_2.jpg';
 import step3 from '@/assets/images/step_3.jpg';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 
 interface ProcessSectionProps {
   locale: string;
@@ -276,6 +277,7 @@ export default function ProcessSection({ locale }: ProcessSectionProps) {
                   href={getWhatsAppLink(locale)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => sendWhatsAppConversion('process_section')}
                   className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"
                   style={{ backgroundColor: '#6ba5a5' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}

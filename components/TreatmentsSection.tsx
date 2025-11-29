@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { TREATMENTS } from '@/lib/constants/treatments';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 import type { Dictionary } from '@/lib/types';
 
 interface TreatmentsSectionProps {
@@ -282,6 +283,7 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
                   href={getWhatsAppLink(locale)}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => sendWhatsAppConversion('treatments_section')}
                   className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"
                   style={{ backgroundColor: '#6ba5a5' }}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}

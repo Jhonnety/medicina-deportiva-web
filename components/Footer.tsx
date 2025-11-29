@@ -1,7 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 
 interface FooterProps {
   dictionary: Dictionary;
@@ -73,6 +76,11 @@ export default function Footer({ dictionary, locale }: FooterProps) {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => {
+                    if (social.name === 'WhatsApp') {
+                      sendWhatsAppConversion('footer_social');
+                    }
+                  }}
                   className="w-12 h-12 bg-white/10 hover:bg-primary rounded-xl flex items-center justify-center !text-white hover:text-gray-400 transition-all duration-300 hover:scale-110"
                   aria-label={social.name}
                 >

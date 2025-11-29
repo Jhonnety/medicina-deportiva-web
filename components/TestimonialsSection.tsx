@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -253,6 +254,7 @@ export default function TestimonialsSection({ dictionary, locale }: Testimonials
                 href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => sendWhatsAppConversion('testimonials_section')}
                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-xl text-lg font-bold text-white transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl w-full sm:w-auto justify-center"
                 style={{ backgroundColor: '#6ba5a5' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}

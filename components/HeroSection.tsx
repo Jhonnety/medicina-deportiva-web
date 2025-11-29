@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import type { Dictionary } from '@/lib/types';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 import teamMobile from '@/assets/images/team_mobile_1.png';
 import teamDesktop from '@/assets/images/team_desktop_1.png';
 
@@ -89,12 +90,13 @@ export default function HeroSection({ locale }: HeroSectionProps) {
               </div>
             </div>
 
-            {/* CTA Buttons mejorados */}
+              {/* CTA Buttons mejorados */}
             <div className="flex flex-col sm:flex-row gap-5 mb-12">
               <a
                 href={getWhatsAppLink(locale)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => sendWhatsAppConversion('hero_section')}
                 className="group inline-flex items-center justify-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
                 style={{ backgroundColor: '#6ba5a5' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}

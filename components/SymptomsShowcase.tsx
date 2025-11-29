@@ -7,6 +7,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 
 interface Symptom {
   name: string;
@@ -202,6 +203,7 @@ export default function SymptomsShowcase({ symptoms, lang }: SymptomsShowcasePro
             href={getWhatsAppLink(lang)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => sendWhatsAppConversion('symptoms_showcase')}
             className="inline-flex items-center gap-3 px-10 py-5 text-lg font-bold text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
             style={{ backgroundColor: '#6ba5a5' }}
             onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#5a9494'}

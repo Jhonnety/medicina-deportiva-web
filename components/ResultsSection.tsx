@@ -5,6 +5,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 
 interface ResultItem {
   title: string;
@@ -195,6 +196,7 @@ export default function ResultsSection({ langContent, lang }: ResultsSectionProp
               <a href={getWhatsAppLink(lang, lang === 'es' ? '¡Hola! Los vi en la página web y me interesa el tratamiento y quiero más información' : 'Hello! I saw you on the website and I am interested in the treatment and would like more information')}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => sendWhatsAppConversion('results_section')}
                 className="px-6 py-3 rounded-full font-bold !text-white shadow-lg 
                             hover:shadow-2xl transform hover:scale-105 transition-all duration-300
                             flex items-center gap-2"

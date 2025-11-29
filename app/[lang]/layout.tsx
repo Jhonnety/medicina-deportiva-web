@@ -16,6 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+import { GoogleAnalytics } from '@next/third-parties/google';
 import HotjarInit from '@/components/HotjarInit';
 
 export default async function LangLayout(props: unknown) {
@@ -27,20 +28,7 @@ export default async function LangLayout(props: unknown) {
         <meta charSet="utf-8" />
       </head>
       <body className="antialiased">
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-L1RCDDJVRG"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-L1RCDDJVRG');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="G-L1RCDDJVRG" />
         <HotjarInit />
         {children}
       </body>

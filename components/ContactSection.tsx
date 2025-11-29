@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Phone, Mail, Instagram, MapPin, Clock } from 'lucide-react';
 import type { Dictionary } from '@/lib/types';
 import { getWhatsAppLink } from '@/lib/constants/contact';
+import { sendWhatsAppConversion } from '@/lib/analytics';
 
 interface ContactSectionProps {
   dictionary: Dictionary;
@@ -200,6 +201,7 @@ export default function ContactSection({ locale }: ContactSectionProps) {
                 href={contactInfo.whatsapp.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => sendWhatsAppConversion('contact_section_card')}
                 className="flex items-center gap-4 p-4 rounded-xl transition-all duration-300 mb-4 group hover:scale-105"
                 style={{ backgroundColor: '#6ba5a5' }}
               >
@@ -457,6 +459,7 @@ export default function ContactSection({ locale }: ContactSectionProps) {
         href={contactInfo.whatsapp.link}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => sendWhatsAppConversion('floating_button')}
         className="whatsapp-float no-print"
         aria-label="Contact via WhatsApp"
       >
