@@ -29,7 +29,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center lg:items-end">
 
           {/* Content Column */}
-          <div className="flex flex-col justify-center pb-12 lg:pb-20 order-2 lg:order-1">
+          <div className="flex flex-col justify-center pb-12 lg:pb-20">
 
             {/* Badge mejorado */}
             <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full w-fit mb-8 shadow-lg"
@@ -180,7 +180,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
           </div>
 
           {/* Image Column - Aligned to bottom - Solo Desktop */}
-          <div className="relative hidden md:flex items-end justify-center lg:justify-end order-1 lg:order-2 w-full">
+          <div className="relative hidden md:flex items-end justify-center lg:justify-end w-full">
             {/* Imagen Desktop - team_5.png */}
             <div className="relative w-full max-w-2xl">
               <Image
@@ -190,10 +190,6 @@ export default function HeroSection({ locale }: HeroSectionProps) {
                 height={1000}
                 priority
                 className="w-full h-auto object-contain object-bottom drop-shadow-2xl"
-                style={{
-                  maxHeight: '85vh',
-                  objectPosition: 'bottom'
-                }}
               />
 
               {/* Floating Location Badge mejorado */}
