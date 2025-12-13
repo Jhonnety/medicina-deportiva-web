@@ -58,7 +58,7 @@ export default function HeroSection({ locale }: HeroSectionProps) {
             {/* Subtitle mejorado */}
             <h2 className="text-xl sm:text-2xl lg:text-[26px] font-medium leading-relaxed mb-8 text-slate-600 max-w-2xl">
               <span className="block text-2xl sm:text-3xl lg:text-[32px] font-bold text-[#182121] mb-3">
-                {locale === 'es' ? 'Dr. James Madrid' : 'Dr. James Madrid'}
+                {locale === 'es' ? 'Dr. James Madrid - Deportólogo' : 'Dr. James Madrid - Sports Medicine Physician'}
               </span>
               <div className="flex items-center gap-3 mb-3">
                 <div className="h-1 w-12 bg-[#6ba5a5] rounded-full"></div>
