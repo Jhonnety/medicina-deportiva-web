@@ -201,7 +201,11 @@
         "Análisis de riesgo",
         "Atención prioritaria",
         "Estudios metabólicos"
-      ]
+      ],
+      "badge": {
+        "text": "Servicio Premium",
+        "highlight": "VIP"
+      }
     }
   }
 }

@@ -201,7 +201,11 @@
         "Risk analysis",
         "Priority attention",
         "Metabolic studies"
-      ]
+      ],
+      "badge": {
+        "text": "Premium Service",
+        "highlight": "VIP"
+      }
     }
   }
 }

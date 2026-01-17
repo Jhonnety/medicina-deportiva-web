@@ -173,6 +173,10 @@ export interface Dictionary {
       title: string;
       description: string;
       features: string[];
+      badge?: {
+        text: string;
+        highlight: string;
+      };
     };
   };
 }
