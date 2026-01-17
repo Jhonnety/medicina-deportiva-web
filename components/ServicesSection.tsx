@@ -5,8 +5,8 @@ import { getWhatsAppLink } from '@/lib/constants/contact';
 import { sendWhatsAppConversion } from '@/lib/analytics';
 import type { Dictionary } from '@/lib/types';
 
-import certificateImage from '@/public/assets/images/sports-certificate.png';
-import executiveImage from '@/public/assets/images/executive-checkup.png';
+import certificateImage from '@/assets/images/treaments/sports_medical_certificates.png';
+import executiveImage from '@/assets/images/treaments/executive checks.png';
 
 interface ServicesSectionProps {
     dictionary: Dictionary;
