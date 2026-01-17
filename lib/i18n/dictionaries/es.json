@@ -41,42 +41,74 @@
     "celulas_madre": {
       "title": "Células Madre Mesenquimales",
       "description": "Células totipotenciales con capacidad de convertir tejido enfermo en sano. Pueden ser autólogas o alogénicas",
-      "benefits": ["Regeneración o cicatrización", "Autólogas o alogénicas", "Tratamiento avanzado"]
+      "benefits": [
+        "Regeneración o cicatrización",
+        "Autólogas o alogénicas",
+        "Tratamiento avanzado"
+      ]
     },
     "exosomas": {
       "title": "Exosomas",
       "description": "Vesículas extraídas de células madre mesenquimales que contienen microRNA, proteínas y factores de crecimiento",
-      "benefits": ["Alta concentración", "Reparación celular", "Tecnología avanzada"]
+      "benefits": [
+        "Alta concentración",
+        "Reparación celular",
+        "Tecnología avanzada"
+      ]
     },
     "prp": {
       "title": "Plasma Rico en Plaquetas (PRP)",
       "description": "Fracción de plasma extraído de sangre autóloga, con concentración superior de plaquetas y altos niveles de factores de crecimiento",
-      "benefits": ["100% autólogo", "Factores de crecimiento", "Recuperación rápida"]
+      "benefits": [
+        "100% autólogo",
+        "Factores de crecimiento",
+        "Recuperación rápida"
+      ]
     },
     "acido_hialuronico": {
       "title": "Ácido Hialurónico",
       "description": "Lubricante articular que acelera la cicatrización, fomenta la producción de colágeno natural y tiene efecto analgésico",
-      "benefits": ["Lubricación articular", "Efecto analgésico", "Estimula colágeno"]
+      "benefits": [
+        "Lubricación articular",
+        "Efecto analgésico",
+        "Estimula colágeno"
+      ]
     },
     "infiltracion": {
       "title": "Infiltración Convencional",
       "description": "Control de inflamación de articulación, tendón o músculo mediante esteroides o biorreguladores con anestésicos locales",
-      "benefits": ["Control de inflamación", "Alivio inmediato", "Mínimamente invasivo"]
+      "benefits": [
+        "Control de inflamación",
+        "Alivio inmediato",
+        "Mínimamente invasivo"
+      ]
     },
     "sueroterapia": {
       "title": "Sueroterapia",
       "description": "Fórmula personalizada por vía intravenosa que proporciona al cuerpo los elementos necesarios para restaurar el equilibrio y bienestar",
-      "benefits": ["Personalizada", "Restauración integral", "Resultados inmediatos"]
+      "benefits": [
+        "Personalizada",
+        "Restauración integral",
+        "Resultados inmediatos"
+      ]
     },
     "adelgazamiento": {
       "title": "Programa de Adelgazamiento",
       "description": "Programa integral multidisciplinario que te ayuda a realizar cambios permanentes en hábitos alimenticios, actividad física y manejo psicológico",
-      "benefits": ["Equipo multidisciplinario", "Cambios permanentes", "Manejo psicológico"]
+      "benefits": [
+        "Equipo multidisciplinario",
+        "Cambios permanentes",
+        "Manejo psicológico"
+      ]
     },
     "alto_rendimiento": {
       "title": "Alto Rendimiento Deportivo",
       "description": "Evaluación y manejo de deportistas élite y aficionados para prevenir y rehabilitar lesiones deportivas y mejorar el rendimiento en condiciones seguras",
-      "benefits": ["Prevención de lesiones", "Mejora de rendimiento", "Condiciones seguras"]
+      "benefits": [
+        "Prevención de lesiones",
+        "Mejora de rendimiento",
+        "Condiciones seguras"
+      ]
     },
     "cta": "Ver Más Detalles"
   },
@@ -147,7 +179,29 @@
       "title": "Clínica del Movimiento | Dr. James Madrid Jaramillo - Medicina Deportiva",
       "description": "Clínica del Movimiento en Medellín. Dr. James Madrid, especialista en medicina deportiva, tratamientos de artrosis, PRP, proloterapia y lesiones deportivas."
     }
+  },
+  "services": {
+    "title": "Servicios de Evaluación Médica",
+    "subtitle": "Prevención y diagnóstico al más alto nivel",
+    "certificates": {
+      "title": "Certificados Médicos Deportivos",
+      "description": "Certificación oficial de aptitud física para la práctica deportiva segura. Realizamos una evaluación médica completa orientada a cuidar tu salud y prevenir riesgos.",
+      "features": [
+        "Historia clínica deportiva",
+        "Valoración cardiovascular",
+        "Aptitud para competencia",
+        "Examen físico general"
+      ]
+    },
+    "executive": {
+      "title": "Chequeos Ejecutivos",
+      "description": "Evaluación médica integral diseñada para ejecutivos y profesionales que buscan cuidar su salud de manera preventiva y eficiente.",
+      "features": [
+        "Check-up completo",
+        "Análisis de riesgo",
+        "Atención prioritaria",
+        "Estudios metabólicos"
+      ]
+    }
   }
 }
-
-

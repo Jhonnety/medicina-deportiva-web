@@ -41,42 +41,74 @@
     "celulas_madre": {
       "title": "Mesenchymal Stem Cells",
       "description": "Totipotent cells capable of converting diseased tissue into healthy tissue. Can be autologous or allogeneic",
-      "benefits": ["Regeneration or healing", "Autologous or allogeneic", "Advanced treatment"]
+      "benefits": [
+        "Regeneration or healing",
+        "Autologous or allogeneic",
+        "Advanced treatment"
+      ]
     },
     "exosomas": {
       "title": "Exosomes",
       "description": "Vesicles extracted from mesenchymal stem cells containing microRNA, proteins and growth factors",
-      "benefits": ["High concentration", "Cellular repair", "Advanced technology"]
+      "benefits": [
+        "High concentration",
+        "Cellular repair",
+        "Advanced technology"
+      ]
     },
     "prp": {
       "title": "Platelet-Rich Plasma (PRP)",
       "description": "Plasma fraction extracted from autologous blood with higher platelet concentration and high levels of growth factors",
-      "benefits": ["100% autologous", "Growth factors", "Quick recovery"]
+      "benefits": [
+        "100% autologous",
+        "Growth factors",
+        "Quick recovery"
+      ]
     },
     "acido_hialuronico": {
       "title": "Hyaluronic Acid",
       "description": "Joint lubricant that accelerates healing, promotes natural collagen production and has analgesic effects",
-      "benefits": ["Joint lubrication", "Analgesic effect", "Stimulates collagen"]
+      "benefits": [
+        "Joint lubrication",
+        "Analgesic effect",
+        "Stimulates collagen"
+      ]
     },
     "infiltracion": {
       "title": "Conventional Infiltration",
       "description": "Inflammation control of joint, tendon or muscle through steroids or bioregulators with local anesthetics",
-      "benefits": ["Inflammation control", "Immediate relief", "Minimally invasive"]
+      "benefits": [
+        "Inflammation control",
+        "Immediate relief",
+        "Minimally invasive"
+      ]
     },
     "sueroterapia": {
       "title": "IV Therapy",
       "description": "Personalized intravenous formula that provides the body with necessary elements to restore balance and wellness",
-      "benefits": ["Personalized", "Comprehensive restoration", "Immediate results"]
+      "benefits": [
+        "Personalized",
+        "Comprehensive restoration",
+        "Immediate results"
+      ]
     },
     "adelgazamiento": {
       "title": "Weight Loss Program",
       "description": "Comprehensive multidisciplinary program that helps you make permanent changes in eating habits, physical activity and psychological management",
-      "benefits": ["Multidisciplinary team", "Permanent changes", "Psychological management"]
+      "benefits": [
+        "Multidisciplinary team",
+        "Permanent changes",
+        "Psychological management"
+      ]
     },
     "alto_rendimiento": {
       "title": "High Performance Sports",
       "description": "Evaluation and management of elite and amateur athletes to prevent and rehabilitate sports injuries and improve performance in safe conditions",
-      "benefits": ["Injury prevention", "Performance improvement", "Safe conditions"]
+      "benefits": [
+        "Injury prevention",
+        "Performance improvement",
+        "Safe conditions"
+      ]
     },
     "cta": "View More Details"
   },
@@ -147,7 +179,29 @@
       "title": "Clínica del Movimiento | Dr. James Madrid Jaramillo - Sports Medicine",
       "description": "Clínica del Movimiento in Medellín. Dr. James Madrid, sports medicine specialist, arthritis treatments, PRP, prolotherapy and sports injuries."
     }
+  },
+  "services": {
+    "title": "Medical Evaluation Services",
+    "subtitle": "Prevention and diagnosis at the highest level",
+    "certificates": {
+      "title": "Sports Medical Certificates",
+      "description": "Official certification of physical aptitude for safe sports practice. We perform a complete medical evaluation aimed at caring for your health and preventing risks.",
+      "features": [
+        "Sports medical history",
+        "Cardiovascular assessment",
+        "Competition aptitude",
+        "General physical exam"
+      ]
+    },
+    "executive": {
+      "title": "Executive Check-ups",
+      "description": "Comprehensive medical evaluation designed for executives and professionals seeking to care for their health in a preventive and efficient manner.",
+      "features": [
+        "Complete check-up",
+        "Risk analysis",
+        "Priority attention",
+        "Metabolic studies"
+      ]
+    }
   }
 }
-
-

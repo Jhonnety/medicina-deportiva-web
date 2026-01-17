@@ -161,4 +161,18 @@ export interface Dictionary {
       description: string;
     };
   };
+  services: {
+    title: string;
+    subtitle: string;
+    certificates: {
+      title: string;
+      description: string;
+      features: string[];
+    };
+    executive: {
+      title: string;
+      description: string;
+      features: string[];
+    };
+  };
 }

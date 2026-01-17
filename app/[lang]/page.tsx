@@ -7,6 +7,7 @@ import HeroSection from '@/components/HeroSection';
 import TrustBarMobile from '@/components/TrustBarMobile';
 import ProcessSection from '@/components/ProcessSection';
 import TreatmentsSection from '@/components/TreatmentsSection';
+import ServicesSection from '@/components/ServicesSection';
 import AboutSection from '@/components/AboutSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import FAQsSection from '@/components/FAQsSection';
@@ -169,21 +170,22 @@ export default async function Home({ params }: { params: Promise<{ lang: Locale 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(doctorJsonLd) }}
       />
-      
+
       <ScrollHandler />
       <Header dictionary={dictionary} locale={lang} />
-      
+
       <main>
         <HeroSection dictionary={dictionary} locale={lang} />
         <TrustBarMobile locale={lang} />
         <ProcessSection locale={lang} />
         <TreatmentsSection dictionary={dictionary} locale={lang} />
+        <ServicesSection dictionary={dictionary} locale={lang} />
         <AboutSection locale={lang} />
         <TestimonialsSection dictionary={dictionary} locale={lang} />
         <FAQsSection dictionary={dictionary} locale={lang} />
         <ContactSection dictionary={dictionary} locale={lang} />
       </main>
-      
+
       <Footer dictionary={dictionary} locale={lang} />
     </>
   );
