@@ -121,7 +121,7 @@ export default async function TreatmentPage({
   const langContent = content[lang];
 
   // JSON-LD Structured Data
-  const jsonLd: any = {
+  const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'MedicalProcedure',
     name: langContent.title,
@@ -140,14 +140,6 @@ export default async function TreatmentPage({
       medicalSpecialty: 'SportsMedicine',
     },
   };
-
-  if (langContent.types?.list) {
-    jsonLd.hasPart = langContent.types.list.map((type: any) => ({
-      '@type': 'MedicalProcedure',
-      name: type.name,
-      description: type.description,
-    }));
-  }
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',

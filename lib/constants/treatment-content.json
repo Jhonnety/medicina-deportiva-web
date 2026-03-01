@@ -1165,7 +1165,7 @@
             "name": "Vitalidad",
             "description": "Combate la fatiga, el agotamiento y la debilidad, mejorando el estado de ánimo y restaurando la energía en personas con alta demanda física y mental.",
             "icon": "⚡",
-            "image": "/assets/images/symptoms/sport_1.jpg"
+            "image": "/assets/images/sports-certificate.png"
           },
           {
             "name": "Detox",
@@ -1300,7 +1300,7 @@
             "name": "Vitality",
             "description": "Combats fatigue, exhaustion, and weakness, improving mood and restoring energy in people with high physical and mental demands.",
             "icon": "⚡",
-            "image": "/assets/images/symptoms/sport_1.jpg"
+            "image": "/assets/images/sports-certificate.png"
           },
           {
             "name": "Detox",
