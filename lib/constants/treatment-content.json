@@ -1150,34 +1150,34 @@
         "intro": "Ofrecemos sueroterapias diseñadas para elevar tu bienestar de forma segura y personalizada. Cada infusión incluye nutrientes esenciales como glutatión y vitamina C, que apoyan la energía, la recuperación y el equilibrio del organismo.",
         "list": [
           {
-            "name": "Osteomuscular",
-            "description": "Contribuye a una mejor recuperación muscular y articular, ideal para quienes buscan más comodidad y movilidad.",
-            "icon": "💪🦴",
+            "name": "Rendimiento Muscular",
+            "description": "Disminuye la inflamación osteoarticular, favorece la reparación de tejidos, mejora el rendimiento físico y puede acelerar la recuperación.",
+            "icon": "💪",
+            "image": "/assets/images/symptoms/sport_7.png"
+          },
+          {
+            "name": "Inmuno",
+            "description": "Estimula y fortalece el sistema inmunológico, apoyando la prevención de infecciones y favoreciendo una recuperación más rápida después de procesos virales.",
+            "icon": "🛡️",
             "image": "/assets/images/treatment_platelet_rich_plasma_desktop_1.jpg"
           },
           {
+            "name": "Vitalidad",
+            "description": "Combate la fatiga, el agotamiento y la debilidad, mejorando el estado de ánimo y restaurando la energía en personas con alta demanda física y mental.",
+            "icon": "⚡",
+            "image": "/assets/images/symptoms/sport_1.jpg"
+          },
+          {
             "name": "Detox",
-            "description": "Apoya los procesos naturales de depuración y te ayuda a sentirte más ligero(a) y renovado(a).",
+            "description": "Activa los mecanismos naturales de desintoxicación del organismo, ayudando a eliminar toxinas y promoviendo equilibrio y bienestar integral.",
             "icon": "🧪",
             "image": "/assets/images/treatment_serum_therapy_desktop_1.jpg"
           },
           {
-            "name": "Rendimiento Deportivo",
-            "description": "Apoya el rendimiento, la resistencia y la recuperación física en personas activas y deportistas.",
-            "icon": "⚡🏃‍♂",
-            "image": "/assets/images/symptoms/sport_7.png"
-          },
-          {
-            "name": "Vitamina C",
-            "description": "Una infusión concentrada de vitamina C para apoyar el sistema inmunológico, favorecer la energía y contribuir a una adecuada recuperación celular.",
+            "name": "Vida C",
+            "description": "Potente antioxidante que reduce la inflamación y el estrés oxidativo, fortalece las defensas, estimula el colágeno y potencia la acción del glutatión para un efecto antienvejecimiento.",
             "icon": "🍊",
             "image": "/assets/images/vitaminac.jpeg"
-          },
-          {
-            "name": "Glutatión",
-            "description": "Un refuerzo antioxidante premium que apoya los procesos de detoxificación y contribuye al equilibrio del organismo desde adentro.",
-            "icon": "💎",
-            "image": "/assets/images/glutanex.jpg"
           }
         ],
         "cta": "¿Cuál de estos sueros te gustaría explorar para apoyar tu bienestar?"
@@ -1285,34 +1285,34 @@
         "intro": "We offer IV therapies designed to elevate your well-being safely and personally. Each infusion includes essential nutrients such as glutathione and Vitamin C, which support energy, recovery, and the body's balance.",
         "list": [
           {
-            "name": "Osteomuscular",
-            "description": "Contributes to better muscle and joint recovery, ideal for those seeking more comfort and mobility.",
-            "icon": "💪🦴",
+            "name": "Muscle Performance",
+            "description": "Reduces osteoarticular inflammation, promotes tissue repair, improves physical performance, and can accelerate recovery.",
+            "icon": "💪",
+            "image": "/assets/images/symptoms/sport_7.png"
+          },
+          {
+            "name": "Immuno",
+            "description": "Stimulates and strengthens the immune system, supporting infection prevention and promoting faster recovery after viral processes.",
+            "icon": "🛡️",
             "image": "/assets/images/treatment_platelet_rich_plasma_desktop_1.jpg"
           },
           {
+            "name": "Vitality",
+            "description": "Combats fatigue, exhaustion, and weakness, improving mood and restoring energy in people with high physical and mental demands.",
+            "icon": "⚡",
+            "image": "/assets/images/symptoms/sport_1.jpg"
+          },
+          {
             "name": "Detox",
-            "description": "Supports natural detoxification processes and helps you feel lighter and renewed.",
+            "description": "Activates the body's natural detoxification mechanisms, helping to eliminate toxins and promoting balance and overall well-being.",
             "icon": "🧪",
             "image": "/assets/images/treatment_serum_therapy_desktop_1.jpg"
           },
           {
-            "name": "Sports Performance",
-            "description": "Supports performance, endurance, and physical recovery in active people and athletes.",
-            "icon": "⚡🏃‍♂",
-            "image": "/assets/images/symptoms/sport_7.png"
-          },
-          {
-            "name": "Vitamin C",
-            "description": "A concentrated Vitamin C infusion to support the immune system, promote energy, and contribute to adequate cellular recovery.",
+            "name": "Life C",
+            "description": "Powerful antioxidant that reduces inflammation and oxidative stress, strengthens defenses, stimulates collagen, and boosts the action of glutathione for an anti-aging effect.",
             "icon": "🍊",
             "image": "/assets/images/vitaminac.jpeg"
-          },
-          {
-            "name": "Glutathione",
-            "description": "A premium antioxidant boost that supports detoxification processes and contributes to the body's balance from within.",
-            "icon": "💎",
-            "image": "/assets/images/glutanex.jpg"
           }
         ],
         "cta": "Which of these serums would you like to explore to support your well-being?"
