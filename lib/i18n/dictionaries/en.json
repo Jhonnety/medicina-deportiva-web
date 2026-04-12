@@ -207,5 +207,51 @@
         "highlight": "VIP"
       }
     }
+  },
+  "fisioterapia": {
+    "nav_title": "Physiotherapy",
+    "banner": {
+      "badge": "New",
+      "title": "Specialized Physiotherapy",
+      "subtitle": "At our clinic we now have dedicated professionals to accompany you in your physical recovery.",
+      "cta": "Discover more"
+    },
+    "hero": {
+      "title": "Recover your movement.",
+      "subtitle": "Recover your quality of life.",
+      "description": "In our Physical Medicine and Sports clinic, we understand that pain or injury affects more than just the body. It can also limit your routine, physical performance, and daily well-being."
+    },
+    "content": {
+      "intro": "That is why we offer a specialized physiotherapy approach, focused on helping you recover mobility, reduce pain, and return to your activities with confidence and safety.",
+      "goal": "Our goal is not just to relieve symptoms, but to identify the root cause of the problem and support you through a real and lasting recovery process.",
+      "personalized": "Each patient receives a personalized medical assessment, allowing us to design a specific treatment based on their condition, lifestyle, and goals.",
+      "benefits_title": "What benefits can physiotherapy offer?",
+      "benefits": [
+        "Reduction of muscle and joint pain",
+        "Recovery of mobility and flexibility",
+        "Reduction of inflammation and contractures",
+        "Improvement of body posture",
+        "Faster recovery after injuries",
+        "Prevention of relapses or new injuries",
+        "Greater confidence when returning to physical activity"
+      ],
+      "benefits_conclusion": "With proper treatment, many people discover that it is possible to move again without pain and with greater freedom.",
+      "when_to_consult_title": "When is it advisable to consult?",
+      "when_to_consult_intro": "If you have recently noticed any of these discomforts, your body might be asking for attention:",
+      "when_to_consult": [
+        "Pain in the back, neck, or lower back",
+        "Persistent discomfort in knees, shoulders, or ankles",
+        "Frequent muscle contractures",
+        "Sports injuries like sprains or tendinitis",
+        "Stiffness when moving or difficulty with certain movements",
+        "Pain after training or physical activity",
+        "Slow recovery after an injury or surgery"
+      ],
+      "when_to_consult_conclusion": "Early intervention can make the difference between a quick recovery and a problem that prolongs over time."
+    },
+    "seo": {
+      "title": "Specialized Physiotherapy | Dr. James Madrid - Medellín",
+      "description": "Recover your movement and quality of life with our specialized physiotherapy treatments in Medellín. We design specific treatments for you."
+    }
   }
 }

@@ -48,14 +48,12 @@
             "name": "Punzadas en el lado interno de la rodilla al caminar",
             "condition": "Bursitis Pata de Ganso",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
             "condition": "Bursitis Trocantérea Mayor",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
             "condition": "Bursitis Subacromio Subdeltoidea",
@@ -72,7 +70,7 @@
           },
           {
             "title": "Recupera Tu Vida Activa",
-            "description":"Vuelve a jugar con tus hijos, retoma ese deporte que dejaste, camina sin limitaciones o rinde nuevamente en tu deporte favorito. Este tratamiento te devuelve la posibilidad de vivir plenamente."
+            "description": "Vuelve a jugar con tus hijos, retoma ese deporte que dejaste, camina sin limitaciones o rinde nuevamente en tu deporte favorito. Este tratamiento te devuelve la posibilidad de vivir plenamente."
           },
           {
             "title": "Una Solución Duradera y Natural",
@@ -163,14 +161,12 @@
             "name": "Stabbing pain on the inner side of the knee when walking",
             "condition": "Pes Anserine Bursitis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Pain on the side of the hip that won't let you sleep on your side",
             "condition": "Greater Trochanteric Bursitis",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
             "condition": "Subacromial Subdeltoid Bursitis",
@@ -280,14 +276,12 @@
             "name": "Punzadas en el lado interno de la rodilla al caminar",
             "condition": "Bursitis Pata de Ganso",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
             "condition": "Bursitis Trocantérea Mayor",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
             "condition": "Bursitis Subacromio Subdeltoidea",
@@ -395,14 +389,12 @@
             "name": "Stabbing pain on the inner side of the knee when walking",
             "condition": "Pes Anserine Bursitis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Pain on the side of the hip that won't let you sleep on your side",
             "condition": "Greater Trochanteric Bursitis",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
             "condition": "Subacromial Subdeltoid Bursitis",
@@ -512,14 +504,12 @@
             "name": "Punzadas en el lado interno de la rodilla al caminar",
             "condition": "Bursitis Pata de Ganso",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
             "condition": "Bursitis Trocantérea Mayor",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
             "condition": "Bursitis Subacromio Subdeltoidea",
@@ -627,14 +617,12 @@
             "name": "Stabbing pain on the inner side of the knee when walking",
             "condition": "Pes Anserine Bursitis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Pain on the side of the hip that won't let you sleep on your side",
             "condition": "Greater Trochanteric Bursitis",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
             "condition": "Subacromial Subdeltoid Bursitis",
@@ -744,14 +732,12 @@
             "name": "Punzadas en el lado interno de la rodilla al caminar",
             "condition": "Bursitis Pata de Ganso",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Dolor en el lateral de la cadera que no te deja dormir de lado",
             "condition": "Bursitis Trocantérea Mayor",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Dolor agudo en el hombro al intentar peinarte o vestirte",
             "condition": "Bursitis Subacromio Subdeltoidea",
@@ -863,14 +849,12 @@
             "name": "Stabbing pain on the inner side of the knee when walking",
             "condition": "Pes Anserine Bursitis",
             "image": "/assets/images/symptoms/artrosis_2.jpeg"
-          }
-          ,
+          },
           {
             "name": "Pain on the side of the hip that won't let you sleep on your side",
             "condition": "Greater Trochanteric Bursitis",
             "image": "/assets/images/symptoms/artrosis_10.jpg"
-          }
-          ,
+          },
           {
             "name": "Sharp pain in the shoulder when trying to comb your hair or get dressed",
             "condition": "Subacromial Subdeltoid Bursitis",
@@ -1140,14 +1124,14 @@
       "metaTitle": "Sueroterapia Deportiva en Medellín | Vitaminas IV | Dr. James Madrid",
       "metaDescription": "Sueroterapia con vitaminas, minerales y antioxidantes intravenosos. Mejora energía, recuperación deportiva e hidratación. Tratamiento rápido y efectivo en Medellín.",
       "whatIs": {
-        "title": "¿Qué es la Sueroterapia Deportiva?",
-        "definition": "La sueroterapia es la administración intravenosa de soluciones personalizadas que contienen vitaminas, minerales, aminoácidos y antioxidantes directamente al torrente sanguíneo. Al evitar el sistema digestivo, se logra una absorción del 100% de los nutrientes, proporcionando efectos más rápidos y potentes que la suplementación oral.",
-        "physiologicalBenefit": "Mejora la hidratación celular, repone electrolitos, optimiza el rendimiento deportivo, acelera la recuperación muscular, fortalece el sistema inmunológico, combate la fatiga y el estrés oxidativo. Es especialmente útil para atletas, personas con alta exigencia física, durante periodos de agotamiento, en personas con enfermedades degenerativas como la artrosis de rodilla o personas con sobrepeso.",
-        "howWorks": "Se coloca un acceso venoso y se infunde una solución personalizada según tus necesidades específicas (deportivas, recuperación, energía, inmunidad y metabolismo). La sesión dura 30-45 minutos y los efectos se sienten de inmediato. Los nutrientes llegan directamente a las células sin pérdidas por digestión o metabolismo hepático."
+        "title": "Bienestar, energía y recuperación desde el interior",
+        "definition": "La sueroterapia es un tratamiento médico que consiste en la administración intravenosa de vitaminas, minerales, antioxidantes y nutrientes esenciales, permitiendo que el organismo los absorba de forma rápida y eficaz. En nuestro consultorio utilizamos este tratamiento como un apoyo para fortalecer el organismo, mejorar los niveles de energía y favorecer la recuperación física y mental. Cada sesión se realiza bajo valoración médica previa, garantizando seguridad y una indicación adecuada para cada paciente.",
+        "physiologicalBenefit": "La sueroterapia es un tratamiento médico que consiste en la administración intravenosa de vitaminas, minerales, aminoácidos y antioxidantes directamente al torrente sanguíneo, permitiendo que el organismo los absorba de forma rápida y eficaz (100% de absorción). Mejora la hidratación celular, repone electrolitos, optimiza el rendimiento deportivo, fortalece el sistema inmunológico, combate la fatiga y el estrés oxidativo. Es un apoyo profundo para fortalecer el organismo, mejorar niveles de energía y favorecer la recuperación física y mental.",
+        "howWorks": "Se coloca un acceso venoso y se infunde una solución personalizada. Para obtener mejores resultados, en nuestro consultorio trabajamos la sueroterapia en paquetes de tratamiento de cuatro sesiones, recomendando una sesión por semana para que el cuerpo asimile los nutrientes de forma progresiva. De esta manera, el tratamiento se completa en cuatro semanas, permitiendo que el cuerpo reciba un apoyo continuo para recuperar energía, fortalecer el sistema inmunológico y mejorar el bienestar."
       },
       "types": {
         "title": "Tipos de Sueroterapia",
-        "intro": "Ofrecemos sueroterapias diseñadas para elevar tu bienestar de forma segura y personalizada. Cada infusión incluye nutrientes esenciales como glutatión y vitamina C, que apoyan la energía, la recuperación y el equilibrio del organismo.",
+        "intro": "En nuestro consultorio contamos con diferentes tipos de sueros terapéuticos, diseñados para responder a necesidades específicas de cada paciente. Cada infusión incluye nutrientes esenciales que apoyan la energía, la recuperación y el equilibrio del organismo.",
         "list": [
           {
             "name": "Rendimiento Muscular",
@@ -1174,7 +1158,7 @@
             "image": "/assets/images/treatment_serum_therapy_desktop_1.jpg"
           },
           {
-            "name": "Vida C",
+            "name": "Vida C (Antioxidante)",
             "description": "Potente antioxidante que reduce la inflamación y el estrés oxidativo, fortalece las defensas, estimula el colágeno y potencia la acción del glutatión para un efecto antienvejecimiento.",
             "icon": "🍊",
             "image": "/assets/images/vitaminac.jpeg"
@@ -1267,7 +1251,57 @@
           "q": "¿Cuánto duran los efectos de la sueroterapia?",
           "a": "Los efectos inmediatos (energía, hidratación) duran 3-7 días. Los beneficios acumulativos con sesiones regulares incluyen mejor rendimiento, recuperación más rápida y sistema inmune fortalecido que se mantienen a largo plazo."
         }
-      ]
+      ],
+      "ctas": {
+        "afterWhatIs": {
+          "title": "Empieza a sentirte mejor hoy",
+          "description": "Agenda tu valoración médica y recibe un tratamiento personalizado para recuperar tu energía, tu movilidad y tu bienestar.",
+          "buttonText": "Agenda tu cita"
+        },
+        "afterTypes": {
+          "title": "Empieza hoy tu proceso de recuperación",
+          "description": "Tu bienestar no tiene por qué esperar. Si estás sintiendo dolor, cansancio constante o quieres mejorar tu rendimiento, estamos aquí para ayudarte. Recibirás una valoración personalizada.",
+          "buttonText": "Reserva tu cita ahora"
+        }
+      },
+      "fisioterapia": {
+        "title": "Fisioterapia",
+        "subtitle": "Recupera tu movimiento. Recupera tu calidad de vida.",
+        "intro": [
+          "En nuestro consultorio de Medicina Física y del Deporte, entendemos que el dolor o una lesión no solo afecta el cuerpo. También puede limitar tu rutina, tu rendimiento físico y tu bienestar diario.",
+          "Por eso ofrecemos un enfoque de fisioterapia especializada, enfocada en ayudarte a recuperar la movilidad, disminuir el dolor y volver a tus actividades con confianza y seguridad.",
+          "Nuestro objetivo no es solo aliviar el síntoma, sino identificar la causa del problema y acompañarte en un proceso de recuperación real y duradera.",
+          "Cada paciente recibe una valoración médica personalizada, lo que nos permite diseñar un tratamiento específico según su condición, estilo de vida y objetivos."
+        ],
+        "benefits": {
+          "title": "¿Qué beneficios puede ofrecer la fisioterapia?",
+          "intro": "Nuestros pacientes suelen experimentar mejoras importantes en aspectos como:",
+          "list": [
+            "Disminución del dolor muscular y articular",
+            "Recuperación de la movilidad y flexibilidad",
+            "Reducción de inflamación y contracturas",
+            "Mejora de la postura corporal",
+            "Recuperación más rápida después de lesiones",
+            "Prevención de recaídas o nuevas lesiones",
+            "Mayor confianza al volver a la actividad física"
+          ],
+          "outro": "Con el tratamiento adecuado, muchas personas descubren que es posible volver a moverse sin dolor y con mayor libertad."
+        },
+        "whenToConsult": {
+          "title": "¿Cuándo es recomendable consultar?",
+          "intro": "Si últimamente has notado alguna de estas molestias, tu cuerpo podría estar pidiendo atención:",
+          "list": [
+            "Dolor en espalda, cuello o zona lumbar",
+            "Molestias persistentes en rodillas, hombros o tobillos",
+            "Contracturas musculares frecuentes",
+            "Lesiones deportivas como esguinces o tendinitis",
+            "Rigidez al moverte o dificultad para ciertos movimientos",
+            "Dolor después de entrenar o realizar actividad física",
+            "Recuperación lenta después de una lesión o cirugía"
+          ],
+          "outro": "Una intervención temprana puede marcar la diferencia entre una recuperación rápida o un problema que se prolonga en el tiempo."
+        }
+      }
     },
     "en": {
       "title": "Sports IV Therapy",
@@ -1275,14 +1309,14 @@
       "metaTitle": "Sports IV Therapy in Medellín | IV Vitamins | Dr. James Madrid",
       "metaDescription": "IV therapy with vitamins, minerals and intravenous antioxidants. Improves energy, sports recovery and hydration. Fast and effective treatment in Medellín.",
       "whatIs": {
-        "title": "What is Sports IV Therapy?",
-        "definition": "IV therapy is the intravenous administration of personalized solutions containing vitamins, minerals, amino acids and antioxidants directly into the bloodstream. By bypassing the digestive system, 100% absorption of nutrients is achieved, providing faster and more powerful effects than oral supplementation.",
+        "title": "Wellness, energy, and recovery from the inside out",
+        "definition": "IV therapy is a medical treatment consisting of the intravenous administration of vitamins, minerals, antioxidants, and essential nutrients, allowing the body to absorb them quickly and effectively. In our clinic, we use this treatment to strengthen the body, improve energy levels, and promote physical and mental recovery. Each session is performed after a medical evaluation to guarantee safety and proper indication for each patient.",
         "physiologicalBenefit": "It improves cellular hydration, replenishes electrolytes, optimizes athletic performance, accelerates muscle recovery, strengthens the immune system, combats fatigue and oxidative stress. It is especially useful for athletes, people with high physical demands, during periods of exhaustion, in people with degenerative diseases such as knee osteoarthritis or people with excess weight.",
-        "howWorks": "A venous access is placed and a personalized solution is infused according to your specific needs (sports, recovery, energy, immunity and metabolism). The session lasts 30-45 minutes and effects are felt immediately. Nutrients reach cells directly without losses from digestion or hepatic metabolism."
+        "howWorks": "A venous access is placed, and a personalized solution is infused. For best results, we work with treatment packages of four sessions, recommending one session per week so the body absorbs nutrients progressively. This way, the treatment is completed in four weeks, allowing continuous support to recover energy, strengthen the immune system, and improve overall well-being."
       },
       "types": {
         "title": "Types of IV Therapy",
-        "intro": "We offer IV therapies designed to elevate your well-being safely and personally. Each infusion includes essential nutrients such as glutathione and Vitamin C, which support energy, recovery, and the body's balance.",
+        "intro": "In our clinic, we have different types of therapeutic IVs designed to respond to the specific needs of each patient. Each infusion includes essential nutrients that support energy, recovery, and the body's balance.",
         "list": [
           {
             "name": "Muscle Performance",
@@ -1309,7 +1343,7 @@
             "image": "/assets/images/treatment_serum_therapy_desktop_1.jpg"
           },
           {
-            "name": "Life C",
+            "name": "Life C (Antioxidant)",
             "description": "Powerful antioxidant that reduces inflammation and oxidative stress, strengthens defenses, stimulates collagen, and boosts the action of glutathione for an anti-aging effect.",
             "icon": "🍊",
             "image": "/assets/images/vitaminac.jpeg"
@@ -1402,7 +1436,57 @@
           "q": "How long do the effects of IV therapy last?",
           "a": "Immediate effects (energy, hydration) last 3-7 days. Cumulative benefits with regular sessions include better performance, faster recovery, and strengthened immune system which are maintained long-term."
         }
-      ]
+      ],
+      "ctas": {
+        "afterWhatIs": {
+          "title": "Start feeling better today",
+          "description": "Schedule your medical assessment and receive personalized treatment to recover your energy, mobility, and well-being.",
+          "buttonText": "Schedule appointment"
+        },
+        "afterTypes": {
+          "title": "Start your recovery process today",
+          "description": "Your well-being doesn't have to wait. If you feel tired or want to improve your performance, we are here to help.",
+          "buttonText": "Book now"
+        }
+      },
+      "fisioterapia": {
+        "title": "Physiotherapy",
+        "subtitle": "Recover your movement. Recover your quality of life.",
+        "intro": [
+          "In our Sports and Physical Medicine clinic, we understand that pain or injury doesn't just affect the body. It can also limit your routine, physical performance, and daily well-being.",
+          "That's why we offer specialized physiotherapy focused on helping you recover mobility, reduce pain, and return to your activities with confidence and safety.",
+          "Our goal is not just to relieve symptoms, but to identify the root cause of the problem and accompany you through a real, lasting recovery process.",
+          "Every patient receives a personalized medical evaluation, allowing us to design a specific treatment based on their condition, lifestyle, and goals."
+        ],
+        "benefits": {
+          "title": "What benefits does physiotherapy offer?",
+          "intro": "Our patients usually experience significant improvements in areas such as:",
+          "list": [
+            "Reduction in muscle and joint pain",
+            "Recovery of mobility and flexibility",
+            "Reduction of inflammation and contractures",
+            "Improvement in body posture",
+            "Faster recovery after injuries",
+            "Prevention of relapses or new injuries",
+            "Greater confidence when returning to physical activity"
+          ],
+          "outro": "With the proper treatment, many discover it is possible to move without pain and with greater freedom."
+        },
+        "whenToConsult": {
+          "title": "When is it advisable to consult?",
+          "intro": "If you have recently noticed any of the following discomforts, your body might be asking for attention:",
+          "list": [
+            "Back, neck, or lower back pain",
+            "Persistent discomfort in knees, shoulders, or ankles",
+            "Frequent muscle spasms",
+            "Sports injuries like sprains or tendinitis",
+            "Stiffness or difficulty moving certain ways",
+            "Pain after training or physical activity",
+            "Slow recovery after injury or surgery"
+          ],
+          "outro": "Early intervention can be the difference between a speedy recovery and a prolonged issue."
+        }
+      }
     }
   },
   "programa-adelgazamiento": {
@@ -1805,6 +1889,230 @@
         {
           "q": "What recovery techniques does the program include?",
           "a": "Includes advanced techniques such as Platelet-Rich Plasma (PRP) for injuries and muscle recovery, sports IV therapy for rehydration and nutrients, stem cells if necessary, specialized physiotherapy, cryotherapy, myofascial release techniques, pneumatic compression, sleep and recovery analysis, strategic supplementation."
+        }
+      ]
+    }
+  },
+  "fisioterapia": {
+    "es": {
+      "title": "Fisioterapia Especializada",
+      "subtitle": "Recupera tu movimiento. Recupera tu calidad de vida.",
+      "metaTitle": "Fisioterapia Especializada en Medellín | Dr. James Madrid",
+      "metaDescription": "Enfoque de fisioterapia especializada para recuperar la movilidad, disminuir el dolor y volver a tus actividades con confianza. Tratamiento con valoración médica.",
+      "whatIs": {
+        "title": "¿Qué es la Fisioterapia Especializada?",
+        "definition": "En nuestro consultorio de Medicina Física y del Deporte, entendemos que el dolor o una lesión no solo afecta el cuerpo, sino que limita tu rutina y bienestar.",
+        "physiologicalBenefit": "Nuestro enfoque está pensado en ayudarte a recuperar la movilidad, disminuir el dolor y volver a tus actividades con confianza. Nuestro objetivo no es solo aliviar el síntoma, sino identificar la causa y acompañarte en una recuperación real y duradera.",
+        "howWorks": "Cada paciente recibe una valoración médica personalizada, lo que permite diseñar un tratamiento específico según su condición, estilo de vida y objetivos."
+      },
+      "ctas": {
+        "afterWhatIs": {
+          "title": "Empieza a sentirte mejor hoy",
+          "description": "Agenda tu valoración médica y recibe un tratamiento personalizado para recuperar tu energía, tu movilidad y tu bienestar.",
+          "buttonText": "Agenda tu cita"
+        },
+        "afterSymptoms": {
+          "title": "Da el primer paso para sentirte mejor",
+          "description": "Una intervención temprana puede marcar la diferencia entre una recuperación rápida o un problema prolongado.",
+          "buttonText": "Reserva tu cita ahora"
+        }
+      },
+      "symptoms": {
+        "title": "¿Cuándo es recomendable consultar?",
+        "list": [
+          {
+            "name": "Dolor en espalda, cuello o zona lumbar",
+            "condition": "Dolor osteomuscular crónico o agudo",
+            "image": "/assets/images/symptoms/osteopatia_4.jpg"
+          },
+          {
+            "name": "Molestias en rodillas, hombros o tobillos",
+            "condition": "Desgaste articular",
+            "image": "/assets/images/symptoms/artrosis_16.jpg"
+          },
+          {
+            "name": "Contracturas musculares frecuentes",
+            "condition": "Tensión y espasmos musculares",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
+          },
+          {
+            "name": "Esguinces o tendinitis",
+            "condition": "Lesiones deportivas comunes",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Rigidez al moverte",
+            "condition": "Restricción de movimiento",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Dolor después de entrenar",
+            "condition": "Sobrecarga física",
+            "image": "/assets/images/symptoms/sport_2.png"
+          },
+          {
+            "name": "Recuperación lenta tras cirugía",
+            "condition": "Rehabilitación postquirúrgica",
+            "image": "/assets/images/symptoms/sport_8.png"
+          }
+        ]
+      },
+      "results": {
+        "title": "Beneficios de la Fisioterapia",
+        "items": [
+          {
+            "title": "Movilidad y Flexibilidad",
+            "description": "Recuperación del rango de movimiento completo, sin rigidez ni limitaciones."
+          },
+          {
+            "title": "Alivio del Dolor y la Inflamación",
+            "description": "Disminución profunda del dolor muscular y articular, tratando desde contracturas hasta espasmos severos."
+          },
+          {
+            "title": "Prevención a Largo Plazo",
+            "description": "No solo te curamos hoy. Te enseñamos mejores posturas y fortalecemos tu cuerpo para evitar recaídas o nuevas lesiones."
+          }
+        ]
+      },
+      "process": {
+        "title": "Tu Tratamiento en Clínca",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Valoración Diagnóstica",
+            "description": "Comenzamos evaluando clínicamente la causa principal del dolor, no solo los síntomas. Identificamos el patrón de la lesión."
+          },
+          {
+            "number": "02",
+            "title": "Diseño del Plan",
+            "description": "Adaptamos las sesiones y ejercicios terapéuticos según tus necesidades, tu edad y tus objetivos de retorno a la actividad."
+          },
+          {
+            "number": "03",
+            "title": "Intervención y Reeducación",
+            "description": "Aplicamos técnicas manuales y equipos tecnológicos mientras te enseñamos la ergonomía y control motor para mantener bienestar."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "¿Debería esperar a que me duela más para ir?",
+          "a": "No. Una intervención temprana en fisioterapia previene que los tejidos se acostumbren al dolor limitante."
+        },
+        {
+          "q": "¿Cuántas sesiones necesito?",
+          "a": "Depende exclusivamente del grado y el tipo de la lesión detectado durante tu primera valoración."
+        }
+      ]
+    },
+    "en": {
+      "title": "Specialized Physical Therapy",
+      "subtitle": "Recover your movement. Recover your quality of life.",
+      "metaTitle": "Specialized Physical Therapy in Medellín | Dr. James Madrid",
+      "metaDescription": "Specialized physical therapy approach to regain mobility, decrease pain and confidently return to your activities.",
+      "whatIs": {
+        "title": "What is Specialized Physical Therapy?",
+        "definition": "At our Sports and Physical Medicine clinic, we understand that pain or injury affects not only the body but your daily routine and well-being.",
+        "physiologicalBenefit": "Our approach is designed to help you regain mobility, reduce pain, and safely return to activities. We aim not only to relieve symptoms but to find the core issue for true recovery.",
+        "howWorks": "Every patient receives a customized medical evaluation to design a specific treatment based on condition, lifestyle, and goals."
+      },
+      "ctas": {
+        "afterWhatIs": {
+          "title": "Start feeling better today",
+          "description": "Schedule your medical assessment and get personalized treatment to regain your energy and mobility.",
+          "buttonText": "Schedule appointment"
+        },
+        "afterSymptoms": {
+          "title": "Take the first step to feeling better",
+          "description": "Early intervention makes the difference between quick recovery and prolonged pain.",
+          "buttonText": "Book now"
+        }
+      },
+      "symptoms": {
+        "title": "When should you consult us?",
+        "list": [
+          {
+            "name": "Back, neck, or lower back pain",
+            "condition": "Acute or chronic musculoskeletal pain",
+            "image": "/assets/images/symptoms/osteopatia_4.jpg"
+          },
+          {
+            "name": "Knee, shoulder, or ankle discomfort",
+            "condition": "Joint wear",
+            "image": "/assets/images/symptoms/artrosis_16.jpg"
+          },
+          {
+            "name": "Frequent muscle contractures",
+            "condition": "Tension and muscle spasms",
+            "image": "/assets/images/symptoms/artrosis_5.jpeg"
+          },
+          {
+            "name": "Sprains or tendinitis",
+            "condition": "Common sports injuries",
+            "image": "/assets/images/symptoms/tendinitis_1.jpg"
+          },
+          {
+            "name": "Stiffness moving",
+            "condition": "Movement restriction",
+            "image": "/assets/images/symptoms/artrosis_4.jpeg"
+          },
+          {
+            "name": "Pain after working out",
+            "condition": "Physical overload",
+            "image": "/assets/images/symptoms/sport_2.png"
+          },
+          {
+            "name": "Slow recovery after surgery",
+            "condition": "Post-surgical rehabilitation",
+            "image": "/assets/images/symptoms/sport_8.png"
+          }
+        ]
+      },
+      "results": {
+        "title": "Benefits of Physical Therapy",
+        "items": [
+          {
+            "title": "Mobility and Flexibility",
+            "description": "Full range of motion recovery without stiffness or limits."
+          },
+          {
+            "title": "Pain Relief",
+            "description": "Deep relief of muscular and joint pain."
+          },
+          {
+            "title": "Long-term Prevention",
+            "description": "We teach you posture and body mechanics to avoid future injuries."
+          }
+        ]
+      },
+      "process": {
+        "title": "Your Clinic Treatment",
+        "steps": [
+          {
+            "number": "01",
+            "title": "Diagnostic Evaluation",
+            "description": "Clinical evaluation of the main cause behind the pain."
+          },
+          {
+            "number": "02",
+            "title": "Plan Design",
+            "description": "Adapting therapeutic exercises matching your goals."
+          },
+          {
+            "number": "03",
+            "title": "Intervention",
+            "description": "We apply manual techniques and educate you on motor control."
+          }
+        ]
+      },
+      "faqs": [
+        {
+          "q": "Should I wait for more pain before going?",
+          "a": "No. Early intervention prevents chronic adaptations."
+        },
+        {
+          "q": "How many sessions?",
+          "a": "It depends completely on the evaluation of your injury."
         }
       ]
     }

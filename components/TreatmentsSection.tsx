@@ -6,6 +6,7 @@ import { TREATMENTS } from '@/lib/constants/treatments';
 import { getWhatsAppLink } from '@/lib/constants/contact';
 import { sendWhatsAppConversion } from '@/lib/analytics';
 import type { Dictionary } from '@/lib/types';
+import FisioterapiaBanner from './FisioterapiaBanner';
 
 interface TreatmentsSectionProps {
   dictionary: Dictionary;
@@ -237,6 +238,8 @@ export default function TreatmentsSection({ dictionary, locale }: TreatmentsSect
           })}
         </div>
 
+        <FisioterapiaBanner dictionary={dictionary} locale={locale} />
+        
         {/* Bottom CTA */}
         <div className="text-center mt-20">
           <div className="relative rounded-3xl shadow-2xl p-10 md:p-14 lg:p-16 text-center w-full overflow-hidden"

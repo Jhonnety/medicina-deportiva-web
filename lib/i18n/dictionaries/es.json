@@ -207,5 +207,51 @@
         "highlight": "VIP"
       }
     }
+  },
+  "fisioterapia": {
+    "nav_title": "Fisioterapia",
+    "banner": {
+      "badge": "Nuevo",
+      "title": "Fisioterapia Especializada",
+      "subtitle": "En nuestro consultorio ahora contamos con profesionales dedicados para acompañarte en tu recuperación física.",
+      "cta": "Descubre más"
+    },
+    "hero": {
+      "title": "Recupera tu movimiento.",
+      "subtitle": "Recupera tu calidad de vida.",
+      "description": "En nuestro consultorio de Medicina Física y del Deporte, entendemos que el dolor o una lesión no solo afecta el cuerpo. También puede limitar tu rutina, tu rendimiento físico y tu bienestar diario."
+    },
+    "content": {
+      "intro": "Por eso ofrecemos un enfoque de fisioterapia especializada, enfocado en ayudarte a recuperar la movilidad, disminuir el dolor y volver a tus actividades con confianza y seguridad.",
+      "goal": "Nuestro objetivo no es solo aliviar el síntoma, sino identificar la causa del problema y acompañarte en un proceso de recuperación real y duradera.",
+      "personalized": "Cada paciente recibe una valoración médica personalizada, lo que nos permite diseñar un tratamiento específico según su condición, estilo de vida y objetivos.",
+      "benefits_title": "¿Qué beneficios puede ofrecer la fisioterapia?",
+      "benefits": [
+        "Disminución del dolor muscular y articular",
+        "Recuperación de la movilidad y flexibilidad",
+        "Reducción de inflamación y contracturas",
+        "Mejora de la postura corporal",
+        "Recuperación más rápida después de lesiones",
+        "Prevención de recaídas o nuevas lesiones",
+        "Mayor confianza al volver a la actividad física"
+      ],
+      "benefits_conclusion": "Con el tratamiento adecuado, muchas personas descubren que es posible volver a moverse sin dolor y con mayor libertad.",
+      "when_to_consult_title": "¿Cuándo es recomendable consultar?",
+      "when_to_consult_intro": "Si últimamente has notado alguna de estas molestias, tu cuerpo podría estar pidiendo atención:",
+      "when_to_consult": [
+        "Dolor en espalda, cuello o zona lumbar",
+        "Molestias persistentes en rodillas, hombros o tobillos",
+        "Contracturas musculares frecuentes",
+        "Lesiones deportivas como esguinces o tendinitis",
+        "Rigidez al moverte o dificultad para ciertos movimientos",
+        "Dolor después de entrenar o realizar actividad física",
+        "Recuperación lenta después de una lesión o cirugía"
+      ],
+      "when_to_consult_conclusion": "Una intervención temprana puede marcar la diferencia entre una recuperación rápida o un problema que se prolonga en el tiempo."
+    },
+    "seo": {
+      "title": "Fisioterapia Especializada | Dr. James Madrid - Medellín",
+      "description": "Recupera tu movimiento y calidad de vida con nuestros tratamientos de fisioterapia especializada en Medellín. Diseñamos tratamientos específicos para ti."
+    }
   }
 }
