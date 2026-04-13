@@ -222,32 +222,61 @@
       "description": "In our Physical Medicine and Sports clinic, we understand that pain or injury affects more than just the body. It can also limit your routine, physical performance, and daily well-being."
     },
     "content": {
-      "intro": "That is why we offer a specialized physiotherapy approach, focused on helping you recover mobility, reduce pain, and return to your activities with confidence and safety.",
-      "goal": "Our goal is not just to relieve symptoms, but to identify the root cause of the problem and support you through a real and lasting recovery process.",
-      "personalized": "Each patient receives a personalized medical assessment, allowing us to design a specific treatment based on their condition, lifestyle, and goals.",
-      "benefits_title": "What benefits can physiotherapy offer?",
+      "what_is": {
+        "title": "What is Physiotherapy?",
+        "text": "Physiotherapy is the science of movement. It is a health discipline dedicated to restoring physical function and quality of life through natural and scientific methods. We don't just treat pain; we rehabilitate the body to function at its full potential, using manual techniques, therapeutic exercise, and advanced technology.",
+        "highlight": "In our clinic, physiotherapy is directly integrated with Sports Medicine, ensuring that every exercise has a clear biological purpose behind it."
+      },
+      "how_it_works": {
+        "title": "How does our process work?",
+        "steps": [
+          { 
+            "title": "Initial Medical Assessment", 
+            "desc": "Dr. James Madrid performs a precise medical diagnosis to identify the biological cause of your pain or limitation." 
+          },
+          { 
+            "title": "Personalized Program", 
+            "desc": "We define clear goals and design a treatment plan that adapts to your pace and lifestyle." 
+          },
+          { 
+            "title": "Dynamic Rehabilitation", 
+            "desc": "We combine manual therapy with motor control exercises to recover strength and mobility safely." 
+          },
+          { 
+            "title": "Prevention and Return", 
+            "desc": "We provide you with the necessary tools to avoid relapses and for you to return to your physical activity with total confidence." 
+          }
+        ]
+      },
+      "physiological_benefits": {
+        "title": "Real Physiological Benefit",
+        "intro": "Our physiotherapy generates real changes in your biology to accelerate healing:",
+        "items": [
+          { "t": "Tissue Repair", "d": "Stimulates the production of collagen and fibroblasts to heal damaged tissues." },
+          { "t": "Pain Control", "d": "Regulates neurological receptors to decrease the perception of pain without medication." },
+          { "t": "Drainage and Circulation", "d": "Optimizes blood and lymphatic flow, reducing persistent edema and inflammation." },
+          { "t": "Motor Efficiency", "d": "Improves communication between brain and muscle, optimizing every movement." }
+        ]
+      },
+      "benefits_title": "What benefits will you get?",
       "benefits": [
-        "Reduction of muscle and joint pain",
-        "Recovery of mobility and flexibility",
-        "Reduction of inflammation and contractures",
-        "Improvement of body posture",
-        "Faster recovery after injuries",
-        "Prevention of relapses or new injuries",
-        "Greater confidence when returning to physical activity"
+        "Elimination of pain points and chronic contractures",
+        "Notable increase in range of motion and flexibility",
+        "Better performance in your sports practice",
+        "Correction of postural habits that cause fatigue",
+        "Prevention of future surgeries through strengthening",
+        "Greater independence in your daily activities"
       ],
-      "benefits_conclusion": "With proper treatment, many people discover that it is possible to move again without pain and with greater freedom.",
-      "when_to_consult_title": "When is it advisable to consult?",
-      "when_to_consult_intro": "If you have recently noticed any of these discomforts, your body might be asking for attention:",
+      "when_to_consult_title": "When should you visit us?",
+      "when_to_consult_intro": "Your body sends alert signals. If you experience any of these cases, we are your solution:",
       "when_to_consult": [
-        "Pain in the back, neck, or lower back",
-        "Persistent discomfort in knees, shoulders, or ankles",
-        "Frequent muscle contractures",
-        "Sports injuries like sprains or tendinitis",
-        "Stiffness when moving or difficulty with certain movements",
-        "Pain after training or physical activity",
-        "Slow recovery after an injury or surgery"
+        "Pain that does not subside after rest (back, neck, knees)",
+        "Morning stiffness or difficulty stretching correctly",
+        "Recent or chronic sports injuries (sprains, tendinitis)",
+        "After orthopedic or sports surgery",
+        "Excessive muscle fatigue after slight efforts"
       ],
-      "when_to_consult_conclusion": "Early intervention can make the difference between a quick recovery and a problem that prolongs over time."
+      "when_to_consult_conclusion": "Don't wait for a tweak to become a limiting injury. Timely intervention is key."
     },
     "faqs": {
       "title": "Frequently Asked Questions - Physiotherapy",

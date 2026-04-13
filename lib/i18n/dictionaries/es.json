@@ -222,32 +222,61 @@
       "description": "En nuestro consultorio de Medicina Física y del Deporte, entendemos que el dolor o una lesión no solo afecta el cuerpo. También puede limitar tu rutina, tu rendimiento físico y tu bienestar diario."
     },
     "content": {
-      "intro": "Por eso ofrecemos un enfoque de fisioterapia especializada, enfocado en ayudarte a recuperar la movilidad, disminuir el dolor y volver a tus actividades con confianza y seguridad.",
-      "goal": "Nuestro objetivo no es solo aliviar el síntoma, sino identificar la causa del problema y acompañarte en un proceso de recuperación real y duradera.",
-      "personalized": "Cada paciente recibe una valoración médica personalizada, lo que nos permite diseñar un tratamiento específico según su condición, estilo de vida y objetivos.",
-      "benefits_title": "¿Qué beneficios puede ofrecer la fisioterapia?",
+      "what_is": {
+        "title": "¿Qué es la Fisioterapia?",
+        "text": "La fisioterapia es la ciencia del movimiento. Es una disciplina de la salud dedicada a restaurar la función física y la calidad de vida a través de métodos naturales y científicos. No solo tratamos el dolor; rehabilitamos el cuerpo para que funcione a su máximo potencial, utilizando técnicas manuales, ejercicio terapéutico y tecnología avanzada.",
+        "highlight": "En nuestro consultorio, la fisioterapia se integra directamente con la Medicina Deportiva, garantizando que cada ejercicio tenga un propósito biológico claro detrás."
+      },
+      "how_it_works": {
+        "title": "¿Cómo funciona nuestro proceso?",
+        "steps": [
+          { 
+            "title": "Valoración Médica Inicial", 
+            "desc": "El Dr. James Madrid realiza un diagnóstico médico preciso para identificar la causa biológica de tu dolor o limitación." 
+          },
+          { 
+            "title": "Programa Personalizado", 
+            "desc": "Definimos objetivos claros y diseñamos un plan de tratamiento que se adapta a tu ritmo y estilo de vida." 
+          },
+          { 
+            "title": "Rehabilitación Dinámica", 
+            "desc": "Combinamos terapia manual con ejercicios de control motor para recuperar fuerza y movilidad de forma segura." 
+          },
+          { 
+            "title": "Prevención y Retorno", 
+            "desc": "Te brindamos las herramientas necesarias para evitar recaídas y que vuelvas a tu actividad física con total confianza." 
+          }
+        ]
+      },
+      "physiological_benefits": {
+        "title": "Beneficio Fisiológico Real",
+        "intro": "Nuestra fisioterapia genera cambios reales en tu biología para acelerar la curación:",
+        "items": [
+          { "t": "Reparación Tisular", "d": "Estimula la producción de colágeno y fibroblastos para sanar tejidos dañados." },
+          { "t": "Control del Dolor", "d": "Regula los receptores neurológicos para disminuir la percepción del dolor sin medicamentos." },
+          { "t": "Drenaje y Circulación", "d": "Optimiza el flujo sanguíneo y linfático, reduciendo edemas e inflamaciones persistentes." },
+          { "t": "Eficiencia Motriz", "d": "Mejora la comunicación entre cerebro y músculo, optimizando cada movimiento." }
+        ]
+      },
+      "benefits_title": "¿Qué beneficios obtendrás?",
       "benefits": [
-        "Disminución del dolor muscular y articular",
-        "Recuperación de la movilidad y flexibilidad",
-        "Reducción de inflamación y contracturas",
-        "Mejora de la postura corporal",
-        "Recuperación más rápida después de lesiones",
-        "Prevención de recaídas o nuevas lesiones",
-        "Mayor confianza al volver a la actividad física"
+        "Eliminación de puntos de dolor y contracturas crónicas",
+        "Aumento notable del rango de movimiento y flexibilidad",
+        "Mejora del rendimiento en tu práctica deportiva",
+        "Corrección de vicios posturales que causan fatiga",
+        "Prevención de futuras cirugías mediante fortalecimiento",
+        "Mayor independencia en tus actividades diarias"
       ],
-      "benefits_conclusion": "Con el tratamiento adecuado, muchas personas descubren que es posible volver a moverse sin dolor y con mayor libertad.",
-      "when_to_consult_title": "¿Cuándo es recomendable consultar?",
-      "when_to_consult_intro": "Si últimamente has notado alguna de estas molestias, tu cuerpo podría estar pidiendo atención:",
+      "when_to_consult_title": "¿Cuándo deberías visitarnos?",
+      "when_to_consult_intro": "Tu cuerpo envía señales de alerta. Si experimentas alguno de estos casos, somos tu solución:",
       "when_to_consult": [
-        "Dolor en espalda, cuello o zona lumbar",
-        "Molestias persistentes en rodillas, hombros o tobillos",
-        "Contracturas musculares frecuentes",
-        "Lesiones deportivas como esguinces o tendinitis",
-        "Rigidez al moverte o dificultad para ciertos movimientos",
-        "Dolor después de entrenar o realizar actividad física",
-        "Recuperación lenta después de una lesión o cirugía"
+        "Dolor que no cede tras el descanso (espalda, cuello, rodillas)",
+        "Rigidez matutina o dificultad para estirarte correctamente",
+        "Lesiones deportivas recientes o crónicas (esguinces, tendinitis)",
+        "Después de una cirugía traumatológica o deportiva",
+        "Fatiga muscular excesiva tras realizar esfuerzos leves"
       ],
-      "when_to_consult_conclusion": "Una intervención temprana puede marcar la diferencia entre una recuperación rápida o un problema que se prolonga en el tiempo."
+      "when_to_consult_conclusion": "No esperes a que una pequeña molestia se convierta en una lesión limitante. La intervención oportuna es clave."
     },
     "faqs": {
       "title": "Preguntas Frecuentes - Fisioterapia",

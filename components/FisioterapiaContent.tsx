@@ -2,6 +2,17 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { 
+  Activity, 
+  Stethoscope, 
+  Target, 
+  Zap, 
+  Dna, 
+  ShieldCheck, 
+  Brain, 
+  ChevronRight, 
+  AlertCircle 
+} from 'lucide-react';
 import physioImg1 from '@/assets/images_fisioterapia/4_vertical.jpeg';
 import physioImg2 from '@/assets/images_fisioterapia/7_vertical.jpeg';
 
@@ -16,108 +27,182 @@ export default function FisioterapiaContent({ dictionary, locale }: Fisioterapia
   if (!content) return null;
 
   return (
-    <div className="bg-white">
-      {/* Intro Section */}
-      <section id="intro-fisioterapia" className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="space-y-8 order-2 lg:order-1">
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light border-l-4 border-teal-500 pl-6">
-              {content.intro}
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              {content.goal}
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed font-medium bg-gray-50 p-6 rounded-2xl">
-              {content.personalized}
-            </p>
-          </div>
-          <div className="relative h-96 lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2">
-             <Image
-                src={physioImg1}
-                alt="Fisioterapia Especializada"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-             />
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section id="beneficios-fisioterapia" className="bg-teal-50 py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6" style={{ color: '#182121' }}>
-                {content.benefits_title}
-              </h2>
-           </div>
-           
-           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {content.benefits.map((benefit: string, idx: number) => (
-                <div key={idx} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                   <div className="w-12 h-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                   </div>
-                   <p className="text-lg font-medium text-gray-800">{benefit}</p>
+    <div className="bg-white overflow-hidden">
+      
+      {/* What is Physiotherapy? */}
+      <section id="intro-fisioterapia" className="py-20 md:py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative group">
+                <div className="absolute -inset-4 bg-teal-500/5 rounded-[3rem] blur-2xl group-hover:bg-teal-500/10 transition-all duration-700" />
+                <div className="relative h-[450px] lg:h-[600px] rounded-[3rem] overflow-hidden shadow-2xl">
+                    <Image
+                        src={physioImg1}
+                        alt={content.what_is.title}
+                        fill
+                        className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
                 </div>
-              ))}
-           </div>
-           
-           <div className="mt-16 text-center max-w-2xl mx-auto bg-white p-8 rounded-3xl shadow-sm border border-teal-100">
-              <p className="text-xl text-teal-800 font-medium">
-                {content.benefits_conclusion}
-              </p>
-           </div>
+            </div>
+
+            <div className="space-y-8">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-50 text-teal-700 font-bold text-xs uppercase tracking-widest">
+                    <Stethoscope className="w-4 h-4" />
+                    {locale === 'es' ? 'Ciencia y Movimiento' : 'Science and Movement'}
+                </div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold !text-[#111818] leading-tight tracking-tighter">
+                    {content.what_is.title}
+                </h2>
+                <p className="text-xl !text-gray-600 leading-relaxed font-light">
+                    {content.what_is.text}
+                </p>
+                
+                {/* Repositioned Highlight as a premium block */}
+                <div className="bg-teal-50/50 border-l-4 border-teal-500 p-8 rounded-r-3xl relative overflow-hidden group">
+                    <Activity className="absolute -right-4 -bottom-4 w-24 h-24 text-teal-500/10 group-hover:scale-110 transition-transform duration-500" />
+                    <p className="relative z-10 text-gray-900 font-bold text-lg leading-relaxed">
+                        {content.what_is.highlight}
+                    </p>
+                </div>
+                <div className="grid grid-cols-2 gap-8 pt-6">
+                    <div className="space-y-2">
+                        <span className="text-4xl font-black text-teal-600/20 block">01</span>
+                        <h4 className="font-bold !text-[#111818]">{locale === 'es' ? 'Precisión Médica' : 'Medical Precision'}</h4>
+                    </div>
+                    <div className="space-y-2">
+                        <span className="text-4xl font-black text-teal-600/20 block">02</span>
+                        <h4 className="font-bold !text-[#111818]">{locale === 'es' ? 'Base Científica' : 'Scientific Basis'}</h4>
+                    </div>
+                </div>
+            </div>
         </div>
       </section>
 
-      {/* When to consult Section */}
-      <section id="consultar-fisioterapia" className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="relative h-96 lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-              <Image
-                src={physioImg2}
-                alt={content.when_to_consult_title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-             />
-             <div className="absolute inset-0 bg-teal-900/10 mix-blend-multiply"></div>
-          </div>
-          
-          <div className="space-y-8">
-             <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6" style={{ color: '#182121' }}>
-                  {content.when_to_consult_title}
+      {/* How it works - Step Process */}
+      <section className="bg-[#111818] py-24 md:py-32 relative overflow-hidden">
+        {/* Background Decoration */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-teal-500/5 blur-[120px] rounded-full translate-x-1/2" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-20">
+                <h2 className="text-3xl md:text-5xl font-bold !text-white mb-6">
+                    {content.how_it_works.title}
                 </h2>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                  {content.when_to_consult_intro}
-                </p>
-             </div>
-             
-             <ul className="space-y-4">
-                {content.when_to_consult.map((item: string, idx: number) => (
-                  <li key={idx} className="flex items-start">
-                     <span className="flex-shrink-0 w-6 h-6 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mt-1 mr-4">
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd"></path>
-                        </svg>
-                     </span>
-                     <p className="text-lg text-gray-700">{item}</p>
-                  </li>
+                <div className="w-24 h-1.5 bg-teal-500 mx-auto rounded-full" />
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {content.how_it_works.steps.map((step: any, idx: number) => (
+                    <div key={idx} className="relative group">
+                        <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-[2rem] h-full hover:bg-white/10 transition-all duration-500 hover:-translate-y-2">
+                            <div className="w-14 h-14 bg-teal-500/20 text-teal-400 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-teal-500 group-hover:text-white transition-all duration-500 overflow-hidden">
+                                <span className="text-2xl font-black">{idx + 1}</span>
+                            </div>
+                            <h3 className="text-xl font-bold !text-white mb-4">{step.title}</h3>
+                            <p className="!text-gray-400 leading-relaxed">{step.desc}</p>
+                        </div>
+                        {idx < 3 && (
+                            <div className="hidden lg:block absolute top-1/2 -right-4 translate-y-[-50%] z-20">
+                                <ChevronRight className="w-8 h-8 text-white/10" />
+                            </div>
+                        )}
+                    </div>
                 ))}
-             </ul>
-             
-             <div className="pt-6 border-t border-gray-100">
-                <p className="text-xl font-medium text-amber-800 leading-relaxed bg-amber-50 p-6 rounded-2xl">
-                  {content.when_to_consult_conclusion}
-                </p>
-             </div>
-          </div>
+            </div>
         </div>
       </section>
+
+      {/* Physiological Benefits */}
+      <section id="beneficios-fisioterapia" className="py-24 md:py-32 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row justify-between items-end mb-20 gap-8">
+                <div className="max-w-2xl space-y-6 text-center lg:text-left">
+                    <div className="flex items-center gap-3 text-teal-600 font-bold tracking-widest uppercase text-sm justify-center lg:justify-start">
+                        <Dna className="w-5 h-5" />
+                        {locale === 'es' ? 'Resultados Biológicos' : 'Biological Results'}
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-extrabold !text-[#111818]">
+                        {content.physiological_benefits.title}
+                    </h2>
+                    <p className="text-xl !text-gray-600 font-light">
+                        {content.physiological_benefits.intro}
+                    </p>
+                </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+                {content.physiological_benefits.items.map((item: any, idx: number) => (
+                    <div key={idx} className="flex gap-8 p-10 bg-white rounded-[2.5rem] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                        <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center group-hover:bg-teal-600 group-hover:text-white transition-all duration-500">
+                            {idx === 0 && <Activity className="w-8 h-8" />}
+                            {idx === 1 && <Target className="w-8 h-8" />}
+                            {idx === 2 && <Zap className="w-8 h-8" />}
+                            {idx === 3 && <Brain className="w-8 h-8" />}
+                        </div>
+                        <div className="space-y-3">
+                            <h3 className="text-2xl font-bold !text-[#111818]">{item.t}</h3>
+                            <p className="!text-gray-600 leading-relaxed text-lg">{item.d}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+      </section>
+
+      {/* General Benefits & Consultation */}
+      <section className="py-24 md:py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-20 items-stretch">
+                
+                {/* Benefits List */}
+                <div className="space-y-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#111818]">
+                        {content.benefits_title}
+                    </h2>
+                    <div className="grid sm:grid-cols-2 gap-6">
+                        {content.benefits.map((benefit: string, idx: number) => (
+                            <div key={idx} className="flex items-start gap-4">
+                                <div className="flex-shrink-0 mt-1">
+                                    <ShieldCheck className="w-6 h-6 text-teal-500" />
+                                </div>
+                                <p className="text-gray-700 font-medium">{benefit}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* When to consult - Red alert style */}
+                <div id="consultar-fisioterapia" className="bg-teal-900 rounded-[3rem] p-10 md:p-16 relative overflow-hidden group border border-white/10 shadow-2xl">
+                    <div className="absolute top-0 right-0 p-8 opacity-10 transform translate-x-1/4 -translate-y-1/4 group-hover:scale-110 transition-transform duration-700">
+                        <AlertCircle className="w-64 h-64 !text-white" />
+                    </div>
+                    <div className="relative z-10 space-y-8">
+                        <h2 className="text-3xl md:text-4xl font-bold !text-white">
+                            {content.when_to_consult_title}
+                        </h2>
+                        <p className="!text-teal-100 text-lg opacity-90 leading-relaxed font-light">
+                            {content.when_to_consult_intro}
+                        </p>
+                        <ul className="space-y-5">
+                            {content.when_to_consult.map((item: string, idx: number) => (
+                                <li key={idx} className="flex items-center gap-4 !text-white">
+                                    <div className="w-2 h-2 rounded-full bg-teal-400 flex-shrink-0" />
+                                    <span className="text-lg font-light">{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <div className="pt-6 border-t border-white/20">
+                            <p className="!text-teal-300 font-bold text-lg italic">
+                                "{content.when_to_consult_conclusion}"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
     </div>
   );
 }
