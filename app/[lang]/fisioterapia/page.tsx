@@ -7,6 +7,8 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import ContactSection from '@/components/ContactSection';
 import FisioterapiaHero from '@/components/FisioterapiaHero';
 import FisioterapiaContent from '@/components/FisioterapiaContent';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FisioterapiaFAQs from '@/components/FisioterapiaFAQs';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -135,6 +137,10 @@ export default async function FisioterapiaPage({
         <FisioterapiaHero dictionary={dictionary} locale={lang} />
         
         <FisioterapiaContent dictionary={dictionary} locale={lang} />
+
+        <TestimonialsSection dictionary={dictionary} locale={lang} />
+
+        <FisioterapiaFAQs dictionary={dictionary} locale={lang} />
 
         <ContactSection dictionary={dictionary} locale={lang} />
       </main>

@@ -249,6 +249,28 @@
       ],
       "when_to_consult_conclusion": "Early intervention can make the difference between a quick recovery and a problem that prolongs over time."
     },
+    "faqs": {
+      "title": "Frequently Asked Questions - Physiotherapy",
+      "subtitle": "We solve your doubts about our service",
+      "items": [
+        {
+          "q": "What is the difference between your physiotherapy and conventional ones?",
+          "a": "Our approach integrates sports medicine and specialized physiotherapy. Each patient receives an initial medical assessment, which allows the therapist to work on an already established medical diagnosis, accelerating results."
+        },
+        {
+          "q": "How many sessions will I need?",
+          "a": "The number of sessions varies according to the injury and the response of each body. After the initial assessment, we define a plan that usually ranges between 5 and 10 sessions with very clear recovery objectives."
+        },
+        {
+          "q": "Do you treat specific sports injuries?",
+          "a": "Yes, we specialize in sports injuries such as sprains, tendinitis, muscle tears and post-surgical rehabilitation, focusing on a safe return to physical activity."
+        },
+        {
+          "q": "Do I need a medical order to attend?",
+          "a": "It is not essential to bring an external order, as we ourselves perform the initial sports medical assessment to guarantee safe and effective treatment."
+        }
+      ]
+    },
     "seo": {
       "title": "Specialized Physiotherapy | Dr. James Madrid - Medellín",
       "description": "Recover your movement and quality of life with our specialized physiotherapy treatments in Medellín. We design specific treatments for you."

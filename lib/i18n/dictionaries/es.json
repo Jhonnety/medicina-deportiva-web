@@ -249,6 +249,28 @@
       ],
       "when_to_consult_conclusion": "Una intervención temprana puede marcar la diferencia entre una recuperación rápida o un problema que se prolonga en el tiempo."
     },
+    "faqs": {
+      "title": "Preguntas Frecuentes - Fisioterapia",
+      "subtitle": "Resolvemos tus dudas sobre nuestro servicio",
+      "items": [
+        {
+          "q": "¿Qué diferencia hay entre su fisioterapia y la convencional?",
+          "a": "Nuestro enfoque integra medicina deportiva y fisioterapia especializada. Cada paciente recibe una valoración médica inicial, lo que permite que el terapeuta trabaje sobre un diagnóstico médico ya establecido, acelerando los resultados."
+        },
+        {
+          "q": "¿Cuántas sesiones necesitaré?",
+          "a": "El número de sesiones varía según la lesión y la respuesta de cada cuerpo. Tras la valoración inicial, definimos un plan que suele oscilar entre 5 y 10 sesiones con objetivos muy claros de recuperación."
+        },
+        {
+          "q": "¿Tratan lesiones deportivas específicas?",
+          "a": "Sí, somos especialistas en lesiones deportivas como esguinces, tendinitis, desgarros musculares y rehabilitación post-quirúrgica, enfocándonos en un retorno seguro a la actividad física."
+        },
+        {
+          "q": "¿Necesito orden médica para asistir?",
+          "a": "No es indispensable traer una orden externa, ya que nosotros mismos realizamos la valoración médica deportiva inicial para garantizar un tratamiento seguro y efectivo."
+        }
+      ]
+    },
     "seo": {
       "title": "Fisioterapia Especializada | Dr. James Madrid - Medellín",
       "description": "Recupera tu movimiento y calidad de vida con nuestros tratamientos de fisioterapia especializada en Medellín. Diseñamos tratamientos específicos para ti."
