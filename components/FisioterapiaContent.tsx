@@ -18,7 +18,7 @@ export default function FisioterapiaContent({ dictionary, locale }: Fisioterapia
   return (
     <div className="bg-white">
       {/* Intro Section */}
-      <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="intro-fisioterapia" className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-8 order-2 lg:order-1">
             <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light border-l-4 border-teal-500 pl-6">
@@ -44,7 +44,7 @@ export default function FisioterapiaContent({ dictionary, locale }: Fisioterapia
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-teal-50 py-16 md:py-24">
+      <section id="beneficios-fisioterapia" className="bg-teal-50 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6" style={{ color: '#182121' }}>
@@ -74,7 +74,7 @@ export default function FisioterapiaContent({ dictionary, locale }: Fisioterapia
       </section>
 
       {/* When to consult Section */}
-      <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="consultar-fisioterapia" className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative h-96 lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
               <Image

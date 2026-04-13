@@ -15,7 +15,7 @@ export default function FisioterapiaFAQs({ dictionary, locale }: FisioterapiaFAQ
   if (!faqs || !faqs.items) return null;
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section id="faqs-fisioterapia" className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-semibold mb-6">

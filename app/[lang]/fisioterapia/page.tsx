@@ -129,12 +129,12 @@ export default async function FisioterapiaPage({
 
       <Header dictionary={dictionary} locale={lang} />
 
-      <main className="pt-20">
-        <div className="bg-gray-50 py-4 absolute w-full z-20">
-          <Breadcrumbs items={breadcrumbItems} />
-        </div>
-
-        <FisioterapiaHero dictionary={dictionary} locale={lang} />
+      <main className="pt-16">
+        <FisioterapiaHero 
+          dictionary={dictionary} 
+          locale={lang} 
+          breadcrumbItems={breadcrumbItems}
+        />
         
         <FisioterapiaContent dictionary={dictionary} locale={lang} />
 
