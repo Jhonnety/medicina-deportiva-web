@@ -278,6 +278,28 @@
       ],
       "when_to_consult_conclusion": "Don't wait for a tweak to become a limiting injury. Timely intervention is key."
     },
+    "symptoms": {
+      "title": "Common Symptoms",
+      "subtitle": "Do you identify any of these signals in your body?",
+      "items": [
+        {
+          "title": "Lower Back and Neck Pain",
+          "desc": "Persistent discomfort in the back or neck that limits your rest and productivity."
+        },
+        {
+          "title": "Joint Stiffness",
+          "desc": "A 'stuck' sensation or difficulty starting movement after being at rest."
+        },
+        {
+          "title": "Muscle Weakness",
+          "desc": "Lack of strength or premature fatigue when performing activities that were previously easy."
+        },
+        {
+          "title": "Loss of Mobility",
+          "desc": "Inability to reach full range of motion in shoulders, knees, or hips."
+        }
+      ]
+    },
     "faqs": {
       "title": "Frequently Asked Questions - Physiotherapy",
       "subtitle": "We solve your doubts about our service",

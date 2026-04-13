@@ -6,6 +6,16 @@ import heroImage from '@/assets/images_fisioterapia/6_vertical.jpeg';
 import { getWhatsAppLink } from '@/lib/constants/contact';
 import { sendWhatsAppConversion } from '@/lib/analytics';
 
+import { 
+  Home, 
+  Activity, 
+  Sparkles, 
+  Stethoscope, 
+  MessageSquare, 
+  HelpCircle, 
+  Phone 
+} from 'lucide-react';
+
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -27,19 +37,19 @@ const ConcaveCorner = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const NavItem = ({ href, label, active }: { href: string; label: string; active?: boolean }) => (
+const NavItem = ({ href, label, icon: Icon, active }: { href: string; label: string; icon: any; active?: boolean }) => (
   <a
     href={href}
-    className="group/item flex items-center justify-end gap-0 hover:gap-3 transition-all duration-500 py-3"
+    className="group/item flex items-center justify-end gap-0 hover:gap-4 transition-all duration-500 py-3"
   >
-    <span className={`text-[10px] uppercase tracking-[0.2em] font-bold text-white whitespace-nowrap overflow-hidden transition-all duration-500 w-0 group-hover:w-28 text-right opacity-0 group-hover:opacity-100 ${active ? 'text-[#6ba5a5]' : ''}`}>
+    <span className={`text-[10px] uppercase tracking-[0.2em] font-bold text-white whitespace-nowrap overflow-hidden transition-all duration-500 w-0 group-hover:w-32 text-right opacity-0 group-hover:opacity-100 ${active ? 'text-[#6ba5a5]' : ''}`}>
       {label}
     </span>
-    <div className={`relative flex items-center justify-center transition-all duration-500`}>
-      <div className={`h-8 w-[2px] rounded-full transition-all duration-500 ${active ? 'bg-[#6ba5a5] h-10' : 'bg-white/20 group-hover/item:bg-white/80 group-hover/item:h-10'}`} />
-      {active && (
-        <div className="absolute w-2 h-2 rounded-full bg-[#6ba5a5] shadow-[0_0_8px_#6ba5a5]" />
-      )}
+    <div className={`relative flex items-center justify-center transition-all duration-500 w-10 h-10 rounded-xl ${active ? 'bg-[#6ba5a5] text-white shadow-[0_0_15px_rgba(107,165,165,0.5)]' : 'bg-white/5 text-white/40 group-hover/item:bg-white/10 group-hover/item:text-white'}`}>
+        <Icon className="w-5 h-5" />
+        {active && (
+            <div className="absolute -right-1 top-1/2 -translate-y-1/2 w-1 h-3 bg-white rounded-l-full" />
+        )}
     </div>
   </a>
 );
@@ -50,19 +60,21 @@ export default function FisioterapiaHero({ dictionary, locale, breadcrumbItems }
   if (!content) return null;
 
   const navLinks = locale === 'es' ? [
-    { label: 'Inicio', href: '#intro-fisioterapia' },
-    { label: 'Beneficios', href: '#beneficios-fisioterapia' },
-    { label: 'Consulta', href: '#consultar-fisioterapia' },
-    { label: 'Testimonios', href: '#testimonios' },
-    { label: 'Preguntas', href: '#faqs-fisioterapia' },
-    { label: 'Contacto', href: '#contacto' },
+    { label: 'Inicio', href: '#intro-fisioterapia', icon: Home },
+    { label: 'Síntomas', href: '#sintomas-fisioterapia', icon: Activity },
+    { label: 'Beneficios', href: '#beneficios-fisioterapia', icon: Sparkles },
+    { label: 'Consulta', href: '#consultar-fisioterapia', icon: Stethoscope },
+    { label: 'Testimonios', href: '#testimonios', icon: MessageSquare },
+    { label: 'Preguntas', href: '#faqs-fisioterapia', icon: HelpCircle },
+    { label: 'Contacto', href: '#contacto', icon: Phone },
   ] : [
-    { label: 'Intro', href: '#intro-fisioterapia' },
-    { label: 'Benefits', href: '#beneficios-fisioterapia' },
-    { label: 'When to consult', href: '#consultar-fisioterapia' },
-    { label: 'Testimonials', href: '#testimonios' },
-    { label: 'FAQs', href: '#faqs-fisioterapia' },
-    { label: 'Contact', href: '#contacto' },
+    { label: 'Intro', href: '#intro-fisioterapia', icon: Home },
+    { label: 'Symptoms', href: '#sintomas-fisioterapia', icon: Activity },
+    { label: 'Benefits', href: '#beneficios-fisioterapia', icon: Sparkles },
+    { label: 'When to consult', href: '#consultar-fisioterapia', icon: Stethoscope },
+    { label: 'Testimonials', href: '#testimonios', icon: MessageSquare },
+    { label: 'FAQs', href: '#faqs-fisioterapia', icon: HelpCircle },
+    { label: 'Contact', href: '#contacto', icon: Phone },
   ];
 
   return (
@@ -108,12 +120,12 @@ export default function FisioterapiaHero({ dictionary, locale, breadcrumbItems }
           {/* Content */}
           <div className="absolute inset-0 z-10 flex flex-col justify-center px-8 md:px-16 lg:px-24">
             <div className="max-w-3xl">
-              <h1 className="!text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 tracking-tighter leading-[1.1]">
+              <h1 className="!text-white !text-2xl sm:!text-3xl md:!text-4xl lg:!text-5xl font-extrabold text-white mb-8 tracking-tighter leading-[1.1]">
                 {content.title}
                 <span className="block text-[#6ba5a5] mt-2 drop-shadow-sm filter brightness-110"> {content.subtitle}</span>
               </h1>
               <div className="h-1 w-20 bg-[#6ba5a5] mb-8 rounded-full" />
-              <p className="!text-white text-lg md:text-2xl text-gray-200 leading-relaxed font-light max-w-2xl drop-shadow-md">
+              <p className="!text-white !text-lg md:text-2xl text-gray-200 leading-relaxed font-light max-w-2xl drop-shadow-md">
                 {content.description}
               </p>
             </div>
@@ -123,7 +135,7 @@ export default function FisioterapiaHero({ dictionary, locale, breadcrumbItems }
           <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-end z-20 group transition-all duration-500 hover:bg-black/20 hover:backdrop-blur-md px-6 py-10 rounded-l-[3rem] border-l border-y border-white/10">
             <div className="flex flex-col gap-1">
               {navLinks.map((link, idx) => (
-                <NavItem key={idx} href={link.href} label={link.label} active={idx === 0} />
+                <NavItem key={idx} href={link.href} label={link.label} icon={link.icon} active={idx === 0} />
               ))}
             </div>
           </div>

@@ -278,6 +278,28 @@
       ],
       "when_to_consult_conclusion": "No esperes a que una pequeña molestia se convierta en una lesión limitante. La intervención oportuna es clave."
     },
+    "symptoms": {
+      "title": "Síntomas comunes",
+      "subtitle": "¿Identificas alguna de estas señales en tu cuerpo?",
+      "items": [
+        {
+          "title": "Dolor Lumbar y Cervical",
+          "desc": "Molestias persistentes en la espalda o el cuello que limitan tu descanso y productividad."
+        },
+        {
+          "title": "Rigidez Articular",
+          "desc": "Sensación de 'trabado' o dificultad para iniciar el movimiento después de estar en reposo."
+        },
+        {
+          "title": "Debilidad Muscular",
+          "desc": "Falta de fuerza o fatiga prematura al realizar actividades que antes eran sencillas."
+        },
+        {
+          "title": "Pérdida de Movilidad",
+          "desc": "Incapacidad para alcanzar el rango completo de movimiento en hombros, rodillas o cadera."
+        }
+      ]
+    },
     "faqs": {
       "title": "Preguntas Frecuentes - Fisioterapia",
       "subtitle": "Resolvemos tus dudas sobre nuestro servicio",
