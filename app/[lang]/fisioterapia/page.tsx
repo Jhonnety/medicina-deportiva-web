@@ -42,7 +42,7 @@ export async function generateMetadata({
       siteName: 'Dr. James Madrid',
       images: [
         {
-          url: `${baseUrl}/assets/images_fisioterapia/1_horizontal.png`,
+          url: `${baseUrl}/assets/images_fisioterapia/galeria/cover-estiramiento-pierna.jpg`,
           width: 1200,
           height: 630,
           alt: content?.title || 'Fisioterapia',

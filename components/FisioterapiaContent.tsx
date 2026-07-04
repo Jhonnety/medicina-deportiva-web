@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import physioImg1 from '@/assets/images_fisioterapia/4_vertical.jpeg';
 import physioImg2 from '@/assets/images_fisioterapia/7_vertical.jpeg';
+import FisioterapiaGallery from '@/components/FisioterapiaGallery';
 
 interface FisioterapiaContentProps {
   dictionary: any;
@@ -111,6 +112,8 @@ export default function FisioterapiaContent({ dictionary, locale }: Fisioterapia
             </div>
         </div>
       </section>
+
+      <FisioterapiaGallery locale={locale} />
 
       {/* Symptoms Section */}
       <section id="sintomas-fisioterapia" className="py-24 md:py-32 bg-white">

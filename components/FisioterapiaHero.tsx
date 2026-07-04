@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import heroImage from '@/assets/images_fisioterapia/6_vertical.jpeg';
+import heroImage from '@/assets/images_fisioterapia/galeria/cover-estiramiento-pierna.jpg';
 import { getWhatsAppLink } from '@/lib/constants/contact';
 import { sendWhatsAppConversion } from '@/lib/analytics';
 

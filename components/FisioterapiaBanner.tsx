@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import bannerImage from '@/assets/images_fisioterapia/1_horizontal.png';
+import bannerImage from '@/assets/images_fisioterapia/galeria/cover-estiramiento-pierna.jpg';
 
 interface FisioterapiaBannerProps {
   dictionary: any;
